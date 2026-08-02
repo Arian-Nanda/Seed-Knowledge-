@@ -1,0 +1,25 @@
+{
+  "name": "seed-knowledge-",
+  "version": "1.0.0",
+  "description": "Enter any Minecraft seed and get detailed info on biomes, structures, and points of interest.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Arian-Nanda/Seed-Knowledge-.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Arian-Nanda/Seed-Knowledge-/issues"
+  },
+  "homepage": "https://github.com/Arian-Nanda/Seed-Knowledge-#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
