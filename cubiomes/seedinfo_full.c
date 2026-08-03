@@ -7,6 +7,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <inttypes.h>
+#include <math.h>
 
 typedef struct {
     int type;
@@ -42,17 +43,26 @@ int main(int argc, char **argv)
 {
     if (argc < 2)
     {
-        fprintf(stderr, "Usage: %s <seed>\n", argv[0]);
+        fprintf(stderr, "Usage: %s <seed> [fromX] [fromZ]\n", argv[0]);
         return 1;
     }
 
     int64_t seed = strtoll(argv[1], NULL, 10);
     int mc = MC_1_21;
 
+    // Optional: search relative to a custom point instead of (0,0)/spawn.
+    int fromX = 0;
+    int fromZ = 0;
+    if (argc >= 4)
+    {
+        fromX = atoi(argv[2]);
+        fromZ = atoi(argv[3]);
+    }
+
     Generator g;
     setupGenerator(&g, mc, 0);
 
-    // Spawn point (Overworld only)
+    // Spawn point (Overworld only) - always reported regardless of search origin
     applySeed(&g, DIM_OVERWORLD, (uint64_t)seed);
     Pos spawn = getSpawn(&g);
 
@@ -60,10 +70,11 @@ int main(int argc, char **argv)
     printf("  \"seed\": %" PRId64 ",\n", seed);
     printf("  \"version\": \"1.21\",\n");
     printf("  \"spawn\": {\"x\": %d, \"z\": %d},\n", spawn.x, spawn.z);
+    printf("  \"searchOrigin\": {\"x\": %d, \"z\": %d},\n", fromX, fromZ);
     printf("  \"structures\": {\n");
 
     int currentDim = 999; // force first applySeed
-    int searchRadius = 10; // regions in each direction
+    int searchRadius = 10; // regions in each direction, centered on the search origin
 
     for (int i = 0; i < NUM_STRUCTURES; i++)
     {
@@ -75,13 +86,22 @@ int main(int argc, char **argv)
             currentDim = entry->dim;
         }
 
+        StructureConfig sconf;
+        getStructureConfig(entry->type, mc, &sconf);
+        int regionBlocks = sconf.regionSize * 16; // blocks per region for this structure type
+        if (regionBlocks <= 0) regionBlocks = 512; // fallback safety
+
+        // Which region index contains our search origin, for this structure's region size
+        int originRegX = (int)floor((double)fromX / regionBlocks);
+        int originRegZ = (int)floor((double)fromZ / regionBlocks);
+
         int found = 0;
         Pos bestPos = {0, 0};
         double bestDist = -1;
 
-        for (int rz = -searchRadius; rz <= searchRadius; rz++)
+        for (int rz = originRegZ - searchRadius; rz <= originRegZ + searchRadius; rz++)
         {
-            for (int rx = -searchRadius; rx <= searchRadius; rx++)
+            for (int rx = originRegX - searchRadius; rx <= originRegX + searchRadius; rx++)
             {
                 Pos p;
                 if (!getStructurePos(entry->type, mc, (uint64_t)seed, rx, rz, &p))
@@ -89,7 +109,9 @@ int main(int argc, char **argv)
                 if (!isViableStructurePos(entry->type, &g, p.x, p.z, 0))
                     continue;
 
-                double dist = p.x * (double)p.x + p.z * (double)p.z;
+                double dx = p.x - fromX;
+                double dz = p.z - fromZ;
+                double dist = dx * dx + dz * dz;
                 if (bestDist < 0 || dist < bestDist)
                 {
                     bestDist = dist;
@@ -101,7 +123,10 @@ int main(int argc, char **argv)
 
         printf("    \"%s\": ", entry->name);
         if (found)
-            printf("{\"x\": %d, \"z\": %d}", bestPos.x, bestPos.z);
+        {
+            double distance = sqrt(bestDist);
+            printf("{\"x\": %d, \"z\": %d, \"distance\": %.1f}", bestPos.x, bestPos.z, distance);
+        }
         else
             printf("null");
 

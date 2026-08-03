@@ -9,6 +9,9 @@ const path = require("path");
 const app = express();
 const PORT = 3000;
 
+// Serve the frontend files (index.html, etc.) from the "public" folder
+app.use(express.static(path.join(__dirname, "public")));
+
 // Path to the compiled C program (inside the cubiomes folder)
 const SEEDINFO_PATH = path.join(__dirname, "cubiomes", "seedinfo_full");
 
@@ -20,7 +23,18 @@ app.get("/api/seed/:seed", (req, res) => {
     return res.status(400).json({ error: "Seed must be a valid integer." });
   }
 
-  execFile(SEEDINFO_PATH, [seed], { timeout: 5000 }, (error, stdout, stderr) => {
+  // Optional custom search origin via ?x=...&z=...  Defaults to spawn (0,0) if not given.
+  const args = [seed];
+  if (req.query.x !== undefined || req.query.z !== undefined) {
+    const x = req.query.x;
+    const z = req.query.z;
+    if (!/^-?\d+$/.test(x) || !/^-?\d+$/.test(z)) {
+      return res.status(400).json({ error: "x and z must both be valid integers." });
+    }
+    args.push(x, z);
+  }
+
+  execFile(SEEDINFO_PATH, args, { timeout: 5000 }, (error, stdout, stderr) => {
     if (error) {
       console.error("Error running seedinfo_full:", error, stderr);
       return res.status(500).json({ error: "Failed to analyze seed." });
