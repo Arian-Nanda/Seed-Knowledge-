@@ -22,6 +22,20 @@
     margin-top: 0;
     margin-bottom: 24px;
   }
+  .platform-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 16px;
+  }
+  .platform-option {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #e6e6e6;
+    font-size: 0.95rem;
+    cursor: pointer;
+  }
+
   .search-row {
     display: flex;
     gap: 8px;
@@ -48,6 +62,15 @@
   button:hover { background: #5aa55a; }
   button:disabled { background: #3a3f45; cursor: default; }
 
+  .search-row select {
+    padding: 10px 8px;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: 1px solid #3a3f45;
+    background: #262b31;
+    color: #e6e6e6;
+  }
+
   .coords-row {
     margin-bottom: 20px;
   }
@@ -72,6 +95,207 @@
     border: 1px solid #3a3f45;
     background: #262b31;
     color: #e6e6e6;
+  }
+
+  .stronghold-section {
+    margin-top: 16px;
+    padding: 12px 16px;
+    background: #262b31;
+    border-radius: 8px;
+  }
+  .stronghold-result {
+    margin-top: 10px;
+    font-size: 0.9rem;
+  }
+
+  .compare-section {
+    margin-top: 20px;
+    padding-top: 16px;
+    border-top: 1px solid #33383e;
+  }
+  .closest-pair {
+    background: #1f2b23;
+    border: 1px solid #2f4a3a;
+    border-radius: 8px;
+    padding: 12px 16px;
+    margin-bottom: 16px;
+    font-size: 0.9rem;
+  }
+  .compare-row {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .compare-row select, .compare-row input[type="text"] {
+    padding: 8px 10px;
+    font-size: 0.9rem;
+    border-radius: 6px;
+    border: 1px solid #3a3f45;
+    background: #262b31;
+    color: #e6e6e6;
+  }
+  .compare-and { color: #9aa0a6; font-size: 0.85rem; }
+  .compare-result {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #e6e6e6;
+  }
+
+  .combo-section {
+    margin-top: 20px;
+    padding-top: 16px;
+    border-top: 1px solid #33383e;
+  }
+  .combo-section h3 { font-size: 1rem; margin-bottom: 4px; }
+  .combo-hint { color: #9aa0a6; font-size: 0.85rem; margin-top: 0; margin-bottom: 12px; }
+  .combo-checkboxes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6px 12px;
+    margin-bottom: 14px;
+    font-size: 0.9rem;
+  }
+  .combo-checkboxes label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+  }
+  .combo-row-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .combo-row-item label {
+    flex: 1;
+    min-width: 0;
+  }
+  .combo-count {
+    width: 40px;
+    padding: 2px 4px;
+    font-size: 0.8rem;
+    border-radius: 4px;
+    border: 1px solid #3a3f45;
+    background: #262b31;
+    color: #e6e6e6;
+    flex-shrink: 0;
+  }
+  .combo-results { margin-top: 14px; }
+  .combo-warning {
+    color: #d8a34a;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+  }
+  .combo-card {
+    background: #262b31;
+    border-radius: 8px;
+    padding: 12px 16px;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+  }
+  .combo-card .combo-spread { color: #9aa0a6; font-size: 0.8rem; margin-bottom: 6px; }
+  .combo-pairs {
+    margin-top: 8px;
+    padding-top: 8px;
+    border-top: 1px solid #33383e;
+    color: #9aa0a6;
+    font-size: 0.85rem;
+  }
+
+  .ai-section {
+    margin-top: 28px;
+    padding-top: 20px;
+    border-top: 1px solid #33383e;
+  }
+  .ai-hint {
+    color: #9aa0a6;
+    font-size: 0.85rem;
+    margin-top: 0;
+    margin-bottom: 12px;
+  }
+  .chat-log {
+    max-height: 400px;
+    overflow-y: auto;
+    margin-bottom: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .chat-bubble {
+    padding: 10px 14px;
+    border-radius: 10px;
+    font-size: 0.92rem;
+    line-height: 1.5;
+    white-space: pre-wrap;
+    max-width: 85%;
+  }
+  .chat-bubble.user {
+    background: #2c5a34;
+    align-self: flex-end;
+  }
+  .chat-bubble.assistant {
+    background: #262b31;
+    align-self: flex-start;
+  }
+  .chat-bubble.thinking {
+    color: #9aa0a6;
+    font-style: italic;
+  }
+  .crafting-visual {
+    margin-top: 10px;
+    padding: 10px;
+    background: #1b1f24;
+    border-radius: 8px;
+    display: inline-block;
+  }
+  .crafting-visual-title {
+    font-size: 0.8rem;
+    color: #9aa0a6;
+    margin-bottom: 8px;
+  }
+  .crafting-grid {
+    display: grid;
+    gap: 4px;
+  }
+  .crafting-cell {
+    width: 64px;
+    height: 64px;
+    background: #2a2f36;
+    border: 1px solid #3a3f45;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 0.65rem;
+    color: #e6e6e6;
+    padding: 4px;
+    line-height: 1.2;
+  }
+  .crafting-cell.empty {
+    background: transparent;
+    border: 1px dashed #33383e;
+  }
+  .crafting-shapeless-list {
+    font-size: 0.85rem;
+    color: #e6e6e6;
+  }
+  .ai-row {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 12px;
+  }
+  .ai-row input[type="text"] {
+    flex: 1;
+  }
+  .ai-answer {
+    background: #262b31;
+    border-radius: 8px;
+    padding: 14px 16px;
+    line-height: 1.5;
+    white-space: pre-wrap;
+    display: none;
   }
 
   #error {
@@ -106,9 +330,21 @@
 <body>
 
 <h1>Minecraft Seed Explorer</h1>
-<p class="subtitle">Enter a seed to see spawn point and nearby structures (Minecraft 1.21).</p>
+<p class="subtitle">Enter a seed to see spawn point and nearby structures.</p>
+
+<div class="platform-row">
+  <label class="platform-option">
+    <input type="radio" name="platform" value="java" id="platformJava" checked>
+    Java Edition
+  </label>
+  <label class="platform-option">
+    <input type="radio" name="platform" value="bedrock" id="platformBedrock">
+    Bedrock Edition
+  </label>
+</div>
 
 <div class="search-row">
+  <select id="versionSelect"></select>
   <input type="text" id="seedInput" placeholder="Enter a seed, e.g. 12345">
   <button id="searchBtn">Search</button>
 </div>
@@ -136,10 +372,50 @@
     </thead>
     <tbody id="structureRows"></tbody>
   </table>
+
+  <div class="stronghold-section" id="strongholdSection">
+    <p class="combo-hint">Stronghold search is slower than everything else (extra biome checks), so it's kept separate - click below only if you want it.</p>
+    <button id="strongholdBtn">Find nearest Stronghold</button>
+    <div class="stronghold-result" id="strongholdResult"></div>
+  </div>
+
+  <div class="compare-section">
+    <div class="closest-pair" id="closestPair"></div>
+
+    <div class="compare-row">
+      <select id="structureASelect"></select>
+      <span class="compare-and">and</span>
+      <select id="structureBSelect"></select>
+      <input type="text" id="thresholdInput" placeholder="Within how many blocks? (optional)">
+      <button id="compareBtn">Compare</button>
+    </div>
+    <div class="compare-result" id="compareResult"></div>
+  </div>
+
+  <div class="combo-section">
+    <h3>Find structure combinations</h3>
+    <p class="combo-hint">Pick any number of structure types. We'll find the top 5 tightest clusters where all of them appear near each other. Larger combinations take longer to search.</p>
+    <div class="combo-checkboxes" id="comboCheckboxes"></div>
+    <button id="comboSearchBtn">Find combinations</button>
+    <div class="combo-results" id="comboResults"></div>
+  </div>
+</div>
+
+<div class="ai-section">
+  <h3>Chat with the Minecraft assistant</h3>
+  <p class="ai-hint">Ask anything Minecraft-related - crafting, mobs, mechanics, or questions about the seed you just searched.</p>
+  <div class="chat-log" id="chatLog"></div>
+  <div class="ai-row">
+    <input type="text" id="questionInput" placeholder="Ask anything about Minecraft...">
+    <button id="askBtn">Send</button>
+  </div>
 </div>
 
 <script>
 const seedInput = document.getElementById("seedInput");
+const versionSelect = document.getElementById("versionSelect");
+const platformJava = document.getElementById("platformJava");
+const platformBedrock = document.getElementById("platformBedrock");
 const searchBtn = document.getElementById("searchBtn");
 const errorBox = document.getElementById("error");
 const resultsBox = document.getElementById("results");
@@ -149,11 +425,42 @@ const useCoordsCheckbox = document.getElementById("useCoordsCheckbox");
 const coordsInputs = document.getElementById("coordsInputs");
 const xInput = document.getElementById("xInput");
 const zInput = document.getElementById("zInput");
+const questionInput = document.getElementById("questionInput");
+const askBtn = document.getElementById("askBtn");
+const chatLog = document.getElementById("chatLog");
+let conversationHistory = []; // {role: "user"|"assistant", content: string}
+const closestPair = document.getElementById("closestPair");
+const strongholdSection = document.getElementById("strongholdSection");
+const strongholdBtn = document.getElementById("strongholdBtn");
+const strongholdResult = document.getElementById("strongholdResult");
+const structureASelect = document.getElementById("structureASelect");
+const structureBSelect = document.getElementById("structureBSelect");
+const thresholdInput = document.getElementById("thresholdInput");
+const compareBtn = document.getElementById("compareBtn");
+const compareResult = document.getElementById("compareResult");
+const comboCheckboxes = document.getElementById("comboCheckboxes");
+const comboSearchBtn = document.getElementById("comboSearchBtn");
+const comboResults = document.getElementById("comboResults");
+
+// Remembers the most recent successful search, so "Ask" and "Compare" know what data to use.
+let lastSearch = null;
+let lastData = null;
 
 useCoordsCheckbox.addEventListener("change", () => {
   coordsInputs.style.display = useCoordsCheckbox.checked ? "flex" : "none";
 });
 
+function getPlatform() {
+  return platformBedrock.checked ? "bedrock" : "java";
+}
+
+function updateVersionVisibility() {
+  versionSelect.style.display = getPlatform() === "bedrock" ? "none" : "";
+}
+platformJava.addEventListener("change", updateVersionVisibility);
+platformBedrock.addEventListener("change", updateVersionVisibility);
+
+// Friendly display names for each structure key returned by the API
 const STRUCTURE_LABELS = {
   village: "Village",
   desertPyramid: "Desert Pyramid",
@@ -174,7 +481,45 @@ const STRUCTURE_LABELS = {
   bastionRemnant: "Bastion Remnant",
   ruinedPortalNether: "Ruined Portal (Nether)",
   endCity: "End City",
+  buriedTreasure: "Buried Treasure",
+  desertWell: "Desert Well",
+  amethystGeode: "Amethyst Geode",
+  endGateway: "End Gateway",
 };
+
+// Build the structure checkboxes once, up front.
+const VERSIONS = ["1.21","1.20","1.19","1.18","1.17","1.16","1.15","1.14","1.13","1.12","1.11","1.10","1.9","1.8","1.7","1.6","1.5","1.4","1.3","1.2","1.1","1.0"];
+for (const v of VERSIONS) {
+  const opt = document.createElement("option");
+  opt.value = v;
+  opt.textContent = v;
+  versionSelect.appendChild(opt);
+}
+
+for (const [key, label] of Object.entries(STRUCTURE_LABELS)) {
+  const wrapper = document.createElement("div");
+  wrapper.className = "combo-row-item";
+
+  const innerLabel = document.createElement("label");
+  const cb = document.createElement("input");
+  cb.type = "checkbox";
+  cb.value = key;
+  cb.className = "combo-cb";
+  innerLabel.appendChild(cb);
+  innerLabel.appendChild(document.createTextNode(label));
+  wrapper.appendChild(innerLabel);
+
+  const countInput = document.createElement("input");
+  countInput.type = "number";
+  countInput.min = "1";
+  countInput.max = "10";
+  countInput.value = "1";
+  countInput.className = "combo-count";
+  countInput.title = "How many of this structure to find close together";
+  wrapper.appendChild(countInput);
+
+  comboCheckboxes.appendChild(wrapper);
+}
 
 async function runSearch() {
   const seed = seedInput.value.trim();
@@ -186,16 +531,17 @@ async function runSearch() {
     return;
   }
 
-  let url = `/api/seed/${encodeURIComponent(seed)}`;
+  let url = `/api/seed/${encodeURIComponent(seed)}?platform=${encodeURIComponent(getPlatform())}&version=${encodeURIComponent(versionSelect.value)}`;
+  let x, z;
 
   if (useCoordsCheckbox.checked) {
-    const x = xInput.value.trim();
-    const z = zInput.value.trim();
+    x = xInput.value.trim();
+    z = zInput.value.trim();
     if (x === "" || z === "") {
       showError("Please enter both X and Z coordinates, or uncheck the location option.");
       return;
     }
-    url += `?x=${encodeURIComponent(x)}&z=${encodeURIComponent(z)}`;
+    url += `&x=${encodeURIComponent(x)}&z=${encodeURIComponent(z)}`;
   }
 
   searchBtn.disabled = true;
@@ -210,6 +556,7 @@ async function runSearch() {
       return;
     }
 
+    lastSearch = { seed, x, z, version: versionSelect.value, platform: getPlatform() };
     renderResults(data);
   } catch (err) {
     showError("Could not reach the server. Please try again.");
@@ -226,6 +573,9 @@ function showError(message) {
 
 function renderResults(data) {
   spawnCoords.textContent = `X: ${data.spawn.x}, Z: ${data.spawn.z}`;
+
+  strongholdResult.textContent = "";
+  strongholdSection.style.display = getPlatform() === "bedrock" ? "none" : "block";
 
   structureRows.innerHTML = "";
   for (const [key, label] of Object.entries(STRUCTURE_LABELS)) {
@@ -250,12 +600,398 @@ function renderResults(data) {
     structureRows.appendChild(row);
   }
 
+  lastData = data;
+  populateCompareDropdowns(data);
+  showClosestPair(data);
+  compareResult.textContent = "";
+
   resultsBox.style.display = "block";
 }
+
+// Distance between two (x, z) points.
+function distanceBetween(a, b) {
+  const dx = a.x - b.x;
+  const dz = a.z - b.z;
+  return Math.sqrt(dx * dx + dz * dz);
+}
+
+function populateCompareDropdowns(data) {
+  const found = Object.entries(STRUCTURE_LABELS).filter(([key]) => data.structures[key]);
+
+  const buildOptions = (select) => {
+    select.innerHTML = "";
+    for (const [key, label] of found) {
+      const opt = document.createElement("option");
+      opt.value = key;
+      opt.textContent = label;
+      select.appendChild(opt);
+    }
+  };
+
+  buildOptions(structureASelect);
+  buildOptions(structureBSelect);
+  if (found.length > 1) {
+    structureBSelect.selectedIndex = 1;
+  }
+}
+
+function showClosestPair(data) {
+  const found = Object.entries(STRUCTURE_LABELS).filter(([key]) => data.structures[key]);
+
+  if (found.length < 2) {
+    closestPair.textContent = "Not enough nearby structures found to compare pairs.";
+    return;
+  }
+
+  let best = null;
+  for (let i = 0; i < found.length; i++) {
+    for (let j = i + 1; j < found.length; j++) {
+      const posA = data.structures[found[i][0]];
+      const posB = data.structures[found[j][0]];
+      const dist = distanceBetween(posA, posB);
+      if (!best || dist < best.dist) {
+        best = { labelA: found[i][1], labelB: found[j][1], dist };
+      }
+    }
+  }
+
+  closestPair.innerHTML = `<strong>Closest pair:</strong> ${best.labelA} and ${best.labelB} are ${Math.round(best.dist)} blocks apart.`;
+}
+
+function runCompare() {
+  if (!lastData) return;
+
+  const keyA = structureASelect.value;
+  const keyB = structureBSelect.value;
+  const posA = lastData.structures[keyA];
+  const posB = lastData.structures[keyB];
+
+  if (keyA === keyB) {
+    compareResult.textContent = "Please pick two different structures.";
+    return;
+  }
+  if (!posA || !posB) {
+    compareResult.textContent = "One or both of those structures weren't found nearby.";
+    return;
+  }
+
+  const dist = Math.round(distanceBetween(posA, posB));
+  const labelA = STRUCTURE_LABELS[keyA];
+  const labelB = STRUCTURE_LABELS[keyB];
+
+  const thresholdRaw = thresholdInput.value.trim();
+  if (thresholdRaw !== "") {
+    const threshold = Number(thresholdRaw);
+    if (isNaN(threshold) || threshold < 0) {
+      compareResult.textContent = "Please enter a valid number of blocks.";
+      return;
+    }
+    if (dist <= threshold) {
+      compareResult.textContent = `Yes - ${labelA} and ${labelB} are ${dist} blocks apart, within your ${threshold}-block range.`;
+    } else {
+      compareResult.textContent = `No - ${labelA} and ${labelB} are ${dist} blocks apart, which is farther than your ${threshold}-block range.`;
+    }
+  } else {
+    compareResult.textContent = `${labelA} and ${labelB} are ${dist} blocks apart.`;
+  }
+}
+
+compareBtn.addEventListener("click", runCompare);
+
+async function findStronghold() {
+  if (!lastSearch) {
+    showError("Please search a seed first.");
+    return;
+  }
+  if (lastSearch.platform === "bedrock") {
+    strongholdResult.textContent = "Stronghold search isn't available for Bedrock yet.";
+    return;
+  }
+
+  strongholdBtn.disabled = true;
+  strongholdBtn.textContent = "Searching...";
+  strongholdResult.textContent = "";
+
+  const x = lastSearch.x !== undefined ? lastSearch.x : "0";
+  const z = lastSearch.z !== undefined ? lastSearch.z : "0";
+  const url = `/api/stronghold/${encodeURIComponent(lastSearch.seed)}?platform=${encodeURIComponent(lastSearch.platform)}&version=${encodeURIComponent(lastSearch.version)}&x=${encodeURIComponent(x)}&z=${encodeURIComponent(z)}`;
+
+  try {
+    const response = await fetch(url);
+    const data = await response.json();
+
+    if (!response.ok) {
+      strongholdResult.textContent = data.error || "Something went wrong.";
+      return;
+    }
+
+    if (data.stronghold) {
+      strongholdResult.textContent = `Nearest stronghold: X: ${data.stronghold.x}, Z: ${data.stronghold.z} (${Math.round(data.stronghold.distance)} blocks away)`;
+    } else {
+      strongholdResult.textContent = "No stronghold found.";
+    }
+  } catch (err) {
+    strongholdResult.textContent = "Could not reach the server. Please try again.";
+  } finally {
+    strongholdBtn.disabled = false;
+    strongholdBtn.textContent = "Find nearest Stronghold";
+  }
+}
+
+strongholdBtn.addEventListener("click", findStronghold);
+
+async function runComboSearch() {
+  if (!lastSearch) {
+    showError("Please search a seed first.");
+    return;
+  }
+
+  const checkedBoxes = Array.from(document.querySelectorAll(".combo-cb:checked"));
+  if (checkedBoxes.length === 0) {
+    comboResults.innerHTML = `<div class="combo-warning">Please select at least one structure type.</div>`;
+    return;
+  }
+
+  const selected = checkedBoxes.map((cb) => cb.value);
+  // For each checked box, find its matching count input (same wrapper) and
+  // read how many instances of that structure are wanted.
+  const counts = checkedBoxes.map((cb) => {
+    const wrapper = cb.closest(".combo-row-item");
+    const countInput = wrapper ? wrapper.querySelector(".combo-count") : null;
+    const val = countInput ? parseInt(countInput.value, 10) : 1;
+    return Number.isFinite(val) && val > 0 ? val : 1;
+  });
+
+  comboSearchBtn.disabled = true;
+  comboSearchBtn.textContent = "Searching...";
+  const widenMessageTimeout = setTimeout(() => {
+    comboSearchBtn.textContent = "Widening search...";
+  }, 2000);
+  comboResults.innerHTML = "";
+
+  const x = lastSearch.x !== undefined ? lastSearch.x : "0";
+  const z = lastSearch.z !== undefined ? lastSearch.z : "0";
+  const url = `/api/combo/${encodeURIComponent(lastSearch.seed)}?types=${encodeURIComponent(selected.join(","))}&counts=${encodeURIComponent(counts.join(","))}&x=${encodeURIComponent(x)}&z=${encodeURIComponent(z)}&platform=${encodeURIComponent(lastSearch.platform)}&version=${encodeURIComponent(lastSearch.version)}`;
+
+  try {
+    const response = await fetch(url);
+    const data = await response.json();
+
+    if (!response.ok) {
+      comboResults.innerHTML = `<div class="combo-warning">${data.error || "Something went wrong."}</div>`;
+      return;
+    }
+
+    renderComboResults(data, selected);
+  } catch (err) {
+    comboResults.innerHTML = `<div class="combo-warning">Could not reach the server. Please try again.</div>`;
+  } finally {
+    clearTimeout(widenMessageTimeout);
+    comboSearchBtn.disabled = false;
+    comboSearchBtn.textContent = "Find combinations";
+  }
+}
+
+// Turns a key like "woodlandMansion_2" into "Woodland Mansion #2", or a
+// plain key like "woodlandMansion" into just "Woodland Mansion".
+function structureLabelFor(key) {
+  const match = key.match(/^(.+)_(\d+)$/);
+  if (match) {
+    const [, baseKey, num] = match;
+    return `${STRUCTURE_LABELS[baseKey] || baseKey} #${num}`;
+  }
+  return STRUCTURE_LABELS[key] || key;
+}
+
+function renderComboResults(data, selected) {
+  comboResults.innerHTML = "";
+
+  if (data.missing && data.missing.length > 0) {
+    const missingLabels = data.missing.map((key) => STRUCTURE_LABELS[key] || key).join(", ");
+    const widenNote = data.widened ? ` (even after widening the search to ${data.radiusUsed.toLocaleString()} blocks)` : "";
+    comboResults.innerHTML = `<div class="combo-warning">No combination exists nearby - couldn't find any: ${missingLabels}${widenNote}.</div>`;
+    return;
+  }
+
+  if (!data.combinations || data.combinations.length === 0) {
+    comboResults.innerHTML = `<div class="combo-warning">No combinations found.</div>`;
+    return;
+  }
+
+  if (data.widened && data.metThreshold) {
+    const widenNote = document.createElement("div");
+    widenNote.className = "combo-warning";
+    widenNote.textContent = `Had to search out to ${data.radiusUsed.toLocaleString()} blocks to find these close together.`;
+    comboResults.appendChild(widenNote);
+  } else if (data.widened && !data.metThreshold) {
+    const widenNote = document.createElement("div");
+    widenNote.className = "combo-warning";
+    widenNote.textContent = `Even after searching all the way out to ${data.radiusUsed.toLocaleString()} blocks, these structures aren't very close together - this is the tightest grouping found.`;
+    comboResults.appendChild(widenNote);
+  }
+
+  if (data.combinations.length < 5) {
+    const note = document.createElement("div");
+    note.className = "combo-warning";
+    note.textContent = `Only found ${data.combinations.length} of 5 possible combinations nearby.`;
+    comboResults.appendChild(note);
+  }
+
+  data.combinations.forEach((combo, i) => {
+    const card = document.createElement("div");
+    card.className = "combo-card";
+
+    const entries = Object.entries(combo.structures);
+
+    const spreadLine = document.createElement("div");
+    spreadLine.className = "combo-spread";
+    spreadLine.textContent = entries.length > 1
+      ? `#${i + 1} - spread: ${Math.round(combo.spread)} blocks (largest distance between any two in this group)`
+      : `#${i + 1}`;
+    card.appendChild(spreadLine);
+
+    for (const [key, pos] of entries) {
+      const line = document.createElement("div");
+      line.textContent = `${structureLabelFor(key)}: X: ${pos.x}, Z: ${pos.z}`;
+      card.appendChild(line);
+    }
+
+    // List the distance between every pair of structures in this combo.
+    if (entries.length > 1) {
+      const pairsBox = document.createElement("div");
+      pairsBox.className = "combo-pairs";
+      for (let a = 0; a < entries.length; a++) {
+        for (let b = a + 1; b < entries.length; b++) {
+          const [keyA, posA] = entries[a];
+          const [keyB, posB] = entries[b];
+          const dist = Math.round(distanceBetween(posA, posB));
+          const labelA = structureLabelFor(keyA);
+          const labelB = structureLabelFor(keyB);
+          const pairLine = document.createElement("div");
+          pairLine.textContent = `${labelA} \u2194 ${labelB}: ${dist} blocks`;
+          pairsBox.appendChild(pairLine);
+        }
+      }
+      card.appendChild(pairsBox);
+    }
+
+    comboResults.appendChild(card);
+  });
+}
+
+comboSearchBtn.addEventListener("click", runComboSearch);
 
 searchBtn.addEventListener("click", runSearch);
 seedInput.addEventListener("keydown", (e) => {
   if (e.key === "Enter") runSearch();
+});
+
+function addChatBubble(role, text) {
+  const bubble = document.createElement("div");
+  bubble.className = `chat-bubble ${role}`;
+  bubble.textContent = text;
+  chatLog.appendChild(bubble);
+  chatLog.scrollTop = chatLog.scrollHeight;
+  return bubble;
+}
+
+function renderCraftingVisual(bubble, visual) {
+  const container = document.createElement("div");
+  container.className = "crafting-visual";
+
+  const title = document.createElement("div");
+  title.className = "crafting-visual-title";
+  title.textContent = `${visual.name} (makes ${visual.count})`;
+  container.appendChild(title);
+
+  if (visual.shape) {
+    const grid = document.createElement("div");
+    grid.className = "crafting-grid";
+    const cols = visual.shape[0].length;
+    grid.style.gridTemplateColumns = `repeat(${cols}, 64px)`;
+    for (const row of visual.shape) {
+      for (const cell of row) {
+        const cellEl = document.createElement("div");
+        cellEl.className = cell ? "crafting-cell" : "crafting-cell empty";
+        cellEl.textContent = cell || "";
+        grid.appendChild(cellEl);
+      }
+    }
+    container.appendChild(grid);
+  } else if (visual.shapeless) {
+    const list = document.createElement("div");
+    list.className = "crafting-shapeless-list";
+    list.textContent = `Combine (any arrangement): ${visual.shapeless.join(", ")}`;
+    container.appendChild(list);
+  }
+
+  bubble.appendChild(container);
+}
+
+async function askQuestion() {
+  const question = questionInput.value.trim();
+
+  if (question === "") {
+    return;
+  }
+
+  questionInput.value = "";
+  addChatBubble("user", question);
+  const thinkingBubble = addChatBubble("assistant thinking", "Thinking...");
+
+  askBtn.disabled = true;
+
+  try {
+    const body = {
+      question: question,
+      history: conversationHistory,
+    };
+    if (lastSearch) {
+      body.seed = lastSearch.seed;
+      body.x = lastSearch.x;
+      body.z = lastSearch.z;
+      body.platform = lastSearch.platform;
+      body.version = lastSearch.version;
+    }
+
+    const response = await fetch("/api/ask", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(body),
+    });
+    const data = await response.json();
+
+    if (!response.ok) {
+      thinkingBubble.textContent = data.error || "Something went wrong.";
+      thinkingBubble.classList.remove("thinking");
+      return;
+    }
+
+    thinkingBubble.textContent = data.answer;
+    thinkingBubble.classList.remove("thinking");
+
+    if (data.craftingVisual) {
+      renderCraftingVisual(thinkingBubble, data.craftingVisual);
+      chatLog.scrollTop = chatLog.scrollHeight;
+    }
+
+    conversationHistory.push({ role: "user", content: question });
+    conversationHistory.push({ role: "assistant", content: data.answer });
+    // Keep the history from growing unbounded - last 10 turns is plenty of memory.
+    if (conversationHistory.length > 20) {
+      conversationHistory = conversationHistory.slice(-20);
+    }
+  } catch (err) {
+    thinkingBubble.textContent = "Could not reach the server. Please try again.";
+    thinkingBubble.classList.remove("thinking");
+  } finally {
+    askBtn.disabled = false;
+  }
+}
+
+askBtn.addEventListener("click", askQuestion);
+questionInput.addEventListener("keydown", (e) => {
+  if (e.key === "Enter") askQuestion();
 });
 </script>
 

@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/Arian-Nanda/Seed-Knowledge-#readme",
   "dependencies": {
+    "dotenv": "^17.4.2",
     "express": "^5.2.1"
   }
 }
