@@ -4,8 +4,9 @@
 // Supports both Java Edition (with version selection) and Bedrock Edition
 // (always the latest version, since Bedrock players can't opt into old ones).
 // Also includes an /api/ask endpoint - a general Minecraft chat assistant
-// powered by a local Ollama model plus a Minecraft knowledge base, with
-// visual crafting-grid diagrams when the answer involves a recipe.
+// powered by Groq's cloud API plus a Minecraft knowledge base, with visual
+// crafting-grid diagrams (generated deterministically, no AI involved) when
+// the answer involves a recipe.
 
 require("dotenv").config();
 const express = require("express");
@@ -14,7 +15,7 @@ const path = require("path");
 
 const app = express();
 app.use(express.json());
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 // Serve the frontend files (index.html, etc.) from the "public" folder
 app.use(express.static(path.join(__dirname, "public")));
@@ -67,8 +68,7 @@ function runSeedInfo(platform, seed, version, x, z) {
 // Runs the combo-finder C program (Java or Bedrock) and returns a Promise
 // with parsed JSON. The C program handles the escalating tiered search
 // internally (20k -> 40k -> 60k -> 80k -> 100k blocks), only scanning new
-// area at each step, and reports which tier it settled on. Also supports
-// requesting multiple instances of the same structure type (countsCsv).
+// area at each step, and reports which tier it settled on.
 function runSeedCombo(platform, seed, version, x, z, typesCsv, countsCsv) {
   return new Promise((resolve, reject) => {
     const bedrock = isBedrock(platform);
@@ -228,7 +228,7 @@ app.get("/api/seed/:seed", async (req, res) => {
   }
 });
 
-// General Minecraft chat assistant, powered by a local Ollama model. Can
+// General Minecraft chat assistant, powered by Groq's cloud API. Can
 // have a normal back-and-forth conversation, draws on a built-in Minecraft
 // knowledge base for accuracy, and - if the person has searched a seed -
 // also has access to that seed's real structure data as extra context.
@@ -307,31 +307,37 @@ function generateRecipeAnswerText(visual) {
   return `To craft ${visual.name} (makes ${visual.count}): ${stepText}`;
 }
 
-const OLLAMA_URL = "http://localhost:11434/api/chat";
-const OLLAMA_MODEL = "llama3.2:3b";
+// Uses Groq's cloud API instead of a local model - no persistent background
+// process needed (which was the main obstacle to hosting this publicly),
+// and a much more capable model (70B parameters vs the local 3B one).
+const GROQ_MODEL = "llama-3.3-70b-versatile";
 
-async function askLocalLLM(messages) {
-  const res = await fetch(OLLAMA_URL, {
+async function askGroq(messages) {
+  if (!process.env.GROQ_API_KEY) {
+    throw new Error("Server is missing a Groq API key. Set GROQ_API_KEY in your .env file.");
+  }
+
+  const res = await fetch("https://api.groq.com/openai/v1/chat/completions", {
     method: "POST",
-    headers: { "Content-Type": "application/json" },
+    headers: {
+      "Content-Type": "application/json",
+      "Authorization": `Bearer ${process.env.GROQ_API_KEY}`,
+    },
     body: JSON.stringify({
-      model: OLLAMA_MODEL,
+      model: GROQ_MODEL,
       messages,
-      stream: false,
-      options: {
-        temperature: 0.3, // lower = sticks closer to provided facts, less rambling/inventing
-        num_predict: 300, // caps response length - faster, and curbs unfocused answers
-      },
+      temperature: 0.3, // lower = sticks closer to provided facts, less rambling/inventing
+      max_tokens: 400,
     }),
   });
 
   if (!res.ok) {
     const text = await res.text().catch(() => "");
-    throw new Error(`Ollama returned an error: ${text || res.statusText}`);
+    throw new Error(`Groq API returned an error: ${text || res.statusText}`);
   }
 
   const data = await res.json();
-  return data.message?.content || "";
+  return data.choices?.[0]?.message?.content || "";
 }
 
 app.post("/api/ask", async (req, res) => {
@@ -432,12 +438,14 @@ Rules:
   ];
 
   try {
-    const answerText = await askLocalLLM(messages);
+    const answerText = await askGroq(messages);
     res.json({ answer: answerText, seedData, craftingVisual });
   } catch (err) {
-    console.error("Failed to reach local LLM:", err.message);
+    console.error("Failed to reach Groq:", err.message);
     res.status(500).json({
-      error: "Could not reach the local AI model. Make sure Ollama is running (ollama serve) and the model is pulled (ollama pull llama3.2:3b).",
+      error: err.message.includes("GROQ_API_KEY")
+        ? err.message
+        : "Could not reach the AI service. Please try again in a moment.",
     });
   }
 });
