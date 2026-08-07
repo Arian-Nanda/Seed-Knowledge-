@@ -2,37 +2,47 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Minecraft Seed Explorer</title>
+<title>Smart Seed</title>
 <style>
   * { box-sizing: border-box; }
   body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    background: #1b1f24;
-    color: #e6e6e6;
-    max-width: 700px;
+    background: linear-gradient(180deg, #bfe9ff 0%, #eaf7ff 220px, #eaf7ff 100%);
+    color: #2c3e30;
+    max-width: 760px;
     margin: 0 auto;
-    padding: 40px 20px;
+    padding: 40px 20px 80px;
   }
   h1 {
-    font-size: 1.6rem;
+    font-size: 2rem;
+    font-weight: 800;
     margin-bottom: 4px;
+    color: #2d6a2e;
+    text-shadow: 2px 2px 0 #ffffff;
   }
+  h3 { color: #2d6a2e; font-weight: 800; }
   p.subtitle {
-    color: #9aa0a6;
+    color: #4a7a52;
     margin-top: 0;
     margin-bottom: 24px;
+    font-weight: 600;
   }
   .platform-row {
     display: flex;
     gap: 20px;
     margin-bottom: 16px;
+    background: #ffffff;
+    border: 3px solid #7fd858;
+    border-radius: 14px;
+    padding: 12px 16px;
   }
   .platform-option {
     display: flex;
     align-items: center;
     gap: 6px;
-    color: #e6e6e6;
+    color: #2c3e30;
     font-size: 0.95rem;
+    font-weight: 700;
     cursor: pointer;
   }
 
@@ -43,32 +53,42 @@
   }
   input[type="text"] {
     flex: 1;
-    padding: 10px 12px;
+    padding: 11px 14px;
     font-size: 1rem;
-    border-radius: 6px;
-    border: 1px solid #3a3f45;
-    background: #262b31;
-    color: #e6e6e6;
+    border-radius: 10px;
+    border: 3px solid #a3d9f5;
+    background: #ffffff;
+    color: #2c3e30;
+    font-weight: 600;
+  }
+  input[type="text"]:focus, input[type="number"]:focus {
+    outline: none;
+    border-color: #f9b93e;
   }
   button {
-    padding: 10px 18px;
+    padding: 11px 20px;
     font-size: 1rem;
-    border-radius: 6px;
+    font-weight: 800;
+    border-radius: 10px;
     border: none;
-    background: #4c8f4c;
+    background: #58c247;
     color: white;
     cursor: pointer;
+    box-shadow: 0 4px 0 #2f8f2a;
+    transition: transform 0.05s;
   }
-  button:hover { background: #5aa55a; }
-  button:disabled { background: #3a3f45; cursor: default; }
+  button:hover { background: #6bd558; }
+  button:active { transform: translateY(3px); box-shadow: 0 1px 0 #2f8f2a; }
+  button:disabled { background: #cfd8d2; cursor: default; box-shadow: none; }
 
   .search-row select {
-    padding: 10px 8px;
+    padding: 11px 10px;
     font-size: 1rem;
-    border-radius: 6px;
-    border: 1px solid #3a3f45;
-    background: #262b31;
-    color: #e6e6e6;
+    font-weight: 700;
+    border-radius: 10px;
+    border: 3px solid #a3d9f5;
+    background: #ffffff;
+    color: #2c3e30;
   }
 
   .coords-row {
@@ -78,8 +98,9 @@
     display: flex;
     align-items: center;
     gap: 8px;
-    color: #9aa0a6;
+    color: #3c6b45;
     font-size: 0.9rem;
+    font-weight: 700;
     cursor: pointer;
     margin-bottom: 10px;
   }
@@ -89,37 +110,41 @@
   }
   .coords-inputs input {
     flex: 1;
-    padding: 8px 12px;
+    padding: 9px 12px;
     font-size: 0.95rem;
-    border-radius: 6px;
-    border: 1px solid #3a3f45;
-    background: #262b31;
-    color: #e6e6e6;
+    border-radius: 8px;
+    border: 3px solid #a3d9f5;
+    background: #ffffff;
+    color: #2c3e30;
   }
 
   .stronghold-section {
     margin-top: 16px;
-    padding: 12px 16px;
-    background: #262b31;
-    border-radius: 8px;
+    padding: 14px 18px;
+    background: #fff6df;
+    border: 3px solid #f9b93e;
+    border-radius: 14px;
   }
   .stronghold-result {
     margin-top: 10px;
     font-size: 0.9rem;
+    font-weight: 700;
+    color: #7a5a10;
   }
 
   .compare-section {
-    margin-top: 20px;
-    padding-top: 16px;
-    border-top: 1px solid #33383e;
+    margin-top: 24px;
+    padding-top: 20px;
+    border-top: 4px dashed #bfe0ce;
   }
   .closest-pair {
-    background: #1f2b23;
-    border: 1px solid #2f4a3a;
-    border-radius: 8px;
-    padding: 12px 16px;
+    background: #eafbe9;
+    border: 3px solid #7fd858;
+    border-radius: 14px;
+    padding: 14px 18px;
     margin-bottom: 16px;
     font-size: 0.9rem;
+    font-weight: 600;
   }
   .compare-row {
     display: flex;
@@ -128,31 +153,32 @@
     flex-wrap: wrap;
   }
   .compare-row select, .compare-row input[type="text"] {
-    padding: 8px 10px;
+    padding: 9px 10px;
     font-size: 0.9rem;
-    border-radius: 6px;
-    border: 1px solid #3a3f45;
-    background: #262b31;
-    color: #e6e6e6;
+    border-radius: 8px;
+    border: 3px solid #a3d9f5;
+    background: #ffffff;
+    color: #2c3e30;
   }
-  .compare-and { color: #9aa0a6; font-size: 0.85rem; }
+  .compare-and { color: #4a7a52; font-size: 0.85rem; font-weight: 700; }
   .compare-result {
     margin-top: 10px;
     font-size: 0.9rem;
-    color: #e6e6e6;
+    font-weight: 600;
+    color: #2c3e30;
   }
 
   .combo-section {
-    margin-top: 20px;
-    padding-top: 16px;
-    border-top: 1px solid #33383e;
+    margin-top: 24px;
+    padding-top: 20px;
+    border-top: 4px dashed #bfe0ce;
   }
-  .combo-section h3 { font-size: 1rem; margin-bottom: 4px; }
-  .combo-hint { color: #9aa0a6; font-size: 0.85rem; margin-top: 0; margin-bottom: 12px; }
+  .combo-section h3 { font-size: 1.1rem; margin-bottom: 4px; }
+  .combo-hint { color: #4a7a52; font-size: 0.85rem; margin-top: 0; margin-bottom: 12px; font-weight: 600; }
   .combo-checkboxes {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 6px 12px;
+    gap: 8px 12px;
     margin-bottom: 14px;
     font-size: 0.9rem;
   }
@@ -161,11 +187,16 @@
     align-items: center;
     gap: 6px;
     cursor: pointer;
+    font-weight: 600;
   }
   .combo-row-item {
     display: flex;
     align-items: center;
     gap: 6px;
+    background: #ffffff;
+    border: 2px solid #d6ecd9;
+    border-radius: 8px;
+    padding: 6px 10px;
   }
   .combo-row-item label {
     flex: 1;
@@ -173,86 +204,104 @@
   }
   .combo-count {
     width: 40px;
-    padding: 2px 4px;
+    padding: 3px 4px;
     font-size: 0.8rem;
-    border-radius: 4px;
-    border: 1px solid #3a3f45;
-    background: #262b31;
-    color: #e6e6e6;
+    border-radius: 6px;
+    border: 2px solid #a3d9f5;
+    background: #ffffff;
+    color: #2c3e30;
     flex-shrink: 0;
+    font-weight: 700;
   }
   .combo-results { margin-top: 14px; }
   .combo-warning {
-    color: #d8a34a;
+    color: #a8630e;
+    background: #fff2da;
+    border: 2px solid #f9b93e;
+    border-radius: 10px;
+    padding: 8px 12px;
     font-size: 0.9rem;
+    font-weight: 600;
     margin-bottom: 10px;
   }
   .combo-card {
-    background: #262b31;
-    border-radius: 8px;
-    padding: 12px 16px;
-    margin-bottom: 10px;
+    background: #ffffff;
+    border: 3px solid #7fd858;
+    border-radius: 14px;
+    padding: 14px 18px;
+    margin-bottom: 12px;
     font-size: 0.9rem;
   }
-  .combo-card .combo-spread { color: #9aa0a6; font-size: 0.8rem; margin-bottom: 6px; }
+  .combo-card .combo-spread { color: #4a7a52; font-size: 0.8rem; margin-bottom: 6px; font-weight: 700; }
   .combo-pairs {
     margin-top: 8px;
     padding-top: 8px;
-    border-top: 1px solid #33383e;
-    color: #9aa0a6;
+    border-top: 2px dashed #d6ecd9;
+    color: #4a7a52;
     font-size: 0.85rem;
+    font-weight: 600;
   }
 
   .ai-section {
-    margin-top: 28px;
-    padding-top: 20px;
-    border-top: 1px solid #33383e;
+    margin-top: 32px;
+    padding-top: 24px;
+    border-top: 4px dashed #bfe0ce;
   }
   .ai-hint {
-    color: #9aa0a6;
+    color: #4a7a52;
     font-size: 0.85rem;
     margin-top: 0;
     margin-bottom: 12px;
+    font-weight: 600;
   }
   .chat-log {
-    max-height: 400px;
+    max-height: 420px;
     overflow-y: auto;
     margin-bottom: 12px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 12px;
+    padding: 4px;
   }
   .chat-bubble {
-    padding: 10px 14px;
-    border-radius: 10px;
-    font-size: 0.92rem;
+    padding: 12px 16px;
+    border-radius: 14px;
+    font-size: 0.95rem;
     line-height: 1.5;
     white-space: pre-wrap;
     max-width: 85%;
+    font-weight: 500;
   }
   .chat-bubble.user {
-    background: #2c5a34;
+    background: #58c247;
+    color: #ffffff;
     align-self: flex-end;
+    border-bottom-right-radius: 4px;
   }
   .chat-bubble.assistant {
-    background: #262b31;
+    background: #ffffff;
+    border: 3px solid #a3d9f5;
+    color: #2c3e30;
     align-self: flex-start;
+    border-bottom-left-radius: 4px;
   }
   .chat-bubble.thinking {
-    color: #9aa0a6;
+    color: #7f8c8d;
     font-style: italic;
   }
   .crafting-visual {
     margin-top: 10px;
-    padding: 10px;
-    background: #1b1f24;
-    border-radius: 8px;
+    padding: 12px;
+    background: #eaf7ff;
+    border: 2px solid #a3d9f5;
+    border-radius: 10px;
     display: inline-block;
   }
   .crafting-visual-title {
     font-size: 0.8rem;
-    color: #9aa0a6;
+    color: #3c6b8a;
     margin-bottom: 8px;
+    font-weight: 700;
   }
   .crafting-grid {
     display: grid;
@@ -261,25 +310,27 @@
   .crafting-cell {
     width: 64px;
     height: 64px;
-    background: #2a2f36;
-    border: 1px solid #3a3f45;
-    border-radius: 4px;
+    background: #ffffff;
+    border: 2px solid #cfe8f5;
+    border-radius: 6px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     font-size: 0.65rem;
-    color: #e6e6e6;
+    font-weight: 700;
+    color: #2c3e30;
     padding: 4px;
     line-height: 1.2;
   }
   .crafting-cell.empty {
     background: transparent;
-    border: 1px dashed #33383e;
+    border: 2px dashed #cfe8f5;
   }
   .crafting-shapeless-list {
     font-size: 0.85rem;
-    color: #e6e6e6;
+    color: #2c3e30;
+    font-weight: 600;
   }
   .ai-row {
     display: flex;
@@ -289,47 +340,51 @@
   .ai-row input[type="text"] {
     flex: 1;
   }
-  .ai-answer {
-    background: #262b31;
-    border-radius: 8px;
-    padding: 14px 16px;
-    line-height: 1.5;
-    white-space: pre-wrap;
-    display: none;
-  }
 
   #error {
-    color: #ff8080;
+    color: #b23a3a;
+    background: #ffe6e6;
+    border: 2px solid #f5a3a3;
+    border-radius: 10px;
+    padding: 10px 14px;
     margin-bottom: 16px;
     display: none;
+    font-weight: 600;
   }
 
   #results { display: none; }
 
   .spawn-box {
-    background: #262b31;
-    border-radius: 8px;
-    padding: 12px 16px;
+    background: #fff6df;
+    border: 3px solid #f9b93e;
+    border-radius: 14px;
+    padding: 14px 18px;
     margin-bottom: 20px;
+    font-weight: 600;
   }
 
   table {
     width: 100%;
-    border-collapse: collapse;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: #ffffff;
+    border: 3px solid #a3d9f5;
+    border-radius: 14px;
+    overflow: hidden;
   }
   th, td {
     text-align: left;
-    padding: 8px 10px;
-    border-bottom: 1px solid #33383e;
+    padding: 10px 12px;
+    border-bottom: 2px solid #eaf7ff;
   }
-  th { color: #9aa0a6; font-weight: normal; font-size: 0.85rem; }
-  td.coords { font-variant-numeric: tabular-nums; }
-  td.none { color: #6b7178; font-style: italic; }
+  th { color: #3c6b8a; font-weight: 800; font-size: 0.85rem; background: #eaf7ff; }
+  td.coords { font-variant-numeric: tabular-nums; font-weight: 600; }
+  td.none { color: #a0aca4; font-style: italic; }
 </style>
 </head>
 <body>
 
-<h1>Minecraft Seed Explorer</h1>
+<h1>Smart Seed</h1>
 <p class="subtitle">Enter a seed to see spawn point and nearby structures.</p>
 
 <div class="platform-row">
