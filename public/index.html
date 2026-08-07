@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Smart Seed</title>
 <style>
   * { box-sizing: border-box; }
@@ -56,6 +57,13 @@
     line-height: 1.6;
   }
   .botd-details .botd-row { margin-bottom: 2px; }
+  .botd-details .botd-date {
+    margin-top: 8px;
+    font-size: 0.75rem;
+    color: #a8630e;
+    font-weight: 700;
+    opacity: 0.8;
+  }
 
   .platform-row {
     display: flex;
@@ -410,6 +418,27 @@
   th { color: #3c6b8a; font-weight: 800; font-size: 0.85rem; background: #eaf7ff; }
   td.coords { font-variant-numeric: tabular-nums; font-weight: 600; }
   td.none { color: #a0aca4; font-style: italic; }
+
+  @media (max-width: 500px) {
+    body { padding: 20px 14px 60px; }
+    h1 { font-size: 1.6rem; }
+    .search-row {
+      flex-direction: column;
+    }
+    .search-row select { width: 100%; }
+    .combo-checkboxes {
+      grid-template-columns: 1fr;
+    }
+    .platform-row {
+      flex-direction: column;
+      gap: 10px;
+    }
+    .compare-row {
+      flex-direction: column;
+      align-items: stretch;
+    }
+    .chat-bubble { max-width: 92%; }
+  }
 </style>
 </head>
 <body>
@@ -518,15 +547,36 @@ async function loadBlockOfTheDay() {
     botdName.textContent = b.name;
 
     const lines = [];
-    lines.push(`Hardness: ${b.hardness}`);
-    lines.push(`Blast resistance: ${b.blastResistance}`);
+    // A hardness of -1 is Minecraft's own convention for "unbreakable"
+    // (e.g. Bedrock, End Portal) - showing the raw "-1" would look like a
+    // bug to anyone unfamiliar with that convention.
+    if (b.hardness === -1) {
+      lines.push("Hardness: unbreakable");
+    } else {
+      lines.push(`Hardness: ${b.hardness}`);
+    }
+    // Similarly, some unbreakable blocks show an enormous blast resistance
+    // (3,600,000) rather than a normal small number - show it plainly.
+    if (b.blastResistance >= 3600000) {
+      lines.push("Blast resistance: essentially indestructible");
+    } else {
+      lines.push(`Blast resistance: ${b.blastResistance}`);
+    }
     if (b.cannotBeMined) {
-      lines.push("Cannot be mined normally");
+      lines.push("Cannot be broken/mined normally");
     } else {
       if (b.drops) lines.push(`Drops: ${b.drops.join(", ")}`);
       if (b.harvestTools) lines.push(`Harvestable with: ${b.harvestTools.join(", ")}`);
     }
     botdDetails.innerHTML = lines.map((l) => `<div class="botd-row">${l}</div>`).join("");
+
+    // Show the actual date, reinforcing that this genuinely updates daily.
+    const dateObj = new Date(data.date + "T00:00:00");
+    const dateStr = dateObj.toLocaleDateString(undefined, { month: "long", day: "numeric", year: "numeric" });
+    const dateLine = document.createElement("div");
+    dateLine.className = "botd-date";
+    dateLine.textContent = dateStr;
+    botdDetails.appendChild(dateLine);
   } catch (err) {
     botdName.textContent = "Couldn't load today's block.";
   }
@@ -1004,6 +1054,12 @@ comboSearchBtn.addEventListener("click", runComboSearch);
 
 searchBtn.addEventListener("click", runSearch);
 seedInput.addEventListener("keydown", (e) => {
+  if (e.key === "Enter") runSearch();
+});
+xInput.addEventListener("keydown", (e) => {
+  if (e.key === "Enter") runSearch();
+});
+zInput.addEventListener("keydown", (e) => {
   if (e.key === "Enter") runSearch();
 });
 
