@@ -68,37 +68,58 @@
     display: flex;
     justify-content: center;
     margin-bottom: 10px;
+    perspective: 400px;
   }
   .botd-cube {
     position: relative;
-    width: 60px;
-    height: 70px;
+    width: 64px;
+    height: 64px;
+    transform-style: preserve-3d;
+    /* Rotated to show the top, front, and right faces - a standard
+       isometric-style viewing angle achieved via real 3D transforms
+       (more reliable than the 2D skew/rotate hack). */
+    transform: rotateX(-28deg) rotateY(35deg);
   }
-  .botd-cube-top, .botd-cube-left, .botd-cube-right {
+  .botd-face {
     position: absolute;
-    width: 60px;
-    height: 34px;
+    width: 64px;
+    height: 64px;
+    border: 1px solid rgba(0,0,0,0.15);
   }
-  .botd-cube-top {
+  .botd-face-top {
     background: var(--cube-top, #9aa0a6);
-    transform: rotate(210deg) skew(-30deg) scaleY(0.864);
-    top: 0;
-    left: 0;
-    border-radius: 3px;
+    transform: rotateX(90deg) translateZ(32px);
   }
-  .botd-cube-left {
-    background: var(--cube-left, #7d8288);
-    transform: rotate(90deg) skew(-30deg) scaleY(0.864);
-    top: 16px;
-    left: -16px;
-    border-radius: 3px;
+  .botd-face-front {
+    background: var(--cube-front, #7d8288);
+    transform: translateZ(32px);
   }
-  .botd-cube-right {
-    background: var(--cube-right, #62666b);
-    transform: rotate(-30deg) skew(-30deg) scaleY(0.864);
-    top: 46.5px;
-    left: 15px;
-    border-radius: 3px;
+  .botd-face-side {
+    background: var(--cube-side, #62666b);
+    transform: rotateY(90deg) translateZ(32px);
+  }
+  /* Detail overlays: children of a face inherit that face's own rotation,
+     so they naturally appear "on" that face regardless of the cube's
+     overall orientation - no extra math needed per element. */
+  .botd-dot {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+  }
+  .botd-grain {
+    position: absolute;
+    left: 4px;
+    right: 4px;
+    height: 2px;
+    background: rgba(0,0,0,0.22);
+  }
+  .botd-shine {
+    position: absolute;
+    width: 3px;
+    height: 26px;
+    background: rgba(255,255,255,0.55);
+    border-radius: 2px;
   }
 
   .platform-row {
@@ -486,9 +507,9 @@
   <div class="botd-label">✨ Block of the Day</div>
   <div class="botd-cube-wrap">
     <div class="botd-cube" id="botdCube">
-      <div class="botd-cube-top"></div>
-      <div class="botd-cube-left"></div>
-      <div class="botd-cube-right"></div>
+      <div class="botd-face botd-face-top" id="botdFaceTop"></div>
+      <div class="botd-face botd-face-front" id="botdFaceFront"></div>
+      <div class="botd-face botd-face-side" id="botdFaceSide"></div>
     </div>
   </div>
   <div class="botd-name" id="botdName">Loading...</div>
@@ -577,12 +598,18 @@
 <script>
 const botdName = document.getElementById("botdName");
 const botdCube = document.getElementById("botdCube");
+const botdFaceTop = document.getElementById("botdFaceTop");
+const botdFaceFront = document.getElementById("botdFaceFront");
+const botdFaceSide = document.getElementById("botdFaceSide");
 
-// Derives a themed color for a block's name via keyword matching - color
-// blocks (wool, concrete, etc.) use their actual named color; everything
-// else uses a sensible category color (wood = brown, ore = its metal's
-// color, ice = light blue, and so on). This is an original color mapping,
-// not derived from or copying any Minecraft game asset.
+// Derives a themed color + surface detail for a block's name via keyword
+// matching - color blocks (wool, concrete, etc.) use their actual named
+// color; everything else uses a sensible category color and detail (wood
+// gets grain lines, stone/ore gets speckles, liquids get a shine streak).
+// This is an original color/detail mapping, not derived from or copying
+// any Minecraft game asset - ore blocks use a gray stone base with
+// colored speckles, matching how ore actually looks (colored flecks in
+// stone), rather than a solid mineral color.
 const COLOR_WORDS = [
   [/white/i, "#e9edf0"], [/orange/i, "#e5811a"], [/magenta/i, "#c04cd1"],
   [/light blue/i, "#6ec2e8"], [/yellow/i, "#f0c928"], [/lime/i, "#7fd433"],
@@ -591,42 +618,57 @@ const COLOR_WORDS = [
   [/brown/i, "#6b4a2b"], [/green/i, "#5b7d21"], [/red/i, "#a13a2e"],
   [/black/i, "#2b2b2e"],
 ];
+// [pattern, color, detail, dotColor(for speckle only)]
+const STONE_GRAY = "#8f8f8f";
 const CATEGORY_WORDS = [
-  [/crimson/i, "#932b3e"], [/warped/i, "#2a8f83"],
-  [/(iron ore|iron block|iron door|iron bars|iron )/i, "#d8d8d0"],
-  [/(gold ore|gold block|gilded)/i, "#f0c53d"],
-  [/(diamond)/i, "#5adbd8"], [/(emerald)/i, "#3fbf5d"],
-  [/(coal)/i, "#2b2b2b"], [/(redstone)/i, "#b22222"],
-  [/(lapis)/i, "#2f5fa8"], [/(copper)/i, "#c67a4f"],
-  [/(netherite|ancient debris)/i, "#4a423f"],
-  [/(quartz)/i, "#ece6da"], [/(amethyst)/i, "#9966cc"],
-  [/(deepslate|tuff|calcite)/i, "#5c5c60"],
-  [/(stone|cobble|granite|diorite|andesite|brick|concrete|terracotta)/i, "#8f8f8f"],
-  [/(oak|spruce|birch|jungle wood|jungle log|jungle plank|acacia|dark oak|mangrove|bamboo|plank|\blog\b|\bwood\b|bookshelf|crafting table|barrel)/i, "#a1723f"],
-  [/(leaves|grass|moss|vine|sapling|fern|melon|pumpkin stem)/i, "#4f8f3e"],
-  [/(sand)/i, "#d9c98a"],
-  [/(ice|snow)/i, "#bfe6f0"],
-  [/(water)/i, "#3a6fd8"],
-  [/(lava|magma|netherrack|nether wart)/i, "#c9481f"],
-  [/(obsidian)/i, "#2a1f38"],
-  [/(end stone|purpur|chorus)/i, "#a98fc9"],
-  [/(glass)/i, "#cfe9f2"],
-  [/(tnt)/i, "#c93a2e"],
-  [/(bedrock)/i, "#3a3a3d"],
-  [/(dirt|podzol|mud|farmland|path)/i, "#7a5c3a"],
-  [/(gravel)/i, "#8a8580"],
-  [/(sponge)/i, "#c9c93a"],
-  [/(piston|dispenser|dropper|observer|hopper|note block|redstone lamp|repeater|comparator|rail)/i, "#7d8288"],
+  [/crimson/i, "#932b3e", "grain"], [/warped/i, "#2a8f83", "grain"],
+  [/(iron ore)/i, STONE_GRAY, "speckle", "#e8e8e8"],
+  [/(gold ore)/i, STONE_GRAY, "speckle", "#f0c53d"],
+  [/(diamond ore)/i, STONE_GRAY, "speckle", "#5adbd8"],
+  [/(emerald ore)/i, STONE_GRAY, "speckle", "#3fbf5d"],
+  [/(coal ore)/i, STONE_GRAY, "speckle", "#232323"],
+  [/(redstone ore)/i, STONE_GRAY, "speckle", "#c1272d"],
+  [/(lapis ore)/i, STONE_GRAY, "speckle", "#2f5fa8"],
+  [/(copper ore)/i, STONE_GRAY, "speckle", "#c67a4f"],
+  [/(ancient debris)/i, "#4a423f", "speckle", "#8a5a3f"],
+  [/(iron block|iron door|iron bars|iron )/i, "#d8d8d0", null],
+  [/(gold block|gilded)/i, "#f0c53d", null],
+  [/(diamond)/i, "#5adbd8", null],
+  [/(emerald)/i, "#3fbf5d", null],
+  [/(coal)/i, "#2b2b2b", null],
+  [/(redstone)/i, "#b22222", null],
+  [/(lapis)/i, "#2f5fa8", null],
+  [/(copper)/i, "#c67a4f", null],
+  [/(netherite)/i, "#4a423f", null],
+  [/(quartz)/i, "#ece6da", null], [/(amethyst)/i, "#9966cc", null],
+  [/(deepslate|tuff|calcite)/i, "#5c5c60", "speckle", "#3a3a3d"],
+  [/(stone|cobble|granite|diorite|andesite|brick|concrete|terracotta)/i, STONE_GRAY, "speckle", "#5a5a5a"],
+  [/(oak|spruce|birch|jungle wood|jungle log|jungle plank|acacia|dark oak|mangrove|bamboo|plank|\blog\b|\bwood\b|bookshelf|crafting table|barrel)/i, "#a1723f", "grain"],
+  [/(leaves|grass|moss|vine|sapling|fern|melon|pumpkin stem)/i, "#4f8f3e", null],
+  [/(sand)/i, "#d9c98a", null],
+  [/(ice|snow)/i, "#bfe6f0", "shine"],
+  [/(water)/i, "#3a6fd8", "shine"],
+  [/(lava|magma|nether wart)/i, "#c9481f", "shine"],
+  [/(netherrack)/i, "#c9481f", "speckle", "#5a1c0d"],
+  [/(obsidian)/i, "#2a1f38", null],
+  [/(end stone|purpur|chorus)/i, "#a98fc9", null],
+  [/(glass)/i, "#cfe9f2", "shine"],
+  [/(tnt)/i, "#c93a2e", null],
+  [/(bedrock)/i, "#3a3a3d", "speckle", "#232323"],
+  [/(dirt|podzol|mud|farmland|path)/i, "#7a5c3a", null],
+  [/(gravel)/i, "#8a8580", "speckle", "#5a5a5a"],
+  [/(sponge)/i, "#c9c93a", null],
+  [/(piston|dispenser|dropper|observer|hopper|note block|redstone lamp|repeater|comparator|rail)/i, "#7d8288", null],
 ];
 
-function getBlockBaseColor(name) {
+function getBlockStyle(name) {
   for (const [pattern, color] of COLOR_WORDS) {
-    if (pattern.test(name)) return color;
+    if (pattern.test(name)) return { color, detail: null };
   }
-  for (const [pattern, color] of CATEGORY_WORDS) {
-    if (pattern.test(name)) return color;
+  for (const [pattern, color, detail, dotColor] of CATEGORY_WORDS) {
+    if (pattern.test(name)) return { color, detail, dotColor };
   }
-  return "#6fa84a"; // default: grassy green, a friendly Minecraft-y fallback
+  return { color: "#6fa84a", detail: null }; // default: grassy green fallback
 }
 
 // Lightens (positive amount) or darkens (negative amount) a hex color, used
@@ -642,11 +684,57 @@ function shadeColor(hex, amount) {
   return `#${(r << 16 | g << 8 | b).toString(16).padStart(6, "0")}`;
 }
 
+// A handful of positions (within the 64x64 face) for each detail type,
+// reused for every block sharing that detail - not per-block, just per
+// category, matching the reference design.
+const SPECKLE_POSITIONS = [
+  [12, 14], [40, 10], [22, 32], [48, 40], [16, 50], [36, 26],
+];
+const GRAIN_POSITIONS = [14, 30, 46]; // vertical offsets for horizontal lines
+const SHINE_POSITIONS = [[16, 6], [30, 10]]; // [left, top] for diagonal streaks
+
+function renderFaceDetail(faceEl, detail, dotColor) {
+  faceEl.innerHTML = "";
+  if (detail === "speckle") {
+    for (const [left, top] of SPECKLE_POSITIONS) {
+      const dot = document.createElement("div");
+      dot.className = "botd-dot";
+      dot.style.left = `${left}px`;
+      dot.style.top = `${top}px`;
+      dot.style.background = dotColor || "#333";
+      faceEl.appendChild(dot);
+    }
+  } else if (detail === "grain") {
+    for (const top of GRAIN_POSITIONS) {
+      const line = document.createElement("div");
+      line.className = "botd-grain";
+      line.style.top = `${top}px`;
+      faceEl.appendChild(line);
+    }
+  } else if (detail === "shine") {
+    // Shine only makes sense on the top face (a glossy highlight).
+    if (faceEl === botdFaceTop) {
+      for (const [left, top] of SHINE_POSITIONS) {
+        const streak = document.createElement("div");
+        streak.className = "botd-shine";
+        streak.style.left = `${left}px`;
+        streak.style.top = `${top}px`;
+        streak.style.transform = "rotate(35deg)";
+        faceEl.appendChild(streak);
+      }
+    }
+  }
+}
+
 function setCubeColor(name) {
-  const base = getBlockBaseColor(name);
-  botdCube.style.setProperty("--cube-top", shadeColor(base, 35));
-  botdCube.style.setProperty("--cube-left", base);
-  botdCube.style.setProperty("--cube-right", shadeColor(base, -35));
+  const { color, detail, dotColor } = getBlockStyle(name);
+  botdCube.style.setProperty("--cube-top", shadeColor(color, 35));
+  botdCube.style.setProperty("--cube-front", color);
+  botdCube.style.setProperty("--cube-side", shadeColor(color, -35));
+
+  renderFaceDetail(botdFaceTop, detail, dotColor);
+  renderFaceDetail(botdFaceFront, detail, dotColor);
+  renderFaceDetail(botdFaceSide, detail, dotColor);
 }
 
 const botdDetails = document.getElementById("botdDetails");
