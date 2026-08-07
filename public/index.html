@@ -29,17 +29,17 @@
     font-weight: 600;
   }
   .botd-section {
-    background: linear-gradient(135deg, #fff6df 0%, #ffe9b8 100%);
-    border: 3px solid #f9b93e;
+    background: linear-gradient(135deg, #f3ebff 0%, #e3d0ff 100%);
+    border: 3px solid #a76ee0;
     border-radius: 16px;
     padding: 18px 22px;
     margin-bottom: 20px;
-    box-shadow: 0 3px 0 #e0a02a;
+    box-shadow: 0 3px 0 #8a4fc7;
   }
   .botd-label {
     font-size: 0.85rem;
     font-weight: 800;
-    color: #a8630e;
+    color: #7a3fb0;
     text-transform: uppercase;
     letter-spacing: 0.05em;
     margin-bottom: 4px;
@@ -52,7 +52,7 @@
   }
   .botd-details {
     font-size: 0.9rem;
-    color: #5a4620;
+    color: #5a3d70;
     font-weight: 600;
     line-height: 1.6;
   }
@@ -60,7 +60,7 @@
   .botd-details .botd-date {
     margin-top: 8px;
     font-size: 0.75rem;
-    color: #a8630e;
+    color: #7a3fb0;
     font-weight: 700;
     opacity: 0.8;
   }
@@ -79,6 +79,24 @@
        isometric-style viewing angle achieved via real 3D transforms
        (more reliable than the 2D skew/rotate hack). */
     transform: rotateX(-28deg) rotateY(35deg);
+  }
+  .botd-image {
+    width: 64px;
+    height: 64px;
+    /* These are pixel-art textures - smooth scaling would blur them. */
+    image-rendering: pixelated;
+    border: 2px solid rgba(0,0,0,0.2);
+    border-radius: 4px;
+  }
+  .botd-credit {
+    margin-top: 10px;
+    font-size: 0.7rem;
+    color: #7a3fb0;
+    opacity: 0.75;
+  }
+  .botd-credit a {
+    color: #7a3fb0;
+    font-weight: 700;
   }
   .botd-face {
     position: absolute;
@@ -542,9 +560,11 @@
       <div class="botd-face botd-face-front" id="botdFaceFront"></div>
       <div class="botd-face botd-face-side" id="botdFaceSide"></div>
     </div>
+    <img class="botd-image" id="botdImage" style="display: none;">
   </div>
   <div class="botd-name" id="botdName">Loading...</div>
   <div class="botd-details" id="botdDetails"></div>
+  <div class="botd-credit">Block textures from <a href="https://faithfulpack.net" target="_blank" rel="noopener">Faithful</a>, used under their license.</div>
 </div>
 
 <div class="platform-row">
@@ -632,6 +652,7 @@ const botdCube = document.getElementById("botdCube");
 const botdFaceTop = document.getElementById("botdFaceTop");
 const botdFaceFront = document.getElementById("botdFaceFront");
 const botdFaceSide = document.getElementById("botdFaceSide");
+const botdImage = document.getElementById("botdImage");
 
 // Derives a themed color + surface detail for a block's name via keyword
 // matching - color blocks (wool, concrete, etc.) use their actual named
@@ -762,7 +783,17 @@ async function loadBlockOfTheDay() {
     }
     const b = data.block;
     botdName.textContent = b.name;
-    setCubeColor(b.name);
+
+    if (b.imageUrl) {
+      botdCube.style.display = "none";
+      botdImage.src = b.imageUrl;
+      botdImage.alt = b.name;
+      botdImage.style.display = "block";
+    } else {
+      botdImage.style.display = "none";
+      botdCube.style.display = "";
+      setCubeColor(b.name);
+    }
 
     const lines = [];
     // A hardness of -1 is Minecraft's own convention for "unbreakable"
@@ -786,6 +817,10 @@ async function loadBlockOfTheDay() {
       if (b.drops) lines.push(`Drops: ${b.drops.join(", ")}`);
       if (b.harvestTools) lines.push(`Harvestable with: ${b.harvestTools.join(", ")}`);
     }
+    lines.push(`Stack size: ${b.stackSize}`);
+    lines.push(b.transparent ? "Light passes through it" : "Blocks light");
+    if (b.lightLevel) lines.push(`Emits light level ${b.lightLevel} (out of 15)`);
+    lines.push(b.solid ? "Solid - blocks movement" : "No collision - can walk through it");
     botdDetails.innerHTML = lines.map((l) => `<div class="botd-row">${l}</div>`).join("");
 
     // Show the actual date, reinforcing that this genuinely updates daily.

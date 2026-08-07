@@ -12,6 +12,7 @@ require("dotenv").config();
 const express = require("express");
 const { execFile } = require("child_process");
 const path = require("path");
+const fs = require("fs");
 
 const app = express();
 app.use(express.json());
@@ -255,8 +256,26 @@ function parseBlockFact(fact) {
     else if (part.startsWith("drops: ")) result.drops = part.replace("drops: ", "").split(", ");
     else if (part.startsWith("harvestable with: ")) result.harvestTools = part.replace("harvestable with: ", "").split(", ");
     else if (part === "cannot be mined normally") result.cannotBeMined = true;
+    else if (part.startsWith("stack size ")) result.stackSize = parseInt(part.replace("stack size ", ""), 10);
+    else if (part === "transparent (light passes through)") result.transparent = true;
+    else if (part === "opaque (blocks light)") result.transparent = false;
+    else if (/^emits light level \d+/.test(part)) result.lightLevel = parseInt(part.match(/\d+/)[0], 10);
+    else if (part === "no collision - can walk through it") result.solid = false;
+    else if (part === "solid - blocks movement") result.solid = true;
   }
   return result;
+}
+
+// Maps display names ("Polished Diorite Slab") to Minecraft's internal
+// snake_case names ("polished_diorite_slab"), needed to look up the
+// matching real texture file (if we have one - see match-textures.js).
+let displayNameToInternalName = {};
+try {
+  displayNameToInternalName = JSON.parse(
+    fs.readFileSync(path.join(__dirname, "displayname_to_internalname.json"), "utf8")
+  );
+} catch (err) {
+  console.error("Could not load displayname_to_internalname.json - Block of the Day will use the CSS cube fallback for every block.");
 }
 
 // Picks today's block deterministically - same block for everyone on a
@@ -267,7 +286,19 @@ function getBlockOfTheDay() {
   const daysSinceEpoch = Math.floor(Date.now() / 86400000);
   const index = daysSinceEpoch % ALL_BLOCK_FACTS.length;
   const fact = ALL_BLOCK_FACTS[index];
-  return parseBlockFact(fact);
+  const block = parseBlockFact(fact);
+
+  // If we have a real matched texture for this block, include its URL -
+  // the frontend falls back to the CSS cube if this is null.
+  const internalName = displayNameToInternalName[block.name];
+  if (internalName) {
+    const texturePath = path.join(__dirname, "public", "block-textures", `${internalName}.png`);
+    if (fs.existsSync(texturePath)) {
+      block.imageUrl = `/block-textures/${internalName}.png`;
+    }
+  }
+
+  return block;
 }
 
 app.get("/api/block-of-the-day", (req, res) => {
@@ -326,8 +357,11 @@ const COL_LABELS = ["left", "middle", "right"];
 // Generates a guaranteed-accurate, step-by-step crafting explanation
 // directly from the structured recipe data - no LLM involved. This exists
 // because testing showed the local model would sometimes describe recipes
-// incorrectly (even flatly contradicting the data it was given), so for
-// recipe questions we use this deterministic text instead.
+// incorrectly, even when given the correct data (e.g. omitting a stick,
+// or describing an impossible layout). Rather than keep prompt-tuning
+// around an unreliable model, confident recipe matches skip the LLM
+// entirely and use a deterministic description generated directly from
+// the same data that draws the diagram - guaranteed to match, and faster.
 function generateRecipeAnswerText(visual) {
   if (visual.shapeless) {
     return `To craft ${visual.name} (makes ${visual.count}): combine these in a crafting grid, in any arrangement - ${visual.shapeless.join(", ")}.`;
