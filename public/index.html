@@ -27,6 +27,36 @@
     margin-bottom: 24px;
     font-weight: 600;
   }
+  .botd-section {
+    background: linear-gradient(135deg, #fff6df 0%, #ffe9b8 100%);
+    border: 3px solid #f9b93e;
+    border-radius: 16px;
+    padding: 18px 22px;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 0 #e0a02a;
+  }
+  .botd-label {
+    font-size: 0.85rem;
+    font-weight: 800;
+    color: #a8630e;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 4px;
+  }
+  .botd-name {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #2c3e30;
+    margin-bottom: 8px;
+  }
+  .botd-details {
+    font-size: 0.9rem;
+    color: #5a4620;
+    font-weight: 600;
+    line-height: 1.6;
+  }
+  .botd-details .botd-row { margin-bottom: 2px; }
+
   .platform-row {
     display: flex;
     gap: 20px;
@@ -387,6 +417,12 @@
 <h1>Smart Seed</h1>
 <p class="subtitle">Enter a seed to see spawn point and nearby structures.</p>
 
+<div class="botd-section" id="botdSection">
+  <div class="botd-label">✨ Block of the Day</div>
+  <div class="botd-name" id="botdName">Loading...</div>
+  <div class="botd-details" id="botdDetails"></div>
+</div>
+
 <div class="platform-row">
   <label class="platform-option">
     <input type="radio" name="platform" value="java" id="platformJava" checked>
@@ -467,6 +503,36 @@
 </div>
 
 <script>
+const botdName = document.getElementById("botdName");
+const botdDetails = document.getElementById("botdDetails");
+
+async function loadBlockOfTheDay() {
+  try {
+    const response = await fetch("/api/block-of-the-day");
+    const data = await response.json();
+    if (!response.ok || !data.block) {
+      botdName.textContent = "Couldn't load today's block.";
+      return;
+    }
+    const b = data.block;
+    botdName.textContent = b.name;
+
+    const lines = [];
+    lines.push(`Hardness: ${b.hardness}`);
+    lines.push(`Blast resistance: ${b.blastResistance}`);
+    if (b.cannotBeMined) {
+      lines.push("Cannot be mined normally");
+    } else {
+      if (b.drops) lines.push(`Drops: ${b.drops.join(", ")}`);
+      if (b.harvestTools) lines.push(`Harvestable with: ${b.harvestTools.join(", ")}`);
+    }
+    botdDetails.innerHTML = lines.map((l) => `<div class="botd-row">${l}</div>`).join("");
+  } catch (err) {
+    botdName.textContent = "Couldn't load today's block.";
+  }
+}
+loadBlockOfTheDay();
+
 const seedInput = document.getElementById("seedInput");
 const versionSelect = document.getElementById("versionSelect");
 const platformJava = document.getElementById("platformJava");
