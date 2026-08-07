@@ -98,22 +98,9 @@
     background: var(--cube-side, #62666b);
     transform: rotateY(90deg) translateZ(32px);
   }
-  /* Detail overlays: children of a face inherit that face's own rotation,
-     so they naturally appear "on" that face regardless of the cube's
-     overall orientation - no extra math needed per element. */
-  .botd-dot {
-    position: absolute;
-    width: 5px;
-    height: 5px;
-    border-radius: 50%;
-  }
-  .botd-grain {
-    position: absolute;
-    left: 4px;
-    right: 4px;
-    height: 2px;
-    background: rgba(0,0,0,0.22);
-  }
+  /* Children of a face inherit that face's own 3D rotation, so the shine
+     highlight naturally appears "on" the top face regardless of the
+     cube's overall orientation - no extra math needed. */
   .botd-shine {
     position: absolute;
     width: 3px;
@@ -500,6 +487,50 @@
 </head>
 <body>
 
+<svg width="0" height="0" style="position: absolute;">
+  <defs>
+    <!-- Rough, grainy surface (stone/ore/gravel/bedrock) - fine, high-frequency noise -->
+    <filter id="texStone" x="-20%" y="-20%" width="140%" height="140%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="3" seed="7" result="noise"/>
+      <feColorMatrix in="noise" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0.5 0.5 0.5 0 0" result="noiseAlpha"/>
+      <feComponentTransfer in="noiseAlpha" result="noiseSoft">
+        <feFuncA type="linear" slope="0.35" intercept="0"/>
+      </feComponentTransfer>
+      <feBlend in="SourceGraphic" in2="noiseSoft" mode="multiply"/>
+    </filter>
+
+    <!-- Streaky wood-grain surface - elongated, directional noise -->
+    <filter id="texWood" x="-20%" y="-20%" width="140%" height="140%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.015 0.3" numOctaves="2" seed="3" result="noise"/>
+      <feColorMatrix in="noise" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0.6 0.6 0.6 0 0" result="noiseAlpha"/>
+      <feComponentTransfer in="noiseAlpha" result="noiseSoft">
+        <feFuncA type="linear" slope="0.4" intercept="0"/>
+      </feComponentTransfer>
+      <feBlend in="SourceGraphic" in2="noiseSoft" mode="multiply"/>
+    </filter>
+
+    <!-- Smooth, gently rippled surface (water/lava/ice/glass) - low-frequency, soft noise -->
+    <filter id="texLiquid" x="-20%" y="-20%" width="140%" height="140%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="2" seed="11" result="noise"/>
+      <feColorMatrix in="noise" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0.4 0.4 0.4 0 0" result="noiseAlpha"/>
+      <feComponentTransfer in="noiseAlpha" result="noiseSoft">
+        <feFuncA type="linear" slope="0.25" intercept="0"/>
+      </feComponentTransfer>
+      <feBlend in="SourceGraphic" in2="noiseSoft" mode="overlay"/>
+    </filter>
+
+    <!-- Mottled organic surface (leaves/grass/moss/dirt) - soft turbulence, not fractal -->
+    <filter id="texOrganic" x="-20%" y="-20%" width="140%" height="140%">
+      <feTurbulence type="turbulence" baseFrequency="0.25" numOctaves="2" seed="21" result="noise"/>
+      <feColorMatrix in="noise" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0.5 0.5 0.5 0 0" result="noiseAlpha"/>
+      <feComponentTransfer in="noiseAlpha" result="noiseSoft">
+        <feFuncA type="linear" slope="0.3" intercept="0"/>
+      </feComponentTransfer>
+      <feBlend in="SourceGraphic" in2="noiseSoft" mode="multiply"/>
+    </filter>
+  </defs>
+</svg>
+
 <h1>Smart Seed</h1>
 <p class="subtitle">Enter a seed to see spawn point and nearby structures.</p>
 
@@ -620,17 +651,13 @@ const COLOR_WORDS = [
 ];
 // [pattern, color, detail, dotColor(for speckle only)]
 const STONE_GRAY = "#8f8f8f";
+// [pattern, color, textureType] - textureType selects which SVG filter
+// (defined in the hidden <svg><defs> at the top of the page) gets applied
+// to give the surface actual procedural texture, instead of a flat color.
 const CATEGORY_WORDS = [
-  [/crimson/i, "#932b3e", "grain"], [/warped/i, "#2a8f83", "grain"],
-  [/(iron ore)/i, STONE_GRAY, "speckle", "#e8e8e8"],
-  [/(gold ore)/i, STONE_GRAY, "speckle", "#f0c53d"],
-  [/(diamond ore)/i, STONE_GRAY, "speckle", "#5adbd8"],
-  [/(emerald ore)/i, STONE_GRAY, "speckle", "#3fbf5d"],
-  [/(coal ore)/i, STONE_GRAY, "speckle", "#232323"],
-  [/(redstone ore)/i, STONE_GRAY, "speckle", "#c1272d"],
-  [/(lapis ore)/i, STONE_GRAY, "speckle", "#2f5fa8"],
-  [/(copper ore)/i, STONE_GRAY, "speckle", "#c67a4f"],
-  [/(ancient debris)/i, "#4a423f", "speckle", "#8a5a3f"],
+  [/crimson/i, "#932b3e", "wood"], [/warped/i, "#2a8f83", "wood"],
+  [/(iron ore|gold ore|diamond ore|emerald ore|coal ore|redstone ore|lapis ore|copper ore)/i, STONE_GRAY, "stone"],
+  [/(ancient debris)/i, "#4a423f", "stone"],
   [/(iron block|iron door|iron bars|iron )/i, "#d8d8d0", null],
   [/(gold block|gilded)/i, "#f0c53d", null],
   [/(diamond)/i, "#5adbd8", null],
@@ -640,35 +667,35 @@ const CATEGORY_WORDS = [
   [/(lapis)/i, "#2f5fa8", null],
   [/(copper)/i, "#c67a4f", null],
   [/(netherite)/i, "#4a423f", null],
-  [/(quartz)/i, "#ece6da", null], [/(amethyst)/i, "#9966cc", null],
-  [/(deepslate|tuff|calcite)/i, "#5c5c60", "speckle", "#3a3a3d"],
-  [/(stone|cobble|granite|diorite|andesite|brick|concrete|terracotta)/i, STONE_GRAY, "speckle", "#5a5a5a"],
-  [/(oak|spruce|birch|jungle wood|jungle log|jungle plank|acacia|dark oak|mangrove|bamboo|plank|\blog\b|\bwood\b|bookshelf|crafting table|barrel)/i, "#a1723f", "grain"],
-  [/(leaves|grass|moss|vine|sapling|fern|melon|pumpkin stem)/i, "#4f8f3e", null],
-  [/(sand)/i, "#d9c98a", null],
-  [/(ice|snow)/i, "#bfe6f0", "shine"],
-  [/(water)/i, "#3a6fd8", "shine"],
-  [/(lava|magma|nether wart)/i, "#c9481f", "shine"],
-  [/(netherrack)/i, "#c9481f", "speckle", "#5a1c0d"],
-  [/(obsidian)/i, "#2a1f38", null],
-  [/(end stone|purpur|chorus)/i, "#a98fc9", null],
-  [/(glass)/i, "#cfe9f2", "shine"],
+  [/(quartz)/i, "#ece6da", "stone"], [/(amethyst)/i, "#9966cc", null],
+  [/(deepslate|tuff|calcite)/i, "#5c5c60", "stone"],
+  [/(stone|cobble|granite|diorite|andesite|brick|concrete|terracotta)/i, STONE_GRAY, "stone"],
+  [/(oak|spruce|birch|jungle wood|jungle log|jungle plank|acacia|dark oak|mangrove|bamboo|plank|\blog\b|\bwood\b|bookshelf|crafting table|barrel)/i, "#a1723f", "wood"],
+  [/(leaves|grass|moss|vine|sapling|fern|melon|pumpkin stem)/i, "#4f8f3e", "organic"],
+  [/(sand)/i, "#d9c98a", "organic"],
+  [/(ice|snow)/i, "#bfe6f0", "liquid"],
+  [/(water)/i, "#3a6fd8", "liquid"],
+  [/(lava|magma|nether wart)/i, "#c9481f", "liquid"],
+  [/(netherrack)/i, "#c9481f", "stone"],
+  [/(obsidian)/i, "#2a1f38", "stone"],
+  [/(end stone|purpur|chorus)/i, "#a98fc9", "stone"],
+  [/(glass)/i, "#cfe9f2", "liquid"],
   [/(tnt)/i, "#c93a2e", null],
-  [/(bedrock)/i, "#3a3a3d", "speckle", "#232323"],
-  [/(dirt|podzol|mud|farmland|path)/i, "#7a5c3a", null],
-  [/(gravel)/i, "#8a8580", "speckle", "#5a5a5a"],
-  [/(sponge)/i, "#c9c93a", null],
+  [/(bedrock)/i, "#3a3a3d", "stone"],
+  [/(dirt|podzol|mud|farmland|path)/i, "#7a5c3a", "organic"],
+  [/(gravel)/i, "#8a8580", "stone"],
+  [/(sponge)/i, "#c9c93a", "organic"],
   [/(piston|dispenser|dropper|observer|hopper|note block|redstone lamp|repeater|comparator|rail)/i, "#7d8288", null],
 ];
 
 function getBlockStyle(name) {
   for (const [pattern, color] of COLOR_WORDS) {
-    if (pattern.test(name)) return { color, detail: null };
+    if (pattern.test(name)) return { color, texture: null };
   }
-  for (const [pattern, color, detail, dotColor] of CATEGORY_WORDS) {
-    if (pattern.test(name)) return { color, detail, dotColor };
+  for (const [pattern, color, texture] of CATEGORY_WORDS) {
+    if (pattern.test(name)) return { color, texture };
   }
-  return { color: "#6fa84a", detail: null }; // default: grassy green fallback
+  return { color: "#6fa84a", texture: "organic" }; // default: grassy green fallback
 }
 
 // Lightens (positive amount) or darkens (negative amount) a hex color, used
@@ -684,57 +711,43 @@ function shadeColor(hex, amount) {
   return `#${(r << 16 | g << 8 | b).toString(16).padStart(6, "0")}`;
 }
 
-// A handful of positions (within the 64x64 face) for each detail type,
-// reused for every block sharing that detail - not per-block, just per
-// category, matching the reference design.
-const SPECKLE_POSITIONS = [
-  [12, 14], [40, 10], [22, 32], [48, 40], [16, 50], [36, 26],
-];
-const GRAIN_POSITIONS = [14, 30, 46]; // vertical offsets for horizontal lines
-const SHINE_POSITIONS = [[16, 6], [30, 10]]; // [left, top] for diagonal streaks
+const TEXTURE_FILTER_IDS = {
+  stone: "texStone",
+  wood: "texWood",
+  liquid: "texLiquid",
+  organic: "texOrganic",
+};
 
-function renderFaceDetail(faceEl, detail, dotColor) {
+const SHINE_POSITIONS = [[16, 6], [30, 10]]; // [left, top] for diagonal streaks on the top face
+
+function applyFaceTexture(faceEl, texture) {
   faceEl.innerHTML = "";
-  if (detail === "speckle") {
-    for (const [left, top] of SPECKLE_POSITIONS) {
-      const dot = document.createElement("div");
-      dot.className = "botd-dot";
-      dot.style.left = `${left}px`;
-      dot.style.top = `${top}px`;
-      dot.style.background = dotColor || "#333";
-      faceEl.appendChild(dot);
-    }
-  } else if (detail === "grain") {
-    for (const top of GRAIN_POSITIONS) {
-      const line = document.createElement("div");
-      line.className = "botd-grain";
-      line.style.top = `${top}px`;
-      faceEl.appendChild(line);
-    }
-  } else if (detail === "shine") {
-    // Shine only makes sense on the top face (a glossy highlight).
-    if (faceEl === botdFaceTop) {
-      for (const [left, top] of SHINE_POSITIONS) {
-        const streak = document.createElement("div");
-        streak.className = "botd-shine";
-        streak.style.left = `${left}px`;
-        streak.style.top = `${top}px`;
-        streak.style.transform = "rotate(35deg)";
-        faceEl.appendChild(streak);
-      }
+  const filterId = TEXTURE_FILTER_IDS[texture];
+  faceEl.style.filter = filterId ? `url(#${filterId})` : "none";
+
+  // Liquids/glass/ice additionally get a glossy shine highlight on the top
+  // face only, layered on top of the procedural ripple texture.
+  if (texture === "liquid" && faceEl === botdFaceTop) {
+    for (const [left, top] of SHINE_POSITIONS) {
+      const streak = document.createElement("div");
+      streak.className = "botd-shine";
+      streak.style.left = `${left}px`;
+      streak.style.top = `${top}px`;
+      streak.style.transform = "rotate(35deg)";
+      faceEl.appendChild(streak);
     }
   }
 }
 
 function setCubeColor(name) {
-  const { color, detail, dotColor } = getBlockStyle(name);
+  const { color, texture } = getBlockStyle(name);
   botdCube.style.setProperty("--cube-top", shadeColor(color, 35));
   botdCube.style.setProperty("--cube-front", color);
   botdCube.style.setProperty("--cube-side", shadeColor(color, -35));
 
-  renderFaceDetail(botdFaceTop, detail, dotColor);
-  renderFaceDetail(botdFaceFront, detail, dotColor);
-  renderFaceDetail(botdFaceSide, detail, dotColor);
+  applyFaceTexture(botdFaceTop, texture);
+  applyFaceTexture(botdFaceFront, texture);
+  applyFaceTexture(botdFaceSide, texture);
 }
 
 const botdDetails = document.getElementById("botdDetails");
