@@ -64,6 +64,42 @@
     font-weight: 700;
     opacity: 0.8;
   }
+  .botd-cube-wrap {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  .botd-cube {
+    position: relative;
+    width: 60px;
+    height: 70px;
+  }
+  .botd-cube-top, .botd-cube-left, .botd-cube-right {
+    position: absolute;
+    width: 60px;
+    height: 34px;
+  }
+  .botd-cube-top {
+    background: var(--cube-top, #9aa0a6);
+    transform: rotate(210deg) skew(-30deg) scaleY(0.864);
+    top: 0;
+    left: 0;
+    border-radius: 3px;
+  }
+  .botd-cube-left {
+    background: var(--cube-left, #7d8288);
+    transform: rotate(90deg) skew(-30deg) scaleY(0.864);
+    top: 16px;
+    left: -16px;
+    border-radius: 3px;
+  }
+  .botd-cube-right {
+    background: var(--cube-right, #62666b);
+    transform: rotate(-30deg) skew(-30deg) scaleY(0.864);
+    top: 46.5px;
+    left: 15px;
+    border-radius: 3px;
+  }
 
   .platform-row {
     display: flex;
@@ -448,6 +484,13 @@
 
 <div class="botd-section" id="botdSection">
   <div class="botd-label">✨ Block of the Day</div>
+  <div class="botd-cube-wrap">
+    <div class="botd-cube" id="botdCube">
+      <div class="botd-cube-top"></div>
+      <div class="botd-cube-left"></div>
+      <div class="botd-cube-right"></div>
+    </div>
+  </div>
   <div class="botd-name" id="botdName">Loading...</div>
   <div class="botd-details" id="botdDetails"></div>
 </div>
@@ -533,6 +576,79 @@
 
 <script>
 const botdName = document.getElementById("botdName");
+const botdCube = document.getElementById("botdCube");
+
+// Derives a themed color for a block's name via keyword matching - color
+// blocks (wool, concrete, etc.) use their actual named color; everything
+// else uses a sensible category color (wood = brown, ore = its metal's
+// color, ice = light blue, and so on). This is an original color mapping,
+// not derived from or copying any Minecraft game asset.
+const COLOR_WORDS = [
+  [/white/i, "#e9edf0"], [/orange/i, "#e5811a"], [/magenta/i, "#c04cd1"],
+  [/light blue/i, "#6ec2e8"], [/yellow/i, "#f0c928"], [/lime/i, "#7fd433"],
+  [/pink/i, "#eb94b5"], [/light gray/i, "#9ea3a3"], [/gray/i, "#4c4f52"],
+  [/cyan/i, "#25a6a0"], [/purple/i, "#7b2fbe"], [/blue/i, "#3457c9"],
+  [/brown/i, "#6b4a2b"], [/green/i, "#5b7d21"], [/red/i, "#a13a2e"],
+  [/black/i, "#2b2b2e"],
+];
+const CATEGORY_WORDS = [
+  [/crimson/i, "#932b3e"], [/warped/i, "#2a8f83"],
+  [/(iron ore|iron block|iron door|iron bars|iron )/i, "#d8d8d0"],
+  [/(gold ore|gold block|gilded)/i, "#f0c53d"],
+  [/(diamond)/i, "#5adbd8"], [/(emerald)/i, "#3fbf5d"],
+  [/(coal)/i, "#2b2b2b"], [/(redstone)/i, "#b22222"],
+  [/(lapis)/i, "#2f5fa8"], [/(copper)/i, "#c67a4f"],
+  [/(netherite|ancient debris)/i, "#4a423f"],
+  [/(quartz)/i, "#ece6da"], [/(amethyst)/i, "#9966cc"],
+  [/(deepslate|tuff|calcite)/i, "#5c5c60"],
+  [/(stone|cobble|granite|diorite|andesite|brick|concrete|terracotta)/i, "#8f8f8f"],
+  [/(oak|spruce|birch|jungle wood|jungle log|jungle plank|acacia|dark oak|mangrove|bamboo|plank|\blog\b|\bwood\b|bookshelf|crafting table|barrel)/i, "#a1723f"],
+  [/(leaves|grass|moss|vine|sapling|fern|melon|pumpkin stem)/i, "#4f8f3e"],
+  [/(sand)/i, "#d9c98a"],
+  [/(ice|snow)/i, "#bfe6f0"],
+  [/(water)/i, "#3a6fd8"],
+  [/(lava|magma|netherrack|nether wart)/i, "#c9481f"],
+  [/(obsidian)/i, "#2a1f38"],
+  [/(end stone|purpur|chorus)/i, "#a98fc9"],
+  [/(glass)/i, "#cfe9f2"],
+  [/(tnt)/i, "#c93a2e"],
+  [/(bedrock)/i, "#3a3a3d"],
+  [/(dirt|podzol|mud|farmland|path)/i, "#7a5c3a"],
+  [/(gravel)/i, "#8a8580"],
+  [/(sponge)/i, "#c9c93a"],
+  [/(piston|dispenser|dropper|observer|hopper|note block|redstone lamp|repeater|comparator|rail)/i, "#7d8288"],
+];
+
+function getBlockBaseColor(name) {
+  for (const [pattern, color] of COLOR_WORDS) {
+    if (pattern.test(name)) return color;
+  }
+  for (const [pattern, color] of CATEGORY_WORDS) {
+    if (pattern.test(name)) return color;
+  }
+  return "#6fa84a"; // default: grassy green, a friendly Minecraft-y fallback
+}
+
+// Lightens (positive amount) or darkens (negative amount) a hex color, used
+// to create the 3 differently-shaded cube faces from one base color.
+function shadeColor(hex, amount) {
+  const num = parseInt(hex.slice(1), 16);
+  let r = (num >> 16) + amount;
+  let g = ((num >> 8) & 0x00ff) + amount;
+  let b = (num & 0x0000ff) + amount;
+  r = Math.max(0, Math.min(255, r));
+  g = Math.max(0, Math.min(255, g));
+  b = Math.max(0, Math.min(255, b));
+  return `#${(r << 16 | g << 8 | b).toString(16).padStart(6, "0")}`;
+}
+
+function setCubeColor(name) {
+  const base = getBlockBaseColor(name);
+  botdCube.style.setProperty("--cube-top", shadeColor(base, 35));
+  botdCube.style.setProperty("--cube-left", base);
+  botdCube.style.setProperty("--cube-right", shadeColor(base, -35));
+}
+
 const botdDetails = document.getElementById("botdDetails");
 
 async function loadBlockOfTheDay() {
@@ -545,6 +661,7 @@ async function loadBlockOfTheDay() {
     }
     const b = data.block;
     botdName.textContent = b.name;
+    setCubeColor(b.name);
 
     const lines = [];
     // A hardness of -1 is Minecraft's own convention for "unbreakable"
