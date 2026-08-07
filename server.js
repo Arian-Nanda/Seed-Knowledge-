@@ -50,7 +50,7 @@ function runSeedInfo(platform, seed, version, x, z) {
       args.push(x, z);
     }
 
-    execFile(binPath, args, { timeout: 5000 }, (error, stdout, stderr) => {
+    execFile(binPath, args, { timeout: 30000 }, (error, stdout, stderr) => {
       if (error) {
         console.error("Error running seedinfo:", error, stderr);
         return reject(new Error("Failed to analyze seed."));
@@ -79,7 +79,7 @@ function runSeedCombo(platform, seed, version, x, z, typesCsv, countsCsv) {
       : [seed, version, String(x), String(z), typesCsv];
     if (countsCsv) args.push(countsCsv);
 
-    execFile(binPath, args, { timeout: 60000 }, (error, stdout, stderr) => {
+    execFile(binPath, args, { timeout: 180000 }, (error, stdout, stderr) => {
       if (error) {
         console.error("Error running seedcombo:", error, stderr);
         return reject(new Error(stderr.trim() || "Failed to search structure combinations."));
@@ -151,7 +151,7 @@ function runSeedStronghold(seed, version, x, z) {
       args.push(x, z);
     }
 
-    execFile(SEEDSTRONGHOLD_PATH, args, { timeout: 15000 }, (error, stdout, stderr) => {
+    execFile(SEEDSTRONGHOLD_PATH, args, { timeout: 45000 }, (error, stdout, stderr) => {
       if (error) {
         console.error("Error running seedstronghold:", error, stderr);
         return reject(new Error("Failed to find stronghold."));
