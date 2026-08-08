@@ -108,6 +108,14 @@
     background: rgba(255,255,255,0.55);
     border-radius: 2px;
   }
+  .botd-image {
+    width: 64px;
+    height: 64px;
+    /* These are pixel-art textures - smooth scaling would blur them. */
+    image-rendering: pixelated;
+    border: 2px solid rgba(0,0,0,0.2);
+    border-radius: 4px;
+  }
 
   .platform-row {
     display: flex;
@@ -542,6 +550,7 @@
       <div class="botd-face botd-face-front" id="botdFaceFront"></div>
       <div class="botd-face botd-face-side" id="botdFaceSide"></div>
     </div>
+    <img class="botd-image" id="botdImage" style="display: none;">
   </div>
   <div class="botd-name" id="botdName">Loading...</div>
   <div class="botd-details" id="botdDetails"></div>
@@ -632,6 +641,7 @@ const botdCube = document.getElementById("botdCube");
 const botdFaceTop = document.getElementById("botdFaceTop");
 const botdFaceFront = document.getElementById("botdFaceFront");
 const botdFaceSide = document.getElementById("botdFaceSide");
+const botdImage = document.getElementById("botdImage");
 
 // Derives a themed color + surface detail for a block's name via keyword
 // matching - color blocks (wool, concrete, etc.) use their actual named
@@ -762,7 +772,17 @@ async function loadBlockOfTheDay() {
     }
     const b = data.block;
     botdName.textContent = b.name;
-    setCubeColor(b.name);
+
+    if (b.imageUrl) {
+      botdCube.style.display = "none";
+      botdImage.src = b.imageUrl;
+      botdImage.alt = b.name;
+      botdImage.style.display = "block";
+    } else {
+      botdImage.style.display = "none";
+      botdCube.style.display = "";
+      setCubeColor(b.name);
+    }
 
     const lines = [];
     // A hardness of -1 is Minecraft's own convention for "unbreakable"
