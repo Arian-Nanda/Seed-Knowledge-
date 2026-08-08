@@ -298,6 +298,22 @@ function getBlockOfTheDay() {
     }
   }
 
+  // If this block has a known crafting recipe, include it too - reuses
+  // the same parsing/text-generation already built and tested for the AI
+  // chat's crafting diagrams, so this is guaranteed-accurate, no new code
+  // paths to worry about.
+  const recipeFact = MINECRAFT_KNOWLEDGE.find((f) => f.startsWith(`Recipe for ${block.name} (`));
+  if (recipeFact) {
+    const recipeVisual = parseRecipeFact(recipeFact);
+    if (recipeVisual) {
+      if (recipeVisual.shape) recipeVisual.shape = padShapeTo3x3(recipeVisual.shape);
+      block.recipe = {
+        visual: recipeVisual,
+        text: generateRecipeAnswerText(recipeVisual),
+      };
+    }
+  }
+
   return block;
 }
 
@@ -306,6 +322,7 @@ app.get("/api/block-of-the-day", (req, res) => {
   const today = new Date().toISOString().slice(0, 10);
   res.json({ date: today, block });
 });
+
 
 // Parses a "Recipe for X (makes N): crafted in a grid - ..." or
 // "...shapeless, combine ..." fact back into a structured grid, so the
@@ -357,11 +374,8 @@ const COL_LABELS = ["left", "middle", "right"];
 // Generates a guaranteed-accurate, step-by-step crafting explanation
 // directly from the structured recipe data - no LLM involved. This exists
 // because testing showed the local model would sometimes describe recipes
-// incorrectly, even when given the correct data (e.g. omitting a stick,
-// or describing an impossible layout). Rather than keep prompt-tuning
-// around an unreliable model, confident recipe matches skip the LLM
-// entirely and use a deterministic description generated directly from
-// the same data that draws the diagram - guaranteed to match, and faster.
+// incorrectly (even flatly contradicting the data it was given), so for
+// recipe questions we use this deterministic text instead.
 function generateRecipeAnswerText(visual) {
   if (visual.shapeless) {
     return `To craft ${visual.name} (makes ${visual.count}): combine these in a crafting grid, in any arrangement - ${visual.shapeless.join(", ")}.`;
@@ -402,7 +416,7 @@ async function askGroq(messages) {
     body: JSON.stringify({
       model: GROQ_MODEL,
       messages,
-      temperature: 0.3,
+      temperature: 0.3, // lower = sticks closer to provided facts, less rambling/inventing
       max_tokens: 400,
     }),
   });
@@ -420,12 +434,17 @@ app.post("/api/ask", async (req, res) => {
   const { seed, question, x, z } = req.body;
   const platform = req.body.platform || "java";
   const version = req.body.version || "1.21";
+  // history: array of { role: "user"|"assistant", content: string } from
+  // earlier turns in this conversation, so the assistant has real memory.
   const history = Array.isArray(req.body.history) ? req.body.history : [];
 
   if (!question || typeof question !== "string" || question.trim() === "") {
     return res.status(400).json({ error: "A question is required." });
   }
 
+  // Only bother looking up seed data if the question actually seems related
+  // to it - re-running the seed search on every unrelated chat message
+  // (e.g. "how fast are minecarts") would waste real time for no benefit.
   const SEED_RELATED_WORDS = [
     "seed", "structure", "coordinate", "spawn", "nearby", "distance", "away",
     "village", "monument", "mansion", "temple", "pyramid", "outpost", "portal",
@@ -442,6 +461,8 @@ app.post("/api/ask", async (req, res) => {
       try {
         seedData = await runSeedInfo(platform, String(seed), version, x, z);
       } catch (err) {
+        // Don't fail the whole chat just because seed lookup failed -
+        // just proceed without seed context.
         console.error("Seed lookup failed for /api/ask:", err.message);
       }
     }
@@ -470,11 +491,19 @@ app.post("/api/ask", async (req, res) => {
     ? `\n\nRelevant Minecraft reference facts:\n${knowledgeChunks.map((c) => `- ${c}`).join("\n")}`
     : "";
 
+  // If the top matched fact is a recipe, parse it into a structured grid so
+  // the frontend can render an actual visual diagram alongside the answer.
   const craftingVisual = parseRecipeFact(knowledgeChunks[0] || "");
   if (craftingVisual && craftingVisual.shape) {
     craftingVisual.shape = padShapeTo3x3(craftingVisual.shape);
   }
 
+  // Testing showed the local LLM would sometimes describe recipes
+  // incorrectly, even when given the correct data (e.g. omitting a stick,
+  // or describing an impossible layout). Rather than keep prompt-tuning
+  // around an unreliable model, confident recipe matches skip the LLM
+  // entirely and use a deterministic description generated directly from
+  // the same data that draws the diagram - guaranteed to match, and faster.
   if (craftingVisual) {
     return res.json({
       answer: generateRecipeAnswerText(craftingVisual),

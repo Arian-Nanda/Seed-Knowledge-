@@ -788,9 +788,20 @@ async function loadBlockOfTheDay() {
     }
     lines.push(`Stack size: ${b.stackSize}`);
     lines.push(`Light: ${b.transparent ? "Transparent (lets light through)" : "Opaque (blocks light)"}`);
-    if (b.lightLevel) lines.push(`Light emitted: ${b.lightLevel} (out of 15)`);
-    lines.push(`Collision: ${b.solid ? "Solid (blocks movement)" : "None (can walk through)"}`);
+    lines.push(`Light emitted: ${b.lightLevel || 0} (out of 15)`);
+    lines.push(`Block Type: ${b.solid ? "Solid (cannot walk through it)" : "Non-solid (can walk through it)"}`);
     botdDetails.innerHTML = lines.map((l) => `<div class="botd-row">${l}</div>`).join("");
+
+    // If this block has a known recipe, show it too - reuses the same
+    // crafting diagram function already built and tested for the chat.
+    if (b.recipe) {
+      const recipeLine = document.createElement("div");
+      recipeLine.className = "botd-row";
+      recipeLine.style.marginTop = "8px";
+      recipeLine.textContent = b.recipe.text;
+      botdDetails.appendChild(recipeLine);
+      renderCraftingVisual(botdDetails, b.recipe.visual);
+    }
 
     // Show the actual date, reinforcing that this genuinely updates daily.
     const dateObj = new Date(data.date + "T00:00:00");
