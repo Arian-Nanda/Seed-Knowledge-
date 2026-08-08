@@ -80,24 +80,6 @@
        (more reliable than the 2D skew/rotate hack). */
     transform: rotateX(-28deg) rotateY(35deg);
   }
-  .botd-image {
-    width: 64px;
-    height: 64px;
-    /* These are pixel-art textures - smooth scaling would blur them. */
-    image-rendering: pixelated;
-    border: 2px solid rgba(0,0,0,0.2);
-    border-radius: 4px;
-  }
-  .botd-credit {
-    margin-top: 10px;
-    font-size: 0.7rem;
-    color: #7a3fb0;
-    opacity: 0.75;
-  }
-  .botd-credit a {
-    color: #7a3fb0;
-    font-weight: 700;
-  }
   .botd-face {
     position: absolute;
     width: 64px;
@@ -560,11 +542,9 @@
       <div class="botd-face botd-face-front" id="botdFaceFront"></div>
       <div class="botd-face botd-face-side" id="botdFaceSide"></div>
     </div>
-    <img class="botd-image" id="botdImage" style="display: none;">
   </div>
   <div class="botd-name" id="botdName">Loading...</div>
   <div class="botd-details" id="botdDetails"></div>
-  <div class="botd-credit">Block textures from <a href="https://faithfulpack.net" target="_blank" rel="noopener">Faithful</a>, used under their license.</div>
 </div>
 
 <div class="platform-row">
@@ -652,7 +632,6 @@ const botdCube = document.getElementById("botdCube");
 const botdFaceTop = document.getElementById("botdFaceTop");
 const botdFaceFront = document.getElementById("botdFaceFront");
 const botdFaceSide = document.getElementById("botdFaceSide");
-const botdImage = document.getElementById("botdImage");
 
 // Derives a themed color + surface detail for a block's name via keyword
 // matching - color blocks (wool, concrete, etc.) use their actual named
@@ -783,17 +762,7 @@ async function loadBlockOfTheDay() {
     }
     const b = data.block;
     botdName.textContent = b.name;
-
-    if (b.imageUrl) {
-      botdCube.style.display = "none";
-      botdImage.src = b.imageUrl;
-      botdImage.alt = b.name;
-      botdImage.style.display = "block";
-    } else {
-      botdImage.style.display = "none";
-      botdCube.style.display = "";
-      setCubeColor(b.name);
-    }
+    setCubeColor(b.name);
 
     const lines = [];
     // A hardness of -1 is Minecraft's own convention for "unbreakable"
@@ -818,9 +787,9 @@ async function loadBlockOfTheDay() {
       if (b.harvestTools) lines.push(`Harvestable with: ${b.harvestTools.join(", ")}`);
     }
     lines.push(`Stack size: ${b.stackSize}`);
-    lines.push(b.transparent ? "Light passes through it" : "Blocks light");
-    if (b.lightLevel) lines.push(`Emits light level ${b.lightLevel} (out of 15)`);
-    lines.push(b.solid ? "Solid - blocks movement" : "No collision - can walk through it");
+    lines.push(`Light: ${b.transparent ? "Transparent (lets light through)" : "Opaque (blocks light)"}`);
+    if (b.lightLevel) lines.push(`Light emitted: ${b.lightLevel} (out of 15)`);
+    lines.push(`Collision: ${b.solid ? "Solid (blocks movement)" : "None (can walk through)"}`);
     botdDetails.innerHTML = lines.map((l) => `<div class="botd-row">${l}</div>`).join("");
 
     // Show the actual date, reinforcing that this genuinely updates daily.
