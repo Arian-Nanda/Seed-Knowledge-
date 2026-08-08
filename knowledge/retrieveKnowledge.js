@@ -134,6 +134,9 @@ function retrieveContext(userMessage, topN = 3) {
 
   // Step 2: fill remaining slots with normal keyword-overlap scoring
   // (skipping whatever we already picked above, to avoid duplicates).
+  const LOCATION_INTENT_WORDS = ["where", "find", "generate", "generates", "located", "spawn", "get"];
+  const hasLocationIntent = LOCATION_INTENT_WORDS.some((w) => rawLower.includes(w));
+
   const scored = MINECRAFT_KNOWLEDGE.map((chunk, i) => {
     if (i === bestRecipeIdx && results.length > 0) return { chunk, score: -1 };
     let score = 0;
@@ -150,6 +153,13 @@ function retrieveContext(userMessage, topN = 3) {
           score += 0.5;
         }
       }
+    }
+    // "Where can I find X" questions specifically want structure-loot
+    // facts (which structures contain X), not just any fact mentioning X -
+    // without this, ties with older facts (like plain item stats) were
+    // winning simply due to appearing earlier in the knowledge base.
+    if (hasLocationIntent && chunk.includes("(structure loot)") && score > 0) {
+      score += 1;
     }
     return { chunk, score };
   });
