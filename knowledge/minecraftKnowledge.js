@@ -4593,7 +4593,7 @@ const MINECRAFT_KNOWLEDGE = [
   "Trial Chambers building materials (structure architecture): commonly built from Tuff Bricks, Polished Tuff, Waxed Block of Copper, Waxed Oxidized Copper, Chiseled Tuff Bricks, Waxed Oxidized Cut Copper, Waxed Copper Grate, Water, Waxed Copper Bulb, Jigsaw Block, Waxed Oxidized Cut Copper Stairs, Powder Snow, Chiseled Tuff, Waxed Chiseled Copper, Ladder.",
   "Ocean Ruin building materials (structure architecture): commonly built from Gravel, Sand, Stone Bricks, Cracked Stone Bricks, Mossy Stone Bricks, Cut Sandstone, Chiseled Stone Bricks, Polished Granite, Mossy Cobblestone, Structure Block, Magma Block, Stone Brick Stairs, Dark Oak Planks, Chiseled Sandstone, Spruce Planks.",
   "Village building materials (structure architecture): commonly built from Dirt Path, Cobblestone, Grass Block, Smooth Sandstone, Dirt, Spruce Log, Oak Stairs, Spruce Planks, Oak Planks, Jigsaw Block, Acacia Stairs, Sand, Snow, Oak Log, Acacia Planks.",
-  "Woodland Mansion building materials (structure architecture): commonly built from Birch Planks, Cobblestone, Dark Oak Planks, Oak Planks, Dark Oak Log, Cobblestone Stairs, Oak Stairs, Red Carpet, Oak Slab, Polished Andesite, Oak Fence, Light Gray Wool, Dark Oak Stairs, Bookshelf, White Wool."
+  "Woodland Mansion building materials (structure architecture): commonly built from Birch Planks, Cobblestone, Dark Oak Planks, Oak Planks, Dark Oak Log, Cobblestone Stairs, Oak Stairs, Red Carpet, Oak Slab, Polished Andesite, Oak Fence, Light Gray Wool, Dark Oak Stairs, Bookshelf, White Wool, Blocks of Labiz, Blocks of Diamond."
 ];
 
 module.exports = { MINECRAFT_KNOWLEDGE };
