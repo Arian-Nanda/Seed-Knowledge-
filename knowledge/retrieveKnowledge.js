@@ -143,6 +143,11 @@ function retrieveContext(userMessage, topN = 3) {
   const NATURAL_GEN_INTENT_WORDS = ["height", "biome", "biomes", "naturally", "y level", "ylevel", "underground", "ore"];
   const hasNaturalGenIntent = NATURAL_GEN_INTENT_WORDS.some((w) => rawLower.includes(w));
 
+  // Signals someone wants to know what a STRUCTURE is physically built
+  // from (walls/floors), not what's in its treasure chests.
+  const ARCHITECTURE_INTENT_WORDS = ["built", "build", "made of", "made from", "make up", "makes up", "material", "materials", "constructed", "walls"];
+  const hasArchitectureIntent = ARCHITECTURE_INTENT_WORDS.some((w) => rawLower.includes(w));
+
   const scored = MINECRAFT_KNOWLEDGE.map((chunk, i) => {
     if (i === bestRecipeIdx && results.length > 0) return { chunk, score: -1 };
     let score = 0;
@@ -171,6 +176,11 @@ function retrieveContext(userMessage, topN = 3) {
     // questions (height/biome/etc.), so these win over structure loot
     // when the question is clearly about world generation, not chests.
     if (hasNaturalGenIntent && chunk.includes("(natural generation)") && score > 0) {
+      score += 1.5;
+    }
+    // Similarly, "what is X built from" should win over structure loot
+    // facts for the same structure.
+    if (hasArchitectureIntent && chunk.includes("(structure architecture)") && score > 0) {
       score += 1.5;
     }
     return { chunk, score };

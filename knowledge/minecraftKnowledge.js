@@ -3,18 +3,23 @@
 // - Hand-written mechanic/mob-behavior facts
 // - Auto-generated facts from the "minecraft-data" npm package (MIT
 //   licensed, version 1.21.8): every block, item, recipe, food, enchantment
-// - Structure loot facts (Phase 1) and ore/block world-generation facts
-//   (Phase 2), both sourced from misode/mcmeta - a real, actively
-//   maintained mirror of Minecraft's official generated data (loot tables
-//   and world-generation configs straight from Mojang's own data generator
-//   tool, not guessed or AI-invented).
+// - Structure loot (Phase 1), ore/block world generation (Phase 2), and
+//   structure building materials (Phase 3) - all sourced from misode/mcmeta,
+//   a real, actively maintained mirror of Minecraft's official generated
+//   data (loot tables, world-generation configs, and structure NBT files
+//   straight from Mojang's own data generator tool).
 //
 // Honest notes:
 // - The hand-written facts were written from general knowledge and haven't
 //   been cross-checked against the current wiki.
-// - Natural-generation facts cover ore/mineral blocks and surface deposits
-//   (clay/sand/gravel) - not yet "which blocks physically build a
-//   structure" (a harder, binary-NBT-based extraction planned as Phase 3).
+// - Structure architecture facts cover the 12 structures that use real NBT
+//   templates (Igloo, Ancient City, Bastion, End City, Pillager Outpost,
+//   Ruined Portal, Shipwreck, Trail Ruins, Trial Chambers, Ocean Ruin,
+//   Village, Woodland Mansion) - some well-known structures (Desert
+//   Pyramid, Jungle Temple, Dungeons, Mineshafts, Strongholds, Ocean
+//   Monuments, Nether Fortresses) are built directly in Minecraft's game
+//   code rather than from a data template, so their block composition
+//   isn't available this way.
 // - A small number of very new/experimental items referenced in loot
 //   tables aren't in our items database yet, so their names are
 //   auto-formatted from their internal ID rather than a verified display name.
@@ -4576,7 +4581,19 @@ const MINECRAFT_KNOWLEDGE = [
   "Clay (natural generation): generates mainly as surface deposits (commonly near water), and occasionally underground (Y -64 to 256); occurs in most biomes.",
   "Deepslate Redstone Ore (natural generation): generates underground from Y -64 to 15; occurs in most biomes.",
   "Redstone Ore (natural generation): generates underground from Y -64 to 15; occurs in most biomes.",
-  "Sand (natural generation): generates as surface deposits (commonly near water); occurs in most biomes."
+  "Sand (natural generation): generates as surface deposits (commonly near water); occurs in most biomes.",
+  "Igloo building materials (structure architecture): commonly built from Stone Bricks, Snow Block, Mossy Stone Bricks, Stone, White Carpet, Cracked Stone Bricks, Chiseled Stone Bricks, Ladder, Infested Stone Bricks, Iron Bars, Torch, Light Gray Carpet, Infested Chiseled Stone Bricks, Red Carpet, Spruce Stairs.",
+  "Ancient City building materials (structure architecture): commonly built from Deepslate Bricks, Deepslate Tiles, Deepslate, Gray Wool, Deepslate Tile Stairs, Cobbled Deepslate, Polished Deepslate, Chiseled Deepslate, Gray Carpet, Polished Basalt, Dark Oak Planks, Glass Pane, Deepslate Brick Stairs, Deepslate Tile Slab, Candle.",
+  "Bastion Remnant building materials (structure architecture): commonly built from Polished Blackstone Bricks, Blackstone, Basalt, Cracked Polished Blackstone Bricks, Lava, Polished Blackstone Brick Stairs, Jigsaw Block, Polished Basalt, Blackstone Slab, Lantern, Chiseled Polished Blackstone, Block of Gold, Gilded Blackstone, Magma Block, Blackstone Stairs.",
+  "End City building materials (structure architecture): commonly built from Purpur Block, Purpur Stairs, End Stone Bricks, Purpur Pillar, Magenta Stained Glass, Purpur Slab, End Rod, Obsidian, Structure Block, Ladder, Magenta Banner, Chest, Brewing Stand, Dragon Head, Ender Chest.",
+  "Pillager Outpost building materials (structure architecture): commonly built from Dark Oak Planks, Birch Planks, Dark Oak Log, Cobblestone, Mossy Cobblestone, Dark Oak Fence, Vines, Dark Oak Slab, Dark Oak Stairs, Jigsaw Block, White Wool, Cobblestone Stairs, Mossy Cobblestone Stairs, White Banner, Cobblestone Wall.",
+  "Ruined Portal building materials (structure architecture): commonly built from Netherrack, Stone Bricks, Obsidian, Stone Brick Slab, Lava, Stone Brick Stairs, Iron Bars, Block of Gold, Chiseled Stone Bricks, Stone Slab, Chest, Stone, Smooth Stone Slab, Jigsaw Block, Stone Brick Wall.",
+  "Shipwreck building materials (structure architecture): commonly built from Oak Planks, Oak Stairs, Spruce Planks, Spruce Fence, Spruce Stairs, Spruce Slab, Oak Log, Oak Trapdoor, Oak Fence, Chest, Structure Block, Oak Slab, Oak Door.",
+  "Trail Ruins building materials (structure architecture): commonly built from Gravel, Mud Bricks, Bricks, White Terracotta, Cobblestone, Blue Terracotta, Cyan Terracotta, Red Terracotta, Orange Terracotta, Light Gray Terracotta, Mud Brick Stairs, Brown Terracotta, Jigsaw Block, Mud Brick Slab, Brick Slab.",
+  "Trial Chambers building materials (structure architecture): commonly built from Tuff Bricks, Polished Tuff, Waxed Block of Copper, Waxed Oxidized Copper, Chiseled Tuff Bricks, Waxed Oxidized Cut Copper, Waxed Copper Grate, Water, Waxed Copper Bulb, Jigsaw Block, Waxed Oxidized Cut Copper Stairs, Powder Snow, Chiseled Tuff, Waxed Chiseled Copper, Ladder.",
+  "Ocean Ruin building materials (structure architecture): commonly built from Gravel, Sand, Stone Bricks, Cracked Stone Bricks, Mossy Stone Bricks, Cut Sandstone, Chiseled Stone Bricks, Polished Granite, Mossy Cobblestone, Structure Block, Magma Block, Stone Brick Stairs, Dark Oak Planks, Chiseled Sandstone, Spruce Planks.",
+  "Village building materials (structure architecture): commonly built from Dirt Path, Cobblestone, Grass Block, Smooth Sandstone, Dirt, Spruce Log, Oak Stairs, Spruce Planks, Oak Planks, Jigsaw Block, Acacia Stairs, Sand, Snow, Oak Log, Acacia Planks.",
+  "Woodland Mansion building materials (structure architecture): commonly built from Birch Planks, Cobblestone, Dark Oak Planks, Oak Planks, Dark Oak Log, Cobblestone Stairs, Oak Stairs, Red Carpet, Oak Slab, Polished Andesite, Oak Fence, Light Gray Wool, Dark Oak Stairs, Bookshelf, White Wool."
 ];
 
 module.exports = { MINECRAFT_KNOWLEDGE };
