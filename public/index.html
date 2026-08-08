@@ -810,6 +810,9 @@ async function loadBlockOfTheDay() {
     lines.push(`Light: ${b.transparent ? "Transparent (lets light through)" : "Opaque (blocks light)"}`);
     lines.push(`Light emitted: ${b.lightLevel || 0} (out of 15)`);
     lines.push(`Block Type: ${b.solid ? "Solid (cannot walk through it)" : "Non-solid (can walk through it)"}`);
+    if (b.naturalGeneration) lines.push(`Natural generation: ${b.naturalGeneration}`);
+    if (b.structureLoot) lines.push(`Structure loot: ${b.structureLoot}`);
+    if (b.usedInStructures) lines.push(`Used to build: ${b.usedInStructures.join(", ")}`);
     botdDetails.innerHTML = lines.map((l) => `<div class="botd-row">${l}</div>`).join("");
 
     // If this block has a known recipe, show it too - reuses the same

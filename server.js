@@ -314,6 +314,41 @@ function getBlockOfTheDay() {
     }
   }
 
+  // If this item/block can be found as structure loot, include that fact
+  // (e.g. "Diamond can be found in the treasure chests of: ...").
+  const lootFact = MINECRAFT_KNOWLEDGE.find((f) => f.startsWith(`${block.name} (structure loot): `));
+  if (lootFact) {
+    block.structureLoot = lootFact.replace(`${block.name} (structure loot): `, "").replace(/\.$/, "");
+  }
+
+  // If this block naturally generates in the world (ores, clay, etc.),
+  // include that fact too.
+  const genFact = MINECRAFT_KNOWLEDGE.find((f) => f.startsWith(`${block.name} (natural generation): `));
+  if (genFact) {
+    block.naturalGeneration = genFact.replace(`${block.name} (natural generation): `, "").replace(/\.$/, "");
+  }
+
+  // Reverse lookup: does this block appear in any structure's list of
+  // common building materials? (These facts are keyed by structure name,
+  // not block name, so we search their content rather than their prefix.)
+  // Splits into exact list items rather than a naive substring check -
+  // otherwise searching for "Stone" would incorrectly match within
+  // "Cobblestone" or "Sandstone".
+  const usedInStructures = [];
+  for (const f of MINECRAFT_KNOWLEDGE) {
+    if (!f.includes("(structure architecture): ")) continue;
+    const materialsPart = f.split("commonly built from ")[1];
+    if (!materialsPart) continue;
+    const materialsList = materialsPart.replace(/\.$/, "").split(", ");
+    if (materialsList.includes(block.name)) {
+      const structureName = f.split(" building materials (structure architecture)")[0];
+      usedInStructures.push(structureName);
+    }
+  }
+  if (usedInStructures.length > 0) {
+    block.usedInStructures = usedInStructures;
+  }
+
   return block;
 }
 
