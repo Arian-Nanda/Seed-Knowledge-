@@ -137,6 +137,12 @@ function retrieveContext(userMessage, topN = 3) {
   const LOCATION_INTENT_WORDS = ["where", "find", "generate", "generates", "located", "spawn", "get"];
   const hasLocationIntent = LOCATION_INTENT_WORDS.some((w) => rawLower.includes(w));
 
+  // A stronger, more specific signal than plain "where/find" - these words
+  // unambiguously point at natural world-generation (not structure loot),
+  // e.g. "what height does X generate" or "what biomes have X".
+  const NATURAL_GEN_INTENT_WORDS = ["height", "biome", "biomes", "naturally", "y level", "ylevel", "underground", "ore"];
+  const hasNaturalGenIntent = NATURAL_GEN_INTENT_WORDS.some((w) => rawLower.includes(w));
+
   const scored = MINECRAFT_KNOWLEDGE.map((chunk, i) => {
     if (i === bestRecipeIdx && results.length > 0) return { chunk, score: -1 };
     let score = 0;
@@ -160,6 +166,12 @@ function retrieveContext(userMessage, topN = 3) {
     // winning simply due to appearing earlier in the knowledge base.
     if (hasLocationIntent && chunk.includes("(structure loot)") && score > 0) {
       score += 1;
+    }
+    // A more specific boost for genuinely natural-generation-flavored
+    // questions (height/biome/etc.), so these win over structure loot
+    // when the question is clearly about world generation, not chests.
+    if (hasNaturalGenIntent && chunk.includes("(natural generation)") && score > 0) {
+      score += 1.5;
     }
     return { chunk, score };
   });

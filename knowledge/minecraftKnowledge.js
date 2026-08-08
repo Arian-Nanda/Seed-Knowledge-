@@ -3,19 +3,21 @@
 // - Hand-written mechanic/mob-behavior facts
 // - Auto-generated facts from the "minecraft-data" npm package (MIT
 //   licensed, version 1.21.8): every block, item, recipe, food, enchantment
-// - Structure loot facts, sourced from misode/mcmeta (a real, actively
-//   maintained mirror of Minecraft's official generated data - loot tables
-//   straight from Mojang's own data generator tool, not guessed or
-//   AI-invented). Covers both "what's in this structure's chests" and the
-//   reverse lookup "where can I find this item/block".
+// - Structure loot facts (Phase 1) and ore/block world-generation facts
+//   (Phase 2), both sourced from misode/mcmeta - a real, actively
+//   maintained mirror of Minecraft's official generated data (loot tables
+//   and world-generation configs straight from Mojang's own data generator
+//   tool, not guessed or AI-invented).
 //
 // Honest notes:
 // - The hand-written facts were written from general knowledge and haven't
 //   been cross-checked against the current wiki.
+// - Natural-generation facts cover ore/mineral blocks and surface deposits
+//   (clay/sand/gravel) - not yet "which blocks physically build a
+//   structure" (a harder, binary-NBT-based extraction planned as Phase 3).
 // - A small number of very new/experimental items referenced in loot
-//   tables (things like copper tools added in later snapshots) aren't in
-//   our items database yet, so their names are auto-formatted from their
-//   internal ID rather than pulled from a verified display name list.
+//   tables aren't in our items database yet, so their names are
+//   auto-formatted from their internal ID rather than a verified display name.
 // - One field from the source data (food "saturation") was deliberately
 //   left out - it didn't match known real values.
 
@@ -4542,7 +4544,39 @@ const MINECRAFT_KNOWLEDGE = [
   "Wind Charge (structure loot): can be found in the treasure chests of: Trial Chambers.",
   "Wooden Axe (structure loot): can be found in the treasure chests of: Trial Chambers.",
   "Woodland Explorer Map (structure loot): can be found in the treasure chests of: Abandoned Camp.",
-  "Yellow Dye (structure loot): can be found in the treasure chests of: Village."
+  "Yellow Dye (structure loot): can be found in the treasure chests of: Village.",
+  "Deepslate Gold Ore (natural generation): generates underground from Y -64 to 256; occurs in most biomes.",
+  "Gold Ore (natural generation): generates underground from Y -64 to 256; occurs in most biomes.",
+  "Coal Ore (natural generation): generates underground from Y 0 to 320; occurs in most biomes.",
+  "Deepslate Coal Ore (natural generation): generates underground from Y 0 to 320; occurs in most biomes.",
+  "Copper Ore (natural generation): generates underground from Y -16 to 112; occurs in most biomes.",
+  "Deepslate Copper Ore (natural generation): generates underground from Y -16 to 112; occurs in most biomes.",
+  "Gravel (natural generation): generates mainly as surface deposits (commonly near water), and occasionally underground (Y -64 to 320); found in both the Overworld and the Nether; occurs in most biomes.",
+  "Soul Sand (natural generation): generates underground from Y 0 to 31; found only in the Nether; occurs specifically in: Soul Sand Valley.",
+  "Dirt (natural generation): generates mainly as surface deposits (commonly near water), and occasionally underground (Y 0 to 160); occurs in most biomes.",
+  "Blackstone (natural generation): generates underground from Y 5 to 31; found only in the Nether; occurs in most biomes.",
+  "Ancient Debris (natural generation): generates underground from Y 8 to 120; found only in the Nether; occurs in most biomes.",
+  "Deepslate Emerald Ore (natural generation): generates underground from Y -16 to 320; occurs specifically in: Cherry Grove, Frozen Peaks, Grove, Jagged Peaks, Meadow, Snowy Slopes, Stony Peaks, Windswept Forest, Windswept Gravelly Hills, Windswept Hills.",
+  "Emerald Ore (natural generation): generates underground from Y -16 to 320; occurs specifically in: Cherry Grove, Frozen Peaks, Grove, Jagged Peaks, Meadow, Snowy Slopes, Stony Peaks, Windswept Forest, Windswept Gravelly Hills, Windswept Hills.",
+  "Nether Gold Ore (natural generation): generates underground from Y 10 to 118; found only in the Nether; occurs in most biomes.",
+  "Diorite (natural generation): generates underground from Y 0 to 128; occurs in most biomes.",
+  "Andesite (natural generation): generates underground from Y 0 to 128; occurs in most biomes.",
+  "Granite (natural generation): generates underground from Y 0 to 128; occurs in most biomes.",
+  "Deepslate Iron Ore (natural generation): generates underground from Y -64 to 320; occurs in most biomes.",
+  "Iron Ore (natural generation): generates underground from Y -64 to 320; occurs in most biomes.",
+  "Nether Quartz Ore (natural generation): generates underground from Y 10 to 118; found only in the Nether; occurs in most biomes.",
+  "Infested Deepslate (natural generation): generates underground from Y -64 to 63; occurs specifically in: Cherry Grove, Frozen Peaks, Grove, Jagged Peaks, Meadow, Snowy Slopes, Stony Peaks, Windswept Forest, Windswept Gravelly Hills, Windswept Hills.",
+  "Infested Stone (natural generation): generates underground from Y -64 to 63; occurs specifically in: Cherry Grove, Frozen Peaks, Grove, Jagged Peaks, Meadow, Snowy Slopes, Stony Peaks, Windswept Forest, Windswept Gravelly Hills, Windswept Hills.",
+  "Deepslate Lapis Lazuli Ore (natural generation): generates underground from Y -64 to 64; occurs in most biomes.",
+  "Lapis Lazuli Ore (natural generation): generates underground from Y -64 to 64; occurs in most biomes.",
+  "Magma Block (natural generation): generates underground from Y 27 to 36; found only in the Nether; occurs in most biomes.",
+  "Tuff (natural generation): generates underground from Y -64 to 0; occurs in most biomes.",
+  "Deepslate Diamond Ore (natural generation): generates underground from Y -64 to 16; occurs in most biomes.",
+  "Diamond Ore (natural generation): generates underground from Y -64 to 16; occurs in most biomes.",
+  "Clay (natural generation): generates mainly as surface deposits (commonly near water), and occasionally underground (Y -64 to 256); occurs in most biomes.",
+  "Deepslate Redstone Ore (natural generation): generates underground from Y -64 to 15; occurs in most biomes.",
+  "Redstone Ore (natural generation): generates underground from Y -64 to 15; occurs in most biomes.",
+  "Sand (natural generation): generates as surface deposits (commonly near water); occurs in most biomes."
 ];
 
 module.exports = { MINECRAFT_KNOWLEDGE };
