@@ -69,7 +69,7 @@ int main(int argc, char **argv)
     Pos spawn = getSpawn(&g);
 
     printf("{\n");
-    printf("  \"seed\": %" PRId64 ",\n", seed);
+    printf("  \"seed\": \"%" PRId64 "\",\n", seed);
     printf("  \"platform\": \"bedrock\",\n");
     printf("  \"spawn\": {\"x\": %d, \"z\": %d},\n", spawn.x, spawn.z);
     printf("  \"searchOrigin\": {\"x\": %d, \"z\": %d},\n", fromX, fromZ);

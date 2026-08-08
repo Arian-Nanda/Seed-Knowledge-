@@ -93,7 +93,7 @@ int main(int argc, char **argv)
     } while (remaining > 0 && checked < MAX_STRONGHOLDS_TO_CHECK);
 
     printf("{\n");
-    printf("  \"seed\": %" PRId64 ",\n", seed);
+    printf("  \"seed\": \"%" PRId64 "\",\n", seed);
     printf("  \"version\": \"%s\",\n", argv[2]);
     printf("  \"searchOrigin\": {\"x\": %d, \"z\": %d},\n", fromX, fromZ);
     printf("  \"strongholdsChecked\": %d,\n", checked);

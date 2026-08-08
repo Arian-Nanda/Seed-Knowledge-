@@ -603,6 +603,12 @@
     <div class="stronghold-result" id="strongholdResult"></div>
   </div>
 
+  <div class="stronghold-section" id="lootSection">
+    <p class="combo-hint">Predicts the exact loot in a nearby Shipwreck's chests for this seed - not just what's possible, but the specific items that will actually generate. (Java Edition only, Shipwreck only for now.)</p>
+    <button id="lootBtn">Predict Shipwreck Loot</button>
+    <div class="stronghold-result" id="lootResult"></div>
+  </div>
+
   <div class="compare-section">
     <div class="closest-pair" id="closestPair"></div>
 
@@ -1166,6 +1172,53 @@ async function findStronghold() {
 }
 
 strongholdBtn.addEventListener("click", findStronghold);
+
+const lootBtn = document.getElementById("lootBtn");
+const lootResult = document.getElementById("lootResult");
+
+async function predictLoot() {
+  if (!lastSearch) {
+    showError("Please search a seed first.");
+    return;
+  }
+  if (lastSearch.platform === "bedrock") {
+    lootResult.textContent = "Loot prediction isn't available for Bedrock yet.";
+    return;
+  }
+
+  lootBtn.disabled = true;
+  lootBtn.textContent = "Searching...";
+  lootResult.textContent = "";
+
+  const url = `/api/loot/${encodeURIComponent(lastSearch.seed)}?platform=${encodeURIComponent(lastSearch.platform)}&version=${encodeURIComponent(lastSearch.version)}`;
+
+  try {
+    const response = await fetch(url);
+    const data = await response.json();
+
+    if (!response.ok) {
+      lootResult.textContent = data.error || "Something went wrong.";
+      return;
+    }
+
+    const lines = [];
+    lines.push(`Found a Shipwreck (${data.isBeached ? "beached" : "in open water"}) at chunk (${data.chunkX}, ${data.chunkZ}):`);
+    for (const chest of data.chests) {
+      const itemsText = chest.items.length > 0
+        ? chest.items.map((it) => `${it.count}x ${it.name.replace(/_/g, " ")}`).join(", ")
+        : "(empty or not yet supported for this chest type)";
+      lines.push(`${chest.type.replace(/_/g, " ")} at X: ${chest.position.x}, Y: ${chest.position.y}, Z: ${chest.position.z} - ${itemsText}`);
+    }
+    lootResult.innerHTML = lines.map((l) => `<div>${l}</div>`).join("");
+  } catch (err) {
+    lootResult.textContent = "Could not reach the server. Please try again.";
+  } finally {
+    lootBtn.disabled = false;
+    lootBtn.textContent = "Predict Shipwreck Loot";
+  }
+}
+
+lootBtn.addEventListener("click", predictLoot);
 
 async function runComboSearch() {
   if (!lastSearch) {
