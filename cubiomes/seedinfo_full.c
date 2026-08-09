@@ -1,6 +1,14 @@
 // seedinfo_full.c
 // Given a seed and a Minecraft version, find the nearest instance of every
 // major structure type, across Overworld, Nether, and End.
+//
+// Parallelism strategy: rather than one thread per structure type (which is
+// unbalanced - some structures require far more grid checks than others),
+// the full search area for every structure is broken into small row-range
+// chunks. All chunks across all structures go into one shared work queue,
+// and worker threads (one per available CPU core) pull chunks from that
+// queue until it's empty. This keeps every core busy and avoids any single
+// structure type bottlenecking the whole search.
 #include "finders.h"
 #include "generator.h"
 #include <stdio.h>
@@ -8,6 +16,8 @@
 #include <string.h>
 #include <inttypes.h>
 #include <math.h>
+#include <pthread.h>
+#include <unistd.h>
 
 typedef struct {
     int type;
@@ -42,9 +52,28 @@ static StructureEntry STRUCTURES[] = {
 };
 
 #define NUM_STRUCTURES (int)(sizeof(STRUCTURES) / sizeof(STRUCTURES[0]))
+#define ROWS_PER_CHUNK 4  // how many region-rows each work unit covers
 
-// Maps a version string like "1.20" to the cubiomes MC_ constant.
-// Returns -1 if unrecognized.
+// A few structures are either placed at the chunk level (extremely dense)
+// or have a more expensive per-check cost than most other structures,
+// making the standard 20,000-block target needlessly slow. None of them
+// need a large radius to find one nearby. Applied consistently wherever
+// a structure's search radius is computed - the work-queue size
+// pre-calculation and the actual work-unit generation MUST agree, or the
+// queue array would overflow.
+static int getBlockRadiusFor(int structureType, int desiredBlockRadius) {
+    if (structureType == Treasure || structureType == Geode || structureType == End_Gateway) {
+        return desiredBlockRadius < 2000 ? desiredBlockRadius : 2000;
+    }
+    if (structureType == Monument || structureType == End_City) {
+        return desiredBlockRadius < 3000 ? desiredBlockRadius : 3000;
+    }
+    if (structureType == Desert_Well) {
+        return desiredBlockRadius < 5000 ? desiredBlockRadius : 5000;
+    }
+    return desiredBlockRadius;
+}
+
 static int parseVersion(const char *v) {
     if (strcmp(v, "1.0") == 0)  return MC_1_0;
     if (strcmp(v, "1.1") == 0)  return MC_1_1;
@@ -71,6 +100,97 @@ static int parseVersion(const char *v) {
     return -1;
 }
 
+static int64_t g_seed;
+static int g_mc;
+static int g_fromX, g_fromZ;
+static int g_desiredBlockRadius = 20000;
+
+typedef struct {
+    int found;
+    int x, z;
+    double bestDist; // squared distance, for comparison
+} StructureResult;
+static StructureResult results[NUM_STRUCTURES];
+static pthread_mutex_t resultMutex[NUM_STRUCTURES];
+
+// One unit of work: check a range of rows (rz values) for one structure type.
+typedef struct {
+    int structureIdx;
+    int regionBlocks;
+    int originRegX, originRegZ, searchRadius;
+    int rzStart, rzEnd; // inclusive range of rows to check
+} WorkUnit;
+
+static WorkUnit *workQueue;
+static int workQueueSize = 0;
+static int workQueueIndex = 0; // next unclaimed unit
+static pthread_mutex_t queueMutex = PTHREAD_MUTEX_INITIALIZER;
+
+void *worker(void *arg) {
+    (void)arg;
+    // Each worker thread needs its own Generator - not safe to share across threads.
+    Generator threadGenerators[NUM_STRUCTURES];
+    int generatorReady[NUM_STRUCTURES];
+    memset(generatorReady, 0, sizeof(generatorReady));
+
+    while (1) {
+        WorkUnit unit;
+        pthread_mutex_lock(&queueMutex);
+        if (workQueueIndex >= workQueueSize) {
+            pthread_mutex_unlock(&queueMutex);
+            break;
+        }
+        unit = workQueue[workQueueIndex];
+        workQueueIndex++;
+        pthread_mutex_unlock(&queueMutex);
+
+        StructureEntry *entry = &STRUCTURES[unit.structureIdx];
+
+        if (!generatorReady[unit.structureIdx]) {
+            setupGenerator(&threadGenerators[unit.structureIdx], g_mc, 0);
+            applySeed(&threadGenerators[unit.structureIdx], entry->dim, (uint64_t)g_seed);
+            generatorReady[unit.structureIdx] = 1;
+        }
+        Generator *g = &threadGenerators[unit.structureIdx];
+
+        int localFound = 0;
+        Pos localBestPos = {0, 0};
+        double localBestDist = -1;
+
+        for (int rz = unit.rzStart; rz <= unit.rzEnd; rz++) {
+            for (int rx = unit.originRegX - unit.searchRadius; rx <= unit.originRegX + unit.searchRadius; rx++) {
+                Pos p;
+                if (!getStructurePos(entry->type, g_mc, (uint64_t)g_seed, rx, rz, &p))
+                    continue;
+                if (!isViableStructurePos(entry->type, g, p.x, p.z, 0))
+                    continue;
+
+                double dx = p.x - g_fromX;
+                double dz = p.z - g_fromZ;
+                double dist = dx * dx + dz * dz;
+                if (localBestDist < 0 || dist < localBestDist) {
+                    localBestDist = dist;
+                    localBestPos = p;
+                    localFound = 1;
+                }
+            }
+        }
+
+        if (localFound) {
+            pthread_mutex_lock(&resultMutex[unit.structureIdx]);
+            StructureResult *out = &results[unit.structureIdx];
+            if (!out->found || localBestDist < out->bestDist) {
+                out->found = 1;
+                out->x = localBestPos.x;
+                out->z = localBestPos.z;
+                out->bestDist = localBestDist;
+            }
+            pthread_mutex_unlock(&resultMutex[unit.structureIdx]);
+        }
+    }
+    return NULL;
+}
+
 int main(int argc, char **argv)
 {
     if (argc < 3)
@@ -79,118 +199,113 @@ int main(int argc, char **argv)
         return 1;
     }
 
-    int64_t seed = strtoll(argv[1], NULL, 10);
-    int mc = parseVersion(argv[2]);
-    if (mc < 0)
+    g_seed = strtoll(argv[1], NULL, 10);
+    g_mc = parseVersion(argv[2]);
+    if (g_mc < 0)
     {
         fprintf(stderr, "Unknown version: %s\n", argv[2]);
         return 1;
     }
 
-    int fromX = 0;
-    int fromZ = 0;
+    g_fromX = 0;
+    g_fromZ = 0;
     if (argc >= 5)
     {
-        fromX = atoi(argv[3]);
-        fromZ = atoi(argv[4]);
+        g_fromX = atoi(argv[3]);
+        g_fromZ = atoi(argv[4]);
     }
 
-    Generator g;
-    setupGenerator(&g, mc, 0);
+    Generator spawnGen;
+    setupGenerator(&spawnGen, g_mc, 0);
+    applySeed(&spawnGen, DIM_OVERWORLD, (uint64_t)g_seed);
+    Pos spawn = getSpawn(&spawnGen);
 
-    applySeed(&g, DIM_OVERWORLD, (uint64_t)seed);
-    Pos spawn = getSpawn(&g);
+    int supported[NUM_STRUCTURES];
 
-    printf("{\n");
-    printf("  \"seed\": \"%" PRId64 "\",\n", seed);
-    printf("  \"version\": \"%s\",\n", argv[2]);
-    printf("  \"spawn\": {\"x\": %d, \"z\": %d},\n", spawn.x, spawn.z);
-    printf("  \"searchOrigin\": {\"x\": %d, \"z\": %d},\n", fromX, fromZ);
-    printf("  \"structures\": {\n");
-
-    int currentDim = 999;
-    int desiredBlockRadius = 20000;
-
-    for (int i = 0; i < NUM_STRUCTURES; i++)
-    {
-        StructureEntry *entry = &STRUCTURES[i];
-
+    // Build the full work queue up front: for every supported structure,
+    // split its search area into small row-chunks.
+    int maxPossibleUnits = 0;
+    for (int i = 0; i < NUM_STRUCTURES; i++) {
         StructureConfig sconf;
-        int supported = getStructureConfig(entry->type, mc, &sconf);
-
-        printf("    \"%s\": ", entry->name);
-
-        if (!supported)
-        {
-            // This structure type doesn't exist yet in the selected version.
-            printf("null");
-            if (i < NUM_STRUCTURES - 1) printf(",");
-            printf("\n");
-            continue;
-        }
-
-        if (entry->dim != currentDim)
-        {
-            applySeed(&g, entry->dim, (uint64_t)seed);
-            currentDim = entry->dim;
-        }
+        supported[i] = getStructureConfig(STRUCTURES[i].type, g_mc, &sconf);
+        pthread_mutex_init(&resultMutex[i], NULL);
+        results[i].found = 0;
+        if (!supported[i]) continue;
 
         int regionBlocks = sconf.regionSize * 16;
         if (regionBlocks <= 0) regionBlocks = 512;
+        int effectiveRadius = getBlockRadiusFor(STRUCTURES[i].type, g_desiredBlockRadius);
+        int searchRadius = (int)ceil((double)effectiveRadius / regionBlocks);
+        int totalRows = 2 * searchRadius + 1;
+        maxPossibleUnits += (totalRows + ROWS_PER_CHUNK - 1) / ROWS_PER_CHUNK;
+    }
 
-        // A few structures are either placed at the chunk level (extremely
-        // dense) or have a more expensive per-check cost than most other
-        // structures, making the standard 20,000-block target needlessly
-        // slow. None of them need a large radius to find one nearby.
-        int thisBlockRadius = desiredBlockRadius;
-        if (entry->type == Treasure || entry->type == Geode || entry->type == End_Gateway) {
-            thisBlockRadius = 2000;
-        } else if (entry->type == Monument || entry->type == End_City) {
-            thisBlockRadius = 3000;
-        } else if (entry->type == Desert_Well) {
-            thisBlockRadius = 5000;
+    workQueue = malloc(sizeof(WorkUnit) * maxPossibleUnits);
+    workQueueSize = 0;
+
+    for (int i = 0; i < NUM_STRUCTURES; i++) {
+        if (!supported[i]) continue;
+
+        StructureConfig sconf;
+        getStructureConfig(STRUCTURES[i].type, g_mc, &sconf);
+        int regionBlocks = sconf.regionSize * 16;
+        if (regionBlocks <= 0) regionBlocks = 512;
+        int effectiveRadius = getBlockRadiusFor(STRUCTURES[i].type, g_desiredBlockRadius);
+        int searchRadius = (int)ceil((double)effectiveRadius / regionBlocks);
+        int originRegX = (int)floor((double)g_fromX / regionBlocks);
+        int originRegZ = (int)floor((double)g_fromZ / regionBlocks);
+
+        for (int rzStart = originRegZ - searchRadius; rzStart <= originRegZ + searchRadius; rzStart += ROWS_PER_CHUNK) {
+            int rzEnd = rzStart + ROWS_PER_CHUNK - 1;
+            if (rzEnd > originRegZ + searchRadius) rzEnd = originRegZ + searchRadius;
+
+            WorkUnit unit;
+            unit.structureIdx = i;
+            unit.regionBlocks = regionBlocks;
+            unit.originRegX = originRegX;
+            unit.originRegZ = originRegZ;
+            unit.searchRadius = searchRadius;
+            unit.rzStart = rzStart;
+            unit.rzEnd = rzEnd;
+            workQueue[workQueueSize++] = unit;
         }
-        int searchRadius = (int)ceil((double)thisBlockRadius / regionBlocks);
+    }
 
-        int originRegX = (int)floor((double)fromX / regionBlocks);
-        int originRegZ = (int)floor((double)fromZ / regionBlocks);
+    // Detect available CPU cores at runtime, capped at a sane maximum.
+    long nCores = sysconf(_SC_NPROCESSORS_ONLN);
+    if (nCores < 1) nCores = 1;
+    if (nCores > 32) nCores = 32;
 
-        int found = 0;
-        Pos bestPos = {0, 0};
-        double bestDist = -1;
+    pthread_t *threads = malloc(sizeof(pthread_t) * nCores);
+    for (int i = 0; i < nCores; i++) {
+        pthread_create(&threads[i], NULL, worker, NULL);
+    }
+    for (int i = 0; i < nCores; i++) {
+        pthread_join(threads[i], NULL);
+    }
+    free(threads);
+    free(workQueue);
 
-        for (int rz = originRegZ - searchRadius; rz <= originRegZ + searchRadius; rz++)
+    printf("{\n");
+    printf("  \"seed\": \"%" PRId64 "\",\n", g_seed);
+    printf("  \"version\": \"%s\",\n", argv[2]);
+    printf("  \"spawn\": {\"x\": %d, \"z\": %d},\n", spawn.x, spawn.z);
+    printf("  \"searchOrigin\": {\"x\": %d, \"z\": %d},\n", g_fromX, g_fromZ);
+    printf("  \"structures\": {\n");
+
+    for (int i = 0; i < NUM_STRUCTURES; i++)
+    {
+        printf("    \"%s\": ", STRUCTURES[i].name);
+        if (supported[i] && results[i].found)
         {
-            for (int rx = originRegX - searchRadius; rx <= originRegX + searchRadius; rx++)
-            {
-                Pos p;
-                if (!getStructurePos(entry->type, mc, (uint64_t)seed, rx, rz, &p))
-                    continue;
-                if (!isViableStructurePos(entry->type, &g, p.x, p.z, 0))
-                    continue;
-
-                double dx = p.x - fromX;
-                double dz = p.z - fromZ;
-                double dist = dx * dx + dz * dz;
-                if (bestDist < 0 || dist < bestDist)
-                {
-                    bestDist = dist;
-                    bestPos = p;
-                    found = 1;
-                }
-            }
-        }
-
-        if (found)
-        {
-            double distance = sqrt(bestDist);
-            printf("{\"x\": %d, \"z\": %d, \"distance\": %.1f}", bestPos.x, bestPos.z, distance);
+            printf("{\"x\": %d, \"z\": %d, \"distance\": %.1f}",
+                results[i].x, results[i].z, sqrt(results[i].bestDist));
         }
         else
+        {
             printf("null");
-
-        if (i < NUM_STRUCTURES - 1)
-            printf(",");
+        }
+        if (i < NUM_STRUCTURES - 1) printf(",");
         printf("\n");
     }
 

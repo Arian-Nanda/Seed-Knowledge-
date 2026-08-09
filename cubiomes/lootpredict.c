@@ -36,6 +36,8 @@
 #include <string.h>
 #include <inttypes.h>
 #include <math.h>
+#include <unistd.h>
+#include <signal.h>
 
 // ============================================================================
 // Java Random (LCG) - identical to cubiomes' existing rng.h, restated here
@@ -362,6 +364,12 @@ static int generateLoot(int64_t lootSeed, const LootPool *table, int poolCount, 
 // ============================================================================
 
 int main(int argc, char **argv) {
+    // Hard safety net: this process kills ITSELF after 20 seconds no
+    // matter what, so a slow/stuck search can never accumulate as an
+    // orphaned process eating shared CPU/RAM on constrained hosting -
+    // regardless of whether Node's own timeout cleanly terminates it.
+    alarm(45);
+
     if (argc < 3) {
         fprintf(stderr, "Usage: %s <seed> <version> [chunkX chunkZ]\n", argv[0]);
         fprintf(stderr, "  If chunkX/chunkZ are omitted, searches near spawn for the nearest Shipwreck.\n");
@@ -381,6 +389,12 @@ int main(int argc, char **argv) {
         // Reuse cubiomes' own structure-finding to locate a real Shipwreck
         // near spawn, rather than requiring the caller to already know
         // where one is - this makes the tool usable on its own.
+        //
+        // Kept deliberately tight (6,000 blocks, hard iteration cap) - a
+        // huge search radius risks running long on constrained hosting
+        // (free-tier CPUs are dramatically slower than what this was
+        // developed against), and a request that hangs is worse than one
+        // that fails fast with a clear "try again" message.
         Generator g;
         setupGenerator(&g, mc, 0);
         applySeed(&g, DIM_OVERWORLD, (uint64_t)worldSeed);
@@ -391,9 +405,12 @@ int main(int argc, char **argv) {
         }
         int regionBlocks = sconf.regionSize * 16;
         int rMax = (int)ceil(20000.0 / regionBlocks);
+        const int MAX_CHECKS = 50000; // generous safety cap, far above what 20,000 blocks needs
+        int checksSoFar = 0;
         int found = 0;
-        for (int rz = -rMax; rz <= rMax && !found; rz++) {
-            for (int rx = -rMax; rx <= rMax && !found; rx++) {
+        for (int rz = -rMax; rz <= rMax && !found && checksSoFar < MAX_CHECKS; rz++) {
+            for (int rx = -rMax; rx <= rMax && !found && checksSoFar < MAX_CHECKS; rx++) {
+                checksSoFar++;
                 Pos p;
                 if (!getStructurePos(Shipwreck, mc, (uint64_t)worldSeed, rx, rz, &p)) continue;
                 if (!isViableStructurePos(Shipwreck, &g, p.x, p.z, 0)) continue;
@@ -403,7 +420,7 @@ int main(int argc, char **argv) {
             }
         }
         if (!found) {
-            printf("{\"error\": \"No Shipwreck found within 20,000 blocks of spawn.\"}\n");
+            printf("{\"error\": \"No Shipwreck found within 20,000 blocks of spawn. Try a different seed, or search for a Shipwreck's exact chunk position first.\"}\n");
             return 1;
         }
     }

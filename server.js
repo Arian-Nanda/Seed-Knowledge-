@@ -208,7 +208,7 @@ app.get("/api/stronghold/:seed", async (req, res) => {
 // 20,000 blocks of spawn.
 function runLootPredict(seed, version) {
   return new Promise((resolve, reject) => {
-    execFile(LOOTPREDICT_PATH, [seed, version], { timeout: 30000 }, (error, stdout, stderr) => {
+    execFile(LOOTPREDICT_PATH, [seed, version], { timeout: 50000 }, (error, stdout, stderr) => {
       if (error) {
         console.error("Error running lootpredict:", error, stderr);
         return reject(new Error("Failed to predict loot."));
