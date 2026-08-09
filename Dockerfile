@@ -24,7 +24,8 @@ RUN cd cubiomes && \
     gcc -O2 seedcombo.c libcubiomes.a -fwrapv -lm -lpthread -o seedcombo && \
     gcc -O2 seedinfo_full_bedrock.c Bfinders.c libcubiomes.a -fwrapv -lm -lpthread -o seedinfo_full_bedrock && \
     gcc -O2 seedcombo_bedrock.c Bfinders.c libcubiomes.a -fwrapv -lm -lpthread -o seedcombo_bedrock && \
-    gcc -O2 seedstronghold.c libcubiomes.a -fwrapv -lm -lpthread -o seedstronghold
+    gcc -O2 seedstronghold.c libcubiomes.a -fwrapv -lm -lpthread -o seedstronghold && \
+    gcc -O2 lootpredict.c libcubiomes.a -fwrapv -lm -lpthread -o lootpredict
 
 # The port our Node server listens on (matches server.js's PORT constant)
 EXPOSE 3000
