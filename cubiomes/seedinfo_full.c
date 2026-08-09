@@ -272,9 +272,19 @@ int main(int argc, char **argv)
     }
 
     // Detect available CPU cores at runtime, capped at a sane maximum.
+    // Detect available CPU cores, but cap conservatively - constrained
+    // hosting environments (like free-tier cloud containers) often report
+    // the HOST machine's full core count via sysconf, even when the
+    // actual allocated CPU is a tiny throttled slice (e.g. 0.1 of a
+    // core). Spawning many threads to compete over that sliver causes
+    // more OS scheduling overhead than actual progress - genuinely
+    // slower than using fewer threads, not faster. Capping at 2 is safe
+    // on real multi-core machines (still gets real parallelism) and
+    // avoids the over-threading trap on constrained single-core-equivalent
+    // hosting.
     long nCores = sysconf(_SC_NPROCESSORS_ONLN);
     if (nCores < 1) nCores = 1;
-    if (nCores > 32) nCores = 32;
+    if (nCores > 2) nCores = 2;
 
     pthread_t *threads = malloc(sizeof(pthread_t) * nCores);
     for (int i = 0; i < nCores; i++) {
