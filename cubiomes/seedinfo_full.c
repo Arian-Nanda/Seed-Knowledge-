@@ -35,6 +35,10 @@ static StructureEntry STRUCTURES[] = {
     {Bastion,        "bastionRemnant", DIM_NETHER},
     {Ruined_Portal_N,"ruinedPortalNether", DIM_NETHER},
     {End_City,       "endCity",        DIM_END},
+    {Treasure,       "buriedTreasure", DIM_OVERWORLD},
+    {Desert_Well,    "desertWell",     DIM_OVERWORLD},
+    {Geode,          "amethystGeode",  DIM_OVERWORLD},
+    {End_Gateway,    "endGateway",     DIM_END},
 };
 
 #define NUM_STRUCTURES (int)(sizeof(STRUCTURES) / sizeof(STRUCTURES[0]))
@@ -133,7 +137,20 @@ int main(int argc, char **argv)
 
         int regionBlocks = sconf.regionSize * 16;
         if (regionBlocks <= 0) regionBlocks = 512;
-        int searchRadius = (int)ceil((double)desiredBlockRadius / regionBlocks);
+
+        // A few structures are either placed at the chunk level (extremely
+        // dense) or have a more expensive per-check cost than most other
+        // structures, making the standard 20,000-block target needlessly
+        // slow. None of them need a large radius to find one nearby.
+        int thisBlockRadius = desiredBlockRadius;
+        if (entry->type == Treasure || entry->type == Geode || entry->type == End_Gateway) {
+            thisBlockRadius = 2000;
+        } else if (entry->type == Monument || entry->type == End_City) {
+            thisBlockRadius = 3000;
+        } else if (entry->type == Desert_Well) {
+            thisBlockRadius = 5000;
+        }
+        int searchRadius = (int)ceil((double)thisBlockRadius / regionBlocks);
 
         int originRegX = (int)floor((double)fromX / regionBlocks);
         int originRegZ = (int)floor((double)fromZ / regionBlocks);

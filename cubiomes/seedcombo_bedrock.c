@@ -1,14 +1,15 @@
-// seedcombo.c
-// Given a seed and a list of structure types, find the top 5 tightest
-// clusters (combinations with one instance of each requested type,
-// minimizing the maximum pairwise distance between them).
+// seedcombo_bedrock.c
+// Bedrock Edition version of seedcombo. Given a seed, a list of structure
+// types, and how many of each is wanted, find the top 5 tightest clusters.
+// Supports asking for multiple instances of the SAME structure type close
+// together (e.g. two Woodland Mansions), guaranteed to be distinct
+// physical structures, never the same one counted twice. Bedrock players
+// are always on the latest version, so no version argument is needed.
 //
 // Search strategy: tries a small radius first (fast). If any requested
 // structure type isn't found yet, automatically expands the search - but
 // only scans the NEW ring of area added by the larger radius, never
-// re-scanning ground already covered by a smaller tier. This gives the same
-// results as a single full scan at whichever radius succeeds, without
-// wasting time re-checking the same area multiple times.
+// re-scanning ground already covered by a smaller tier.
 #include "finders.h"
 #include "Bfinders.h"
 #include "generator.h"
@@ -48,20 +49,19 @@ static StructureEntry STRUCTURES[] = {
 };
 #define NUM_STRUCTURES (int)(sizeof(STRUCTURES) / sizeof(STRUCTURES[0]))
 
-#define MAX_TYPES 20
+#define MAX_TYPES 20   // distinct structure types requested
+#define MAX_SLOTS 30   // total instances requested (sum of counts)
 #define MAX_CANDIDATES 60
-#define MAX_RAW_CANDIDATES 2000
 #define COMBO_BUDGET 3000000.0
 #define TOP_N 5
 
-// The escalating search tiers, in blocks. Each tier only scans the new ring
-// of area beyond the previous tier - never re-scanning what's already covered.
 static const int TIERS[] = {20000, 40000, 60000, 80000, 100000};
 #define NUM_TIERS (int)(sizeof(TIERS) / sizeof(TIERS[0]))
 
-// Mineshafts are extremely dense and Bedrock's per-cell check is much more
-// computationally expensive than other structures, so cap its own search
-// target much lower - it doesn't need a large radius to find one nearby.
+// Mineshafts/Treasure are extremely dense and Bedrock's per-cell check is
+// much more computationally expensive than other structures, so cap their
+// search target much lower. Monument/End City aren't dense but are still
+// expensive per-check.
 #define DENSE_STRUCTURE_MAX_RADIUS 2000
 #define EXPENSIVE_STRUCTURE_MAX_RADIUS 3000
 
@@ -75,17 +75,22 @@ static int findStructureIndex(const char *name) {
 
 static Candidate rawCandidates[MAX_TYPES][MAX_CANDIDATES]; // kept sorted, bounded to K
 static int rawCount[MAX_TYPES];
-static int g_K = MAX_CANDIDATES; // set once numRequested is known
+static int g_K = MAX_CANDIDATES; // set once numSlots is known
 
 typedef struct { int x, z; } Point;
 static Point candidates[MAX_TYPES][MAX_CANDIDATES];
 static int candidateCount[MAX_TYPES];
-static int requestedIdx[MAX_TYPES];
-static int numRequested;
+
+static int requestedIdx[MAX_TYPES];    // distinct structure type indices
+static int requestedCounts[MAX_TYPES]; // how many instances wanted of each
+static int numRequested;               // number of DISTINCT types
+
+static int slotType[MAX_SLOTS]; // slot -> index into requestedIdx/requestedCounts
+static int numSlots;            // total instances requested (sum of counts)
 
 typedef struct {
     double spread;
-    Point points[MAX_TYPES];
+    Point points[MAX_SLOTS];
 } ComboResult;
 static ComboResult top5[TOP_N];
 static int top5Count = 0;
@@ -120,24 +125,28 @@ static double maxPairwiseDist(Point *pts, int n) {
     return best;
 }
 
-static Point currentCombo[MAX_TYPES];
+static Point currentCombo[MAX_SLOTS];
+// Tracks which candidate indices are already used for each DISTINCT type
+// within the combination currently being built, so multiple slots
+// requesting the same type never pick the identical physical structure twice.
+static int usedCandidate[MAX_TYPES][MAX_CANDIDATES];
 
 static void enumerate(int depth) {
-    if (depth == numRequested) {
-        double spread = numRequested == 1 ? 0 : maxPairwiseDist(currentCombo, numRequested);
-        tryInsertTop5(spread, currentCombo, numRequested);
+    if (depth == numSlots) {
+        double spread = numSlots == 1 ? 0 : maxPairwiseDist(currentCombo, numSlots);
+        tryInsertTop5(spread, currentCombo, numSlots);
         return;
     }
-    for (int i = 0; i < candidateCount[depth]; i++) {
-        currentCombo[depth] = candidates[depth][i];
+    int t = slotType[depth];
+    for (int i = 0; i < candidateCount[t]; i++) {
+        if (usedCandidate[t][i]) continue;
+        usedCandidate[t][i] = 1;
+        currentCombo[depth] = candidates[t][i];
         enumerate(depth + 1);
+        usedCandidate[t][i] = 0;
     }
 }
 
-// Scans a set of (rx, rz) region cells for one structure type. Maintains a
-// bounded set of the K nearest candidates found so far (sorted by distance),
-// so correctness never depends on how many total candidates exist in the
-// scanned area - even extremely dense structures are handled correctly.
 static void scanCells(Generator *g, StructureEntry *entry, int mc, int64_t seed,
                        int origX, int origZ, int rawIdx,
                        int rzFrom, int rzTo, int rxFrom, int rxTo) {
@@ -152,7 +161,6 @@ static void scanCells(Generator *g, StructureEntry *entry, int mc, int64_t seed,
 
             int n = rawCount[rawIdx];
             if (n < g_K) {
-                // Room to spare - insert in sorted position.
                 int j = n - 1;
                 while (j >= 0 && rawCandidates[rawIdx][j].dist > dist) {
                     rawCandidates[rawIdx][j+1] = rawCandidates[rawIdx][j];
@@ -163,7 +171,6 @@ static void scanCells(Generator *g, StructureEntry *entry, int mc, int64_t seed,
                 rawCandidates[rawIdx][j+1].dist = dist;
                 rawCount[rawIdx]++;
             } else if (dist < rawCandidates[rawIdx][g_K - 1].dist) {
-                // Full - only replace if this beats the current worst-of-K.
                 int j = g_K - 2;
                 while (j >= 0 && rawCandidates[rawIdx][j].dist > dist) {
                     rawCandidates[rawIdx][j+1] = rawCandidates[rawIdx][j];
@@ -179,7 +186,7 @@ static void scanCells(Generator *g, StructureEntry *entry, int mc, int64_t seed,
 
 int main(int argc, char **argv) {
     if (argc < 5) {
-        fprintf(stderr, "Usage: %s <seed> <originX> <originZ> <comma,separated,types>\n", argv[0]);
+        fprintf(stderr, "Usage: %s <seed> <originX> <originZ> <comma,separated,types> [comma,separated,counts]\n", argv[0]);
         return 1;
     }
 
@@ -192,10 +199,20 @@ int main(int argc, char **argv) {
     strncpy(typesCopy, argv[4], sizeof(typesCopy) - 1);
     typesCopy[sizeof(typesCopy) - 1] = '\0';
 
-    char *token = strtok(typesCopy, ",");
+    char countsCopy[512];
+    int haveCounts = (argc >= 6);
+    if (haveCounts) {
+        strncpy(countsCopy, argv[5], sizeof(countsCopy) - 1);
+        countsCopy[sizeof(countsCopy) - 1] = '\0';
+    }
+
+    char *typesSaveptr = NULL;
+    char *countsSaveptr = NULL;
+    char *token = strtok_r(typesCopy, ",", &typesSaveptr);
+    char *countToken = haveCounts ? strtok_r(countsCopy, ",", &countsSaveptr) : NULL;
     char missing[MAX_TYPES][64];
     int numMissing = 0;
-    int active[MAX_TYPES]; // 1 if this requested type is still viable to search
+    int active[MAX_TYPES];
 
     while (token && numRequested < MAX_TYPES) {
         int idx = findStructureIndex(token);
@@ -204,8 +221,15 @@ int main(int argc, char **argv) {
             return 1;
         }
         requestedIdx[numRequested] = idx;
+        int count = 1;
+        if (countToken) {
+            count = atoi(countToken);
+            if (count < 1) count = 1;
+            countToken = strtok_r(NULL, ",", &countsSaveptr);
+        }
+        requestedCounts[numRequested] = count;
         numRequested++;
-        token = strtok(NULL, ",");
+        token = strtok_r(NULL, ",", &typesSaveptr);
     }
 
     if (numRequested == 0) {
@@ -213,7 +237,20 @@ int main(int argc, char **argv) {
         return 1;
     }
 
-    g_K = (int)floor(pow(COMBO_BUDGET, 1.0 / numRequested));
+    for (int t = 0; t < numRequested; t++) {
+        for (int c = 0; c < requestedCounts[t]; c++) {
+            if (numSlots >= MAX_SLOTS) break;
+            slotType[numSlots] = t;
+            numSlots++;
+        }
+    }
+
+    if (numSlots == 0) {
+        fprintf(stderr, "No structure instances requested.\n");
+        return 1;
+    }
+
+    g_K = (int)floor(pow(COMBO_BUDGET, 1.0 / numSlots));
     if (g_K < 1) g_K = 1;
     if (g_K > MAX_CANDIDATES) g_K = MAX_CANDIDATES;
 
@@ -221,8 +258,6 @@ int main(int argc, char **argv) {
     setupGenerator(&g, mc, 0);
     int currentDim = 999;
 
-    // Upfront: check version support for every requested type. Anything
-    // unsupported can never be found regardless of radius - fail fast.
     StructureConfig sconfs[MAX_TYPES];
     for (int t = 0; t < numRequested; t++) {
         StructureEntry *entry = &STRUCTURES[requestedIdx[t]];
@@ -233,15 +268,17 @@ int main(int argc, char **argv) {
             strncpy(missing[numMissing], entry->name, 63);
             numMissing++;
         }
+        if (requestedCounts[t] > MAX_CANDIDATES) {
+            requestedCounts[t] = MAX_CANDIDATES;
+        }
     }
 
     int radiusUsed = TIERS[0];
     int tiersUsed = 1;
     int metThreshold = 0;
-    const double TIGHTNESS_THRESHOLD = 150.0; // blocks - only settle early if this tight
+    const double TIGHTNESS_THRESHOLD = 150.0;
 
     if (numMissing == 0) {
-        // Escalate through tiers, ring-scanning only the new area each time.
         for (int ti = 0; ti < NUM_TIERS; ti++) {
             for (int t = 0; t < numRequested; t++) {
                 StructureEntry *entry = &STRUCTURES[requestedIdx[t]];
@@ -266,7 +303,6 @@ int main(int argc, char **argv) {
                 int originRegZ = (int)floor((double)originZ / regionBlocks);
 
                 if (ti == 0) {
-                    // First tier: scan the full square directly.
                     scanCells(&g, entry, mc, seed, originX, originZ, t,
                         originRegZ - rNew, originRegZ + rNew,
                         originRegX - rNew, originRegX + rNew);
@@ -278,22 +314,20 @@ int main(int argc, char **argv) {
                         effectivePrevRadius = EXPENSIVE_STRUCTURE_MAX_RADIUS;
                     }
                     int rPrev = (int)ceil((double)effectivePrevRadius / regionBlocks);
-                    if (rNew <= rPrev) continue; // no new area at this tier for this type
+                    if (rNew <= rPrev) continue;
 
-                    // New ring = square of rNew minus square of rPrev, split
-                    // into 4 non-overlapping strips (top, bottom, left, right).
                     scanCells(&g, entry, mc, seed, originX, originZ, t,
                         originRegZ - rNew, originRegZ - rPrev - 1,
-                        originRegX - rNew, originRegX + rNew); // top
+                        originRegX - rNew, originRegX + rNew);
                     scanCells(&g, entry, mc, seed, originX, originZ, t,
                         originRegZ + rPrev + 1, originRegZ + rNew,
-                        originRegX - rNew, originRegX + rNew); // bottom
+                        originRegX - rNew, originRegX + rNew);
                     scanCells(&g, entry, mc, seed, originX, originZ, t,
                         originRegZ - rPrev, originRegZ + rPrev,
-                        originRegX - rNew, originRegX - rPrev - 1); // left
+                        originRegX - rNew, originRegX - rPrev - 1);
                     scanCells(&g, entry, mc, seed, originX, originZ, t,
                         originRegZ - rPrev, originRegZ + rPrev,
-                        originRegX + rPrev + 1, originRegX + rNew); // right
+                        originRegX + rPrev + 1, originRegX + rNew);
                 }
             }
 
@@ -302,12 +336,10 @@ int main(int argc, char **argv) {
 
             int allFound = 1;
             for (int t = 0; t < numRequested; t++) {
-                if (rawCount[t] == 0) { allFound = 0; break; }
+                if (rawCount[t] < requestedCounts[t]) { allFound = 0; break; }
             }
-            if (!allFound) continue; // keep escalating - some type has nothing yet
+            if (!allFound) continue;
 
-            // All types have at least one candidate - check if the tightest
-            // possible combination is actually close enough to settle for.
             for (int t = 0; t < numRequested; t++) {
                 candidateCount[t] = rawCount[t];
                 for (int i = 0; i < rawCount[t]; i++) {
@@ -315,6 +347,7 @@ int main(int argc, char **argv) {
                     candidates[t][i].z = rawCandidates[t][i].z;
                 }
             }
+            memset(usedCandidate, 0, sizeof(usedCandidate));
             top5Count = 0;
             enumerate(0);
 
@@ -322,12 +355,10 @@ int main(int argc, char **argv) {
                 metThreshold = 1;
                 break;
             }
-            // Otherwise keep escalating, even though every type technically
-            // has a candidate - we're still looking for a tighter cluster.
         }
 
         for (int t = 0; t < numRequested; t++) {
-            if (rawCount[t] == 0) {
+            if (rawCount[t] < requestedCounts[t]) {
                 strncpy(missing[numMissing], STRUCTURES[requestedIdx[t]].name, 63);
                 numMissing++;
             }
@@ -355,11 +386,22 @@ int main(int argc, char **argv) {
             printf("    {\n");
             printf("      \"spread\": %.1f,\n", top5[i].spread);
             printf("      \"structures\": {\n");
-            for (int t = 0; t < numRequested; t++) {
-                printf("        \"%s\": {\"x\": %d, \"z\": %d}%s\n",
-                    STRUCTURES[requestedIdx[t]].name,
-                    top5[i].points[t].x, top5[i].points[t].z,
-                    t < numRequested - 1 ? "," : "");
+            int instanceNum[MAX_TYPES] = {0};
+            for (int s = 0; s < numSlots; s++) {
+                int t = slotType[s];
+                const char *name = STRUCTURES[requestedIdx[t]].name;
+                instanceNum[t]++;
+                if (requestedCounts[t] > 1) {
+                    printf("        \"%s_%d\": {\"x\": %d, \"z\": %d}%s\n",
+                        name, instanceNum[t],
+                        top5[i].points[s].x, top5[i].points[s].z,
+                        s < numSlots - 1 ? "," : "");
+                } else {
+                    printf("        \"%s\": {\"x\": %d, \"z\": %d}%s\n",
+                        name,
+                        top5[i].points[s].x, top5[i].points[s].z,
+                        s < numSlots - 1 ? "," : "");
+                }
             }
             printf("      }\n");
             printf("    }%s\n", i < top5Count - 1 ? "," : "");
