@@ -58,6 +58,9 @@ function runSeedInfo(platform, seed, version, x, z) {
     execFile(binPath, args, { timeout: 30000 }, (error, stdout, stderr) => {
       const t1 = Date.now();
       console.log(`[TIMING] seedinfo process finished after ${t1 - t0}ms`);
+      if (stderr) {
+        console.log(`[MEMCHECK output]\n${stderr}`);
+      }
       if (error) {
         console.error("Error running seedinfo:", error, stderr);
         return reject(new Error("Failed to analyze seed."));
