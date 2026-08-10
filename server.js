@@ -26,6 +26,7 @@ const SEEDINFO_JAVA_PATH = path.join(__dirname, "cubiomes", "seedinfo_full");
 const SEEDINFO_BEDROCK_PATH = path.join(__dirname, "cubiomes", "seedinfo_full_bedrock");
 const SEEDCOMBO_JAVA_PATH = path.join(__dirname, "cubiomes", "seedcombo");
 const SEEDSTRONGHOLD_PATH = path.join(__dirname, "cubiomes", "seedstronghold");
+const LOOTPREDICT_PATH = path.join(__dirname, "cubiomes", "lootpredict");
 const SEEDCOMBO_BEDROCK_PATH = path.join(__dirname, "cubiomes", "seedcombo_bedrock");
 
 // Valid Minecraft versions this project supports (Java only - Bedrock always
@@ -201,6 +202,52 @@ app.get("/api/stronghold/:seed", async (req, res) => {
 
   try {
     const data = await runSeedStronghold(seed, version, x, z);
+    res.json(data);
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// Predicts the EXACT loot in a Shipwreck's chests for a given seed - not
+// just "what's possible" (our knowledge base facts already cover that),
+// but the specific items/counts that will actually generate. Currently
+// Shipwreck only, Java Edition only (see lootpredict.c for the full
+// scope/verification notes). Finds a real Shipwreck automatically within
+// 20,000 blocks of spawn.
+function runLootPredict(seed, version) {
+  return new Promise((resolve, reject) => {
+    execFile(LOOTPREDICT_PATH, [seed, version], { timeout: 50000 }, (error, stdout, stderr) => {
+      if (error) {
+        console.error("Error running lootpredict:", error, stderr);
+        return reject(new Error("Failed to predict loot."));
+      }
+      try {
+        resolve(JSON.parse(stdout));
+      } catch (parseError) {
+        console.error("Failed to parse lootpredict output:", stdout);
+        reject(new Error("Failed to parse loot prediction data."));
+      }
+    });
+  });
+}
+
+app.get("/api/loot/:seed", async (req, res) => {
+  const seed = req.params.seed;
+  const platform = req.query.platform || "java";
+  const version = req.query.version || "1.21";
+
+  if (!/^-?\d+$/.test(seed)) {
+    return res.status(400).json({ error: "Seed must be a valid integer." });
+  }
+  if (platform === "bedrock") {
+    return res.status(400).json({ error: "Loot prediction isn't available for Bedrock yet." });
+  }
+  if (!VALID_VERSIONS.includes(version)) {
+    return res.status(400).json({ error: "Unsupported version." });
+  }
+
+  try {
+    const data = await runLootPredict(seed, version);
     res.json(data);
   } catch (err) {
     res.status(500).json({ error: err.message });
