@@ -16,6 +16,14 @@ RUN npm install
 # Copy the rest of the project (source code, cubiomes folder, public files, etc.)
 COPY . .
 
+# Build libcubiomes.a fresh, every time - this is a required dependency
+# for every program below, but it was never actually being built by this
+# Dockerfile (and it's not tracked in git either, since compiled .a files
+# don't belong in source control). Whatever made builds succeed before
+# this was relying on something outside our control; this makes the build
+# fully self-contained and reproducible.
+RUN cd cubiomes && make release
+
 # Compile every C program fresh, directly in this build environment - safer
 # than reusing binaries built somewhere else (like the Codespace), since
 # this guarantees compatibility with wherever it's actually running.
