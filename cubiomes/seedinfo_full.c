@@ -193,6 +193,35 @@ void *worker(void *arg) {
 
 int main(int argc, char **argv)
 {
+    // Report the system's actual memory/CPU state the moment this program
+    // starts - printed to stderr so it shows up in Render's logs
+    // regardless of whether the search succeeds, giving us real data
+    // without depending on the Metrics dashboard.
+    {
+        FILE *meminfo = fopen("/proc/meminfo", "r");
+        if (meminfo) {
+            char line[256];
+            fprintf(stderr, "[MEMCHECK] --- /proc/meminfo at startup ---\n");
+            while (fgets(line, sizeof(line), meminfo)) {
+                if (strncmp(line, "MemTotal:", 9) == 0 || strncmp(line, "MemAvailable:", 13) == 0 ||
+                    strncmp(line, "MemFree:", 8) == 0 || strncmp(line, "SwapTotal:", 10) == 0 ||
+                    strncmp(line, "SwapFree:", 9) == 0) {
+                    fprintf(stderr, "[MEMCHECK] %s", line);
+                }
+            }
+            fclose(meminfo);
+        }
+        FILE *loadavg = fopen("/proc/loadavg", "r");
+        if (loadavg) {
+            char line[128];
+            if (fgets(line, sizeof(line), loadavg)) {
+                fprintf(stderr, "[MEMCHECK] /proc/loadavg: %s", line);
+            }
+            fclose(loadavg);
+        }
+        fflush(stderr);
+    }
+
     if (argc < 3)
     {
         fprintf(stderr, "Usage: %s <seed> <version> [fromX] [fromZ]\n", argv[0]);
@@ -277,11 +306,9 @@ int main(int argc, char **argv)
     // the HOST machine's full core count via sysconf, even when the
     // actual allocated CPU is a tiny throttled slice (e.g. 0.1 of a
     // core). Spawning many threads to compete over that sliver causes
-    // more OS scheduling overhead than actual progress - genuinely
-    // slower than using fewer threads, not faster. Capping at 2 is safe
-    // on real multi-core machines (still gets real parallelism) and
-    // avoids the over-threading trap on constrained single-core-equivalent
-    // hosting.
+    // more OS scheduling overhead than actual progress. Capping at 2 is
+    // safe on real multi-core machines and avoids the over-threading
+    // trap on constrained hosting.
     long nCores = sysconf(_SC_NPROCESSORS_ONLN);
     if (nCores < 1) nCores = 1;
     if (nCores > 2) nCores = 2;
