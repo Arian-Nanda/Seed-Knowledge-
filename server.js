@@ -26,7 +26,6 @@ const SEEDINFO_JAVA_PATH = path.join(__dirname, "cubiomes", "seedinfo_full");
 const SEEDINFO_BEDROCK_PATH = path.join(__dirname, "cubiomes", "seedinfo_full_bedrock");
 const SEEDCOMBO_JAVA_PATH = path.join(__dirname, "cubiomes", "seedcombo");
 const SEEDSTRONGHOLD_PATH = path.join(__dirname, "cubiomes", "seedstronghold");
-const LOOTPREDICT_PATH = path.join(__dirname, "cubiomes", "lootpredict");
 const SEEDCOMBO_BEDROCK_PATH = path.join(__dirname, "cubiomes", "seedcombo_bedrock");
 
 // Valid Minecraft versions this project supports (Java only - Bedrock always
@@ -52,13 +51,21 @@ function runSeedInfo(platform, seed, version, x, z) {
       args.push(x, z);
     }
 
+    const t0 = Date.now();
+    console.log(`[TIMING] Spawning seedinfo at t=0ms`);
+
     execFile(binPath, args, { timeout: 30000 }, (error, stdout, stderr) => {
+      const t1 = Date.now();
+      console.log(`[TIMING] seedinfo process finished after ${t1 - t0}ms`);
       if (error) {
         console.error("Error running seedinfo:", error, stderr);
         return reject(new Error("Failed to analyze seed."));
       }
       try {
-        resolve(JSON.parse(stdout));
+        const parsed = JSON.parse(stdout);
+        const t2 = Date.now();
+        console.log(`[TIMING] JSON parsed after ${t2 - t0}ms total (parse itself took ${t2 - t1}ms)`);
+        resolve(parsed);
       } catch (parseError) {
         console.error("Failed to parse output:", stdout);
         reject(new Error("Failed to parse seed data."));
@@ -200,53 +207,9 @@ app.get("/api/stronghold/:seed", async (req, res) => {
   }
 });
 
-// Predicts the EXACT loot in a Shipwreck's chests for a given seed - not
-// just "what's possible" (our knowledge base facts already cover that),
-// but the specific items/counts that will actually generate. Currently
-// Shipwreck only, Java Edition only (see lootpredict.c for the full
-// scope/verification notes). Finds a real Shipwreck automatically within
-// 20,000 blocks of spawn.
-function runLootPredict(seed, version) {
-  return new Promise((resolve, reject) => {
-    execFile(LOOTPREDICT_PATH, [seed, version], { timeout: 50000 }, (error, stdout, stderr) => {
-      if (error) {
-        console.error("Error running lootpredict:", error, stderr);
-        return reject(new Error("Failed to predict loot."));
-      }
-      try {
-        resolve(JSON.parse(stdout));
-      } catch (parseError) {
-        console.error("Failed to parse lootpredict output:", stdout);
-        reject(new Error("Failed to parse loot prediction data."));
-      }
-    });
-  });
-}
-
-app.get("/api/loot/:seed", async (req, res) => {
-  const seed = req.params.seed;
-  const platform = req.query.platform || "java";
-  const version = req.query.version || "1.21";
-
-  if (!/^-?\d+$/.test(seed)) {
-    return res.status(400).json({ error: "Seed must be a valid integer." });
-  }
-  if (platform === "bedrock") {
-    return res.status(400).json({ error: "Loot prediction isn't available for Bedrock yet." });
-  }
-  if (!VALID_VERSIONS.includes(version)) {
-    return res.status(400).json({ error: "Unsupported version." });
-  }
-
-  try {
-    const data = await runLootPredict(seed, version);
-    res.json(data);
-  } catch (err) {
-    res.status(500).json({ error: err.message });
-  }
-});
-
 app.get("/api/seed/:seed", async (req, res) => {
+  const requestStart = Date.now();
+  console.log(`[TIMING] /api/seed request received`);
   const seed = req.params.seed;
   const platform = req.query.platform || "java";
   const version = req.query.version || "1.21";
@@ -270,7 +233,9 @@ app.get("/api/seed/:seed", async (req, res) => {
 
   try {
     const data = await runSeedInfo(platform, seed, version, x, z);
+    console.log(`[TIMING] About to send response, ${Date.now() - requestStart}ms since request arrived`);
     res.json(data);
+    console.log(`[TIMING] Response sent, ${Date.now() - requestStart}ms total`);
   } catch (err) {
     res.status(500).json({ error: err.message });
   }
