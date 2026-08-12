@@ -1,0 +1,523 @@
+{{For}}
+{{About|the passive mob that collects items|the hostile mob summoned by evokers|Vex}}
+{{redirect|Fairy|the [[add-on]] mob|Majestic Camping Add-On#Fairy}}
+{{Infobox entity
+| image = Allay.gif
+| invimage = Allay Spawn Egg
+| introducedEventDate = 6-7-22
+| health = {{hp|20}}
+| behavior = Passive
+| size = Height: 0.6 blocks<br>Width: 0.35 blocks
+| speed = 0.4
+| spawn = {{EnvLink|Pillager Outpost}}<br>{{EnvLink|Woodland Mansion}}
+| usableitems = {{Drop|Item|Amethyst Shard}}<br>{{Drop|Item|Lead}}<br>{{Drop|Item|Name Tag}}<br>{{Drop|Env|Item|text=Any item}}
+}}
+
+An '''allay''' <!-- ({{Audio|AllayPronunciation.mp3|/əˈleɪ/|link2=''uh-ʟᴀʏ''}}) -->is a small flying [[passive mob]] that follows the [[player]] who has {{Control|use|text=given it}} an [[item]], or any [[note block]] instrument it has heard in the last 30 seconds. It searches for and collects [[Item (entity)|dropped instances]] of its held item and drops them near the player or note block it is currently following.
+
+== Spawning ==
+[[File:Two Allays Pillager Outpost.png|thumb|right|Two allays in a cage near a pillager outpost.]]
+[[File:Two allays.png|thumb|right|Two allays inside a woodland mansion cell.]]
+Allays spawn only during [[Seed (world generation)|world generation]], but they can also be duplicated; see {{Section link||Allay duplication}} below.
+
+Allays have a 50% chance of [[Mob spawning|spawn]]ing in dark oak cages near [[pillager outpost]]s in groups of 1-3.
+Allays also have a 50% chance to spawn inside jail cells within [[woodland mansion]]s in groups of 1-3.
+
+== Drops ==
+Upon death, allays drop the item they are holding. Besides this, allays drop no other items or experience.
+
+== Behavior ==
+The allay's luminous texture allows it to be seen clearly in the dark, although it doesn't illuminate its surroundings. With [[Vibrant Visuals]], allays are emissive and have a blue glow in the dark.
+
+The allay is small, peaceful, and flies aimlessly until a player gives it an [[item]] with their {{control|use}} key. The allay starts following the player and seeks out dropped versions of the same item to deliver them to the player. The allay returns to wandering around if any player takes its item back by {{control|using}} an empty hand on it.
+
+The allay locks onto the player who last gave it an item. This allay follows the player from within a 64-block radius sphere and seeks items within a 32-block radius sphere from the player. After delivering items, the allay has a delay of three seconds until it can seek items again. An allay has a single inventory slot to hold a [[Inventory#Slots|stack of items]] (usually 64 items) in addition to the item it got from the player. While the allay does not discern [[enchantment]]s, [[Anvil mechanics#Renaming|special item names]], or items in [[shulker box]]es when it seeks, it still carries such items in separate trips.
+
+Allays don't pick up any items if the [[game rule]] {{cmd|gamerule ''mobGriefing''}} is {{Cd|false}}, but the player can still give the allay items with the {{Control|use}} key. 
+
+If the allay hears a [[note block]] play within 16 blocks of its location while delivering items, it instead delivers its items to the note block. Then it spends 30 seconds around that particular note block, seeking items around it and returning them to it instead of its player. The allay returns to targeting its player after 30 seconds. A [[Particles#vibration|vibration particle]] emanates from the note block and reaches the allay to indicate that the allay has locked onto the note block. While an allay is focused on a note block, it responds only to sound from that note block, which resets the time until the allay loses interest. This in principle allows allays to focus on a single note block while other note blocks are playing in the vicinity, thus allowing many allays to work in parallel with different note blocks. Because the allay and the note block interact via a vibration particle, placing [[wool]] between the note block and the allay can prevent this sound [[Sculk Sensor#Vibration detection|interaction]]. 
+
+The allay can pick up items within a radius of about 1.3 blocks from itself and drop items up to 3 blocks away from its player or note block.
+
+An allay performs a dance animation when there is a nearby [[jukebox]] playing. If the jukebox stops playing or if the allay gets too far away from the jukebox, it stops dancing.
+
+The allay cannot enter water, although it attempts to gather underwater items. 
+
+Allays cannot be harmed by their interacting owners. If they are harmed by another source, they fly away for a few seconds. When killed, allays drop the items they were holding. If an allay dies while holding a [[totem of undying]], it instead returns to full health and the totem is destroyed, as with any mob holding a totem of undying. Allays naturally regenerate {{hp|2}} per second if damaged.
+
+{{IN|Java}}, {{Control|using}} a named [[name tag]] performs the item's normal function, and it's impossible to give it to the allay. However, tethering allay to a fence {{Control|using}} a [[lead]] will allow the player to give it to it. {{IN|Bedrock}}, {{Control|using}} a lead or a named name tag gives it to the allay, and the player can trigger the item's normal function by {{Control|sneaking}}.
+
+Despite being flying mobs, allays can destroy [[turtle egg]]s when on top of them.<ref>{{bug|MC-248332||Bees, ghasts, phantoms, and allays can destroy turtle eggs}}</ref>
+
+=== Allay duplication ===
+[[File:Allay breeding.png|thumb|An allay duplicating.]]
+If an allay is given an [[amethyst shard]] while it is dancing due to a nearby [[jukebox]] playing any [[music disc]], it splits into two allays (itself and a new allay) and the amethyst shard is consumed. After duplication, both allays have a five-minute cooldown before being able to duplicate again. Allays do not have a baby form.
+
+When the duplication occurs, the second allay is freshly spawned in the same location as the allay being given the amethyst shard; it doesn't retain the original allay's attributes such as its custom name or attributes set via the use of [[commands]].
+
+=== Teleportation ===
+{{exclusive|bedrock|section=1}}
+When a player teleports through a [[nether portal]], the player's allay teleports to them, even if it does not enter the portal.
+
+When a player teleports through an [[end portal]], the allay teleports to [[the End]] only if a player gives the allay an item before teleporting and must be nearby the player as they teleport.
+
+Allays holding an item follow the player through a portal if they are 21 blocks horizontally from the player or if they are within 22 blocks vertically of the player's legs. Allays do not travel through portals regardless of how close they are if they are tethered to a fence with a [[lead]].
+
+{{clear}}<!--clear stops the table below from trying to squish up around the picture-->
+
+== Sounds ==
+{{JE}}:
+{{SoundTable
+| type = java
+| {{SoundLine
+| sound =Allay idle with item1.ogg
+|sound2=Allay idle with item2.ogg
+|sound3=Allay idle with item3.ogg
+|sound4=Allay idle with item4.ogg
+|description=Randomly while holding an item
+|subtitle=Allay seeks
+|source=neutral
+|id=entity.allay.ambient_with_item
+|translationkey=subtitles.entity.allay.ambient_with_item
+|volume=0.12
+|pitch=1.0-1.5
+|distance=16}}
+| {{SoundLine
+|sound=Allay idle without item1.ogg
+|sound2=Allay idle without item2.ogg
+|sound3=Allay idle without item3.ogg
+|sound4=Allay idle without item4.ogg
+|description=Randomly while not holding an item
+|subtitle=Allay yearns
+|source=neutral
+|id=entity.allay.ambient_without_item
+|translationkey=subtitles.entity.allay.ambient_without_item
+|volume=0.1
+|pitch=0.8-1.2
+|distance=16}}
+| {{SoundLine
+|sound=Allay death1.ogg
+|sound2=Allay death2.ogg
+|subtitle=Allay dies
+|source=neutral
+|description=When an allay dies
+|id=entity.allay.death
+|translationkey=subtitles.entity.allay.death
+|volume=0.24
+|pitch=0.8-1.2
+|distance=16}}
+| {{SoundLine
+|sound=Allay hurt1.ogg
+|sound2=Allay hurt2.ogg
+|subtitle=Allay hurts
+|source=neutral
+|description=When an allay is damaged
+|id=entity.allay.hurt
+|translationkey=subtitles.entity.allay.hurt
+|volume=0.32
+|pitch=1.2-1.8
+|distance=16}}
+| {{SoundLine
+|sound=Allay item given1.ogg
+|sound2=Allay item given2.ogg
+|sound3=Allay item given3.ogg
+|sound4=Allay item given4.ogg
+|subtitle=Allay chortles
+|source=neutral
+|description=When an allay is given an item from a player
+|id=entity.allay.item_given
+|translationkey=subtitles.entity.allay.item_given
+|volume=0.2
+|pitch=1.0
+|distance=16}}
+| {{SoundLine
+|sound=Allay item taken1.ogg
+|sound2=Allay item taken2.ogg
+|sound3=Allay item taken3.ogg
+|sound4=Allay item taken4.ogg
+|description=When an allay's item is removed by a player
+|subtitle=Allay allays
+|source=neutral
+|id=entity.allay.item_taken
+|translationkey=subtitles.entity.allay.item_taken
+|volume=0.2
+|pitch=1.25
+|distance=16}}
+| {{SoundLine
+|sound=Allay item thrown1.ogg
+|subtitle=Allay tosses
+|source=neutral
+|description=When an allay throws an item
+|id=entity.allay.item_thrown
+|translationkey=subtitles.entity.allay.item_thrown
+|volume=0.25
+|pitch=''varies'' <ref group=sound>Can be 0.375, 0.5625, 0.625, 0.75, 1.0, 1.125, 1.25, 1.5, 1.875, 2.0, or 2.25</ref>
+|distance=16}}
+| {{SoundLine
+|sound=Amethyst shimmer.ogg
+|subtitle=Amethyst chimes
+|source=neutral
+|description=When an allay is duplicated
+|id=block.amethyst_block.chime
+|translationkey=subtitles.block.amethyst_block.chime
+|distance=16
+|volume=0.4
+| pitch = 1.0
+}}
+}}
+
+{{BE}}:
+{{SoundTable
+| type = bedrock
+| {{SoundLine
+| sound =Allay idle with item1.ogg
+|sound2=Allay idle with item2.ogg
+|sound3=Allay idle with item3.ogg
+|sound4=Allay idle with item4.ogg
+|source=neutral
+|description=Randomly while holding an item
+|id=mob.allay.idle_holding
+|translationkey=subtitles.entity.allay.ambient_with_item
+|subtitle=Allay seeks
+|volume=0.25
+|pitch=1.25}}
+| {{SoundLine
+|sound=Allay idle without item1.ogg
+|sound2=Allay idle without item2.ogg
+|sound3=Allay idle without item3.ogg
+|sound4=Allay idle without item4.ogg
+|source=neutral
+|description=Randomly while not holding an item
+|id=mob.allay.idle
+|translationkey=subtitles.entity.allay.ambient_without_item
+|subtitle=Allay yearns
+|volume=0.12
+|pitch=1.0}}
+| {{SoundLine
+|sound=Allay death1.ogg
+|sound2=Allay death2.ogg
+|source=neutral
+|description=When an allay dies
+|id=mob.allay.death
+|translationkey=subtitles.entity.allay.death
+|subtitle=Allay dies
+|volume=0.5
+|pitch=1.0}}
+| {{SoundLine
+|sound=Allay hurt1.ogg
+|sound2=Allay hurt2.ogg
+|source=neutral
+|description=When an allay is damaged
+|id=mob.allay.hurt
+|translationkey=subtitles.entity.allay.hurt
+|subtitle=Allay hurts
+|volume=0.5
+|pitch=1.0}}
+| {{SoundLine
+|sound=Allay item given1.ogg
+|sound2=Allay item given2.ogg
+|sound3=Allay item given3.ogg
+|sound4=Allay item given4.ogg
+|source=neutral
+|description=When an allay is given an item from a player
+|id=mob.allay.item_given
+|translationkey=subtitles.entity.allay.item_given
+|subtitle=Allay chortles
+|volume=0.1
+|pitch=1.0}}
+| {{SoundLine
+|sound=Allay item taken1.ogg
+|sound2=Allay item taken2.ogg
+|sound3=Allay item taken3.ogg
+|sound4=Allay item taken4.ogg
+|source=neutral
+|description=When an allay's item is removed by a player
+|id=mob.allay.item_taken
+|translationkey=subtitles.entity.allay.item_taken
+|subtitle=Allay allays
+|volume=0.1
+|pitch=1.25}}
+| {{SoundLine
+|sound=Allay item thrown1.ogg
+|source=neutral
+|description=When an allay throws an item
+|id=mob.allay.item_thrown
+|translationkey=subtitles.entity.allay.item_thrown
+|subtitle=Allay tosses
+|volume=0.3
+|pitch=''varies'' <ref group=sound>Can be 0.5, 0.5625, 0.625, 0.75, 0.9375, 1, 1.125, 1.25, 1.5, 1.875, 2, 2.25, 2.5, 3, 3.75, or 4</ref>}}
+| {{SoundLine
+|sound=Amethyst shimmer.ogg
+|source=block
+|description=When an allay is duplicated
+|id=chime.amethyst_block
+|translationkey=subtitles.block.amethyst_block.chime
+|subtitle=Amethyst chimes
+|volume=1.0
+| pitch = 0.5-1.7
+}}
+}}
+
+== Data values ==
+=== ID ===
+{{JE}}:
+{{ID table
+|edition=java
+|generatetranslationkeys=y
+|displayname=Allay
+|spritetype=entity
+|nameid=allay
+|showentitytags=y
+|entitytags=fall_damage_immune
+|foot=1}}
+
+{{BE}}:
+{{ID table
+|edition=bedrock
+|shownumericids=y
+|showentityfamily=y
+|entityfamily=allay,mob
+|generatetranslationkeys=y
+|displayname=Allay
+|spritetype=entity
+|nameid=allay
+|id=134
+|foot=1}}
+
+=== Entity data ===
+Allays have entity data associated with them that contain various properties.
+
+{{JE}}:
+{{main|Entity format}}
+<section begin="entity data"/><div class="treeview">
+* {{nbt|compound}} Entity data
+** {{nbt inherit/entity}}
+** {{nbt inherit/mob}}
+** {{nbt|long|DuplicationCooldown}}: The allay's duplication cooldown in ticks. This is set to {{convert|6000|game tick|minute}} when the allay duplicates.
+** {{nbt|list|Inventory}}: List of items the allay has picked up. This list can contain at most one compound tag. The item given by the player to the allay is stored in its {{cd|equipment.mainhand}} tag, not here.
+*** {{nbt inherit/itemnoslot}}
+** {{nbt|compound|listener}}: The vibration event listener of this allay.
+*** {{nbt|int|distance}}: Nonnegative integer.
+*** {{nbt|compound|event}}: Optional.
+**** {{nbt|int|distance}}: Nonnegative integer.
+**** {{nbt|string|game_event}}: A resource location of the game event.
+**** {{nbt|list|pos}}: Three doubles representing the X, Y, and Z coordinates.
+**** {{nbt|int-array|projectile_owner}}: Optional. The projectile owner's [[UUID]]. The 128-bit UUID is stored as four 32-bit integers, ordered from most to least significant.
+**** {{nbt|int-array|source}}: Optional. The source entity's [[UUID]]. The 128-bit UUID is stored as four 32-bit integers, ordered from most to least significant.
+*** {{nbt|int|event_delay}}: Nonnegative integer.
+*** {{nbt|int|event_distance}}: Nonnegative integer.
+*** {{nbt|int|range}}: Nonnegative integer.
+*** {{nbt|compound|source}}: Position source.
+**** {{nbt|string|type}}: A resource location of the position source type.
+**** For type {{cd|block}}
+***** {{nbt|int-array|pos}}: X, Y, and Z coordinates.
+**** For type {{cd|entity}}
+***** {{nbt|int-array|source_entity}}: The entity's [[UUID]]. The 128-bit UUID is stored as four 32-bit integers, ordered from most to least significant.
+***** {{nbt|float|y_offset}}:
+</div><section end="entity data"/>
+
+{{BE}}:
+: See [[Bedrock Edition level format/Entity format]].
+
+== Achievements ==
+{{load achievements|Birthday Song;Diamonds to you!}}
+
+Achievements that apply to all mobs:
+{{collapse|content={{load achievements|Overkill;Over-Overkill;Mob Kabob}}
+}}
+
+== Advancements ==
+{{load advancements|You've Got a Friend in Me;Birthday Song}}
+
+Advancements that apply to all mobs:
+{{collapse|content={{load advancements|Take Aim;Arbalistic;A Throwaway Joke;Adventure;Over-Overkill;Mob Kabob}}
+}}
+
+== Videos ==
+{{yt|XdxGwg7cgjw}}
+{{yt|IXu7yKUmBEw}}
+{{yt|1UL1MaWatIg}}
+
+== History ==
+=== Announcement ===
+{{HistoryTable
+|{{HistoryLine||September 4, 2021|link=https://x.com/_Ulraf_/status/1433889361913909292|The allay is teased as the next mob vote candidate by Ulraf through the use of emojis.}}
+|{{HistoryLine||October 12, 2021|link={{ytl|XdxGwg7cgjw}}|[[File:AllayPixel.png|32px]]The allay is announced as part of the mob vote for [[Minecraft Live 2021]].
+|Clarifications on the allay's behavior were made, revealing that they don't actually duplicate items or take items from chests.<ref>{{tweet|kingbdogz|1447945258743091200|Allays are not item duplicators, they pick up items nearby on the floor that are the same item it has been given. So you could give it a dirt block, then it finds dirt blocks that are dropped, collects them, then returns and drops them to the player or a note block.|October 12, 2021}}</ref><ref>{{tweet|kingbdogz|1447945260366286853|They cannot get items from chests either. Only dropped items. You could feasibly use this for item sorting if you make a cool contraption :D|October 12, 2021}}</ref>}}
+|{{HistoryLine||October 16, 2021|link={{ytl|DWZIfsaIgtE|t=7470}}|The allay wins the mob vote at Minecraft Live 2021.}}
+|{{HistoryLine||February 2, 2022|link=https://x.com/_Ulraf_/status/1488542661862735879|The first look of the allay in game is shown.}}
+}}
+
+=== ''Java Edition'' ===
+{{HistoryTable
+|{{HistoryLine|java}}
+|{{HistoryLine||1.19|dev=22w13a|[[File:Allay JE1 BE1.png|32px]] Added allays.}}
+|{{HistoryLine|||dev=22w15a|Allays now have natural regeneration, at a rate of {{hp|2}} per second.}}
+|{{HistoryLine|||dev=22w16a|Increased the health of allays from {{hp|10}} to {{hp|20}}.
+|Allays now drop the item they are holding upon death.}}
+|{{HistoryLine||1.19.1|dev=22w24a|Allays now dance near [[jukebox]]es that are playing music.
+|Allays can be duplicated by using an [[amethyst shard]] on a dancing allay.
+|The duplication cooldown for allays is 2{{frac|1|2}} minutes.}}
+|{{HistoryLine|||dev=pre1|The duplication cooldown for allays has been doubled to 5 minutes.}}
+|{{HistoryLine||1.19.3|dev=22w42a|[[File:Allay JE2 BE2.png|32px]] The bottom of the body and wings of the allay are now translucent.|The wings of the allay are now connected to its body.}}
+}}
+
+=== ''Bedrock Edition'' ===
+{{HistoryTable
+|{{HistoryLine|bedrock}}
+|{{HistoryLine||1.18.10|dev=beta 1.18.10.26|<code>allay</code> and <code>allay_spawn_egg</code> IDs are added to the game and referenced in the Bedrock Beta Addons Documentation.}}
+|{{HistoryLine||1.18.30|exp=Wild Update|dev=Preview 1.18.30.21|Added <code>feature_cage_with_allays</code> and updated <code>2x2_a1</code> structure components to pillager outposts and woodland mansions respectively. They do not yet generate.}} 
+|{{HistoryLine|||dev=Preview 1.18.30.23|[[File:Allay JE1 BE1.png|32px]] Added allays. Currently, allays make no idle sounds.
+|When they are hit, they make the same sound as the player.}}
+|{{HistoryLine|||dev=Preview 1.18.30.29|Allays are now immune to damage from their owner.
+|Allays no longer pick up item variants, although they do pick up identical items with different NBT data.}}
+|{{HistoryLine||1.19.0|dev=Preview 1.19.0.21|Allays are now available without enabling experimental gameplay.
+|Allays can be leashed with a lead and nametagged with a name tag while holding an item.}}
+|{{HistoryLine|||dev=Preview 1.19.0.25|Increased the health of allays from {{hp|16}} to {{hp|20}}.
+|Allays now have natural regeneration, going at a rate of {{hp|2}} per second.}}
+|{{HistoryLine||1.19.10|dev=Preview 1.19.10.20|Pickup range is changed from 64 to 32 blocks.}}
+|{{HistoryLine|||dev=Preview 1.19.10.22|Added allay duplication, making it possible to duplicate an allay with an [[amethyst shard]] and a [[jukebox]].}}
+|{{HistoryLine|||dev=Preview 1.19.10.24|Allays now have a 5 minute duplication cooldown.}}
+}}
+
+=== Data history ===
+{{HistoryTable
+|{{HistoryLine|java}}
+|{{HistoryLine||1.21.5|dev=25w07a|Removed the <code>CanDuplicate</code> field (controlled by <code>DuplicationCooldown</code>). Was a boolean that was set to <code>false</code> when the allay duplicate, and <code>true</code> when <code>DuplicationCooldown</code> reached 0.}}
+}}
+
+== Issues ==
+{{Issue list}}
+
+== Trivia == 
+* The allay was originally planned for the [[Nether Update]].<ref name="TSM Allay">{{ytl|IXu7yKUmBEw|The Secrets of Minecraft: The Allay|Minecraft|Mar 29, 2022}}</ref>
+* Some previous names considered for the allay were the wisp and the pixie.<ref name="TSM Allay">{{ytl|IXu7yKUmBEw|The Secrets of Minecraft: The Allay|Minecraft|Mar 29, 2022}}</ref>
+* The allays were created to solve the problem of how players would build structures and collect resources in {{MCL}} while focusing on defending the Overworld.<ref>{{ytl|iM9KtHaDcUg|Minecraft Live 2022 @ 57:19|Minecraft|October 15, 2022|t=3439}}</ref>
+* The reason why allay duplication uses amethyst shards is because the item is renewable, has a musical sound that fits with the allay, and it adds more value to [[amethyst geode]]s.<ref>{{Tweet|Badgerisi|1534925174394564615|Seen some questions as to why we landed om amethyst shards as the item for Allay duplication * They have a musical sound to them, which goes well with Allays * They are renewable, something we really wanted * The magical feeling of them resonates (pun intended) well with Allays|June 9, 2022}}</ref><ref>{{Tweet|Badgerisi|1534925320784052224|Also, adding extra value to the Geodes felt proper as well|June 9, 2022}}</ref>
+* According to the Meet the Allay article on [[Minecraft.net]], the reason why allays can be tamed by players is because they form a "magical connection" when that player gives it an item. This bond is what prevents players from accidentally harming their allay.<ref name="meet-allay">{{mcnet|meet-allay|Meet the Allay|May 27, 2022|Sophie Austin}}</ref>
+* Originally, Mojang considered having allays naturally spawn within [[forest]] biomes. However, the reason they went with [[pillager outpost]]s and [[woodland mansion]]s, was because they wanted to highlight the companionship aspect.<ref name="meet-allay"/>
+** This wound up being referenced in [[Minecraft Mash-Up]], where [[Beautiful blue allay|an allay]] is shown living in a birch forest.
+
+== Gallery ==
+=== Renders ===
+<gallery>
+File:Allay Hold.png|An allay holding an item.
+File:Allay Idle.gif|An allay idling.
+File:Allay Fly.gif|An allay flying.
+File:Allay Fly Different Angle.gif|An allay flying in a different angle.
+File:Allay Dancing.gif|An allay dancing.
+</gallery>
+
+=== Development images ===
+<gallery>
+Ulraf with Allay.jpg|The first in game image of the allay being teased in the top middle by Ulraf.
+Bedrock 1.18.30.22 PatchNotes.jpg|An allay in [[Bedrock Edition beta 1.18.30.22]].
+Allays In Savanna Outpost.jpg|A few allays trapped in a cage in a savanna outpost in Bedrock Edition.
+</gallery>
+
+=== Concept artwork ===
+<gallery class="pixel-image">
+File:Concept Allay 0.png|One of the early concepts for the allay. This concept of the allay turned into the [[MCD:Wisp|wisp]] from {{MCD}}.
+File:Concept Allay 1.png|Concept art of possible allay colors.
+File:Concept Allay 2.png|Various iterations of how the allay could carry items.
+File:Prototype Allay render.png|An early prototype of the allay. Its limbs resembles the [[MCD:Baby Ghast|baby ghast]] from ''Minecraft Dungeons''.
+File:Prototype Allay 0.png|Prototype allay design with particles.
+File:Prototype Allay 2.png|Prototype allay design with a different set of particles.
+File:Prototype Allay 1.png|Prototype allay holding a [[cookie]].
+File:Prototype Allay 3.png|An allay prototype with a model error, referred to as a '''blooper''' as a joke.
+File:Prototype Allay 4.gif|Allays tossing items on top of hoppers before the implementation of the note block mechanic.<ref name="TSM Allay">{{ytl|IXu7yKUmBEw|The Secrets of Minecraft: The Allay|Minecraft|Mar 29, 2022}}</ref>
+File:Prototype Allay 5.gif|Allays tossing items on top of hoppers.<ref name="TSM Allay"/>
+File:Allay Early Model Texture.png|Allay sticker showing its old model with thinner arms.
+File:AllayPixel.png|An allay as it appeared in the [[2021 Mob Vote|Mob Vote]] animations.
+File:Allay idle animation pixel art.gif|Allay idle animation
+File:Allay-winner.gif|The allay victory animation seen at [[Minecraft Live 2021]]
+File:Allay Vote.png|Allay from the mob vote video.
+File:MCLive2021MobVoteAllOptions.png|Mob vote image.
+File:Wisp.png|The [[MCD:Wisp|Wisp]], a precursor to the allay, featured in ''[[Minecraft Dungeons]]''. 
+</gallery>
+
+;Recreations
+<gallery class="pixel-image">
+WispError.png|A recreation of a bugged wisp prototype.
+Wisp3.png|A recreation of a wisp prototype.
+Wisp1.png|Ditto.
+Wisp0.png|Ditto.
+Wisp Particles.png|A recreation of the wisp particles.
+Allay Early Model Render.png|Allay early model recreation.
+</gallery>
+
+=== Screenshots ===
+<gallery>
+File:Allays in woodland mansion.png|Two allays trapped in a prison in a [[woodland mansion]].
+File:Allays in outpost cage.png|Some allays trapped in an outpost cage.
+File:Allays in outpost cage top down view.png|Top down view of some allays trapped in an outpost cage.
+File:Allaysmansionlargejailprison.png|A few allays trapped in a prison in a woodland mansion from inside.
+File:Allayandvexcomparation.png|Comparison between the allay and the [[vex]].
+File:Random Acts of Kindness Day.jpeg|[[Efe]] and an allay on {{w|Random Acts of Kindness Day}}
+</gallery>
+
+=== Textures ===
+<gallery class="pixel-image">
+Allay (texture).png|Allay texture file.
+</gallery>
+
+=== In other media ===
+<gallery>
+File:Wild key art.png|An allay in official artwork for [[The Wild Update]].
+File:Mobile Adventure 640x960.png|An allay following [[Alex]] in a boat.
+File:Merged Vex and Allay.jpg|Merged allay and vex.
+File:Mangrove Portal.jpg|An allay peeking into view of a [[spyglass]].
+File:Allay Swamp.jpg|An allay in a [[mangrove swamp]].
+File:New friends.gif|[[Noor]] gifting an allay a pair of [[glow berries]].
+File:Frog Allay Goat.gif|A [[frog]] and a [[goat]] following an allay.
+File:Looping allay.gif|An allay trapped in a cage.
+File:Allay animated sticker.gif|Allay artwork.
+File:Happy Allayday Allay.png|Pixel art of an allay holding a [[Christmas chest|present chest]].
+File:MC Wallpaper SereneSnow 3840x2160.png|An allay holding sweet berries as seen in ''[[Minecraft: Soothing Scenes]]'' snow and the ''[[Launcher]]''.
+File:Alex with Allay - Block Friday.png|Pixel artwork of Alex with several allays, for the yearly [[Marketplace|Block Friday]] sale.
+File:Allayday Alex and Sunny.jpeg|An extended version of the aforementioned banner, now featuring [[Sunny]] and a [[wolf]].
+File:Allay Hologram.png|Hologram of an allay in the [[Eerie Mojang Office Party]].
+File:LEGO Allay.png|''[[LEGO Minecraft]]'' allay.
+File:Red Allay Tank Top.png|An official allay tank top.
+File:White Allay Tank Top.png|A similar, white tank top.
+File:Magic Mobs (Allay and Vex) action figure.png|An [[Action figures|action figure]] of an allay with a vex.
+File:Allay Plastic.png|An allay in the [[Plastic Texture Pack]]
+File:MCL Allay Gatherer.png|A {{mcl|gather allay}} from {{MCL}}.
+File:MCL Allay Builder.png|A {{mcl|build allay}} from ''Minecraft Legends''.
+</gallery>
+
+== See also ==
+* {{EntityLink|Vex}}
+* {{DuEntityLink|Wisp}}
+* {{LegLink|Build Allay}}
+* {{LegLink|Gather Allay}}
+
+== Notes ==
+{{Notelist}}
+
+== References ==
+{{reflist}}
+
+== External links ==
+* {{Mcnet|meet-allay|Meet the Allay|May 27, 2022|Sophie Austin}}
+* {{Mcnet|mob-menagerie--allay|Mob Menagerie: Allay|April 6, 2023|Duncan Geere}}
+== Navigation ==
+{{Navbox entities|mobs}}
+
+[[Category:Passive mobs]]
+[[Category:Flying mobs]]
+[[Category:Animal mobs]]
+
+[[de:Hilfsgeist]]
+[[es:Allay]]
+[[fr:Allay]]
+[[it:Alleviante]]
+[[ja:アレイ]]
+[[ko:알레이]]
+[[lzh:悅靈]]
+[[pl:Otuszek]]
+[[pt:Allay]]
+[[ru:Тихоня]]
+[[tr:Allay]]
+[[uk:Збирик]]
+[[zh:悦灵]]

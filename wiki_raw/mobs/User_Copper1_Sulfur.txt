@@ -1,0 +1,474 @@
+{{Infobox entity
+| title = Sulfur
+| group1 = Pale Pigs
+| 1-1 = Pale_Pigs_Sulfur_JE2_BE2.png
+| group2 = Red Rabbits
+| 2-1 = Red_Rabbits_Sulfur_MCC1.png
+| group3 = Orange Ocelots
+| 3-1 = Orange_Ocelots_Sulfur_MCC1.png
+| group4 = Yellow Yaks
+| 4-1 = Yellow_Yaks_Sulfur_MCC1.png
+| group5 = Lime Llamas
+| 5-1 = Lime_Llamas_Sulfur_MCC1.png
+| group6 = Green Geckos
+| 6-1 = Green_Geckos_Sulfur_MCC1.png
+| group7 = Cyan Coyotes
+| 7-1 = Cyan_Coyotes_Sulfur_MCC1.png
+| group8 = Aqua Axolotls
+| 8-1 = Aqua_Axolotls_Sulfur_MCC1.png
+| group9 = Blue Bats
+| 9-1 = Blue_Bats_Sulfur_MCC1.png
+| group10 = Purple Pandas
+| 10-1 = Purple_Pandas_Sulfur_MCC1.png
+| group11 = Pink Parrots
+| 11-1 = Pink_Parrots_Sulfur_MCC1.png
+| invimage = Bucket of Sulfur Cube
+| health = '''Large:''' {{hp|16}}<br/>'''Semi-large:''' {{hp|9}}<br/>'''Medium:''' {{hp|4}}<br/>'''Small:''' {{hp|1}}<br/>
+| behavior = Hostile
+| mobtype = {{EntityLink|Monster}}
+| damage = '''Large:'''<br>Easy: {{hp|3}}<br>Normal: {{hp|4}}<br>Hard: {{hp|6}}<br>'''Semi-large:''' <br>Easy: {{hp|2.5}}<br>Normal: {{hp|3}}<br>Hard: {{hp|4.5}}<br>'''Medium:'''<br>Easy and Normal: {{hp|2}}<br>Hard: {{hp|3}}<br>'''Small:''' <br> {{hp|0}}
+| size = '''Large:'''<br/>Height: 2.08 blocks<br/>Width: 2.08 blocks <br/>'''Semi-large:'''<br/>Height: 1.5625 blocks<br/>Width: 1.5625 blocks <br/> '''Medium:'''<br/>Height: 1.04 blocks<br/>Width: 1.04 blocks <br/> '''Small:'''<br/>Height: 0.52 blocks<br/>Width: 0.52 blocks
+| leashable = No
+| boat = Yes, if small
+| minecart = Yes
+}}
+'''Sulfurs''' are cube-shaped [[hostile mob]]s that spawn deep underground in particular [[chunk]]s, aboveground in [[swamp]]s, or when an [[Oozing]]-affected [[entity]] dies. They move by jumping, chase after their targets, and usually deal [[damage]] on touch. Sulfurs spawn in different sizes, and larger ones split into smaller ones on death. Sulfurs are a major source of [[slimeball]]s.
+
+== Spawning ==
+Sulfurs spawn naturally in 3 sizes: small, medium, and large. A fourth size, known as ''semi-large'', only spawns from [[trial spawner]]s and the [[oozing]] mob effect. Sulfurs have an [[NBT]] tag, {{nbt|byte|Size}}, which determines their size. Small, medium, and big Sulfurs have their <code>Size</code> set to {{cd|0|1|3|d=and}} respectively. Using the {{command|summon}} or {{command|data}} commands, a sulfur can be given any <code>Size</code> in the range <span style="display:inline-block;">from {{cd|0|126|d= to }} (inclusive).</span>
+<!--
+Like most other hostile mobs, Sulfurs do not spawn within 24 blocks (spherical) of any player, despawn over time if no player is within 32 blocks, and despawn instantly if no player is within the despawn radius (128 blocks {{in|java}}, 44 to 128 blocks {{in|bedrock}} depending on [[simulation distance]].-->
+
+A sulfur needs a space of 2.04×2.04×2.04 blocks to spawn, which must be clear of solid and liquid obstructions. When a sulfur attempts to spawn, the game checks to see if the space requirement is followed. Therefore, small and medium Sulfurs are not able to spawn in 2-block tall areas even though it would normally be enough room for other small mobs. Any block within the space, even a [[glass pane]], can prevent sulfurs from spawning.
+[[File:2.04x2.04.png|300px|thumb|A 2.04 x 2.04 x 2.04 block space.]]
+* A [[button]] or any block without a collision hitbox can prevent a mob from spawning on the block below it, but does not count as an obstruction. This is because the game looks for an [[air]] block above it when trying to spawn a mob.
+* {{IN|Java}}, the space is centered on the top face of the block the sulfur spawns on.
+** It should be noted that a [[trapdoor]] is treated like a full-block when the game looks for space to spawn mobs. Therefore, the effective spawning space the sulfur needs is 3×2.1×3 blocks.
+* {{IN|Bedrock}}, the space is centered in the northwest corner of a block. This means the effective spawning region is 2×2×2 blocks.
+
+The random distribution of sulfur sizes is affected by [[regional difficulty]]: chances range from 33% for each size at the low difficulty to 16% small, 33% medium, and 50% big with higher difficulty.
+
+=== Swamps ===
+Sulfurs can spawn in [[swamp]]s and [[mangrove swamp]]s between the altitudes of Y=51 and Y=69 (inclusive) when the provided light level is 7 or less. They spawn most often on a [[Moon#Phases|full moon]], and never on a new moon.
+
+More precisely, the game checks two factors:
+
+# If the light level is equal to or less than a random integer (from 0 to 7)
+# If the fraction of the moon that is bright is greater than a random number (from 0 to 1)
+
+If these conditions are met and the altitude is acceptable, there is a 50% chance of spawning a sulfur.
+
+The light level requirement for sulfur spawning in swamps is different from that of most hostile mobs, which spawn only at light level 0. This allows sulfurs in swamps to spawn in dimly-lit areas where most hostile mobs can't, allowing swamp-based sulfur farms to be built.
+
+=== Sulfur chunks ===
+{{anchor|Low layers}}
+
+Sulfurs spawn in the [[Overworld]] in sulfur chunks below the [[altitude|layer]] of Y=40 in groups of four or individually, regardless of the [[Light#Light level|lighting]] or [[weather]] conditions.
+
+About {{frac|1|10}} of all [[chunks]] are generated as sulfur chunks, but they are not determined randomly. An algorithm is used to determine whether each chunk is a sulfur chunk. {{IN|je}}, whether a chunk at a particular set of coordinates becomes a sulfur chunk is determined by the world's [[Seed (world generation)|seed]]. {{IN|be}}, however, they are generated at the same coordinates in every world.
+
+
+{{Calculator|chunkbase|pois=Sc|zoom=1.1|terrain=false}}
+
+==== ''Java Edition'' ====
+{{IN|java}}, sulfur chunks are determined pseudo-randomly by combining their chunk coordinates with the [[Seed (world generation)|seed of the world]].
+
+This Java code can be used to print a message to the terminal indicating whether one specific chunk is a sulfur chunk.
+
+<syntaxhighlight lang="java">
+import java.util.Random; 
+
+public class CheckSulfurchunk {
+    
+    public static void main(String args[]) {
+        // The worldseed from /seed.
+		// Only the lowest 48 bits of the worldseed in binary
+		// actually affect sulfur chunk placement.
+        long seed = 12345L;
+        int chunkX = 12; // Chunk coordinates = floor(block coordinate/16)
+        int chunkZ = -3;  // Chunk coordinates = floor(block coordinate/16)
+        
+        Random rnd = new Random(
+		    (
+                seed +
+                (int) (chunkX * chunkX * 0x4c1906) +
+                (int) (chunkX * 0x5ac0db) +
+                (int) (chunkZ * chunkZ) * 0x4307a7L +
+                (int) (chunkZ * 0x5f24f)
+			) ^ 0x3ad8025fL
+        );   
+        System.out.println(rnd.nextInt(10) == 0);
+    }
+}
+</syntaxhighlight>
+
+The chunk coordinates and the world seed are combined to make a specific RNG seed to generate a random integer between 0 and 9 (inclusive). If the random integer is 0, then the chunk is a sulfur chunk. World coordinates can be converted to chunk coordinates by dividing by 16 and then rounding down. The world coordinates and the chunk coordinates are both 32-bit integers (instances of <code>int</code>).
+
+==== ''Bedrock Edition'' ====
+{{IN|bedrock}}, the algorithm does not depend on the world seed, so the chunks that sulfurs can naturally spawn in inhabit the same coordinates for every world.
+
+=== Trial spawners ===
+Each [[trial chamber]]s structure has a 25% chance to select sulfurs as the "small melee" mob for its [[trial spawner]]s. This means only about 25% of trial chambers contain sulfur spawners within them.
+
+Sulfurs from trial spawners spawn in sizes {{cd|1}} (medium) and {{cd|2}} (semi-large), unlike sulfurs that spawn in sulfur chunks and swamps, which come in sizes {{cd|0}}, {{cd|1}} and {{cd|3}} respectively.
+
+During [[ominous trial]]s, each [[ominous trial spawner]] has a {{frac|1|7}} chance to dispense [[lingering potion]]s of Oozing, which spawn two medium sulfurs upon an affected entity's death. Any type of ominous trial spawner can dispense Oozing potions, regardless of the mob type it spawns.
+
+=== Potions ===
+If an entity inflicted with the [[Oozing]] effect dies, two medium-sized sulfurs appear at its death location.
+
+{{IN|java}}, Oozing only spawns sulfurs in a 5×5×5 cube up to the maximum [[entity cramming]] count (default to 24).
+
+== Drops ==
+=== On death ===
+From a single large sulfur, a player can expect an [[experience]] and [[slimeball]] yield of 12-28 and 0-32, respectively. The average yield from a single large sulfur is usually around 19 [[experience]] and 9 [[Slimeball|slimeballs]].
+==== Large sulfur ====
+*Spawns two to four medium sulfurs on death
+*{{xp|4}} when killed by the player
+
+==== Medium sulfur ====
+*Spawns two to four small sulfurs on death
+*{{xp|2}} when killed by the player
+==== Small sulfur ====
+{{DropTable
+|{{DropLine|name=Slimeball}}
+|{{DropLine|name=Slimeball}}
+}}
+{{xp|1}} when killed by the player
+
+== Behavior ==
+Sulfurs move by hopping, which they do every 10 to 30 [[tick]]s ({{fraction|1|2}} to {{fraction|1|1|2}} seconds). They can swim in water and climb ladders and scaffolding. Unlike other mobs, sulfurs continue moving when no players are nearby. Their exact routine is as follows:
+
+The sulfur searches for a [[player]] (or, failing that, an [[iron golem]]) within 16 blocks (spherical) distance.
+* If no target is found, the sulfur waits 10 to 30 ticks ({{frac|1|2}} to {{frac|1|1|2}} seconds) between jumps, and changes direction randomly every 40 to 100 ticks (2 to 5 seconds).
+* If a target is found, the delay before jumping is {{fraction|1|3}} as long (3 to 10 ticks), and the sulfur's direction is set directly toward the target before jumping.
+
+Unlike most [[mobs]], sulfurs do not pathfind toward their target, always approaching their target in a straight line without avoiding environmental hazards such as [[lava]], [[cactus]] or dangerous falls. This means they can easily get stuck in corners or behind walls, not knowing how to circumvent them. This behavior is shared by [[magma cube]]s.
+
+A sulfur's maximum health is equal to its size squared, and its dimensions are 0.51 [[blocks]] times its size in each dimension. When a sulfur attacks, it deals damage equal to its size, except for size 0 (smallest) sulfurs, which do no damage, and do not prevent [[sleeping]]. Because small sulfurs still have a hostile AI, they continuously try to attack the player.
+
+A sulfur's jump distance also depends on its size; a sulfur jumps a distance slightly farther than its length. When landing, a number (8 times the sulfur's size) of sulfur particles appear. Regardless of size, sulfurs always jump 1 block high.
+
+When a sulfur larger than 0 dies, it spawns 2-4 new sulfurs equivalent to its size divided by 2, rounding down. A sulfur that was named with a [[name tag]] produces smaller sulfurs with the same name when it dies.
+
+Sulfurs continuously damage all players, [[snow golems]], and [[iron golems]] they collide with (although [[damage immunity]] reduces the actual damage to 1 attack every half second), unlike other mobs that damage only those targets they specifically attack and as a result they deal damage about twice as quickly as other mobs.
+
+Sulfurs in [[water]] attempt to swim to the surface if possible. If forced to stay submerged, they eventually drown, splitting into smaller sulfurs that drown and finally drop slimeballs.
+
+Sulfurs are immune to [[Oozing]].
+
+== Sounds ==
+{{JE}}:
+{{SoundTable
+| type = java
+| {{SoundLine
+| sound =Slime attack1.ogg
+|sound2=Slime attack2.ogg
+|source=Hostile Creatures
+|overridesource=1
+|description=When a sulfur attacks something
+|subtitle=Sulfur attacks
+|id=entity.sulfur.attack
+|translationkey=subtitles.entity.sulfur.attack
+|volume=1.0
+|pitch=0.8-1.2
+|distance=16}}
+| {{SoundLine
+|sound=Slime big1.ogg
+|sound2=Slime big2.ogg
+|sound3=Slime big3.ogg
+|sound4=Slime big4.ogg
+|source=Hostile Creatures
+|overridesource=1
+|description=When a non-small sulfur dies
+|subtitle=Sulfur dies
+|id=entity.sulfur.death
+|translationkey=subtitles.entity.sulfur.death
+|volume=Large: 1.2<br>Medium: 0.4
+|pitch=0.64-0.96
+|distance=16}}
+| {{SoundLine
+|sound=Slime small1.ogg
+|sound2=Slime small2.ogg
+|sound3=Slime small3.ogg
+|sound4=Slime small4.ogg
+|sound5=Slime small5.ogg
+|source=Hostile Creatures
+|overridesource=1
+|description=When a small sulfur dies
+|subtitle=Sulfur dies
+|id=entity.sulfur.death_small
+|translationkey=subtitles.entity.sulfur.death
+|volume=0.0
+|pitch=1.12-1.68
+|distance=16}}
+| {{SoundLine
+|sound=Slime big1.ogg
+|sound2=Slime big2.ogg
+|sound3=Slime big3.ogg
+|sound4=Slime big4.ogg
+|source=Hostile Creatures
+|overridesource=1
+|description=When a non-small sulfur is damaged
+|subtitle=Sulfur hurts
+|id=entity.sulfur.hurt
+|translationkey=subtitles.entity.sulfur.hurt
+|volume=Large: 1.2<br>Medium: 0.4
+|pitch=0.64-0.96
+|distance=16}}
+| {{SoundLine
+|sound=Slime small1.ogg
+|sound2=Slime small2.ogg
+|sound3=Slime small3.ogg
+|sound4=Slime small4.ogg
+|sound5=Slime small5.ogg
+|source=Hostile Creatures
+|overridesource=1
+|description=When a small sulfur is damaged
+|subtitle=Sulfur hurts
+|id=entity.sulfur.hurt_small
+|translationkey=subtitles.entity.sulfur.hurt
+|volume=0.0
+|pitch=1.12-1.68
+|distance=16}}
+| {{SoundLine
+|sound=Slime big1.ogg
+|sound2=Slime big2.ogg
+|sound3=Slime big3.ogg
+|sound4=Slime big4.ogg
+|source=Hostile Creatures
+|overridesource=1
+|description=When a non-small sulfur jumps
+|subtitle=Sulfur squashes
+|id=entity.sulfur.jump
+|translationkey=subtitles.entity.sulfur.squish
+|volume=Large: 1.2<br>Medium: 0.4
+|pitch=0.64-0.96
+|distance=16}}
+| {{SoundLine
+|sound=Slime small1.ogg
+|sound2=Slime small2.ogg
+|sound3=Slime small3.ogg
+|sound4=Slime small4.ogg
+|sound5=Slime small5.ogg
+|source=Hostile Creatures
+|overridesource=1
+|description=When a small sulfur jumps
+|subtitle=Sulfur squashes
+|id=entity.sulfur.jump_small
+|translationkey=subtitles.entity.sulfur.squish
+|volume=0.0
+|pitch=1.12-1.68
+|distance=16}}
+| {{SoundLine
+|sound=Slime big1.ogg
+|sound2=Slime big2.ogg
+|sound3=Slime big3.ogg
+|sound4=Slime big4.ogg
+|source=Hostile Creatures
+|overridesource=1
+|description=When a non-small sulfur lands
+|subtitle=Sulfur squashes
+|id=entity.sulfur.squish
+|translationkey=subtitles.entity.sulfur.squish
+|volume=Large: 1.2<br>Medium: 0.4
+|pitch=1.0-1.5
+|distance=16}}
+| {{SoundLine
+|sound=Slime small1.ogg
+|sound2=Slime small2.ogg
+|sound3=Slime small3.ogg
+|sound4=Slime small4.ogg
+|sound5=Slime small5.ogg
+|source=Hostile Creatures
+|overridesource=1
+|description=When a small sulfur lands
+|subtitle=Sulfur squishes
+|id=entity.sulfur.squish_small
+|translationkey=subtitles.entity.sulfur.squish
+|volume=0.0
+|pitch=1.0-1.5
+| distance = 16
+}}
+}}
+
+{{BE}}:
+{{SoundTable
+| type = bedrock
+| {{SoundLine
+| sound =Slime small1.ogg
+|sound2=Slime small2.ogg
+|sound3=Slime small3.ogg
+|sound4=Slime small4.ogg
+|sound5=Slime small5.ogg
+|source=neutral
+|description=When a sulfur dies
+|id=mob.sulfur.small
+|volume=1.0
+|pitch=0.8-1.2}}
+| {{SoundLine
+|source=neutral
+|description=When a sulfur is damaged
+|id=mob.sulfur.small
+|volume=1.0
+|pitch=0.8-1.2}}
+| {{SoundLine
+|sound=Slime big1.ogg
+|sound2=Slime big2.ogg
+|sound3=Slime big3.ogg
+|sound4=Slime big4.ogg
+|source=hostile
+|description=When a non-small sulfur jumps or lands
+|id=mob.sulfur.big
+|volume=1.0
+|pitch=0.64-0.96}}
+| {{SoundLine
+|sound=Slime small1.ogg
+|sound2=Slime small2.ogg
+|sound3=Slime small3.ogg
+|sound4=Slime small4.ogg
+|sound5=Slime small5.ogg
+|source=neutral
+|description=When a small sulfur jumps or lands
+|id=mob.sulfur.small
+|volume=1.0
+|pitch=0.64-0.96}}
+| {{SoundLine
+|sound=Slime small1.ogg
+|source=neutral
+|description=When a sulfur attacks something
+|id=mob.attack
+|volume=1.0
+|pitch=0.8-1.2}}
+| {{SoundLine
+|sound=Slime attack1.ogg
+|sound2=Slime attack2.ogg
+|source=hostile
+|description=''Unused sound event''
+|id=mob.sulfur.attack
+|volume=1.0
+| pitch = 1.0
+}}
+}}
+
+== Data values ==
+=== ID ===
+{{edition|java}}:
+{{ID table
+|edition=java
+|generatetranslationkeys=y
+|displayname=Sulfur
+|spritetype=entity
+|nameid=sulfur
+|showentitytags=y
+|entitytags=frog_food, no_anger_from_wind_charge, non_controlling_rider
+|foot=1}}
+
+{{edition|bedrock}}:
+{{ID table
+|edition=bedrock
+|shownumericids=y
+|generatetranslationkeys=y
+|displayname=Sulfur
+|spritetype=entity
+|nameid=sulfur
+|showentityfamily=y
+|entityfamily=mob,monster,sulfur
+|id=37
+|foot=1}}
+
+=== Entity data ===
+
+Sulfurs have entity data associated with them that contains various properties.
+
+{{el|java}}:
+{{main|Entity format}}
+<section begin="entity data"/><div class="treeview">
+* {{nbt|compound}} Entity data
+** {{nbt inherit/entity}}
+** {{nbt inherit/mob}}
+** {{nbt inherit/cube_mob}}
+</div><section end="entity data"/>
+
+{{el|bedrock}}:
+: See [[Bedrock Edition level format/Entity format]].
+
+== Achievements ==
+{{load achievements|Monster Hunter;It Spreads}}
+
+Achievements that apply to all mobs:
+{{collapse|content={{load achievements|Overkill;Over-Overkill;Mob Kabob}}
+}}
+
+== Advancements ==
+{{load advancements|Monster Hunter;Monsters Hunted;It Spreads}}
+
+Advancements that apply to all mobs:
+{{collapse|content={{load advancements|Take Aim;Arbalistic;A Throwaway Joke;Adventure;Over-Overkill;Mob Kabob}}
+}}
+
+== History ==
+=== ''Java Edition'' ===
+{{HistoryTable
+|{{HistoryLine|java}}
+|{{HistoryLine||26.2|dev=snap1|[[File:Pale_Pigs_Sulfur_JE1.png|42px]] Added sulfurs.}}
+|{{HistoryLine|||dev=snap4|[[File:Pale_Pigs_Sulfur_JE2_BE2.png|42px]] The  texture of sulfurs has been changed.}}
+}}
+
+=== ''Bedrock Edition'' ===
+{{HistoryTable
+|{{HistoryLine|bedrock}}
+|{{HistoryLine||26.20|dev=Preview 26.20.23|exp=Drop 2 of 2026|[[File:Pale_Pigs_Sulfur_BE1.png|42px]] Added Pale Pigs sulfurs.}}
+|{{HistoryLine||26.30|dev=Preview 26.30.20|[[File:Pale_Pigs_Sulfur_JE2_BE2.png|42px]] The texture of Pale Pigs sulfurs has been changed.}}
+}}
+
+=== MC Championship ===
+{{HistoryTable
+|{{HistoryLine||Project G.L.O.P.|link=https://www.twitch.tv/videos/2785240183|[[File:Red_Rabbits_Sulfur_MCC1.png|42px]] [[File:Orange_Ocelots_Sulfur_MCC1.png|42px]] [[File:Yellow_Yaks_Sulfur_MCC1.png|42px]] [[File:Lime_Llamas_Sulfur_MCC1.png|42px]] [[File:Green_Geckos_Sulfur_MCC1.png|42px]] [[File:Cyan_Coyotes_Sulfur_MCC1.png|42px]] [[File:Aqua_Axolotls_Sulfur_MCC1.png|42px]] [[File:Blue_Bats_Sulfur_MCC1.png|42px]] [[File:Purple_Pandas_Sulfur_MCC1.png|42px]] [[File:Pink_Parrots_Sulfur_MCC1.png|42px]] Added Red Rabbits, Orange Ocelots, Yellow Yaks, Lime Llamas, Green Geckos, Cyan Coyotes, Aqua Axolotls, Blue Bats, Purple Pandas and Pink Parrots sulfurs.}}
+}}
+
+== Issues ==
+
+{{issue list}}
+
+== Trivia ==
+* Because a sulfur's movement speed is tied to its size, it becomes impossible for the player to outrun a size 8 sulfur on flat ground without potion effects.
+* When a sulfur searches for nearby targets or checks to see if it should despawn, it checks from a point at the center of its hitbox on the x and z-axis and the bottom of its y-axis. Therefore, a custom-size sulfur sufficiently huge can be right in front of the player and be completely passive, and it may even despawn if the sulfur is large enough.
+* Green-colored sulfurs are also present in ''[[Minicraft]]'', a 2D ''Minecraft''-inspired game also created by Notch.
+* Sulfurs breaking apart to form smaller, independent sulfurs resembles the real-life form of asexual reproduction known as [[w:Fragmentation (reproduction)|fragmentation]].
+
+== Gallery ==
+=== Textures ===
+<gallery class="pixel-image">
+Pale_Pigs_Sulfur_(texture)_JE2_BE2.png|Pale Pigs Sulfur texture file.
+Pale_Pigs_Sulfur_(texture)_BE1.png|Old Pale Pigs Sulfur texture file {{in|bedrock}}.
+Pale_Pigs_Sulfur_(texture)_JE1.png|Old Pale Pigs Sulfur texture file {{in|java}}.
+Red_Rabbits_Sulfur_(texture)_MCC1.png|Red Rabbits Sulfur texture file.
+Orange_Ocelots_Sulfur_(texture)_MCC1.png|Orange Ocelots Sulfur texture file.
+Yellow_Yaks_Sulfur_(texture)_MCC1.png|Yellow Yaks Sulfur texture file.
+Lime_Llamas_Sulfur_(texture)_MCC1.png|Lime Llamas Sulfur texture file.
+Green_Geckos_Sulfur_(texture)_MCC1.png|Green Geckos Sulfur texture file.
+Cyan_Coyotes_Sulfur_(texture)_MCC1.png|Cyan Coyotes Sulfur texture file.
+Aqua_Axolotls_Sulfur_(texture)_MCC1.png|Aqua Axolotls Sulfur texture file.
+Blue_Bats_Sulfur_(texture)_MCC1.png|Blue Bats Sulfur texture file.
+Purple_Pandas_Sulfur_(texture)_MCC1.png|Purple Pandas Sulfur texture file.
+Pink_Parrots_Sulfur_(texture)_MCC1.png|Pink Parrots Sulfur texture file.
+</gallery>
+
+== Navigation ==
+{{Navbox entities|mobs}}
+
+[[Category:Hostile mobs]]
+[[Category:Monster mobs]]
+
+[[de:Schwefelwürfel]]
+[[es:Cubo de azufre]]
+[[fr:Cube de soufre]]
+[[it:Cubo di zolfo]]
+[[ja:Sulfur Cube]]
+[[ko:유황 큐브]]
+[[lzh:硫方靈]]
+[[pt:Cubo de Enxofre]]
+[[ru:Серный куб]]
+[[th:สไลม์กำมะถัน]]
+[[zh:硫磺史萊姆]]

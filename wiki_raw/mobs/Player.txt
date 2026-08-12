@@ -1,0 +1,1086 @@
+{{About|the entity controlled by the real person playing ''Minecraft''|the removed passive mob|Mob (entity)|the removed hostile mob|Monster (entity)|the fake player in ''Java Edition''|Mannequin}}
+{{Redirect|Minecrafter|the joke block|Mine Crafter}}
+{{Infobox entity
+| group1 = Alex
+| group2 = Ari
+| group3 = Efe
+| group4 = Kai
+| group5 = Makena
+| group6 = Noor
+| group7 = Steve
+| group8 = Sunny
+| group9 = Zuri
+| 1-1 = Alex (slim) JE2.png
+| 2-1 = Ari (classic) JE1.png
+| 3-1 = Efe (slim) JE1.png
+| 4-1 = Kai (classic) JE1.png
+| 5-1 = Makena (slim) JE1.png
+| 6-1 = Noor (slim) JE1.png
+| 7-1 = Steve (classic) JE6.png
+| 8-1 = Sunny (classic) JE1.png
+| 9-1 = Zuri (classic) JE1.png
+| extratext = View [[#Gallery 2|all renders]]
+| health = {{hp|20}}
+| behavior = Controlled
+| armor = {{armor|0}} - {{armor|20}} ([[Armor#Armor points|Varies]])
+| damage = '''Unarmed:'''<br>{{hp|1}}{{until|java Combat Tests|nocat=1}}<br>{{hp|2}}{{upcoming|java Combat Tests|nocat=1}}<hr>'''Armed:'''<br>[[Damage#Dealing damage|Varies]]
+| size = Height: 1.8 blocks<br>Width: 0.6 blocks<hr>
+'''[[Sneaking]]:'''<br>Height: 1.5 blocks<br>Width: 0.6 blocks<hr>
+'''[[Gliding]], [[Swimming]], or [[Crawling]]:'''<br>Height: 0.6 blocks<br>Width: 0.6 blocks<hr>
+'''[[Sleeping]]:'''<br>Height: 0.2 blocks<br>Width: 0.2 blocks
+| speed = 0.10
+| spawn = [[World spawn#Individual spawn|Player spawn point]], if set<br>[[World spawn]]
+| tickingorder = 
+| gravity = 
+}}
+The '''player''' is a unique [[entity]] or [[mob]]{{only|be|short=1}} whose actions are [[control]]led by the real person, and not the game itself. They are the main character of singleplayer ''Minecraft'' [[world]]s, where most interactions and [[mechanics]] revolve around them as part of the [[gameplay]]. Players may also partake in the [[multiplayer]] mode with other players, putting more emphasis on player-driven activities.
+
+== Appearance ==
+{{Anchor|Skin|Model}}
+
+Every player's model uses a [[skin]] as its texture, composed of one full texture file or multiple [[Character Creator]] items.{{only|be|short=1}} Players can choose a skin to use prior to launch in the ''[[Minecraft Launcher]]''{{only|je|short=1}} or at any time in-game in the [[Dressing Room]].{{only|be|short=1}}
+
+Nine default skins are always available: [[Steve]], [[Alex]], [[Zuri]], [[Sunny]], [[Noor]], [[Makena]], [[Kai]], [[Efe]], or [[Ari]]. Players can obtain custom skins from [[skin packs]] or other content in the [[Marketplace]], third-party resources, or create their own. Classic skins can have either "classic" or "slim" shapes, which makes their arm models wide or slim. External skin textures cannot be imported on consoles.
+[[File:Heights.png|thumb|Different character heights]]
+{{IN|BE}}, the [[Character Creator]] allows players to compose a character from multiple persona items, some of which are animated or use custom geometry, obtained from completing [[achievements]], various events, or [[Minecoins]]. These characters can be further customized with four different player heights and slim or wide arms.
+
+A [[cape]] can be added to any skin, which is a cosmetic item obtained from special events. Characters from the Character Creator periodically blink their eyes in ''Bedrock Edition''.
+
+In ''Bedrock Edition'', any character can also be assigned a set of 4 [[emotes]], obtained similarly to character pieces, which they can express in-game by pressing {{Keys|B}}.
+
+Characters and classic skins are synchronized with the player's Microsoft account and available on any device, except imported skin files in ''Bedrock Edition''. {{IN|JE}}, playing in the [[Demo mode|demo]] or offline does not allow usage of custom skins and always applies a random default skin.
+
+The player's appearance can be obscured by equipping [[armor]], such as a [[turtle shell]], [[helmet]]s, [[chestplate]]s, [[legging]]s, and [[boot]]s, as well as other equippable items such as an [[elytra]], a [[carved pumpkin]], and [[head]]s of mobs and other players.
+
+In ''Java Edition'', if the player is shot with an [[arrow]] or stung by a [[bee]], the arrow or stinger appears physically embedded inside the player for a given time. These do not apply to other mobs.
+
+== Drops ==
+*The content of their [[inventory]] (except any items with [[Curse of Vanishing]])
+*Current XP level multiplied by 7, which is then the amount of points dropped. This is capped at 100 XP points, which corresponds to just over level 7. 
+
+If the game rule "Keep inventory" (or {{Game rule link|keep_inventory}}) is enabled, nothing is dropped.
+
+== Interaction range ==
+{{main|Interaction range}}
+[[File:Player reach.png|alt=An in-game screenshot showing a red circle around other player to indicate the user's attack reach of a spherical area of three blocks.|thumb|205x205px|The attack reach area of 3 blocks is indicated by a red circle.]]
+{{anchor|Reach}}Players can interact with most [[Block|blocks]] and [[entities]] in the world. A player's interaction range (reach) differs. The area forms a three-dimensional cylinder because it encompasses vertical and horizontal distances:<ref>[https://web.archive.org/web/20240613063548/https://streamable.com/h2aq7m Vertical attack reach forms a cylinder, not a sphere.]</ref>{{needs testing|Video is in Bedrock Edition, is it also a cylinder in Java?|java=1}}
+
+{{:Interaction range}}
+
+== Health and hunger meters ==
+The player has 10 full hearts or 20 [[health points]], visible on the [[HUD]]. Players in Survival mode can take [[damage]], depleting health points and eventually [[killing]] the player. After death, players respawn at their spawn point, which can be a [[bed]] or [[Respawn Anchor|respawn anchor]], or the [[world spawn]] if absent.
+
+When the player's [[hunger]] bar is at {{Hunger|18}} or higher and "Natural regeneration" is enabled, health slowly regenerates by {{Hp|1}} every four seconds, but when it is at {{Hunger|20}} with saturation remaining, health regenerates by {{Hp|1}} every half second.{{Only|Java|short=JE}} The hunger bar depletes faster from energy-intensive activities like [[sprinting]], [[jumping]], attacking [[mobs]], and [[mining]], and it can be refilled by eating [[food]]. If the hunger bar is at {{Hunger|17}} or lower, the player does not regenerate health. While the hunger bar is at {{Hunger|0}}, the player is starving and proceeds to lose health. On Hard [[difficulty]], starvation kills the player, while on Normal or Easy, it depletes health to {{hp|1}} or {{hp|10}}, respecitvely. 
+
+On Peaceful difficulty, the hunger bar does not deplete and the player can always regenerate health.
+
+Like any other mob, players can posess [[status effects]] that positively, neutrally, or negatively affect them.
+
+== Movement ==
+{{see also|Controls}}
+
+=== Walking ===
+
+The most basic movement the player can perform is [[walking]]. The player can walk at a reasonable speed rate of 4.317 [[Blocks tall|blocks]] per second{{fn|About 15.5 kph or 9.7 mph, which is a 3:51 kilometer or a 6:12 mile.}}, all while taking no [[hunger]] impact. This means that the player can walk a total of 5181 blocks{{fn|About 5.2 kilometer.}} in [[Daylight cycle|one ''Minecraft'' day]], in a straight line, without sprinting or sneaking.
+
+=== Sprinting ===
+The player can move faster by [[sprinting]], but at the cost of draining the [[hunger]] bar considerably while doing so. The player sprints approximately 5.612 [[Blocks tall|blocks]] per second{{fn|About 20.2 kph or 12.6&nbsp;mph, which is a 2:58&nbsp;km or a 4:46 mile.}}, as opposed to the regular pace of 4.317 blocks per second. The maximum distance a player can jump when sprinting is approximately<!-- 4.225 value is from JUST running until you get to max speed, and then doing a single jump. to a couple more decimal points, value is 4.224812.
+
+5 blocks is NOT possible without some major caveats --> 4.225 blocks. The [[Speed]] [[effect]] increases momentum. The player cannot sprint if the hunger bar is at {{hunger|6}} or less. Sprinting is activated by double-tapping the forward key (default {{key|W}}), then holding it, or by holding the sprint key ({{key|Control}} by default, {{key|Command}} if using a Mac) while pressing the forward key. Holding the sprint key in [[Creative mode]] while [[flying]] causes the player to fly faster.
+
+=== Sneaking ===
+[[Sneaking]] is a feature activated by pressing and holding the sneak key (default is {{key|Shift}}). Sneaking prevents players from falling more than half a block, making it highly useful for building horizontally outward over space. Going past the edge of a block and stopping sneaking does not result in falling off that block. The player can still dismount blocks while sneaking by jumping over the block's edge. In [[multiplayer]], a player's name tag is grayed out in ''Java Edition'' or completely disappears in Bedrock Edition when they sneak, to relate to the fact that sneaking makes them harder to see.
+
+=== Jumping ===
+The maximum height a player can [[Jumping|jump]] without the [[Jump Boost]] effect is about 1.2522 blocks in Java Edition. The jump height on Bedrock Edition is shorter (similar to the pre-[[Combat Update]]) with the value of 1.24919 blocks.
+
+=== Swimming ===
+[[Swimming]] occurs when the player is sprinting (by double pressing {{Keys|W}}, or pressing {{Keys|Control}} or {{Keys|Command}}) while the player is submerged underwater. Swimming has the same animation as crawling.
+
+=== Crawling ===
+[[Crawling]] occurs when the player is in an area less than 1.5 blocks high and prevents suffocation.
+
+=== Climbing ===
+Climbing occurs whenever the player's lower half is in the block occupied by a climbable block, such as a [[ladder]] or [[vines]]. If this condition is satisfied:
+
+* If the player pushes against a wall, the player moves upward at about 2.35 blocks per second instead of horizontally. (Thus inside a 1×1 ladder shaft, the player can use any movement key to move upward.)
+* The player can ascend the ladder by holding jump instead of using a horizontal movement key.
+* If a player moving perpendicular to the climbable block enters said block, the player begins to move upward, but then falls off the block shortly afterward if the player continues to move horizontally.
+* The player's maximum downward speed is reduced to a "descending" speed, at about 3 blocks per second.
+* The player's horizontal movement friction is the same as on [[ice]]. (That is, moving around in the tiny space the player is in while still hanging on the ladder at the same level.)
+
+Additionally:
+
+* In ''Bedrock Edition'', a player can hold down the jump button while climbing to make the climbing speed faster.
+* A player on a [[slab]] in front of the climbable block must jump to get on despite being only half a block down.
+* Consuming [[food]], blocking with a [[shield]] or pulling back a [[bow]], do not slow the player down while climbing (unlike when [[walking]], [[sprinting]] and [[swimming]]).
+{{fnlist}}
+
+== Movement speed ==
+
+There isn't a simple hard-coded maximum velocity for walking, sprinting, etc. The maximum is a result of a base acceleration countered by "friction" or air resistance. The base acceleration for walking is 0.098, and sprinting is 30% faster than that. Velocity is increased by this acceleration value every tick (1/20th of a second), then the player is moved by the resulting velocity, then the velocity is multiplied by the friction value of the block they are walking on. For most blocks, the friction value is 0.546. As the player walks forward, each tick their velocity goes +0.098, *0.546, +.098, *0.546, +0.098, and so on. The result is that eventually, the 0.546 multiplier counteracts the 0.098 increase, so the player doesn't go any faster. The formula for this "terminal velocity" is a/(1-r), where a is the acceleration, and r is the block's friction. 0.098/(1-0.546) ≈ 0.2159 meters/tick = 4.317 meters/second. Sprinting is 30% faster than that, at about 5.612 meters/second. Flying is similar, but the base acceleration is 0.049 and the "friction" is 0.91, which comes out to ~10.89&nbsp;m/s.
+
+{|class="wikitable" data-description="Movement speed by method, unassisted"
+!Movement mode
+!Speed (m/s)
+!Speed (km/h)
+!% of Walking Speed
+|-
+|Walking
+|4.317
+|15.54
+|100%
+|-
+|Sprinting
+|5.612
+|20.20
+|130%
+|-
+|Sneaking
+|1.295
+|4.663
+|30%
+|-
+|Flying
+|10.79
+|38.85
+|250%
+|-
+|Sprint Flying
+|21.58
+|77.71
+|500%
+|-
+|Falling
+|77.71
+|279.75
+|1800%
+|}
+
+== Gameplay HUD ==
+The onscreen [[heads-up display]] (HUD) consists of the player's [[health]] bar, [[hunger]] bar, [[experience]] bar, and [[hotbar]] among with many other UI elements shown sporadically.
+
+The [[armor]] rating bar appears above the health bar if the player is wearing armor and the oxygen bar appears if the player is submerged in [[water]] or is suffocating in a block.{{only|be|short=1}} The HUD also contains the crosshair and a held object or fist. Appearance of HUD elements be toggled with {{key|F1}}, in the [[settings]], or using {{cmd|hud}}.
+
+When the player is in [[Creative]] mode, the health, hunger, experience, armor, and oxygen bars are hidden, and only the hotbar is visible. Despite this, the player can still collect experience and wear armor. In [[Spectator]] mode, the hotbar, crosshair, and held object/fist are also hidden; {{in|je}}, the hotbar appears as a player spectating list when a number is pressed or the {{mouse|scroll}} is moved.
+
+== Experience ==
+{{Main|Experience}}
+Experience points (XP) can be gained via [[experience orbs]] when killing mobs or mining certain minerals. The current level is indicated by a green number above the HUD, and the experience points can be used to enchant weapons, tools, or armor with different useful attributes and skills (see [[enchanting table]].) [[Anvil]]s require experience to use.
+
+The level increases by obtaining enough experience points. All levels and points are lost upon death but can be partially restored by picking up the experience orbs at the place of death.<ref>http://www.pcgamer.com/first-details-on-minecrafts-xp-system-notch-when-you-die-you-lose-all-levels-you-lose-all-xp/</ref>
+
+Experience is also obtained through activities such as [[Breaking|mining]], [[fishing]], mob [[breeding]], killing certain [[mob]]s, [[trading]], or [[smelting]].
+
+== Game modes ==
+{{Main|Game mode}}
+* In [[Survival]] mode, the player can place and destroy most blocks, and use all tools available. The player has limited health ({{health|2|notag=1}} icons), hunger ({{hunger|2|notag=1}} icons), and oxygen. When the player runs out of health, they [[die]] and respawn at their spawn point.
+** In [[Hardcore]] mode, the player can respawn only in [[Spectator]] mode, and the [[difficulty]] level is locked on Hard mode.
+* In [[Creative]] mode, the player can [[fly]] by double-tapping the jump key and have access to infinite items from the [[Creative inventory]]. No mobs attack the player, and the player cannot take damage and die (except in the [[void]] and using {{cmd|kill}} in ''Java Edition''). The player also has no hunger, unlimited oxygen, and can [[break]] blocks instantly.
+* In [[Adventure]] mode, there are no changes from Survival mode aside from being unable to break or place blocks unless they possess a tool with the <code>[[Data component format#can_break|can_break]]</code> item component for that block, or have a block with the <code>[[Data component format#can_place_on|can_place_on]]</code> component. This game mode is used for [[World (downloadable content)|adventure maps]].
+* [[Spectator]] mode is similar to Creative mode, but the player cannot interact with the world in any way. Players in Spectator are invisible to players in other game modes, are always flying, and can phase through blocks. In ''Java Edition'', the player can also spectate mobs and inspect inventories.
+
+== Username ==
+Players in-game are referred to by a username. These are used to target the player with [[commands]], play online [[multiplayer]], and differentiate other players.  
+
+{{IN|je}}, usernames must be 3-16 characters, although there are exceptions for players with under 3 characters, who bought the game early in its development. Players can change their username no more than once every 30 days on the [https://minecraft.net/profile preferences page] of minecraft.net. When the player changes their username, the previous username becomes available for other users to claim after 37 days. Because players can change usernames every 30 days, a player can manage two usernames without anyone being able to take either of them. If the player has a username under 3 characters and changes it, the old sub-3-character username is permanently unable to be obtained again.<ref>https://namemc.com/name/NY</ref> This also applies for symbol names.<ref>https://namemc.com/search?q=y-93</ref>
+
+{{IN|be}}, the players username is the same as the Xbox {{w|Gamertag}} of the player's Microsoft account. Gamertags can be changed on the [https://social.xbox.com/changegamertag change gamertag page] in the Xbox website for a fee of {{w|US$}}9.99, though changing it for the first time is free.<ref>https://support.xbox.com/help/account-profile/profile/change-xbox-live-gamertag</ref> However, players can sign out of their Microsoft account and change the username in-game to any of 3-32 characters long in the Profile [[settings]]. While signed out, multiplayer is inaccessible. Changing the player's name to "Dinnerbone" or "Grumm" turns the player model upside-down.
+
+Player names appear above their head as nameplates, typically in white letters within a dark transparent rectangle. Player nameplates can also be seen through solid blocks and other obstructions, although a player can [[sneak]] to dim the nameplate's visibility when in sight in ''Java Edition'', or hide it completely when out of sight in ''Bedrock Edition''. When a player is in the same [[party]], the font is colored blue.
+
+Furthermore, player names are visible in the player list in multiplayer, the [[chat]] when mentioning a player with <code>@</code>,{{Only|be|short=1}} and the [[social]] drawer or [[Friends List]]. Player names are required for invitations to [[Realms]].
+
+== Sounds ==
+{{JE}}:<br>
+Players use the Players sound category for [[Sound#Entity-dependent categories|entity-dependent sound events]].
+
+{{SoundTable
+| type = java
+| {{SoundLine
+| sound =Eat1.ogg
+|sound2=Eat2.ogg
+|sound3=Eat3.ogg
+|subtitle=Eating
+|source=player
+|description=While a player is eating something
+|id=entity.generic.eat
+|translationkey=subtitles.entity.generic.eat
+|volume=''varies'' <ref group=sound>Can be 0.5, 1.0, or 1.5</ref>
+|pitch=0.8-1.2
+|distance=16}}
+| {{SoundLine
+|sound=Drink.ogg
+|subtitle=Sipping
+|source=player
+|description=While a player is drinking something
+|id=entity.generic.drink
+|translationkey=subtitles.entity.generic.drink
+|volume=0.5
+|pitch=0.9-1.0
+|distance=16}}
+| {{SoundLine
+|sound=Drink honey1.ogg
+|sound2=Drink honey2.ogg
+|sound3=Drink honey3.ogg
+|sound4=Drink honey3.ogg
+|subtitle=Gulping
+|source=player
+|description=While a player is drinking a honey bottle
+|id=item.honey_bottle.drink
+|translationkey=subtitles.item.honey_bottle.drink
+|volume=0.5
+|pitch=''varies'' <ref group=sound>0.9-1.0 for <code>drink_honey1</code> and <code>drink_honey2</code>, 0.315-0.35 for <code>drink_honey3</code>, and 0.675-0.75 for the second copy of <code>drink_honey3</code></ref>
+|distance=16}}
+| {{SoundLine
+|sound=Eat1.ogg
+|sound2=Eat2.ogg
+|sound3=Eat3.ogg
+|subtitle=Eating
+|source=neutral
+|description=When a player finishes eating something
+|id=entity.generic.eat
+|translationkey=subtitles.entity.generic.eat
+|volume=1.0
+|pitch=0.6-1.4
+|distance=16}}
+| {{SoundLine
+|sound=Burp.ogg
+|subtitle=Burp
+|source=player
+|description=When a player finishes eating or drinking
+|id=entity.player.burp
+|translationkey=subtitles.entity.player.burp
+|volume=0.5
+|pitch=0.9-1.0
+|distance=16}}
+
+| {{SoundLine
+|sound=Strong attack1.ogg
+|sound2=Strong attack2.ogg
+|sound3=Strong attack3.ogg
+|sound4=Strong attack4.ogg
+|sound5=Strong attack5.ogg
+|sound6=Strong attack6.ogg
+|subtitle=Strong attack
+|source=player
+|description=When a player deals an attack that does not trigger any other attack sounds
+|id=entity.player.attack.strong
+|translationkey=subtitles.entity.player.attack.strong
+|volume=''varies'' <ref group=sound>0.6 for <code>strong1</code> through <code>strong4</code>, and 0.7 for <code>strong5</code> and <code>strong6</code></ref>
+|pitch=1.0
+|distance=16}}
+| {{SoundLine
+|sound=Critical attack1.ogg
+|sound2=Critical attack2.ogg
+|sound3=Critical attack3.ogg
+|subtitle=Critical attack
+|source=player
+|description=When a player deals a critical hit
+|id=entity.player.attack.crit
+|translationkey=subtitles.entity.player.attack.crit
+|volume=0.7
+|pitch=1.0
+|distance=16}}
+| {{SoundLine
+|sound=Knockback attack1.ogg
+|sound2=Knockback attack2.ogg
+|sound3=Knockback attack3.ogg
+|sound4=Knockback attack4.ogg
+|subtitle=Knockback attack
+|source=player
+|description=When a player deals a sprinting attack
+|id=entity.player.attack.knockback
+|translationkey=subtitles.entity.player.attack.knockback
+|volume=0.7
+|pitch=1.0
+|distance=16}}
+| {{SoundLine
+|sound=Sweep attack1.ogg
+|sound2=Sweep attack2.ogg
+|sound3=Sweep attack3.ogg
+|sound4=Sweep attack4.ogg
+|sound5=Sweep attack5.ogg
+|sound6=Sweep attack6.ogg
+|sound7=Sweep attack7.ogg
+|subtitle=Sweeping attack
+|source=player
+|description=When a player deals a sweep attack
+|id=entity.player.attack.sweep
+|translationkey=subtitles.entity.player.attack.sweep
+|volume=0.7
+|pitch=1.0
+|distance=16}}
+| {{SoundLine
+|rowspan=2
+|sound=Weak attack1.ogg
+|sound2=Weak attack2.ogg
+|sound3=Weak attack3.ogg
+|sound4=Weak attack4.ogg
+|subtitle=Weak attack
+|source=player
+|description=When a player deals an attack with no damage
+|id=entity.player.attack.nodamage
+|translationkey=subtitles.entity.player.attack.weak
+|volume=0.7
+|pitch=1.0
+|distance=16}}
+| {{SoundLine
+|subtitle=Weak attack
+|source=player
+|description=When a player attempts to attack without sufficient cooldown
+|id=entity.player.attack.weak
+|translationkey=subtitles.entity.player.attack.weak
+|volume=0.7
+|pitch=1.0
+|distance=16}}
+| {{SoundLine
+|sound=Random levelup.ogg
+|subtitle=Player dings
+|source=player
+|description=When a player levels up to a multiple of 5 <ref group=sound>And more than five seconds have passed since the last time this sound played</ref>
+|id=entity.player.levelup
+|translationkey=subtitles.entity.player.levelup
+|volume=0.75 <ref group=sound>Is 0.75 for all levels over 30, and is <math>\frac{\text{level}}{30}\times0.75</math>When below 30</ref>
+|pitch=1.0
+|distance=16}}
+
+| {{SoundLine
+|rowspan=2
+|sound=Player hurt1.ogg
+|sound2=Player hurt2.ogg
+|sound3=Player hurt3.ogg
+|subtitle=Player dies
+|source=player
+|description=When a player dies
+|id=entity.player.death
+|translationkey=subtitles.entity.player.death
+|volume=1.0
+|pitch=0.8-1.2
+|distance=16}}
+| {{SoundLine
+|subtitle=Player hurts
+|source=player
+|description=When a player is damaged from a generic source
+|id=entity.player.hurt
+|translationkey=subtitles.entity.player.hurt
+|volume=1.0
+|pitch=0.8-1.2
+|distance=16}}
+| {{SoundLine
+|sound=Player hurt drowning1.ogg
+|sound2=Player hurt drowning2.ogg
+|sound3=Player hurt drowning3.ogg
+|sound4=Player hurt drowning4.ogg
+|subtitle=Player drowning
+|source=player
+|description=When a player is damaged by running out of breath
+|id=entity.player.hurt_drown
+|translationkey=subtitles.entity.player.hurt_drown
+|volume=1.0
+|pitch=0.8-1.2
+|distance=16}}
+| {{SoundLine
+|sound=Player hurt fire1.ogg
+|sound2=Player hurt fire2.ogg
+|sound3=Player hurt fire3.ogg
+|subtitle=Player burns
+|source=player
+|description=When a player is damaged by fire
+|id=entity.player.hurt_on_fire
+|translationkey=subtitles.entity.player.hurt_on_fire
+|volume=1.0
+|pitch=0.8-1.2
+|distance=16}}
+| {{SoundLine
+|sound=Player hurt freeze1.ogg
+|sound2=Player hurt freeze2.ogg
+|sound3=Player hurt freeze3.ogg
+|sound4=Player hurt freeze4.ogg
+|sound5=Player hurt freeze5.ogg
+|subtitle=Player freezes
+|source=block
+|description=When a player is damaged by freezing in [[powder snow]]
+|id=entity.player.hurt_freeze
+|translationkey=subtitles.entity.player.freeze_hurt
+|volume=1.0
+|pitch=0.8-1.2
+|distance=16}}
+| {{SoundLine
+|sound=Player hurt sweet berry bush1.ogg
+|sound2=Player hurt sweet berry bush2.ogg
+|subtitle=Player hurts
+|source=player
+|description=When a player is damaged by touching a [[sweet berry bush]]
+|id=entity.player.hurt_sweet_berry_bush
+|translationkey=subtitles.entity.player.hurt
+|volume=1.0
+|pitch=0.8-1.2
+|distance=16}}
+| {{SoundLine
+|sound=Fall damage small.ogg
+|subtitle=Something trips
+|source=player
+|description=When a player falls from 4 to 7 blocks high in [[Survival]] or [[Adventure]] mode
+|id=entity.player.small_fall
+|translationkey=subtitles.entity.generic.small_fall
+|volume=1.0
+|pitch=1.0
+|distance=16}}
+| {{SoundLine
+|sound=Fall damage big.ogg
+|subtitle=Something fell
+|source=player
+|description=When a player falls from 8 or more blocks high in Survival or Adventure mode
+|id=entity.player.big_fall
+|translationkey=subtitles.entity.generic.big_fall
+|volume=1.0
+|pitch=1.0
+|distance=16}}
+
+| {{SoundLine
+|sound=Water splash1.ogg
+|sound2=Water splash2.ogg
+|subtitle=Splashing
+|source=player
+|description=When a player enters water at low speed <ref group=sound name=speeddefinition>The player's momentum, with the horizontal axes' velocity multiplied by 0.2, compared to 0.25</ref>
+|id=entity.player.splash
+|translationkey=subtitles.entity.generic.splash
+|volume=0.0-0.25 <ref group=sound name=speedvolume>The player's momentum, with the horizontal axes' velocities multiplied by 0.2 (capped at 1.0)</ref>
+|pitch=0.6-1.4
+|distance=16}}
+| {{SoundLine
+|sound=Water heavy splash.ogg
+|subtitle=Splashing
+|source=player
+|description=When a player enters water at high speed <ref group=sound name=speeddefinition />
+|id=entity.player.splash_high_speed
+|translationkey=subtitles.entity.generic.splash
+|volume=0.25-1.0 <ref group=sound name=speedvolume />
+|pitch=0.6-1.4
+|distance=16}}
+| {{SoundLine
+|sound=Swim5.ogg
+|sound2=Swim6.ogg
+|sound3=Swim7.ogg
+|sound4=Swim8.ogg
+|sound5=Swim9.ogg
+|sound6=Swim10.ogg
+|sound7=Swim11.ogg
+|sound8=Swim12.ogg
+|sound9=Swim13.ogg
+|sound10=Swim14.ogg
+|sound11=Swim15.ogg
+|sound12=Swim16.ogg
+|sound13=Swim17.ogg
+|sound14=Swim18.ogg
+|subtitle=Swimming
+|source=player
+|description=While a player is moving through water
+|id=entity.player.swim
+|translationkey=subtitles.entity.generic.swim
+|volume=0.0-1.0 <ref group=sound name=speedvolume />
+|pitch=0.6-1.4
+|distance=16}}
+| {{SoundLine
+|sound=Teleport1.ogg
+|sound2=Teleport2.ogg
+|subtitle=Player teleports
+|source=player
+|description=When a player teleports using an ender pearl<wbr>
+|id=entity.player.teleport
+|translationkey=subtitles.entity.player.teleport
+|volume=1.0
+|pitch=1.0
+|distance=16}}
+
+| {{SoundLine
+|sound=Player breathe.ogg
+|subtitle=''None''<ref name="breath" group="sound">No bug reports have been made for this case, however given the resolution of most others the lack of a subtitle is implied to be intentional</ref>
+|source=-
+|description=''Unused sound event''<ref group="sound">{{bug|MC-185414}}</ref>
+|id=entity.player.breath
+|translationkey=''None''<ref name="breath" group="sound"/>
+|volume=''None''
+|pitch=''None''
+| distance = ''None''
+}}
+}}
+<!---->
+<!---->
+<!---->
+{{BE}}:
+{{SoundTable
+| type = bedrock
+| {{SoundLine
+| sound =Eat1.ogg
+|sound2=Eat2.ogg
+|sound3=Eat3.ogg
+|source=player
+|description=While a player is eating something
+|id=random.eat
+|volume=0.5-1.1
+|pitch=0.8-1.2}}
+| {{SoundLine
+|sound=Drink.ogg
+|source=player
+|description=While a player is drinking something
+|id=random.drink
+|volume=0.35
+|pitch=0.9-1.1
+}}
+
+| {{SoundLine
+|sound=Drink honey1.ogg
+|sound2=Drink honey2.ogg
+|sound3=Drink honey3.ogg
+|sound4=Drink honey3.ogg<!--This is duplicated intentionally, see below-->
+|source=player
+|description=While a player is drinking a honey bottle
+|id=random.drink_honey
+|volume=''varies''<ref group="sound" name="bevarieshoney">0.5 for <code>drink_honey1</code> and <code>drink_honey2</code>, but <code>drink_honey3</code> is 0.175 or 0.375</ref>
+|pitch=0.9-1.0}}
+| {{SoundLine
+|sound=Burp.ogg
+|source=player
+|description=When a player finishes eating or drinking
+|id=random.burp
+|volume=0.5
+|pitch=0.9-1.0}}
+
+| {{SoundLine
+|sound=Strong attack1.ogg
+|sound2=Strong attack2.ogg
+|sound3=Strong attack3.ogg
+|sound4=Strong attack4.ogg
+|sound5=Strong attack5.ogg
+|sound6=Strong attack6.ogg
+|subtitle=Strong attack
+|source=player
+|description=When a player deals an attack with damage
+|id=game.player.attack.strong
+|volume=0.2
+|pitch=0.8-1.2}}
+| {{SoundLine
+|sound=Critical attack1.ogg
+|sound2=Critical attack2.ogg
+|sound3=Critical attack3.ogg
+|subtitle=Critical attack
+|source=player
+|description=When a player deals a critical hit
+|id=game.player.attack.critical
+|volume=
+|pitch=}}
+| {{SoundLine
+|sound=Weak attack1.ogg
+|sound2=Weak attack2.ogg
+|sound3=Weak attack3.ogg
+|sound4=Weak attack4.ogg
+|subtitle=Weak attack
+|source=player
+|description=When a player deals an attack with no damage
+|id=game.player.attack.nodamage
+|volume=0.2
+|pitch=0.8-1.2}}
+| {{SoundLine
+|sound=Random levelup.ogg
+|subtitle=Player dings
+|source=player
+|description=When a player reaches a level multiple of 5
+|id=random.levelup
+|volume=1.0
+|pitch=1.0}}
+
+| {{SoundLine
+|rowspan=2
+|sound=Player hurt1.ogg
+|sound2=Player hurt2.ogg
+|sound3=Player hurt3.ogg
+|subtitle=Player dies
+|source=player
+|description=When a player dies
+|id=game.player.die
+|volume=1.0
+|pitch=0.8-1.2}}
+| {{SoundLine
+|subtitle=Player hurts
+|source=player
+|description=When a player is damaged from a generic source
+|id=game.player.hurt
+|volume=1.0
+|pitch=0.8-1.2}}
+| {{SoundLine
+|sound=Player hurt drowning1.ogg
+|sound2=Player hurt drowning2.ogg
+|sound3=Player hurt drowning3.ogg
+|sound4=Player hurt drowning4.ogg
+|source=player
+|description=When a player is damaged by running out of breath
+|id=mob.player.hurt_drown
+|volume=1.0
+|pitch=1.0}}
+| {{SoundLine
+|sound=Player hurt fire1.ogg
+|sound2=Player hurt fire2.ogg
+|sound3=Player hurt fire3.ogg
+|source=player
+|description=When a player is damaged by fire
+|id=mob.player.hurt_on_fire
+|volume=1.0
+|pitch=1.0}}
+| {{SoundLine
+|sound=Player hurt freeze1.ogg
+|sound2=Player hurt freeze2.ogg
+|sound3=Player hurt freeze3.ogg
+|sound4=Player hurt freeze4.ogg
+|sound5=Player hurt freeze5.ogg
+|source=player
+|description=When a player is damaged by freezing in [[powder snow]]
+|id=mob.player.hurt_freeze
+|volume=1.0
+|pitch=1.0}}
+| {{SoundLine
+|sound=Fall damage small.ogg
+|source=player
+|description=When a player falls from 4 to 7 blocks high in [[Survival]] or [[Adventure]] mode
+|id=damage.fallsmall
+|volume=0.75
+|pitch=1.0}}
+| {{SoundLine
+|sound=Fall damage big.ogg
+|source=player
+|description=When a player falls from 8 or more blocks high in Survival or Adventure mode
+|id=damage.fallbig
+|volume=0.75
+|pitch=1.0}}
+| {{SoundLine
+|sound=Water splash1.ogg
+|sound2=Water splash2.ogg
+|source=ambient
+|description=When a player enters water
+|id=entity.generic.splash
+|pitch=0.6-1.4}}
+| {{SoundLine
+|sound=Entering water1.ogg
+|sound2=Entering water2.ogg
+|sound3=Entering water3.ogg
+|source=player
+|description=When the player's eye level goes underwater
+|id=ambient.underwater.enter
+|volume=<!--0.8 (other multipliers)-->
+|pitch=1.0}}
+| {{SoundLine
+|sound=Exiting water1.ogg
+|sound2=Exiting water2.ogg
+|sound3=Exiting water3.ogg
+|source=player
+|description=When the player's eye level exits underwater
+|id=ambient.underwater.exit
+|volume=<!--1.0 (other multipliers)-->
+|pitch=1.0}}
+| {{SoundLine
+|sound=Swim1.ogg
+|sound2=Swim2.ogg
+|sound3=Swim3.ogg
+|sound4=Swim4.ogg
+|source=player
+|description=While a player is moving through water
+|id=random.swim
+| pitch = 0.6-1.4}}
+| {{SoundLine
+|rowspan=2
+|sound=hurt.wav<!--this is the old hurt sound-->
+|source=player
+|description=''Unused sound event''
+|id=random.hurt
+|volume=1.0
+|pitch=1.0}}
+}}
+
+== Data values ==
+
+=== ID ===
+{{JE}}:
+{{ID table
+|edition=java
+|generatetranslationkeys=y
+|displayname=Player
+|spritetype=entity
+|nameid=player
+|foot=1}}
+
+{{BE}}:
+{{ID table
+|edition=bedrock
+|shownumericids=y
+|generatetranslationkeys=y
+|displayname=Player
+|spritetype=entity
+|nameid=player
+|showentityfamily=y
+|entityfamily=player
+|id=63
+|foot=1}}
+
+=== Entity data ===
+{{main|player.dat format}}
+{{see also|Chunk format}}
+Players have entity data associated with them that contain various properties. 
+
+<onlyinclude>
+<section begin="entity data" /><div class="treeview">
+* {{nbt|compound}} The root tag. In [[Java Edition level format|level.dat]] files, this tag is called {{cd|Player}}.
+** {{nbt inherit/entity}}
+** '''except for''' the tags: {{cd|CustomName}}, {{cd|CustomNameVisible}}, and {{cd|Glowing}}.
+** {{nbt inherit/mob}}
+** '''except for''' the tags:, {{cd|CanPickUpLoot}}, {{cd|LeftHanded}}, {{cd|PersistenceRequired}}, {{cd|Leash}}, {{cd|drop_chances}}.
+** {{nbt|compound|abilities}}: The abilities this player has.
+***{{nbt|byte|flying}}: 1 or 0 ({{cd|true|false|d=/}}) - {{cd|true}} if the player is currently flying.
+*** {{nbt|float|flySpeed}}: The flying speed, set to {{cd|0.05}}.
+*** {{nbt|byte|instabuild}}: 1 or 0 ({{cd|true|false|d=/}}) - If {{cd|true}}, the player can place blocks without depleting them. This is {{cd|true}} for Creative mode, and {{cd|false}} for other game modes.
+*** {{nbt|byte|invulnerable}}: 1 or 0 ({{cd|true|false|d=/}}) - Behavior is not the same as the invulnerable tag on other entities. If {{cd|true}}, the player is immune to all damage and harmful effects except for [[void]] damage and {{cmd|kill}}. Also, all mobs, whether hostile or not, are passive to the player. {{cd|true}} when in Creative or Spectator mode, and {{cd|false}} when in Survival or Adventure mode.
+*** {{nbt|byte|mayBuild}}: 1 or 0 ({{cd|true|false|d=/}}) - If {{cd|true}}, the player can place blocks. {{cd|true}} when in Creative or Survival mode, and {{cd|false}} when in Spectator or Adventure mode.
+*** {{nbt|byte|mayfly}}: 1 or 0 ({{cd|true|false|d=/}}) - If {{cd|true}}, the player can fly and doesn't take fall damage. {{cd|true}} when in Creative and Spectator modes, and {{cd|false}} when in Survival and Adventure modes.
+*** {{nbt|float|walkSpeed}}: The walking speed, set to {{cd|0.1}}.
+** {{nbt|int|DataVersion}}: Version of the player NBT structure. Is increased with every new snapshot and release. See [[Data version]].
+** {{nbt|string|Dimension}}: The [[Resource location|ID]] of the dimension the player is in. Used to store the player's last known location along with {{cd|Pos}}.
+** {{nbt|list|EnderItems}}: Each compound tag in this list is an item in the player's 27-slot ender chest inventory. When empty, list type may have [[NBT format#Usage|unexpected value]].
+*** {{nbt|compound}} An item in the inventory.
+**** Includes the {{nbt|byte|Slot}} tag - slots are numbered {{cd|0|26|d=–}}, inclusive.
+**** See {{slink|Data component format|Item format}}.
+**{{nbt|list|entered_nether_pos}}: May not exist. A list of 3 doubles, describing the [[Overworld]] position from which the player entered the [[the Nether|Nether]]. Used by the <code>[[Advancement/JSON_format#minecraft:nether_travel|nether_travel]]</code> [[advancement]] trigger. Set every time the player passes through [[Nether portal|a portal]] from the Overworld to the Nether. When entering a dimension other than the nether ''(not by respawning)'' this tag is removed. Entering the Nether without using a portal does not update this tag.
+*** {{nbt|double|x}}: The X coordinate in the Overworld.
+*** {{nbt|double|y}}: The Y coordinate in the Overworld.
+*** {{nbt|double|z}}: The Z coordinate in the Overworld.
+**{{nbt|float|foodExhaustionLevel}}: See {{Slink|Hunger|Mechanics}}.
+**{{nbt|int|foodLevel}}: The value of the hunger bar. Referred to as '''hunger'''. See [[Hunger]].
+**{{nbt|float|foodSaturationLevel}}: Referred to as '''saturation'''. See {{Slink|Hunger|Mechanics}}.
+**{{nbt|int|foodTickTimer}}: See [[Hunger]].
+**{{nbt|boolean|ignore_fall_damage_from_current_explosion}}: 1 or 0 ({{cd|true|false|d=/}}) - {{cd|true}} if the current explosion should apply a fall damage reduction. Only used by explosions from [[wind charges]].
+**{{nbt|list|Inventory}}: Each compound tag in this list is an item in the player's inventory. (Note: when empty, list type may have [[NBT format#Usage|unexpected value]].)
+***{{nbt|compound}} An item in the inventory.
+****See {{slink|Data component format|Item format}}.
+**{{nbt|compound|LastDeathLocation}}: May not exist. Location of the player's last death.
+***{{nbt|string|dimension}}: Dimension of last death.
+***{{nbt|int-array|pos}}: Coordinates of last death.
+**{{nbt|int|playerGameType}}: The current game mode of the player. {{cd|0}} means [[Survival]], {{cd|1}} means [[Creative]], {{cd|2}} means [[Adventure]], and {{cd|3}} means [[Spectator]].
+**{{nbt|int|previousPlayerGameType}}: The previous game mode of the player.
+**{{nbt|compound|recipeBook}}: Contains a JSON object detailing recipes the player has unlocked.
+***{{nbt inherit/Recipe Book}}
+**{{nbt|compound|respawn}}: May not exist. The respawn information of the player. Removed when the player attempts to respawn with no valid bed or respawn anchor to spawn at these coordinates. They are unaffected by breaking a bed or respawn anchor at these coordinates, and are unaffected by the player's death.
+***{{nbt|int-array|pos}}: block position to spawn at
+***{{nbt|float|yaw}}: angle to spawn with (default: 0.0)
+***{{nbt|string|dimension}}: dimension id to spawn in (default minecraft:overworld) (required)
+***{{nbt|float|pitch}}: pitch to spawn with. (required)
+***{{nbt|boolean|forced}}: true if this spawn was set through commands (default: false)
+**{{nbt|compound|RootVehicle}}: May not exist. The root entity that the player is riding.
+***{{nbt|int-array|Attach}}: The [[UUID]] of the entity the player is riding, stored as four ints.
+***{{nbt|compound|Entity}}: The NBT data of the root vehicle.
+****See [[Entity format]].
+**{{nbt|int|Score}}: The score displayed upon death.
+**{{nbt|byte|seenCredits}}: 1 or 0 ({{cd|true|false|d=/}}) - {{cd|true}} if the player has entered the [[Exit portal|exit portal]] in the [[The End|End]] at least once.
+**{{nbt|compound|SelectedItem}}: Data of the item currently being held by the player, excluding the [[player.dat format#Inventory slot numbers|Slot]] tag. Only exists when using the /data command, this value is not saved in the [[player.dat format|player.dat format]].
+***See [[item format]].
+**{{nbt|int|SelectedItemSlot}}: The selected hotbar slot of the player. Values are 0-indexed, so the leftmost slot is 0 and the rightmost slot is 8.
+**{{nbt|compound|ShoulderEntityLeft}}: The entity that is on the player's left shoulder. Always displays as a parrot.
+***See [[Entity format]].
+**{{nbt|compound|ShoulderEntityRight}}: The entity that is on the player's right shoulder. Always displays as a parrot.
+***See [[Entity format]].
+**{{nbt|short|SleepTimer}}: The number of [[game tick]]s the player had been in bed. {{cd|0}} when the player is not sleeping. When in bed, increases up to 100 ticks, then stops. Skips the night after enough players in beds have reached 100 (see {{slink|Bed|Passing the night}}). When getting out of bed, instantly changes to 100 ticks and then increases for another 9 ticks (up to 109 ticks) before returning to 0 ticks.
+**{{nbt|boolean|spawn_extra_particles_on_fall}}: {{more info}}
+**{{nbt|compound|warden_spawn_tracker}}: Contains data about the [[warden]] spawning process for this player.
+***{{nbt|int|warning_level}}: A warning level between {{cd|0|3|d=and}} (inclusive). The warden spawns at level 3.
+***{{nbt|int|cooldown_ticks}}: The number of game ticks before the <code>warning_level</code> can be increased again. Decreases by 1 every tick. It is set to 200 game ticks (10 seconds) every time the warning level is increased.
+***{{nbt|int|ticks_since_last_warning}}: The number of game ticks since the player was warned for warden spawning. Increases by 1 every tick. After 12000 game ticks (10 minutes) it resets to a value of 0, and the <code>warning_level</code> decreases by 1 level.
+**{{nbt|int|XpLevel}}: The level shown on the [[experience]] bar.
+**{{nbt|float|XpP}}: The progress across the experience bar to the next level, stored as a percentage.{{verify}}
+**{{nbt|int|XpSeed}}: The seed used for the next enchantment in [[Enchanting Table|enchanting tables]].
+**{{nbt|int|XpTotal}}: The total amount of experience the player has collected over time; used for the score upon death.
+</div><section end="entity data" />
+</onlyinclude> 
+
+{{Calculator|playerUuid}}
+
+== Achievements ==
+{{load achievements|Time for Stew;Diamonds to you;Cheating Death}}
+
+Achievements that apply to all mobs:
+{{collapse|content={{load achievements|Overkill;Over-Overkill;Mob Kabob}}
+}}
+
+== Advancements ==
+Advancements that apply to all mobs:
+{{collapse|content={{load advancements|Take Aim;Arbalistic;A Throwaway Joke;Adventure;Mob Kabob}}
+}}
+
+== History ==
+=== ''Java Edition'' ===
+{{HistoryTable
+|{{HistoryLine|java pre-classic}}
+|{{HistoryLine||Cave game tech test|The player currently has no visible model.
+|The player hitbox is 0.6 blocks wide and 1.8 blocks tall, and the player eye height is 1.62 blocks tall.}}
+|{{HistoryLine||rd-132328|[[File:Steve JE1.png|x56px]] [[Mob (entity)|Mob]]s were added with their skin and model ported from ''[[Zombie Town]]''. These are later used for the player.}}
+|{{HistoryLine||rd-20090515|Players can now jump further and also walk and fall faster.
+|Players move slower when in midair.}}
+|{{HistoryLine|java classic}}
+|{{HistoryLine||0.0.15a (Multiplayer Test 1)|[[File:Steve JE1.png|x56px]] Added the player model for the newly introduced [[multiplayer]] mode. Its model and texture are both taken from the mob.
+|The player's arms flail wildly when walking.<ref group=note>Can also be seen in {{ytl|9Vmy-ZNbGXE|Zombie Town}} by Notch, which features the [[mob (entity)|mob]].</ref>{{info needed|can we get a gif of this?}}}}
+|{{HistoryLine||August 13, 2009|link=https://web.archive.org/web/20210712223819/https://notch.tumblr.com/post/162097136/i-just-realized-theres-room-in-the-player-texture|[[File:Steve Glasses.png|x56px]] Notch shows a test skin with a hat layer.}}
+|{{HistoryLine||0.24_SURVIVAL_TEST|[[File:Steve JE2.png|25px]] The texture was changed.}}
+|{{HistoryLine||0.28|[[File:Steve JE3 BE1.png|25px]] The texture was changed, once again, removing the beard.}}
+|{{HistoryLine||December 19, 2009|link=https://web.archive.org/web/20110302153930/notch.tumblr.com/post/290217078/ive-been-feeling-experimental-lately-here-are-my|Player shadow test.}}
+|{{HistoryLine||December 22, 2009|link=wordofnotch:295397619/the-minecraft-artist-is-dock|Notch shows concept art of a new player model, appearing similar to the base "Steve" model, but with a miner hat and different clothes.}}
+|{{HistoryLine|java infdev}}
+|{{HistoryLine||20100227-1414|Players logged in as [[Notch]] now drop an [[apple]] upon death.}}
+|{{HistoryLine||20100327|The player now drops their [[inventory]] and [[World Spawn|respawns]] at the spawn location upon death, rather than having to reload the last save.}}
+|{{HistoryLine|java alpha}}
+|{{HistoryLine||v1.0.4|The player can jump only two blocks horizontally, instead of three.}}
+|{{HistoryLine||v1.0.6|Held items now appear in third person.}}
+|{{HistoryLine||v1.0.9|The player's arms no longer flail wildly when walking.}}
+|{{HistoryLine||v1.0.15|The player model is made visually smaller when seen in third person; the hitbox is unaffected.
+|Players now have an arm swinging animation when attacking or mining, visible in third person.}}
+|{{HistoryLine||v1.1.1|Added ability to sneak with {{Key|Shift}} by default.}}
+|{{HistoryLine|java beta}}
+|{{HistoryLine||1.5|Unarmed damage was increased from {{hp|1}} to {{hp|2}}.}}
+|{{HistoryLine||1.8|dev=Pre-release|The player now has an experience and hunger bar.
+|The player can now jump four blocks horizontally by sprinting.
+|Unarmed damage was decreased from {{hp|2}} to {{hp|1}}.}}
+|{{HistoryLine|java}}
+|{{HistoryLine||1.0.0|dev=RC1|Changed the sounds the player makes. Any physical damage plays a "tick" sound, and damage from falling would play sounds like bones breaking.
+|Before this version, when the player was damaged, they would make a deep "Ooh!" sound that represented the player's response when hurt. However, this sound suggested that the player was male, which was not consistent with/representative of female player skins, so Mojang changed the sound to make it more gender-neutral.}}
+|{{HistoryLine||1.3.1|dev=12w18a|Players no longer drop apples when killed while logged in as [[Notch]].
+|As a result of internal changes, players in singleplayer worlds are immune to all damage except void and the {{cmd|kill}} command for 3 seconds when spawning, respawning, or joining the world.}}
+|{{HistoryLine||1.4.2|dev=12w38a|Changed hurt sounds for player, the fleshy stab sound alongside the generic tick sound and the bone breaking sound from falling were both removed/changed to be less violent.}}
+|{{HistoryLine||1.8|dev=pre1|[[File:Alex (slim) JE1.png|25px]] Added a new player model with smaller arms, and a new default player skin named Alex.}}
+|{{HistoryLine||February 4, 2015|link={{tweet|KrisJelbring|562916800871297024}}|Players can now change usernames.}}
+|{{HistoryLine||1.9|dev=15w42a|Player's hitbox (usually 1.8 blocks tall) is now shorter (1.65m) when crouching, is a 0.6-block cube when gliding with [[elytra]], and is a 0.2-block cube while laying in [[bed]].}}
+|{{HistoryLine|||dev=15w45a|Jump height increased from 1.24919 blocks to 1.2522 blocks.}}
+|{{HistoryLine||1.12|dev=17w13a|Players walking backwards now use the same animation as moving forward instead of rotating the model to the side as if they are going sideways.}}
+|{{HistoryLine||1.13|dev=18w07a|Added the ability to sprint while in water, which causes the player to dive to the ground and swim much faster.}}
+|{{HistoryLine|||dev=18w15a|Sprinting at the surface of water no longer makes the player swim, instead the player stays at the same altitude constantly.
+|Swimming through 1 block holes is now possible.<ref>{{bug|MC-125240}}</ref>}}
+|{{HistoryLine||1.14|dev=19w12a|The player's hitbox height while sneaking is now 1.5 blocks instead of 1.65.}}
+|{{HistoryLine|||dev=19w14a|The player now [[crawling|crawls]] when they are in a space less than 1.5 blocks tall.}}
+|{{HistoryLine||1.15|dev=19w34a|Fixed the slim model being a half-pixel lower than the torso of the player. This had been an issue since the introduction of the slim skin model in [[Java Edition 1.8|1.8]].}}
+|{{HistoryLine||August 20, 2022|link=https://web.archive.org/web/20220821175156/https://twitter.com/JasperBoerstra/status/1561129697857110018|[[File:Steve (classic) JE5.png|25px]][[File:Steve (slim) JE1.png|25px]][[File:Alex (slim) JE2.png|25px]][[File:Alex (classic) JE1.png|25px]] New skin textures for Steve and Alex were added in the ''Minecraft Launcher'' beta, including classic and slim versions.}}
+|{{HistoryLine||1.19.3|dev=22w45a|Integrated player skin now stored separately by wide and slim model.
+|[[File:Steve (classic) JE6.png|25px]][[File:Alex (slim) JE3.png|25px]] Updated integrated skins of Steve and Alex.
+|[[File:Ari (classic) JE1.png|25px]] [[File:Efe (classic) JE1.png|25px]] [[File:Kai (classic) JE1.png|25px]] [[File:Makena (classic) JE1.png|25px]] [[File:Noor (classic) JE1.png|25px]] [[File:Sunny (classic) JE1.png|25px]] [[File:Zuri (classic) JE1.png|25px]]<br>[[File:Ari (slim) JE1.png|25px]] [[File:Efe (slim) JE1.png|25px]] [[File:Kai (slim) JE1.png|25px]] [[File:Makena (slim) JE1.png|25px]] [[File:Noor (slim) JE1.png|25px]] [[File:Sunny (slim) JE1.png|25px]] [[File:Zuri (slim) JE1.png|25px]] Integrated 7 new skins: Ari, Efe, Kai, Makena, Noor, Sunny and Zuri.
+|The 7 new skins can be assigned to offline players now.}}
+|{{HistoryLine||1.21.2|dev=24w33a|[[File:Steve (slim) JE2.png|25px]] [[File:Alex (slim) JE4.png|25px]] [[File:Ari (slim) JE2.png|25px]] [[File: Efe (slim) JE2.png|25px]] [[File:Kai (slim) JE2.png|25px]] [[File:Makena (slim) JE2.png|25px]] [[File:Noor (slim) JE2.png|25px]] [[File:Sunny (slim) JE2.png|25px]] [[File:Zuri (slim) JE2.png|25px]] The slim player model has changed, moving the arms down half a pixel}}
+|{{HistoryLine|||dev=24w34a|The slim player model has been reverted to the pre-24w33a shape.<ref>{{bug|MC-275473}}</ref>}}
+|{{HistoryLine||1.21.4|dev=24w45a|Players no longer receive 3 seconds of damage immunity when spawning, respawning, or joining a world or server.}}
+|{{HistoryLine|java combat}}
+|{{HistoryLine||5|Players now get knockback from hits that deal less than half a heart of damage, including no damage.}}
+}}
+
+=== ''Bedrock Edition'' ===
+{{HistoryTable
+|{{HistoryLine|pocket alpha}}
+|{{HistoryLine||Demo|[[File:Steve JE3 BE1.png|25px]] Added the player.}}
+|{{HistoryLine||v0.8.0|dev=build 1|[[File:Steve BE2.png|25px]] The player [[skin]] was changed.}}
+|{{HistoryLine||v0.10.0|dev=build 1|[[File:Steve PE 0.10.0.png|25px]][[File:Steve Head (facing NWU) BE3.png|24px]] The player skin was changed, once again. Removed hole from head bottom.}}
+|{{HistoryLine||v0.11.0|dev=build 1|The player's skin can now be customized.
+|[[File:Alex (slim) JE1.png|25px]] Added a new player model with smaller arms, and a new default player skin named Alex.
+|[[File:Steve JE3 BE1.png|25px]] Changed Steve's skin to match {{el|JE}}.}}
+|{{HistoryLine||v0.12.1|dev=build 10|Changed the sounds the player makes. Any physical damage plays a flesh impact sound, and damage from falling would play sounds like bones breaking.
+|Before this version, when the player was damaged, they would make a deep "ooh!" sound that represented the player's response when hurt. However, this sound suggested that the player was male, so Mojang changed the sound to make it more gender-neutral.}}
+|{{HistoryLine||?|Alex's shoulders lowered by half a pixel.}}
+|{{HistoryLine|bedrock}}
+|{{HistoryLine||1.2.13|dev=beta 1.2.13.8|Added the ability to sprint while in water, which causes the player to dive to the ground and swim much faster.}}
+|{{HistoryLine||1.4.0|dev=beta 1.2.20.1|Players can now swim through 1x1 gaps.}}
+|{{HistoryLine||1.5.0|dev=beta 1.5.0.0|Improved player swimming at the surface of water.}}
+|{{HistoryLine||1.13.0|dev=beta 1.13.0.13|The player left leg no longer slightly bob when the player is idle or looking around.}}
+|{{HistoryLine|||dev=beta 1.13.0.15|Player height is now customizable in 4 different sizes in the [[Character creator]]: tall, medium, small, smaller, though have the same hitbox. Also, player eyes (Steve, Alex, and custom Character creator skins) can now blink.}}
+|{{HistoryLine||1.14.0|dev=beta 1.14.0.1|Players can now sprint on top of [[water]] instead of being able to swim.}}
+|{{HistoryLine||1.18.30|dev=beta 1.18.30.20|Unarmed damage has been decreased from {{hp|2}} to {{hp|1}} to match Java Edition.}}
+|{{HistoryLine||1.19.50|dev=Preview 1.19.50.21|<!-- USE JAVA RENDERS TEMPORARY, PLEASE REPLACE WITH BEDROCK RENDERS -->[[File:Ari (classic) JE1.png|25px]] [[File:Efe (classic) JE1.png|25px]] [[File:Kai (classic) JE1.png|25px]] [[File:Makena (classic) JE1.png|25px]] [[File:Noor (classic) JE1.png|25px]] [[File:Sunny (classic) JE1.png|25px]] [[File:Zuri (classic) JE1.png|25px]]<br>[[File:Ari (slim) JE1.png|25px]] [[File:Efe (slim) JE1.png|25px]] [[File:Kai (slim) JE1.png|25px]] [[File:Makena (slim) JE1.png|25px]] [[File:Noor (slim) JE1.png|25px]] [[File:Sunny (slim) JE1.png|25px]] [[File:Zuri (slim) JE1.png|25px]] Added 7 new skins: Ari, Efe, Kai, Makena, Noor, Sunny and Zuri.}}
+|{{HistoryLine||1.19.70|dev=Preview 1.19.70.20|The player’s hitbox height now reduces to 1.5 blocks while sneaking.}}
+|{{HistoryLine||1.19.80|exp=Short Sneak|dev=Preview 1.19.80.20|Sneaking is now behind the "Short Sneak" experimental toggle.}}
+|{{HistoryLine||1.20.10|exp=Short Sneaking and Crawling|dev=Preview 1.20.10.20|The "Short Sneak" experimental toggle has been renamed to "Short Sneaking and Crawling".}}
+|{{HistoryLine||1.20.10|exp=Crawling|dev=Preview 1.20.10.23|Renamed the "Short Sneaking and Crawling" experimental toggle to "Crawling".}}
+|{{HistoryLine||1.20.10|dev=Preview 1.20.10.23|[[Sneaking]] under 1.5 block gaps is no longer behind experimental gameplay.}}
+|{{HistoryLine||1.20.30|dev=Preview 1.20.20.22|Crawling is no longer behind experimental gameplay.
+|Removed the "Crawling" toggle.}}
+|{{HistoryLine||1.21.30|dev=Preview 1.21.30.21|When the player enters [[water]], the splashing sound is now changed to match ''[[Java Edition]]''.}}
+|{{HistoryLine|||dev=Preview 1.21.30.23|[[File:Ari (classic) BE2.png|25px]] [[File:Ari (slim) BE2.png|25px]] The texture of Ari has been changed.}}
+|{{HistoryLine||26.40|dev=Preview 26.40.27|Players can no longer get soft-locked when standing inside a sulfur cube's or a creaking's bounding box, as they are now able to interact with the entities and blocks around them through the mob.
+*Applies only when the entities are invulnerable.
+*Replaces the workaround where creakings would despawn after blocking a player for too long.}}
+}}
+
+=== Legacy Console Edition ===
+{{HistoryTable
+|{{HistoryLine|console}}
+|{{HistoryLine||xbox=TU1|xbone=CU1|ps3=1.00|psvita=1.00|ps4=1.00|wiiu=Patch 1|switch=1.0.1|[[File:Steve JE3 BE1.png|25px]] Added the player.}}
+|{{HistoryLine||xbox=TU3|xbone=CU1|ps3=1.04|psvita=1.00|ps4=1.00|Added skin packs.}}
+|{{HistoryLine||xbox=TU5|xbone=CU1|ps3=1.00|psvita=1.00|ps4=1.00|wiiu=Patch 1|switch=1.0.1|The sound of the player taking damage is changed from a man's grunt to be more gender-neutral.}}
+|{{HistoryLine||xbox=TU24|xbone=CU12|ps3=1.16|psvita=1.16|ps4=1.16|[[File:Alex (slim) JE1.png|25px]] Added the Alex skin.}}
+|{{HistoryLine||xbox=TU46|xbone=CU36|ps3=1.38|psvita=1.38|ps4=1.38|wiiu=Patch 15|Player's hitbox (usually 1.8 blocks tall) is now shorter (1.65m) when crouching, is a 0.6-block cube when gliding with [[elytra]], and is a 0.2-block cube while laying in [[bed]].}}
+|{{HistoryLine||xbox=TU54|xbone=CU44|ps3=1.52|psvita=1.52|ps4=1.52|wiiu=Patch 24|switch=1.0.4|Players walking backwards now use the same animation as moving forward instead of rotating the model to the side as if they are going sideways.}}
+|{{HistoryLine||xbox=TU69|xbone=none|ps3=1.76|psvita=1.76|ps4=1.76|wiiu=Patch 38|switch=none|Changed hurt sounds for player again.}}
+}}
+
+=== Gallery ===
+<gallery>
+Human Mob.jpg|The first image of [[mob (entity)|mobs]]
+Classic 0.24 Skin with hat layer.jpg|First screenshot of a player model with hat layer
+Minecraft character by Dock.jpg|Character concept art for Minecraft by [[Dock]]
+Player height comparison.png|Height comparison of the player model before (left) and in/after (right) [[Java Edition Alpha v1.0.15]]
+</gallery>
+
+=== Historical sounds ===
+{| class="wikitable" style="text-align: center" data-description="Historical player sounds"
+! Sound
+! Added in
+! Removed in
+! Volume
+! Pitch
+! Attenuation Distance
+|-
+| {{Sound|Hurt|Hurt Old.ogg}}
+| Java Edition Classic 0.24 SURVIVAL TEST
+| [[Java Edition 1.0.0]] ([[Java Edition RC1|RC1]])<br>[[Pocket Edition v0.12.1 alpha]] ([[Pocket Edition v0.12.1 alpha build 10|build 10]])
+| 1.0
+| 0.8-1.2
+| 16
+|-
+| {{Sound|Hurt flesh|Hurtflesh1.ogg|Hurtflesh2.ogg|Hurtflesh3.ogg}}
+| rowspan=3 | Java Edition 1.0.0 (RC1)
+| rowspan=3 | [[Java Edition 1.4.2]] ([[Java Edition 12w38a|12w38a]])
+| 1.0
+| 0.8-1.2
+| 16
+|-
+| {{Sound|Landing from a small fall|Fallsmall.ogg}}
+| 1.0
+| 1.0
+| 16
+|-
+| {{Sound|Landing from a big fall|Fallbig1.ogg|Fallbig2.ogg}}
+| 1.0
+| 1.0
+| 16
+|}
+
+=== Data history ===
+{{HistoryTable
+|{{HistoryLine|java}}
+|{{HistoryLine||1.11|dev=16w32a|Changed entity ID from <code>Player</code> to <code>player</code>.}}
+|{{HistoryLine||1.13|dev=17w47a|Numeric IDs for entities were presumably deprecated in this version.{{info needed|what was this entity's numeric ID?}}}}
+|{{HistoryLine||1.21.5|dev=25w06a|The armor and off-hand equipment of players is now also stored in the equipment field.}}
+|{{HistoryLine|||dev=25w07a|The <code>SpawnX</code>, <code>SpawnY</code>, <code>SpawnZ</code>, <code>SpawnAngle</code>, <code>SpawnDimension</code>, and <code>SpawnForced</code> fields have been collected into a single <code>respawn</code> field.|The <code>enteredNetherPosition</code> field has been renamed to <code>entered_nether_pos</code>, and is now formatted as a list of doubles.}}
+|{{HistoryLine||1.21.9|dev=Pre-Release 1|<code>angle</code> has been renamed to <code>yaw</code> and is now a required field.| <code>pitch</code> has been added as a required field.|<code>dimension</code> is now a required field.}}
+
+}}
+
+==Issues==
+{{issue list}}
+
+== Trivia ==
+*The original Steve skin and player model was originally created for another one of Notch's games called ''[[Zombie Town]]''.
+*The player's eye level when using the default player height (according to coordinates on the [[debug screen]]) is 1.62m when standing, 1.27m when sneaking and 0.4m when swimming, crawling or gliding.
+*The player's actual size doesn't match the hitbox. Their model is as tall as 2 blocks, but is scaled down by a factor of 0.9375, making them 1.875m tall and 0.9375m wide, exactly 2 texels shorter than the height of 2 blocks.
+*The player's legs do not line up perfectly with the torso to prevent {{w|z-fighting}} when wearing armor. This is the same case for [[zombie]]s and their variants.<ref>{{bug|MC-42|||WAI}}</ref>
+*{{IN|Bedrock}}, a dead player can still collect [[experience orbs]] near their death location until they choose to respawn.
+**Likewise, when the player slept in a bed, the world revolved around the player during the animation instead of the player's camera rotating, which led to some visual bugs.<ref>{{tweet|Dinnerbone|1100001119407878150|Another one: when the player is in a bed and lying down, we don't move the camera to the bed. We just move and rotate the whole world to make it be in front of where the camera was last. ¯\_(ツ)_/¯|February 25, 2019}}</ref>
+*With a length of 3 to 16 characters and <span class="explain" title="The letters A-Z uppercase and lowercase, the numbers 0-9, and an underscore '_'">63 characters to choose from</span>, the total number of possible player usernames in {{JE}} is <math>\sum_{n=3}^{16} 63^n \approx 6.257 \times 10^{28}</math> or more than 62 octillion.
+*The Knockback attack sounds from 1-2 actually have the punch sound effect.
+
+== Gallery ==<!-- Do not fill the gallery with artwork or external media, the page was split for a reason. -->
+
+=== Renders ===
+==== Idle ====
+<gallery>
+File:Alex (classic) JE2.png|Alex with wide arms
+File:Ari (slim) JE1.png|Ari with slim arms
+File:Efe (classic) JE1.png|Efe with wide arms
+File:Kai (slim) JE1.png|Kai with slim arms
+File:Makena (classic) JE1.png|Makena with wide arms
+File:Noor (classic) JE1.png|Noor with wide arms
+File:Steve (slim) JE2.png|Steve with slim arms
+File:Sunny (slim) JE1.png|Sunny with slim arms
+File:Zuri (slim) JE1.png|Zuri with slim arms
+</gallery>
+
+==== Animated ====
+<gallery class="pixel-image">
+Alex Eye blink BE.gif|Alex's eyes blinking in ''[[Bedrock Edition]]''
+Steve Eye blink BE.gif|Steve's eyes blinking in ''[[Bedrock Edition]]''
+</gallery>
+
+=== Textures ===
+<gallery class="pixel-image">
+Alex (classic texture) JE1.png|Alex
+Alex (slim texture) JE3.png|Alex with slim arms
+Ari (classic texture) JE1.png|Ari
+Ari (slim texture) JE1.png|Ari with slim arms
+Efe (classic texture) JE1.png|Efe
+Efe (slim texture) JE1.png|Efe with slim arms
+Kai (classic texture) JE1.png|Kai
+Kai (slim texture) JE1.png|Kai with slim arms
+Makena (classic texture) JE1.png|Makena
+Makena (slim texture) JE1.png|Makena with slim arms
+Noor (classic texture) JE1.png|Noor
+Noor (slim texture) JE1.png|Noor with slim arms
+Steve (classic texture) JE6.png|Steve
+Steve (slim texture) JE2.png|Steve with slim arms
+Sunny (classic texture) JE1.png|Sunny
+Sunny (slim texture) JE1.png|Sunny with slim arms
+Zuri (classic texture) JE1.png|Zuri
+Zuri (slim texture) JE1.png|Zuri with slim arms
+</gallery>
+
+=== Screenshots ===
+<gallery>
+Steve's Axolotl.png|Several players looking at an [[axolotl]]
+Ari Spyglass.jpg|Ari looks at Efe from afar
+Noor portrait.png|Noor looking at ''[[Painting|Prairie Ride]]''. Unsurprisingly, Noor is seen in the painting.
+Character Potential.png|Five of the default skins customized using the [[Character Creator]]
+Players Around Campfire.jpg|Players around a campfire
+At the Beach.jpg|Steve and Alex at the beach
+HEADER PRICE.jpg|Steve and Alex at a village
+</gallery><!-- Don't put an other media section on here, put all relevant art or images on the characters' pages. -->
+
+==See also==
+* [[Character]]
+* [[Mob]]
+* {{EntityLink|id=mob|Mob (entity)}}
+* [[Skin]]
+* {{PersonaLink|Cape}}
+* {{EntityLink|Mob of Me}}
+
+== External links ==
+
+* {{Mcnet|introducing-new-default-skins|Introducing New Default Minecraft Skins|October 19, 2022|Sophia Dankis}}
+
+==Notes==
+{{reflist|group=note}}
+==References ==
+{{reflist}}
+
+== Navigation ==
+{{Navbox entities|Other}}
+{{Navbox environment}}
+
+[[Category:Characters]]
+[[Category:Playable entities]]
+[[Category:Mobs]]
+
+[[cs:Hráč]]
+[[de:Spieler]]
+[[el:Παίκτης]]
+[[es:Jugador]]
+[[fr:Joueur]]
+[[it:Giocatore]]
+[[ja:プレイヤー]]
+[[ko:플레이어]]
+[[lzh:戲者]]
+[[nl:Speler]]
+[[pl:Gracz]]
+[[pt:Jogador]]
+[[ru:Игрок]]
+[[th:ผู้เล่น]]
+[[tr:Oyuncu]]
+[[uk:Гравець]]
+[[zh:玩家]]

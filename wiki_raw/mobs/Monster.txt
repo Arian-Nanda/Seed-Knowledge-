@@ -1,0 +1,323 @@
+{{about||the removed entity|Monster (entity)|other uses|Monster (disambiguation)}}
+[[File:OverWorld Monsters.png|260px|right|thumb|Some of the many common monsters from {{MC}}.]]
+
+The term '''monster''' refers to a category of [[mob]]s that are mostly hostile to the [[player]].
+
+== Common properties ==
+Mobs mentioned on this page share the following properties to be classified as monsters:
+* They are either classified as enemies in the [[entity format]] or in [[Mob spawning|spawning mechanics]], such as the [[mob cap]].
+
+Although this doesn't affect their classification, ''most'' of them share the following properties, but with exceptions:
+*They despawn or don't spawn naturally in [[Peaceful]] difficulty.
+* Prevent the player from [[Bed#Sleeping|sleeping]].
+* Drop more than 1-3 [[experience]] orbs.
+* Use the "Hostile Mobs" sound category.
+* Trigger the "Monster Hunter" [[advancement]] and "Monsters Hunted" challenge.{{only|java|short=1}}
+* Trigger the "Monster Hunter" [[achievement]].{{only|bedrock|short=1}}
+* [[Iron golem]]s and [[snow golem]]s will target them.
+* [[Parrot]]s will imitate their sounds.
+* An active [[conduit]] will damage them.
+* Worried [[panda]]s{{only|java|short=1}} and [[rabbit]]s will avoid them.
+* They can’t be [[leashed]].
+* They are part of the {{cd|monster}} [[family]]{{only|BE}}.
+
+== List of monsters ==
+{{columns-list|colwidth=20em|
+* {{EntityLink|Blaze}}
+* {{EntityLink|Bogged}}
+* {{EntityLink|Breeze}}
+* {{EntityLink|Camel Husk}}
+* {{EntityLink|Cave Spider}}
+* {{EntityLink|Creaking}}
+* {{EntityLink|Creeper}}
+* {{EntityLink|Drowned}}
+* {{EntityLink|Elder Guardian}}
+* {{EntityLink|Elder Guardian Ghost}}{{only|bedrock|short=1}}
+* {{EntityLink|Ender Dragon}}
+* {{EntityLink|Enderman}}
+* {{EntityLink|Endermite}}
+* {{EntityLink|Evoker}}
+* {{EntityLink|Ghast}}
+* {{EntityLink|Giant}}{{only|java|short=1}}
+* {{EntityLink|Guardian}}
+* {{EntityLink|Hoglin}}
+* {{EntityLink|Husk}}
+* {{EntityLink|Illusioner}}{{only|java|short=1}}
+* {{EntityLink|Magma Cube}}
+* {{EntityLink|Old Zombie Villager|image=ZombieVillagerFaces.gif}}{{only|bedrock|short=1}}
+* {{EntityLink|Parched}}
+* {{EntityLink|Phantom}}
+* {{EntityLink|Piglin}}
+* {{EntityLink|Piglin Brute}}
+* {{EntityLink|Pillager}}
+* {{EntityLink|Ravager}}
+* {{EntityLink|Shulker}}
+* {{EntityLink|Silverfish}}
+* {{EntityLink|Skeleton}}
+* {{EntityLink|Skeleton Horse}}
+* {{EntityLink|Slime}}
+* {{EntityLink|Spider}}
+* {{EntityLink|Stray}}
+* {{EntityLink|Sulfur Cube}}
+* {{EntityLink|Vex}}
+* {{EntityLink|Vindicator}}
+* {{EntityLink|Warden}}
+* {{EntityLink|Witch}}
+* {{EntityLink|Wither}}
+* {{EntityLink|Wither Skeleton}}
+* {{EntityLink|Zoglin}}
+* {{EntityLink|Zombie}}
+* {{EntityLink|Zombie Horse}}
+* {{EntityLink|Zombie Nautilus}}
+* {{EntityLink|Zombie Villager}}
+* {{EntityLink|Zombified Piglin}}
+}}
+
+== Related mobs ==
+This mob is hostile, but is not treated as a monster in the game code - rather as an [[animal]].
+* {{EntityLink|Killer Bunny}}{{only|java|short=1}}
+
+== Related blocks ==
+These blocks are based on monsters but are not treated as such in the code, due to being blocks.
+* {{BlockLink|Creeper Head}}
+* {{BlockLink|Dragon Head}}
+* {{BlockLink|Monster Spawner}}
+* {{BlockLink|Piglin Head}}
+* {{BlockLink|Skeleton Skull}}
+* {{BlockLink|Trial Spawner}}
+* {{BlockLink|Wither Skeleton Skull}}
+* {{BlockLink|Zombie Head}}
+
+== Unimplemented ==
+These mob vote options are based on monsters, but have not been added to the game.
+* {{EntityLink|Barnacle}}
+* {{EntityLink|Great Hunger}}
+* {{EntityLink|Iceologer}}
+* {{EntityLink|Wildfire}}
+
+== April Fools' ==
+These mobs are monsters, but have only appeared in [[April Fools']] versions.
+{{columns-list|colwidth=20em|
+* {{EntityLink|Angry Ghast}}
+* {{EntityLink|Mega Spud}}
+* {{EntityLink|Nerd Creeper}}
+* {{EntityLink|id=creeper|Pet Creeper}}
+* {{EntityLink|id=slime|Pet Slime}}
+* {{EntityLink|Pink Wither}}
+* {{EntityLink|Plaguewhale Slab}}
+* {{EntityLink|Poisonous Potato Zombie}}
+* {{EntityLink|Redstone Bug}}
+* {{EntityLink|Smiling Creeper}}
+* {{EntityLink|Toxifin Slab}}
+* {{EntityLink|id=warden|Warden (boss)}}
+}}
+
+== Achievements ==
+{{load achievements|Monster Hunter}}
+
+== Advancements ==
+{{load advancements|Monster Hunter;Monsters Hunted}}
+
+== History ==
+=== ''Java Edition'' ===
+{{HistoryTable
+|{{HistoryLine|java classic}}
+|{{HistoryLine||0.24_SURVIVAL_TEST|[[File:Creeper JE1.png|32px]] [[File:Skeleton JE3 BE1.png|32px]] [[File:Zombie JE1.png|40px]] Added creepers, skeletons, and zombies.}}
+|{{HistoryLine||0.26 SURVIVAL TEST|[[File:Spider JE2 BE1.png|48px]] Added spiders.}}
+|{{HistoryLine|java indev}}
+|{{HistoryLine||0.31|dev=20100205-1558|[[File:Giant JE1.png|32px]] Added giants.}}
+|{{HistoryLine|java infdev}}
+|{{HistoryLine||20100316|[[File:Steve JE3 BE1.png|x53px]] Added [[Monster (entity)|monsters]].}}
+|{{HistoryLine|java alpha}}
+|{{HistoryLine||v1.0.11|[[File:Slime JE1.png|52px]] Added slimes.}}
+|{{HistoryLine||v1.2.0|[[File:Ghast JE1 BE1.gif|50px]] [[File:Zombified Piglin JE2.png|x53px]] Added ghasts and zombie pigmen.}}
+|{{HistoryLine|java beta}}
+|{{HistoryLine||1.8|dev=Pre-release|[[File:Cave Spider JE1 BE1.png|48px]] [[File:Enderman JE1.png|22px]] [[File:Silverfish JE1 BE1.gif|32px]] Added cave spiders, endermen, and silverfish.|Removed monsters.}}
+|{{HistoryLine|java}}
+|{{HistoryLine||1.0.0|dev=Beta 1.9 Prerelease|[[File:Blaze JE1 BE1.png|32px]] [[File:Magma Cube JE1 BE1.png|52px]] Added blazes and magma cubes.}}
+|{{HistoryLine|||dev=Beta 1.9 Prerelease 4|[[File:Ender Dragon.gif|70px]] Added the ender dragon.}}
+|{{HistoryLine||1.4.2|dev=12w32a|[[File:Zombie Villager.png|32px]] Added zombie villagers.}}
+|{{HistoryLine|||dev=12w34a|[[File:Wither JE1 BE1.png|50px]] Added the wither.}}
+|{{HistoryLine|||dev=12w36a|[[File:Wither Skeleton JE1 BE1.png|32px]] Added wither skeletons.}}
+|{{HistoryLine|||dev=12w38a|[[File:Witch Revision 1.png|32px]] Added witches.}}
+|{{HistoryLine||1.6.1|dev=13w16a|[[File:Zombie Horse Revision 1.png|50px]] [[File:Skeleton Horse Revision 1.png|50px]] Added zombie horses and skeleton horses.}}
+|{{HistoryLine||1.8|dev=14w11a|[[File:Endermite Revision 1.png|32px]] Added endermites.}}
+|{{HistoryLine|||dev=14w25a|[[File:Guardian Revision 1.png|50px]] [[File:Elder Guardian Revision 1.png|50px]] Added guardians and elder guardians.}}
+|{{HistoryLine||1.9|dev=15w31a|[[File:Shulker.png|40px]] Added shulkers.}}
+|{{HistoryLine||1.10|dev=16w20a|[[File:Husk JE1 BE1.png|32px]] [[File:Stray JE1 BE3.png|32px]] [[File:Polar Bear JE1.png|50px]] Added husks, strays, and [[polar bear]]s.
+}}
+|{{HistoryLine||1.11|dev=16w39a|[[File:Vindicator JE1 BE1.png|32px]] [[File:Evoker JE1 BE1.png|32px]] [[File:Vex JE1 BE1.png|32px]] Added vindicators, evokers, and vexes.}}
+|{{HistoryLine||1.12|dev=17w16a|[[File:Illusioner JE1.png|32px]] Added illusioners.}}
+|{{HistoryLine||1.13|dev=18w07a|[[File:Phantom JE1.png|48px]] Added phantoms.}}
+|{{HistoryLine|||dev=18w11a|[[File:Drowned JE1.png|32px]] Added drowned.}}
+|{{HistoryLine||1.14|dev=18w43a|[[File:Pillager JE1.png|50px]] [[File:Ravager JE1.png|50px]] Added pillagers and illager beasts.}}
+|{{HistoryLine|||dev=19w14a|Polar bears are no longer considered monsters.}}
+|{{HistoryLine||1.16|dev=20w06a|[[File:Hoglin JE1.png|50px]] Added hoglins.}}
+|{{HistoryLine|||dev=20w07a|[[File:Piglin.png|32px]] Added piglins.}}
+|{{HistoryLine|||dev=20w14a|[[File:Zoglin.png|50px]] Added zoglins.}}
+|{{HistoryLine||1.16.2|dev=20w27a|[[File:Piglin Brute.png|32px]] Added piglin brutes.}}
+|{{HistoryLine||1.19|dev=Deep Dark Experimental Snapshot 1|[[File:Warden JE1 BE1.png|32px]] Added wardens.}}
+|{{HistoryLine||1.20.3|exp=Update 1.21|dev=23w45a|[[File:Breeze JE1.png|32px]] Added breezes.}}
+|{{HistoryLine||1.20.5|exp=Update 1.21|dev=24w07a|[[File:Bogged JE1 BE1.png|32px]] Added bogged.}}
+|{{HistoryLine||1.21.2|exp=Winter Drop|dev=24w40a|[[File:Creaking JE1 BE1.png|20px]] Added creakings.}}
+|{{HistoryLine||1.21.11|dev=25w41a|[[File:Zombie Nautilus Breathe JE1.gif|60px]] Added zombie nautiluses.}}
+|{{HistoryLine|||dev=25w44a|[[File:Camel Husk JE1 BE1.png|60px]] [[File:Parched.png|30px]] Added camel husks and parched.}}
+|{{HistoryLine||26.2|dev=snap1|[[File:Sulfur Cube JE1.png|32px]] Added sulfur cubes.}}
+}}
+
+=== ''Bedrock Edition'' ===
+{{HistoryTable
+|{{HistoryLine|pocket alpha}}
+|{{HistoryLine||v0.2.0|[[File:Zombie JE2 BE1.png|40px]] Added zombies.}}
+|{{HistoryLine||v0.3.3|[[File:Creeper JE3 BE1.png|24px]] [[File:Skeleton JE3 BE1.png|32px]] [[File:Spider JE2 BE1.png|68px]] Added creepers, skeletons, and spiders.}}
+|{{HistoryLine||v0.5.0|[[File:Zombified Piglin BE1.png|x53px]] Added zombie pigmen.}}
+|{{HistoryLine||v0.9.0|dev=build 1|[[File:Enderman BE1.png|90px]] [[File:Silverfish JE1 BE1.gif|32px]] Added endermen and silverfish.}}
+|{{HistoryLine||v0.11.0|dev=build 1|[[File:Cave Spider JE1 BE1.png|48px]] [[File:Ghast JE1 BE1.gif|32px]] [[File:Magma Cube JE1 BE1.png|52px]] Added cave spiders, ghasts, and magma cubes.}}
+|{{HistoryLine||v0.12.1|dev=build 1|[[File:Blaze JE1 BE1.png|32px]]  [[File:Wither Skeleton JE1 BE1.png|32px]] [[File:Zombie Farmer.png|32px]] Added blazes, wither skeletons and zombie villagers.}}
+|{{HistoryLine||v0.14.0|dev=build 1|[[File:Witch BE Revision 1.png|32px]] Added witches.}}
+|{{HistoryLine||v0.15.0|dev=build 1|[[File:Husk JE1 BE1.png|32px]] [[File:Skeleton Horse Revision 1.png|50px]] [[File:Zombie Horse Revision 1.png|50px]] Added husks, strays, skeleton horses, and zombie horses.}}
+|{{HistoryLine||v0.16.0|dev=build 1|[[File:Guardian Revision 1.png|42px]] [[File:Elder Guardian Revision 1.png|42px]] Added guardians and elder guardians.}}
+|{{HistoryLine|||dev=build 4|[[File:Wither JE1 BE1.png|50px]] Added the wither.}}
+|{{HistoryLine|pocket}}
+|{{HistoryLine||1.0.0|dev=alpha 0.17.0.1|[[File:Endermite Revision 2.png|24px]] [[File:Purple Shulker JE1 BE1.png|30px]] [[File:Ender Dragon.gif|60px]] Added endermites, shulkers, and the ender dragon.}}
+|{{HistoryLine||1.1.0|dev=alpha 1.1.0.0|[[File:Evoker JE1 BE1.png|32px]] [[File:Vex JE1 BE1.png|32px]] [[File:Vindicator JE1 BE1.png|32px]] Added evokers, vexes, and vindicators.}}
+|{{HistoryLine|bedrock}}
+|{{HistoryLine||1.2.13|dev=beta 1.2.13.8|[[File:Drowned BE1.png|32px]] Added drowned.}}
+|{{HistoryLine||1.6.0|dev=beta 1.6.0.1|[[File:Phantom BE1.gif|48px]] Added phantoms.}}
+|{{HistoryLine||1.9.0|dev=beta 1.9.0.0|[[File:Pillager.png|32px]] Added pillagers.}}
+|{{HistoryLine||1.10.0|dev=beta 1.10.0.3|[[File:Ravager BE1.png|64px]] Added illager beasts.}}
+|{{HistoryLine||1.13.0|dev=beta 1.13.0.4|[[File:Elder Guardian JE2 BE2.gif |50px]] Added the elder guardian ghost.}}
+|{{HistoryLine||1.16.0|dev=beta 1.16.0.51|[[File:Hoglin BE1.png|64px]] [[File:Piglin BE.png|32px]] Added hoglins and piglins.}}
+|{{HistoryLine|||dev=beta 1.16.0.57|[[File:Zoglin BE.png|64px]] Added zoglins.}}
+|{{HistoryLine||1.16.20|dev=beta 1.16.20.50|[[File:Piglin Brute.png|32px]] Added piglin brutes.}}
+|{{HistoryLine||1.18.30|exp=Wild Update|dev=beta 1.18.30.32|[[File:Warden JE1 BE1.png|32px]] Added wardens.}}
+|{{HistoryLine||1.20.60|exp=Update 1.21|dev=Preview 1.20.60.20|[[File:Breeze BE1.png|40px]] Added breezes.}}
+|{{HistoryLine||1.20.70|exp=Update 1.21|dev=Preview 1.20.70.24|[[File:Bogged JE1 BE1.png|32px]] Added bogged.}}
+|{{HistoryLine||1.21.50|dev=Preview 1.21.50.20|[[File:Creaking JE1 BE1.png|20px]] Added creakings.}}
+|{{HistoryLine||1.21.130|dev=Preview 1.21.130.20|[[File:Zombie Nautilus Breathe BE1.gif|48px]] Added zombie nautiluses.}}
+|{{HistoryLine|||dev=Preview 1.21.130.24|[[File:Camel Husk JE1 BE1.png|64px]] [[File:Parched BE1.png|32px]] Added camel husks and parched.}}
+|{{HistoryLine||26.20|dev=Preview 26.20.23|exp=Drop 2 of 2026|[[File:Sulfur Cube BE1.png|32px]] Added sulfur cubes}}
+}}
+
+== Trivia ==
+* The [[warden]] is the only fully hostile monster (as [[skeleton horse]]s are passive when not mounted) that spawns naturally that does not count towards the Monster Hunter advancement or Monsters Hunted challenge.
+** The reason for this is because the warden is not intended to be slain, and is instead meant to be evaded.
+* [[Polar bear]]s were once classified as monsters valid for advancements. This property was removed in snapshot [[19w14a]].
+* [[Strider]]s are internally referred to as monsters,<ref>{{cd|net/minecraft/world/entity/monster/Strider}}</ref> however this does not affect gameplay, as the strider does not share the same traits as actual in-game monsters, being considered an [[animal]] instead.
+
+== Gallery ==
+=== Renders ===
+<gallery>
+Blaze.gif|A blaze.{{only|java|short=1}}
+Blaze BE3.gif|A blaze.{{only|bedrock|short=1}}
+Bogged.webp|A bogged.
+Breeze.gif|A breeze.
+Camel Husk Idle.gif|A camel husk.
+Cave Spider.png|A cave spider.
+Creaking.png|A creaking.
+Creeper.png|A creeper.
+Drowned JE2.png|A drowned.{{only|java|short=1}}
+Drowned BE2.png|A drowned.{{only|bedrock|short=1}}
+Elder Guardian.gif|An elder guardian.
+Ender Dragon.gif|An ender dragon.
+Enderman JE3.png|An enderman.{{only|java|short=1}}
+Enderman BE1.png|An enderman.{{only|bedrock|short=1}}
+Endermite.gif|An endermite.
+Evoker JE3.png|An evoker.{{only|java|short=1}}
+Evoker JE2 BE2.png|An evoker.{{only|bedrock|short=1}}
+Ghast.gif|A ghast.
+Guardian.gif|A guardian.
+Hoglin.png|A hoglin.{{only|java|short=1}}
+Hoglin BE2.png|A hoglin.{{only|bedrock|short=1}}
+Husk.png|A husk.
+Magma Cube.png|A magma cube.
+Parched JE2.png|A parched.{{only|java|short=1}}
+Parched BE2.png|A parched.{{only|bedrock|short=1}}
+Phantom.gif|A phantom.{{only|java|short=1}}
+Phantom BE.gif|A phantom.{{only|bedrock|short=1}}
+Piglin.png|A piglin.{{only|java|short=1}}
+Piglin BE.png|A piglin.{{only|bedrock|short=1}}
+Piglin Brute.png|A piglin brute.{{only|java|short=1}}
+Piglin Brute BE1.png|A piglin brute.{{only|bedrock|short=1}}
+Pillager.png|A pillager.{{only|java|short=1}}
+Pillager BE1.png|A pillager.{{only|bedrock|short=1}}
+Ravager.png|A ravager.{{only|java|short=1}}
+Ravager BE1.png|A ravager.{{only|bedrock|short=1}}
+Shulker.png|A shulker.
+Silverfish.gif|A silverfish.
+Skeleton idle animation.webp|A skeleton.
+Skeleton Horse.png|A skeleton horse.
+Slime.png|A slime.
+Spider.png|A spider.
+Stray.png|A stray.
+Sulfur Cube.png|A sulfur cube.
+Vex.gif|A vex.
+Vindicator.png|A vindicator.
+Warden.gif|A warden.
+Witch.png|A witch.{{only|java|short=1}}
+Witch BE.png|A witch{{only|bedrock|short=1}}
+Wither.png|A wither.
+Wither Skeleton.png|A wither skeleton.
+Zoglin.png|A zoglin.{{only|java|short=1}}
+Zoglin BE.png|A zoglin.{{only|bedrock|short=1}}
+Zombie.png|A zombie.
+Zombie Horse.png|A zombie horse.{{only|java|short=1}}
+Zombie Horse BE3.png|A zombie horse.{{only|bedrock|short=1}}
+Zombie Nautilus.gif|A zombie nautilus.
+Plains Zombie Villager Base.png|A zombie villager.
+Zombified Piglin.png|A zombified piglin.{{only|java|short=1}}
+Zombified Piglin BE6.png|A zombified piglin.{{only|bedrock|short=1}}
+</gallery>
+
+==== Unused ====
+<gallery>
+Zombie.png|A giant.{{only|java|short=1}}
+Illusioner.png|An illusioner.{{only|java|short=1}}
+Zombie Farmer.png|An old zombie villager.{{only|bedrock|short=1}}
+</gallery>
+
+=== Screenshots ===
+<gallery>
+CreeperClose.png|A creeper in a stronghold.
+A_ghast_in_the_nether.png|A ghast in the nether.
+A Zombie Breaking Down a Door.png|A zombie breaking a [[wooden door]].
+MInecraft-Nether-Soulsand-Valley-03.jpg|A group of skeletons in a [[soul sand valley]].
+Spider Glich.png|A spider retaliating against a skeleton.
+WitchesMagic.png|Two witches in a [[swamp]].
+Witch at Home.png|A witch in its [[swamp hut]].
+Enderman Party.png|A haunting of endermen in [[the End]].
+Slimes-in-cave.jpg|Slimes inside a [[cave]].
+Wither Skeleton and Blaze.png|A blaze and wither skeleton in a [[Nether fortress]].
+Piglin brute in bastion remnant.png|A piglin brute in a [[Bastion Remnant|bastion]].
+Creaking in pale garden at night.jpg|A creaking in a [[pale garden]].
+Warden in Ancient City.jpg|A warden in an [[ancient city]].
+Zombie riding a zombie horse.jpeg|A zombie riding a zombie horse.
+Alex and zorses.jpeg|Several zombie horses near [[Alex]].
+Zombie nautilus being ridden by a drowned.png|A drowned riding a zombie nautilus.
+File:Parched in a desert.jpeg|A parched in a desert.
+</gallery>
+
+== See also ==
+* [[Mob]]
+* [[Animal]]
+* [[Aquatic]]
+* [[Arthropod]]
+* [[Illager]]
+* [[Jockey]]
+* [[Undead]]
+
+== References ==
+{{reflist}}
+
+== Navigation ==
+{{Navbox entities|mobs}}
+
+[[Category:Mobs]]
+[[Category:Monster mobs| ]]
+
+[[es:Monstruo]]
+[[fr:Monstre]]
+[[ja:モンスター]]
+[[pt:Monstro]]
+[[th:มอนสเตอร์]]
+[[ru:Монстры]]

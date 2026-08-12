@@ -1,0 +1,751 @@
+{{For|other uses|Axolotl (disambiguation)}}
+{{Infobox entity
+| *-1size = 200px
+| 1-3size = 140px
+| group = Leucistic
+| group2 = Wild
+| group3 = Gold
+| group4 = Cyan
+| group5 = Blue
+| 1-1 = Axolotl Idle Floor Underwater.gif
+| 1-2 = Baby Axolotl Idle Floor Underwater.gif
+| 2-1 = Wild Axolotl Idle Floor Underwater.gif
+| 2-2 = Wild Baby Axolotl Idle Floor Underwater.gif
+| 3-1 = Gold Axolotl Idle Floor Underwater.gif
+| 3-2 = Gold Baby Axolotl Idle Floor Underwater.gif
+| 4-1 = Cyan Axolotl Idle Floor Underwater.gif
+| 4-2 = Cyan Baby Axolotl Idle Floor Underwater.gif
+| 5-1 = Blue Axolotl Idle Floor Underwater.gif
+| 5-2 = Blue Baby Axolotl Idle Floor Underwater.gif
+| *-1caption = Adult
+| *-2caption = Baby
+| *-2size = 130px
+| invimage = Bucket of Axolotl
+| invimage2 = Axolotl Spawn Egg
+| health = {{hp|14}}
+| behavior = Passive <!-- Only include behavior with players -->
+| mobtype = {{EntityLink|Animal}}<br>{{EntityLink|Aquatic}}
+| damage = {{hp|2}}
+| size = '''Adult:'''<br>Height: 0.42 blocks<br>Width: 0.75 blocks<br>
+'''Baby:'''<br>Height: 0.21 Blocks<br>Width: 0.375 Blocks<br>
+| speed = 1
+| spawn = {{BiomeLink|Lush Caves}}
+| usableitems = {{drop|Item|Bucket of Tropical Fish}}
+{{drop|Item|Lead}}
+{{drop|Item|Name Tag}}
+{{drop|Item|Water Bucket}}
+{{drop|block|Golden Dandelion}}<small>(baby only)</small>
+}}
+
+An '''axolotl''' is a passive aquatic [[mob]] found in [[lush caves]] that hunts most other aquatic mobs, and can assist [[player]]s with aquatic combat and grant them [[Regeneration]]. They can also be carried around in a [[bucket]].
+
+== Spawning ==
+Axolotls [[Mob spawning|spawn]] underwater in the [[lush caves]] biome and when there is a [[clay block]] less than five blocks below the spawning space.
+
+{{Mob spawn table}}
+
+=== Colors ===
+{{more images|section=1|baby models in each pose (since they're different in the 26.1 (JE)/26.10 (BE) update) - presumably below the adult models in a similar arrangement}}
+Axolotls can be one of five colors: pink (leucistic), brown, gold, cyan and blue. 
+
+When breeding axolotls, there is a {{frac|1|1200}} (0.083%) chance of the offspring having the blue mutation, leaving {{frac|1199|1200}} (99.917%) chance of matching one of the parents (including blue parents).
+
+Blue axolotls cannot naturally spawn and can only be obtained through breeding.
+
+{| class="wikitable"
+! rowspan="2" | Pose
+! colspan="5" | Color
+|-
+! Leucistic
+! Brown
+! Gold
+! Cyan
+! Blue
+|-
+! Ground crawling
+| [[File:Lucy Axolotl.png|64px]]
+| [[File:Wild Axolotl.png|64px]]
+| [[File:Gold Axolotl.png|64px]]
+| [[File:Cyan Axolotl.png|64px]]
+| [[File:Blue Axolotl.png|64px]]
+|-
+! Ground stationary
+| [[File:Axolotl Lay Still Ground (lucy).png|64px]]
+| [[File:Axolotl Lay Still Ground (wild).png|64px]]
+| [[File:Axolotl Lay Still Ground (gold).png|64px]]
+| [[File:Axolotl Lay Still Ground (cyan).png|64px]]
+| [[File:Axolotl Lay Still Ground (blue).png|64px]]
+|-
+! Swimming
+| [[File:Axolotl Swimming (lucy).png|64px]]
+| [[File:Axolotl Swimming (wild).png|64px]]
+| [[File:Axolotl Swimming (gold).png|64px]]
+| [[File:Axolotl Swimming (cyan).png|64px]]
+| [[File:Axolotl Swimming (blue).png|64px]]
+|-
+! Water stationary
+| [[File:Axolotl Hovering in Water (lucy).png|64px]]
+| [[File:Axolotl Hovering in Water (wild).png|64px]]
+| [[File:Axolotl Hovering in Water (gold).png|64px]]
+| [[File:Axolotl Hovering in Water (cyan).png|64px]]
+| [[File:Axolotl Hovering in Water (blue).png|64px]]
+|}
+{| class="wikitable"
+! rowspan="2" | Animation
+! colspan="5" | Color
+|-
+! Leucistic
+! Brown
+! Gold
+! Cyan
+! Blue
+|-
+! Ground crawling
+| [[File:Lucy Axolotl JE2.gif|64px]]
+| [[File:Wild Axolotl JE1.gif|64px]]
+| [[File:Gold Axolotl JE2.gif|64px]]
+| [[File:Cyan Axolotl JE2.gif|64px]]
+| [[File:Blue Axolotl JE2.gif|64px]]
+|}
+
+== Drops ==
+Axolotls drop nothing when killed besides 1 [[experience]] when killed by a [[player]] or a tamed [[wolf]].
+
+== Behavior ==
+Axolotls are passive toward players, can be attached to [[lead]]s, and follow players holding a [[bucket of tropical fish]] on either the main hand or the off-hand. When a player kills a mob that is in combat with one or more axolotls, the axolotls remove [[Mining Fatigue]] from the player, and give the player [[Regeneration]] I for {{convert|100|tick|second}} per axolotl in the fight, up to a duration of {{convert|2400|tick|minute}} {{in|java}}, and uncapped {{in|bedrock}}.
+
+Axolotls attack the following mobs, dealing {{hp|2}} points of damage per attack:
+{{columns-list|
+* {{EntityLink|Cod}}
+* {{EntityLink|Drowned}}
+* {{EntityLink|Elder Guardian}}
+* {{EntityLink|Glow Squid}}
+* {{EntityLink|Guardian}}
+* {{EntityLink|Pufferfish}}
+* {{EntityLink|Salmon}}
+* {{EntityLink|Squid}}
+* {{EntityLink|Tadpole}}
+* {{EntityLink|Tropical Fish}}
+}}
+
+After killing a non-hostile mob, there is a two minute cooldown before another non-hostile mob can be hunted. Axolotls prioritize attacking hostile mobs over non-hostile mobs.
+
+If an axolotl takes damage underwater, it may play dead, dropping to the ground for {{convert|200|tick|second}} while gaining Regeneration I. Hostile aquatic mobs ignore healing axolotls. There is a {{frac|1|3}} chance for an axolotl to play dead to recover {{hp|4}}. In addition, if either a random integer from 0–2 (inclusive) is less than the amount of incoming [[damage]], or the axolotl's health before the damage is dealt is less than 50% of its maximum health, it plays dead. 
+
+Axolotls can leave the water and wander about on land. When an axolotl leaves the water, it wanders as far as 8 or 9 blocks beyond the water's edge before returning to the water, as long as there is water at least 2 blocks deep within 16 blocks of the axolotl. If 2-block-deep water is outside this range, the axolotl can wander off randomly on land in search of more deep water, and die after {{convert|6000|tick|minute}} exposure out of water. Axolotls are not attracted to shallow (1 block deep) water. They require water at least 2 blocks deep within 16 blocks to pathfind to the water.<ref>{{bug|MCPE-122278}}</ref>
+
+Being hit with a splash water bottle or lingering water bottle will restore {{convert|1800|tick|second}} of air to the axolotl.
+
+Axolotls can also die out of water as passengers in a boat. Unlike [[fish]] and [[squid]], axolotls do not die on land in [[rain]] or in a [[thunderstorm]].
+
+Unlike most mobs, axolotls cannot be moved by flowing water. However, they are still affected by [[bubble column]]s.
+
+As aquatic mobs, they take extra [[damage]] from the [[Impaling]] enchantment {{in|je}}. Unlike other aquatic mobs, they cause nearby [[pufferfish]] to inflate.
+
+Axolotls picked up with a [[water bucket]] and re-spawned do not despawn.
+
+Naming a [[bucket of axolotl]] in an [[anvil]] also sets the name of the axolotl inside{{only|je|short=1}}. The name remains with the axolotl if it is picked up by another bucket.
+
+=== Breeding ===
+{{main|Breeding}}
+
+Axolotls follow players holding [[buckets of tropical fish]] within 10{{only|java|short=1}} / 16{{only|bedrock|short=1}} blocks. Additionally, baby axolotls follow adults.
+
+A player can [[breed]] axolotls by using buckets of tropical fish. After breeding, a baby axolotl spawns and 1–7 [[experience]] is generated. The parents cannot be bred again for 5 minutes {{in|je}} or 1 minute {{in|be}}. The baby axolotl has a {{frac|1|1200}} chance to be the rare blue variant; otherwise, it inherits the color of one parent at random.
+
+Baby axolotls take 24000 ticks (20 minutes) to grow up, but the growth time can be accelerated {{control|using}} buckets of tropical fish. Each use takes 10% off the remaining time to grow up.
+
+An axolotl loses its willingness to breed if it is picked up in a bucket and released after it is fed but before it reaches its mate. It must be fed another bucket of tropical fish to become willing to breed again.
+
+== Sounds ==
+{{JE}}:
+{{SoundTable
+| type = java
+| {{SoundLine
+| sound =Axolotl idle1.ogg
+|sound2=Axolotl idle2.ogg
+|sound3=Axolotl idle3.ogg
+|sound4=Axolotl idle4.ogg
+|sound5=Axolotl idle5.ogg
+|subtitle=Axolotl chirps
+|source=neutral
+|description=Randomly when in water
+|id=entity.axolotl.idle_water
+|translationkey=subtitles.entity.axolotl.idle_water
+|volume=1.0
+|pitch=0.8-1.2<br>(Baby: 1.3-1.7)
+|distance=16}}
+| {{SoundLine
+|sound=Axolotl idle air1.ogg
+|sound2=Axolotl idle air2.ogg
+|sound3=Axolotl idle air3.ogg
+|sound4=Axolotl idle air4.ogg
+|sound5=Axolotl idle air5.ogg
+|subtitle=Axolotl chirps
+|source=neutral
+|description=Randomly when not in water
+|id=entity.axolotl.idle_air
+|translationkey=subtitles.entity.axolotl.idle_air
+|volume=1.0 <ref group=sound>Except <code>idle_air3</code>, which is 0.8</ref>
+|pitch=0.8-1.2<br>(Baby: 1.3-1.7) <ref group=sound>Except <code>idle_air3</code>, which is 0.96-1.44 (Baby: 1.56-2.04)</ref>
+|distance=16}}
+| {{SoundLine
+|sound=Axolotl attack1.ogg
+|sound2=Axolotl attack2.ogg
+|sound3=Axolotl attack3.ogg
+|sound4=Axolotl attack4.ogg
+|subtitle=Axolotl attacks
+|source=neutral
+|description=When an axolotl attacks something
+|id=entity.axolotl.attack
+|translationkey=subtitles.entity.axolotl.attack
+|volume=0.5
+|pitch=1.0
+|distance=16}}
+| {{SoundLine
+|sound=Axolotl death1.ogg
+|sound2=Axolotl death2.ogg
+|subtitle=Axolotl dies
+|source=neutral
+|description=When an axolotl dies
+|id=entity.axolotl.death
+|translationkey=subtitles.entity.axolotl.death
+|volume=1.0
+|pitch=0.8-1.2<br>(Baby: 1.3-1.7)
+|distance=16}}
+| {{SoundLine
+|sound=Axolotl hurt1.ogg
+|sound2=Axolotl hurt2.ogg
+|sound3=Axolotl hurt3.ogg
+|sound4=Axolotl hurt4.ogg
+|subtitle=Axolotl hurts
+|source=neutral
+|description=When an axolotl is damaged
+|id=entity.axolotl.hurt
+|translationkey=subtitles.entity.axolotl.hurt
+|volume=1.0
+|pitch=0.8-1.2<br>(Baby: 1.3-1.7)
+|distance=16}}
+| {{SoundLine
+|sound=Dolphin splash1.ogg
+|sound2=Dolphin splash2.ogg
+|sound3=Dolphin splash3.ogg
+|subtitle=Axolotl splashes
+|source=neutral
+|description=When an axolotl enters water
+|id=entity.axolotl.splash
+|translationkey=subtitles.entity.axolotl.splash
+|volume=0.0-0.9 <ref group=sound>0.9 times the axolotl's momentum, with the horizontal axes' velocity multiplied by 0.2</ref>
+|pitch=0.72-1.68
+|distance=16}}
+| {{SoundLine
+|sound=Dolphin swim1.ogg
+|sound2=Dolphin swim2.ogg
+|sound3=Dolphin swim3.ogg
+|sound4=Dolphin swim4.ogg
+|sound5=Fish swim5.ogg
+|sound6=Fish swim6.ogg
+|sound7=Fish swim7.ogg
+|subtitle=Axolotl swims
+|source=neutral
+|description=While an axolotl is moving through water
+|id=entity.axolotl.swim
+|translationkey=subtitles.entity.axolotl.swim
+|volume=0.0-1.0 <ref group=sound>The axolotl's momentum, with the horizontal axes' velocity multiplied by 0.2</ref>
+|pitch=0.6-1.4
+| distance = 16
+}}
+}}
+
+{{BE}}:
+{{SoundTable
+| type = bedrock
+| {{SoundLine
+| sound =Axolotl idle1.ogg
+|sound2=Axolotl idle2.ogg
+|sound3=Axolotl idle3.ogg
+|sound4=Axolotl idle4.ogg
+|sound5=Axolotl idle5.ogg
+|source=neutral
+|description=Randomly when in water
+|id=mob.axolotl.idle_water
+|translationkey=subtitles.entity.axolotl.idle_water
+|subtitle=Axolotl chirps
+|volume=1.0
+|pitch=0.8-1.2 (Baby: 1.3-1.7)}}
+| {{SoundLine
+|sound=Axolotl idle air1.ogg
+|sound2=Axolotl idle air2.ogg
+|sound3=Axolotl idle air3.ogg
+|sound4=Axolotl idle air4.ogg
+|sound5=Axolotl idle air5.ogg
+|source=neutral
+|description=Randomly when not in water
+|id=mob.axolotl.idle_air
+|translationkey=subtitles.entity.axolotl.idle_air
+|subtitle=Axolotl chirps
+|volume=1.0
+|pitch=0.8-1.2 (Baby: 1.3-1.7)}}
+| {{SoundLine
+|sound=Axolotl attack1.ogg
+|sound2=Axolotl attack2.ogg
+|sound3=Axolotl attack3.ogg
+|sound4=Axolotl attack4.ogg
+|source=neutral
+|description=When an axolotl attacks something
+|id=mob.axolotl.attack
+|translationkey=subtitles.entity.axolotl.attack
+|subtitle=Axolotl attacks
+|volume=1.0
+|pitch=0.8-1.2 (Baby: 1.3-1.7)}}
+| {{SoundLine
+|sound=Axolotl death1.ogg
+|sound2=Axolotl death2.ogg
+|source=neutral
+|description=When an axolotl dies
+|id=mob.axolotl.death
+|translationkey=subtitles.entity.axolotl.death
+|subtitle=Axolotl dies
+|volume=1.0
+|pitch=0.8-1.2 (Baby: 1.3-1.7)}}
+| {{SoundLine
+|sound=Axolotl hurt1.ogg
+|sound2=Axolotl hurt2.ogg
+|sound3=Axolotl hurt3.ogg
+|sound4=Axolotl hurt4.ogg
+|source=neutral
+|description=When an axolotl is damaged
+|id=mob.axolotl.hurt
+|translationkey=subtitles.entity.axolotl.hurt
+|subtitle=Axolotl hurts
+|volume=1.0
+|pitch=0.8-1.2 (Baby: 1.3-1.7)}}
+| {{SoundLine
+|sound=Dolphin splash1.ogg
+|sound2=Dolphin splash2.ogg
+|sound3=Dolphin splash3.ogg
+|source=neutral
+|description=When an axolotl enters water
+|id=mob.axolotl.splash
+|translationkey=subtitles.entity.axolotl.splash
+|subtitle=Axolotl splashes
+|volume=0.9
+|pitch=0.96-1.44 (Baby: 1.56-2.04)}}
+| {{SoundLine
+|sound=Dolphin swim1.ogg
+|sound2=Dolphin swim2.ogg
+|sound3=Dolphin swim3.ogg
+|sound4=Dolphin swim4.ogg
+|source=neutral
+|description=While an axolotl is moving through water
+|id=mob.axolotl.swim
+|translationkey=subtitles.entity.axolotl.swim
+|subtitle=Axolotl swims
+|volume=1.0
+| pitch = 0.8-1.2 (Baby: 1.3-1.7)
+}}
+}}
+
+== Data values ==
+=== ID ===
+{{edition|java}}:
+{{ID table
+|edition=java
+|generatetranslationkeys=y
+|displayname=Axolotl
+|spritetype=entity
+|nameid=axolotl
+|showentitytags=y
+|entitytags=aquatic, can_breathe_under_water, sensitive_to_impaling
+|foot=1}}
+
+{{edition|bedrock}}:
+{{ID table
+|edition=bedrock
+|shownumericids=y
+|generatetranslationkeys=y
+|displayname=Axolotl
+|spritetype=entity
+|nameid=axolotl
+|showentityfamily=y
+|entityfamily=aquatic,axolotl,mob
+|id=130
+|foot=1}}
+
+=== Entity data ===
+Axolotls have entity data associated with them that contain various properties.
+
+{{el|java}}:
+{{main|Entity format}}
+<section begin="entity data" /><div class="treeview">
+* {{nbt|compound}} Entity data
+** {{nbt inherit/breedable}}
+** {{nbt inherit/entity}}
+** {{nbt inherit/mob}}
+** {{nbt|byte|FromBucket}}: 1 or 0 ({{cd|true}}/{{cd|false}}) – if {{cd|true}}, indicates the axolotl has been released from a bucket.
+** {{nbt|int|Variant}}: ID of the axolotl's variant. Represents the {{DCL|minecraft:axolotl/variant}} component.
+</div>
+{|class="wikitable mw-collapsible mw-collapsed"
+! Variant
+! Numerical ID
+! Identifier
+|-
+| [[File:Lucy Axolotl.png|32px]] Lucy
+| <code>0</code>
+| <code>lucy</code>
+|-
+| [[File:Wild Axolotl.png|32px]] Wild
+| <code>1</code>
+| <code>wild</code>
+|-
+| [[File:Gold Axolotl.png|32px]] Gold
+| <code>2</code>
+| <code>gold</code>
+|-
+| [[File:Cyan Axolotl.png|32px]] Cyan
+| <code>3</code>
+| <code>cyan</code>
+|-
+| [[File:Blue Axolotl.png|32px]] Blue
+| <code>4</code>
+| <code>blue</code>
+|}<section end="entity data" />
+
+{{el|bedrock}}:
+{| class="wikitable"
+!Color
+!Data value
+|-
+|[[File:Lucy Axolotl.png|32px]]
+|<code>0</code>
+|-
+|[[File:Cyan Axolotl.png|32px]]
+|<code>1</code>
+|-
+|[[File:Gold Axolotl.png|32px]]
+|<code>2</code>
+|-
+|[[File:Wild Axolotl.png|32px]]
+|<code>3</code>
+|-
+|[[File:Blue Axolotl.png|32px]]
+|<code>4</code>
+|}
+
+: See [[Bedrock Edition level format/Entity format]].
+
+== Achievements ==
+{{load achievements|The Healing Power of Friendship!;It Spreads}}
+
+Achievements that apply to all mobs:
+{{collapse|content={{load achievements|Overkill;Over-Overkill;Mob Kabob}}
+}}
+
+== Advancements ==
+{{load advancements|The Cutest Predator;The Healing Power of Friendship;The Parrots and the Bats;Two by Two;It Spreads}}
+
+Advancements that apply to all mobs:
+{{collapse|content={{load advancements|Take Aim;Arbalistic;A Throwaway Joke;Adventure;Over-Overkill;Mob Kabob}}
+}}
+
+== History ==
+=== Announcement ===
+{{HistoryTable
+|{{HistoryLine||October 3, 2020|link={{ytl|DWZIfsaIgtE|t=7470}}|[[File:Lucy Axolotl (pre-release).png|32px]] [[File:Wild Axolotl (pre-release).png|32px]] Axolotls are announced at [[Minecraft Live 2020]].
+|They are shown to spawn in [[lush caves]] biomes.}}
+|{{HistoryLine||October 3, 2020|link={{Mcnet|minecraft-live-the-recap}}|[[File:Green Axolotl (pre-release).png|32px]] An unreleased<ref>{{bug|MC-208659|||Invalid}}</ref> green variant was shown at the Minecraft Live 2020 recap, which was not shown on the live event.}}
+}}
+
+=== ''Java Edition'' ===
+{{more images|section=1|show me that play dead animation}}
+{{HistoryTable
+|{{HistoryLine|java}}
+|{{HistoryLine||1.17|dev=20w51a|[[File:Lucy Axolotl JE1.png|32px]] [[File:Wild Axolotl JE1.png|32px]] [[File:Gold Axolotl JE1.png|32px]] [[File:Cyan Axolotl JE1.png|32px]] [[File:Blue Axolotl JE1.png|32px]] Added axolotls.
+|When an axolotl is held with a [[lead]] on the ground, it begins walking at an exaggeratedly fast speed.<ref>{{bug|MC-208626}}</ref>}}
+|{{HistoryLine|||dev=21w03a|Axolotls now attack [[glow squid]]s.}}
+|{{HistoryLine|||dev=21w13a|[[File:Lucy Axolotl JE2.png|32px]] [[File:Gold Axolotl JE2.png|32px]] [[File:Cyan Axolotl JE2.png|32px]] [[File:Blue Axolotl JE2.png|32px]] The texture of the axolotls for four variants except the brown one has been changed.
+|Axolotls now spawn naturally underwater in [[caves]].}}
+|{{HistoryLine|||dev=21w18a|The lucy texture have been changed from [[File:Lucy Axolotl Texture (21w17a).png|32px]] to [[File:Lucy Axolotl Texture (21w18a).png|32px]] to remove the unused open mouth.}}
+|{{HistoryLine|||dev=21w20a|Axolotls now play dead only when in water.
+|Axolotls can no longer be fed [[tropical fish (item)|tropical fish]].}}
+|{{HistoryLine|||dev=pre3|Axolotls now spawn only in total darkness and where there's a block with <code>base_stone_overworld</code> tag less than 5 blocks below the spawning space.}}
+|{{HistoryLine||1.17.1|dev=pre1|Blue axolotls no longer naturally spawn, and can be obtained only through breeding.}}
+|{{HistoryLine||1.18|dev=Experimental Snapshot 1|Axolotls now spawn only in [[lush caves]].}}
+|{{HistoryLine|||dev=21w37a|Axolotls now have their own mob cap, separate from glow squids.
+|Axolotls now avoid lava.<ref>{{bug|MC-208601}}</ref>}}
+|{{HistoryLine|||dev=21w40a|Axolotls now spawn only when there is a clay block less than five blocks below the spawning space.}}
+|{{HistoryLine|||dev=pre5|The brown axolotl texture has been changed from [[File:Wild Axolotl (back view) JE1.png|32px]] to [[File:Wild Axolotl (back view) JE2.png|32px]], to solve the issue of its off-centered back.}}
+|{{HistoryLine||1.19|dev=22w11a|Axolotls can now attack [[tadpole]]s.}}
+|{{HistoryLine||26.1|dev=snap5|[[File:Baby Lucy Axolotl JE3 BE3.png|32px]] [[File:Baby Wild Axolotl JE3 BE3.png|32px]] [[File:Baby Gold Axolotl JE3 BE3.png|32px]] [[File:Baby Cyan Axolotl JE3 BE3.png|32px]] [[File:Baby Blue Axolotl JE3 BE3.png|32px]] The model and textures of baby axolotls have been changed.
+|Added [[Golden Dandelion]]s, which can be used to prevent baby axolotls from growing up.}}
+|{{HistoryLine|||dev=snap6|Baby axolotls now have a play dead animation.}}
+|{{HistoryLine|||dev=pre2|Fixed issue with Baby Axolotl's right hind leg not moving correctly when swimming.}}
+}}
+
+=== ''Bedrock Edition'' ===
+{{HistoryTable
+|{{HistoryLine|bedrock}}
+|{{HistoryLine||1.17.0|exp=Caves and Cliffs|dev=beta 1.16.230.52|[[File:Lucy Axolotl BE1.png|32px]] [[File:Wild Axolotl BE1.png|32px]] [[File:Gold Axolotl BE1.png|32px]] [[File:Cyan Axolotl BE1.png|32px]] [[File:Blue Axolotl BE1.png|32px]] Added axolotls behind the "Caves and Cliffs" experimental toggle.}}
+|{{HistoryLine|||dev=beta 1.17.0.50|Axolotls now spawn naturally in underground water sources.|Due to a bug, axolotls can spawn in [[The End]], as well as [[The Nether]], if there is a large amount of [[water]].<ref>{{bug|MCPE-130734}}</ref>
+|Axolotls no longer get a [[Regeneration]] effect after killing a mob on their own.}}
+|{{HistoryLine||1.17.0|dev=beta 1.17.0.52|Axolotls now spawn in any biome and up to Y-63 instead of Y-30.
+|Axolotls are now available without enabling [[experimental gameplay]].}}
+|{{HistoryLine|||dev=beta 1.17.0.56|[[File:Lucy Axolotl BE2.png|32px]] [[File:Gold Axolotl BE2.png|32px]] [[File:Cyan Axolotl BE2.png|32px]] [[File:Blue Axolotl BE2.png|32px]] The texture of the axolotls for all variants except the wild one has been changed.
+|Axolotls no longer attack invisible mobs.}}
+|{{HistoryLine||1.17.10|dev=beta 1.17.10.22|Axolotls now spawn only in complete darkness.}}
+|{{HistoryLine||1.17.30|dev=beta 1.17.20.22|Axolotls now spawn only where there is a stone block less than 10 blocks below the spawning space.}}
+|{{HistoryLine||1.17.30|exp=Caves and Cliffs|dev=beta 1.17.20.22|With experimental gameplay enabled, axolotls spawn only in [[lush cave]]s.}}
+|{{HistoryLine||1.18.0|dev=beta 1.18.0.20|Axolotls now spawn only in [[lush caves]] by default without enabling experimental gameplay.|Axolotls no longer spawn in [[The End]], as well as [[The Nether]].}}
+|{{HistoryLine|||dev=beta 1.18.0.21|Axolotls now spawn only when there is a clay block less than five blocks below the spawning space.}}
+|{{HistoryLine|||dev=beta 1.18.0.24|Axolotls more frequently spawn in lush caves.}}
+|{{HistoryLine||1.18.10|dev=beta 1.18.10.22|The brown axolotl texture has been changed from [[File:Wild Axolotl (back view) BE1.png|32px]] to [[File:Wild Axolotl (back view) BE2.png|32px]], to solve the issue of its off-centered back.}}
+|{{HistoryLine||1.18.10|exp=Wild Update|dev=beta 1.18.10.24|Axolotls can now attack [[tadpole]]s behind the "Wild Update" experimental toggle.}}
+|{{HistoryLine||26.10|dev=Preview 26.10.20|[[File:Baby Lucy Axolotl JE1 BE1.png|32px]] [[File:Baby Wild Axolotl JE1 BE1.png|32px]] [[File:Baby Gold Axolotl JE1 BE1.png|32px]] [[File:Baby Cyan Axolotl JE1 BE1.png|32px]] [[File:Baby Blue Axolotl JE1 BE1.png|32px]] The model and textures of baby axolotls have been changed.}}
+|{{HistoryLine|||dev=Preview 26.10.21 |Added [[Golden Dandelion]]s, which can be used to prevent baby axolotls from growing up.}}
+}}
+
+== Issues ==
+{{Issue list}}
+
+== Trivia ==
+<!-- Please don't add meme references. -->
+* In the [[Launcher 2.2.25xx|release notes Minecraft Launcher]] there is an encrypted message T⍑ᒷ ᔑ ̇/𝙹ꖎ𝙹ℸ ̣ ꖎᓭ ᔑ∷ᒷ リ𝙹ℸ ̣ ∴⍑ᔑℸ ̣ ℸ ̣ ⍑ᒷ|| ᓭᒷᒷᒲ, which translates to "The Axolotls are not what they seem".
+*{{w|Axolotl|Axolotls}} are small salamanders that are endemic to Mexico, which are critically endangered. Following [[Mojang Studios]]' trend of adding endangered species such as [[polar bear]]s, [[Panda|giant pandas]] (no longer endangered as of 2022), [[sea turtle]]s, endangered species of wild and native [[bee]]s, and [[Firefly Bush|fireflies]], axolotls were added to the game to raise awareness.<ref>{{cite|url={{ytl|OZqNaEX8208|t=40m15s}}| title = MINECON Live 2019|author=''Minecraft''|website=youtube.com|date=September 28, 2019|quote=...since the bee population is decreasing in the world, which is a big problem, we really felt that we wanted to teach the players...}} - [[Agnes Larsson]]</ref><ref>{{cite|url={{ytl|DBvZ2Iqmm3M|t=41m26s}}| title = Minecraft Live: Caves & Cliffs - First Look|author=''Minecraft''|website=youtube.com|date=October 3, 2020|quote=And then we also found out that axolotls are endangered in the real world, and we think it's good to add endangered animals to Minecraft to create awareness about that.}} - Agnes Larsson</ref>
+* The probability of a blue axolotl spawning is 1 in 1200 because that was the approximate number of axolotls left in the wild in real life at the time.<ref name="C&C Dev">{{ytl|wSsDBpDQKaE|Dev Diaries: Caves & Cliffs Mobs|Minecraft|May 14, 2021|t=5m23s}}</ref>
+* Axolotls can eat only [[buckets of tropical fish]] and not [[tropical fish item]]s because axolotls in real life eat only living fish.<ref name="C&C Dev"/>
+* Even though they are not in the game, the green variant appears in the [[Caves & Cliffs Update: Part I – Official Trailer]], as well as a recap.<ref>{{ytl|0maWbr0FHKY|Caves & Cliffs Update: Part I - Official Trailer|Minecraft|June 8, 2021|t=26s}}</ref> When asked on a livestream, [[Agnes Larsson]] said she cannot say why the green variant was cut from the game.<ref>{{Citation|url=https://www.twitch.tv/cbsunstoppable/clip/YummyClumsyWoodcockBrainSlug-D8T140VjP-Ok2tCk|title=What happened to the Green Axolotl?|author=CBSUnstoppable|website=Twitch}}</ref>
+* Both the "play dead" behavior and the regeneration ability of axolotls are based on the abilities of real life axolotls.<ref name="C&C Dev"/>
+* Because real axolotls don't actually vocalize, the sounds of axolotls were recorded from the incidental "hiccups" and "burps" real axolotls occasionally make when surfacing, as well as heavily edited dog sounds.<ref>{{ytl|n23fRyOfOOg|The Secrets of Minecraft: Death Sounds, Secret Animals, and Other Delights! @3:22|Minecraft|November 19, 2021|t=202s}}</ref>
+* During [[Minecraft Live 2021]], [[Lydia Winters]] created an “[[aloto]],” a hybrid of an axolotl and alligator.<ref>{{YouTube link|HaGdVUcHIbE|Minecraft Live 2021: Minecraft Marketplace|Minecraft|October 22, 2021|t=8m38s}}</ref>
+* The blue axolotl originated from a Reddit post, suggesting that since Steve was added to'' {{W|Super Smash Bros.|newtab=1}}'', Mojang should add a blue axolotl variant to reference the ''Pokémon'' blue characters Mudkip or Wooper.<ref>{{cite|title=The Blue Axolotl: A rare gaming reference |website=reddit.com |url=https://www.reddit.com/r/minecraftsuggestions/comments/j58qmi/the_blue_axolotl_a_rare_gaming_reference/ |date=2020}}</ref>
+
+== Gallery ==
+=== Renders ===
+'''Lucy'''
+<gallery>
+Axolotl Play Dead.png|An axolotl playing dead
+Axolotl Swim.gif|An axolotl swimming
+Axolotl Walk Floor Underwater.gif|An axolotl walking underwater
+Axolotl Walk Floor.gif|An axolotl walking on land
+Axolotl Idle Floor.gif|An axolotl idling 
+Axolotl Idle Floor Underwater.gif|An axolotl idling on underwater floor
+Axolotl Idle Underwater.gif|An axolotl underwater
+Lucy Axolotl Unused Mouth Render.png|Unused axolotl mouth texture render (this state cannot be seen in-game)
+</gallery>
+<gallery>
+Lucy Baby Axolotl play dead.png|A baby axolotl playing dead
+Baby Axolotl Swim.gif|A baby axolotl swimming
+Baby Axolotl Walk Floor Underwater.gif|A baby axolotl walking underwater
+Baby Axolotl Walk Floor.gif|A baby axolotl walking on land
+Baby Axolotl Idle Floor.gif|A baby axolotl idling
+Baby Axolotl Idle Floor Underwater.gif|A baby axolotl idling on underwater floor
+Baby Axolotl Idle Underwater.gif|A baby axolotl underwater
+</gallery>
+{{hidden begin|Show all renders}}
+'''Wild'''
+<gallery>
+Wild Axolotl Play Dead.png|An axolotl playing dead
+Wild Axolotl Swim.gif|An axolotl swimming
+Wild Axolotl Walk Floor Underwater.gif|An axolotl walking underwater
+Wild Axolotl Walk Floor.gif|An axolotl walking on land
+Wild Axolotl Idle Floor.gif|An axolotl idling 
+Wild Axolotl Idle Floor Underwater.gif|An axolotl idling on underwater floor
+Wild Axolotl Idle Underwater.gif|An axolotl underwater
+</gallery>
+<gallery>
+Wild Baby Axolotl play dead.png|A baby axolotl playing dead
+Wild Baby Axolotl Swim.gif|A baby axolotl swimming
+Wild Baby Axolotl Walk Floor Underwater.gif|A baby axolotl walking underwater
+Wild Baby Axolotl Walk Floor.gif|A baby axolotl walking on land
+Wild Baby Axolotl Idle Floor.gif|A baby axolotl idling
+Wild Baby Axolotl Idle Floor Underwater.gif|A baby axolotl idling on underwater floor
+Wild Baby Axolotl Idle Underwater.gif|A baby axolotl underwater
+</gallery>
+'''Gold'''
+<gallery>
+Gold Axolotl Play Dead.png|An axolotl playing dead
+Gold Axolotl Swim.gif|An axolotl swimming
+Gold Axolotl Walk Floor Underwater.gif|An axolotl walking underwater
+Gold Axolotl Walk Floor.gif|An axolotl walking on land
+Gold Axolotl Idle Floor.gif|An axolotl idling 
+Gold Axolotl Idle Floor Underwater.gif|An axolotl idling on underwater floor
+Gold Axolotl Idle Underwater.gif|An axolotl underwater
+</gallery>
+<gallery>
+Gold Baby Axolotl play dead.png|A baby axolotl playing dead
+Gold Baby Axolotl Swim.gif|A baby axolotl swimming
+Gold Baby Axolotl Walk Floor Underwater.gif|A baby axolotl walking underwater
+Gold Baby Axolotl Walk Floor.gif|A baby axolotl walking on land
+Gold Baby Axolotl Idle Floor.gif|A baby axolotl idling
+Gold Baby Axolotl Idle Floor Underwater.gif|A baby axolotl idling on underwater floor
+Gold Baby Axolotl Idle Underwater.gif|A baby axolotl underwater
+</gallery>
+'''Cyan'''
+<gallery>
+Cyan Axolotl Play Dead.png|An axolotl playing dead
+Cyan Axolotl Swim.gif|An axolotl swimming
+Cyan Axolotl Walk Floor Underwater.gif|An axolotl walking underwater
+Cyan Axolotl Walk Floor.gif|An axolotl walking on land
+Cyan Axolotl Idle Floor.gif|An axolotl idling 
+Cyan Axolotl Idle Floor Underwater.gif|An axolotl idling on underwater floor
+Cyan Axolotl Idle Underwater.gif|An axolotl underwater
+</gallery>
+<gallery>
+Cyan Baby Axolotl play dead.png|A baby axolotl playing dead
+Cyan Baby Axolotl Swim.gif|A baby axolotl swimming
+Cyan Baby Axolotl Walk Floor Underwater.gif|A baby axolotl walking underwater
+Cyan Baby Axolotl Walk Floor.gif|A baby axolotl walking on land
+Cyan Baby Axolotl Idle Floor.gif|A baby axolotl idling
+Cyan Baby Axolotl Idle Floor Underwater.gif|A baby axolotl idling on underwater floor
+Cyan Baby Axolotl Idle Underwater.gif|A baby axolotl underwater
+</gallery>
+'''Blue'''
+<gallery>
+Blue Axolotl Play Dead.png|An axolotl playing dead
+Blue Axolotl Swim.gif|An axolotl swimming
+Blue Axolotl Walk Floor Underwater.gif|An axolotl walking underwater
+Blue Axolotl Walk Floor.gif|An axolotl walking on land
+Blue Axolotl Idle Floor.gif|An axolotl idling 
+Blue Axolotl Idle Floor Underwater.gif|An axolotl idling on underwater floor
+Blue Axolotl Idle Underwater.gif|An axolotl underwater
+</gallery>
+<gallery>
+Blue Baby Axolotl play dead.png|A baby axolotl playing dead
+Blue Baby Axolotl Swim.gif|A baby axolotl swimming
+Blue Baby Axolotl Walk Floor Underwater.gif|A baby axolotl walking underwater
+Blue Baby Axolotl Walk Floor.gif|A baby axolotl walking on land
+Blue Baby Axolotl Idle Floor.gif|A baby axolotl idling
+Blue Baby Axolotl Idle Floor Underwater.gif|A baby axolotl idling on underwater floor
+Blue Baby Axolotl Idle Underwater.gif|A baby axolotl underwater
+</gallery>
+{{hidden end}}
+
+=== Screenshots ===
+<gallery>
+Axolotl color variants.png|All current axolotl variants. From left to right: blue, cyan, gold, wild, and leucistic
+Axolotls Java Edition.png|A baby axolotl on the side of a group
+Axolotl attack.jpg|Three axolotls attacking a glow squid underwater
+Axolotls in lush cave.png|All 5 types of axolotls swimming in a [[lush cave]]
+Axolotl Fun.png|[[Kai]] and [[Efe]] swimming with gold and cyan axolotls, while [[Alex]] holds one in a bucket
+Steve's Axolotl.png|[[Steve]] showing Efe and [[Ari]] a blue axolotl
+Golden axolotl playing dead.png|A golden axolotl playing dead
+</gallery>
+
+=== Mojang images ===
+<gallery>
+File:JE 1.17 Development Axolotls.jpg|Multiple axolotls in a lush cave
+File:Many Axolotls.png|Axolotls as seen during [[Minecraft Live 2020]]
+File:JE 1.17 Development Axolotl attack.jpg|Early axolotls attacking an [[elder guardian]]
+File:JE 1.17 Development Axolotl attack 2.jpg|Early axolotls hurting the elder guardian
+File:MCLive Summary Axolotls.jpg|Axolotl variants from development, including unreleased green one
+File:20w51a.jpg|A screenshot showcasing the addition of axolotls in [[20w51a]]. A [[sculk sensor]] can also be seen
+File:Chiwi Axolotls 1.jpg|Axolotls underwater
+File:Chiwi Axolotls 2.jpg|Axolotls breeding
+File:Chiwi Axolotls 3.jpg|A large amount of axolotls
+File:JE 1.17 Development Axolotl animation.jpg|The pose of the <code>no-pose</code> in development
+File:JE 1.17 Development Axolotl animation 2.jpg|An axolotl playing dead in development
+File:Cosy winter cabin.jpg|Buckets of axolotl and [[powder snow]] in [[item frame]]s
+File:Axolotl in Danger.jpg|An axolotl in serious danger
+File:Axolotls Burning.jpg|Axolotls burning to death
+File:Axolotl Dies.jpg|An axolotl dying to a sword
+File:Axolotl Imminent Demise.jpg|An axolotl about to get blown up
+File:Axolotls in a river.png|Axolotls in a [[river]]
+File:An axolotl with a pink star.jpeg|alt=Image of a small axolotl on top of a sand block looking at you. A little pink star is in their hair and they are blushing. A pink vignette surrounds the image. Text on top of the screen says, "This is who you're asking to understand enchantments."|An axolotl atop some [[clay]] and [[sand]] [[block]]s looking at the [[player]]
+File:Axolotls in every timeline.jpg
+File:Axolotl fun fact.jpeg
+File:Adoptable larva.jpg
+File:Kai and the axolotls.jpg
+</gallery>
+
+=== Concept artwork ===
+<gallery>
+Mariana-salimena-axolotl-meetingnotes.jpg|Concept art depicting other iterations for legs and frills, along with the unimplemented "suction" behavior
+Mariana-salimena-axolotl-patterns.jpg|"Axolotl Patterns" - Grayscale art of unimplemented axolotl patterns
+Mariana-salimena-axolotl-colors.jpg|"Axolotl Colors" 1 - Sketches for other axolotl colors
+Mariana-salimena-axolotl-colors-02.jpg|"Axolotl Colors" 2 - Flipped gold axolotl depicting a concept for its belly
+Mariana-salimena-axolotl-colors-03.jpg|"Axolotl Possible Combinations" - The unimplemented patterns mixed with various axolotl colors
+Axololt Leg Concept Art.jpg|Iterations of legs tested on the model
+Mariana-salimena-axolotl-legs.jpg|Other iterations of legs tested on the model
+Axolotl group concept art.jpg|"Having Fun!" - A group of axolotls swimming
+Axolotl concept art.jpg|"Cutie in a Bucket" - concept art for the bucket of axolotl
+Axolotl & Warden concept art.jpg|"Axolotl & Warden" - sketches of the axolotl and warden
+Scale of cuteness concept art.jpg|"Scale of Cuteness" - sketches of the axolotl, goat, and warden
+Axololt Concept Art.jpg|An axolotl
+Crying Axolotl Concept Art.jpg|An axolotl crying
+</gallery>
+
+=== Textures ===
+<gallery class="pixel-image">
+Axolotl Lucy (texture).png|Lucy axolotl texture file
+Axolotl Wild (texture).png|Wild axolotl texture file
+Axolotl Gold (texture).png|Gold axolotl texture file
+Axolotl Cyan (texture).png|Cyan axolotl texture file
+Axolotl Blue (texture).png|Blue axolotl texture file
+Baby Lucy Axolotl (texture).png|Baby lucy axolotl texture file
+Baby Wild Axolotl (texture).png|Baby wild axolotl texture file
+Baby Gold Axolotl (texture).png|Baby gold axolotl texture file
+Baby Cyan Axolotl (texture).png|Baby cyan axolotl texture file
+Baby Blue Axolotl (texture).png|Baby blue axolotl texture file
+</gallery>
+
+=== In other media ===
+<gallery>
+File:MC-Caves-and-Cliffs Media-Block-Axolotl 475x322.png|Official axolotl artwork
+File:15th Anniversary Gold Axolotl.png|Gold axolotl artwork made for the 15th anniversary of ''Minecraft''
+File:Caves & Cliffs cover art.png|An axolotl in promotional artwork for the [[Caves & Cliffs]]: Part I update
+File:Caves & Cliffs (Part II) Artwork.jpg|An axolotl in promotional artwork for the [[Caves & Cliffs]]: Part II update
+File:GOAT Update.jpg|An axolotl in promotional artwork for the [[GOAT Update]]
+File:Mobile, Multiplayer & More.png|Axolotls in promotional artwork for [[Mobile, Multiplayer & More]]
+File:Pixel swimming.gif|Pixel artwork of two axolotls swimming around a blue axolotl
+File:Five Axolotls.gif|alt=A flock of Minecraft axolotls swimming through the water.|All 5 variants of axolotls swimming
+File:Trailer Green Axolotl.png|The green axolotl in the Caves & Cliffs: Part I trailer
+File:Editorial soothingstories article secondary glowingcave 1280x720.png|An axolotl with a [[fox]]<ref>{{mcnet|soothing-minecraft-stories|Soothing Minecraft Stories|December 22, 2023|Sophie Austin}}</ref>
+File:15 Year Journey Axolotl Sticker.png|Sticker of an axolotl from [[15 Year Journey]]
+File:MCLReturnofPiglinsCover.jpg|An axolotl as it appears on the cover of [[Minecraft Legends: Return of the Piglins]]
+File:CCGift-guide plushie axolotl.jpg|Axolotl plushie
+File:Lego Lucy Axolotl.png|A [[Lego Minecraft]] pink axolotl
+File:Lego Blue Axolotl.png|A Lego Minecraft blue axolotl
+File:Lego Gold Axolotl.png|A Lego Minecraft gold axolotl
+File:LEGO Cyan Axolotl.png|A Lego Minecraft cyan axolotl
+File:Axolotl Beanie.png|An official axolotl beanie
+File:Axoltol Outline.png|An officially licensed T-Shirt featuring outlines of three axolotls
+File:Axolotl Mug.jpeg|A mug made of an axolotl in a bucket
+File:Axolotl in a pair of pants.jpeg|Axolotl in a pair of pants
+File:Blue axolotl flippin fig.png|Blue axolotl figure of Flippin' Figs
+File:Axolotl in a bucket flippin fig.png|Axolotl in a bucket figure of Flippin' Figs
+File:Missing axolotl.jpeg|A missing poster of a gold axolotl
+File:Axolotl SuperSoaker.jpg
+File:Axolotl Plastic.png|A pink axolotl in the [[Plastic Texture Pack]]
+File:Blue Axolotl Plastic.png|A blue axolotl in the [[Plastic Texture Pack]]
+File:Gold Axolotl Plastic.png|A gold axolotl in the [[Plastic Texture Pack]]
+File:Wild Axolotl Plastic.png|A wild axolotl in the [[Plastic Texture Pack]]
+File:Cyan Axolotl Plastic.png|A cyan axolotl in the [[Plastic Texture Pack]] 
+</gallery>
+
+== References ==
+{{reflist}}
+
+== External links ==
+* {{Mcnet|axolotl-adventures|Axolotl Adventures|June 2nd, 2021|[[Sofia Dankis]]}}
+* {{mcnet|axolotl|Mob Menagerie: Axolotl|May 1, 2025|[[Duncan Geere]]}}
+
+== Navigation ==
+{{Navbox entities|mobs}}
+
+[[Category:Passive mobs]]
+[[Category:Aquatic mobs]]
+[[Category:Animal mobs]]
+
+[[de:Axolotl]]
+[[es:Ajolote]]
+[[fr:Axolotl]]
+[[hu:Axolotl]]
+[[it:Assolotto]]
+[[ja:ウーパールーパー]]
+[[ko:아홀로틀]]
+[[pl:Aksolotl]]
+[[pt:Axolote]]
+[[ru:Аксолотль]]
+[[th:แอกโซลอเติล]]
+[[uk:Аксолотль]]
+[[zh:美西螈]]

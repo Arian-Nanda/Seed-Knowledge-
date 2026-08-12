@@ -1,0 +1,4 @@
+{{DISPLAYTITLE:Villager}}
+{{User:Aloi4/Template/vsof}}
+{{Message box|type=other | title = This is a user subpage from [[User:Aloi4]] | text = But use {{t|DISPLAYTITLE}}, with like main page name| icon  = 2}}
+{{:Villager_(old)}}

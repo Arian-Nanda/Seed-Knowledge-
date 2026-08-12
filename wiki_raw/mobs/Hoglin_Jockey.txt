@@ -1,0 +1,89 @@
+{{Infobox entity
+| group1 = One
+| 1-1 = Hoglin Jockey.png
+| group2 = Two
+| 2-1 = Hoglin Jockey (2) JE8.png
+| group3 = Three
+| 3-1 = Hoglin Jockey (3) JE8.png
+| health = '''Baby Piglin:''' {{hp|16}}<br>
+'''Baby Hoglin:''' {{hp|40}}
+| classification = [[Animal]] (hoglin)
+| damage = '''Baby Hoglin in {{JE}}:'''<br>Easy and Normal: {{hp|0.5}}<br>Hard: {{hp|0.75}}<br>'''Baby Hoglin in {{BE}}:'''<br>{{hp|1}}
+}}
+'''Hoglin jockeys''' are the rare appearance of a baby [[piglin]] riding a baby [[hoglin]].
+
+== Spawning ==
+=== Post-generation ===
+Baby piglins run near and ride baby hoglins. If there are more baby piglins than baby hoglins, the baby piglins occasionally jump on other baby piglins already riding a baby hoglin, with a maximum of 3 stacked on a single baby hoglin.
+
+=== Dismounting ===
+The baby piglins can dismount the hoglin after getting on it, making hoglin jockeys a temporary occurrence.{{verify|edition=be}}
+
+== Drops ==
+When killed by a player or tamed [[wolf]], hoglins (including babies) drop {{xp|5}}, and baby piglins drop {{xp|1}}.
+
+Baby piglins will not drop any items they have picked up, regardless of jockey status.
+
+== Behavior ==
+=== Baby piglins ===
+{{main|Baby Piglin}}
+Baby piglins are passive and play with baby hoglins, running around and riding upon them. Up to 3 baby piglins may stack on top of each other while riding a baby hoglin.
+
+Baby piglins never grow up.
+
+=== Baby hoglins ===
+{{main|Baby Hoglin}}
+
+=== Zoglin jockey ===
+{{Infobox entity
+| title = Zoglin Jockey
+| image = Zoglin Jockey JE3.png
+| health = '''Baby Zombified Piglin:''' {{hp|20}}<br>
+'''Baby Zoglin:''' {{hp|40}}
+| classification = [[Monster]]
+| damage = '''Baby Zoglin:'''<br>Easy: {{hp|0.5}}<br>Normal: {{hp|0.5}}<br>Hard: {{hp|0.75}}<br>'''Baby Zombified Pglin:'''<br>Easy: {{hp|3.5}}<br>Normal: {{hp|5}}<br>Hard: {{hp|7.5}}
+}}
+{{Exclusive|java|section=1}}
+In {{JE}}, if a hoglin jockey is brought to the [[Overworld]] or [[The End]], the baby hoglin converts to a baby zoglin, and the baby piglin riders convert into baby zombified piglins. The newly created baby zombified piglins continue to ride the newly created baby zoglin.
+
+== History ==
+=== ''Java Edition'' ===
+{{Needs render|Add new baby piglin riding old baby hoglin|section=1}}
+{{HistoryTable
+|{{HistoryLine|java}}
+|{{HistoryLine||1.16|dev=20w09a|[[File:Hoglin Jockey JE1.png|x48px]] Added hoglin jockeys.}}
+|{{HistoryLine|||dev=20w12a|[[File:Hoglin Jockey (3) JE1.png|32px]] Baby piglins can now ride on top of each other on a baby hoglin, up to three baby piglins can climb on at once.}}
+|{{HistoryLine||26.1|dev=snap7|The model and texture of baby piglins have been changed.}}
+|{{HistoryLine|||dev=snap8|[[File:Hoglin Jockey JE5.png|32px]] [[File:Hoglin Jockey (2) JE5.png|32px]] [[File:Hoglin Jockey (3) JE5.png|32px]] The model and texture of baby hoglins have been changed.}}
+|{{HistoryLine|||dev=snap10|[[File:Hoglin Jockey JE6.png|32px]] [[File:Hoglin Jockey (2) JE6.png|32px]] [[File:Hoglin Jockey (3) JE6.png|32px]] The way baby piglins sit on baby hoglins has been changed.}}
+|{{HistoryLine|||dev=snap11|[[File:Hoglin Jockey JE7.png|32px]] [[File:Hoglin Jockey (2) JE7.png|32px]] [[File:Hoglin Jockey (3) JE7.png|32px]] The texture of baby hoglins has been changed.}}
+|{{HistoryLine||26.2|dev=snap5|[[File:Hoglin Jockey JE8.png|32px]] [[File:Hoglin Jockey (2) JE8.png|32px]] [[File:Hoglin Jockey (3) JE8.png|32px]]The riding position on baby hoglins has been fixed.<ref>{{bug|MC-306685|||F}}</ref>}}
+}}
+
+=== ''Bedrock Edition'' ===
+{{HistoryTable
+|{{HistoryLine|bedrock}}
+|{{HistoryLine||1.16.0|dev=beta 1.16.0.51|[[File:Hoglin Jockey JE1.png|x48px]] Added hoglin jockeys.}}
+|{{HistoryLine|||dev=beta 1.16.0.57|Baby piglins can now ride on top of each other on a baby hoglin, up to three baby piglins can climb on at once.}}
+|{{HistoryLine||26.10|dev=Preview 26.10.24|[[File:Hoglin Jockey BE4.png|32px]] [[File:Hoglin Jockey (2) BE4.png|32px]] [[File:Hoglin Jockey (3) BE4.png|32px]] The model and texture of baby hoglins and baby piglins have been changed.}}
+}}
+
+== Gallery ==
+
+=== In other media ===
+<gallery>
+Baby Piglins and Hoglin Animated Pixel Artwork.gif|Official artwork of an animated hoglin jockey.
+AMCM hoglin rider.png|A hoglin jockey as seen in ''[[A Minecraft Movie]]''.
+</gallery>
+
+== Navigation ==
+{{Navbox The Nether}}
+{{Navbox entities|mobs}}
+
+[[Category:Jockeys]]
+[[Category:Hostile mobs]]
+[[Category:Monster mobs]]
+[[Category:Nether mobs]]
+
+[[ja:ホグリンジョッキー]]
+[[pt:Jóquei de Hoglin]]
