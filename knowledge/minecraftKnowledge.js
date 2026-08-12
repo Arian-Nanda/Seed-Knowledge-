@@ -4,22 +4,27 @@
 // - Auto-generated facts from the "minecraft-data" npm package (MIT
 //   licensed, version 1.21.8): every block, item, recipe, food, enchantment
 // - Structure loot (Phase 1), ore/block world generation (Phase 2), and
-//   structure building materials (Phase 3) - all sourced from misode/mcmeta,
+//   structure building materials (Phase 3) - sourced from misode/mcmeta,
 //   a real, actively maintained mirror of Minecraft's official generated
-//   data (loot tables, world-generation configs, and structure NBT files
-//   straight from Mojang's own data generator tool).
+//   data (loot tables and world-generation configs straight from Mojang's
+//   own data generator tool).
+// - Mob facts (health, damage, speed, spawn conditions) sourced from the
+//   official Minecraft Wiki (minecraft.wiki), fetched via its public
+//   MediaWiki API and parsed from each mob's infobox and spawning
+//   section. Wiki content is CC BY-NC-SA licensed - used here for our
+//   own non-commercial project, credited via the site's attribution.
 //
 // Honest notes:
 // - The hand-written facts were written from general knowledge and haven't
 //   been cross-checked against the current wiki.
+// - Mob facts prioritize cleanly-parseable stats over completeness - a few
+//   fields (like multi-variant damage tables) were intentionally left out
+//   rather than risk stating a mismatched or incorrect number.
 // - Structure architecture facts cover the 12 structures that use real NBT
-//   templates (Igloo, Ancient City, Bastion, End City, Pillager Outpost,
-//   Ruined Portal, Shipwreck, Trail Ruins, Trial Chambers, Ocean Ruin,
-//   Village, Woodland Mansion) - some well-known structures (Desert
-//   Pyramid, Jungle Temple, Dungeons, Mineshafts, Strongholds, Ocean
-//   Monuments, Nether Fortresses) are built directly in Minecraft's game
-//   code rather than from a data template, so their block composition
-//   isn't available this way.
+//   templates - some well-known structures (Desert Pyramid, Jungle Temple,
+//   Dungeons, Mineshafts, Strongholds, Ocean Monuments, Nether Fortresses)
+//   are built directly in Minecraft's game code rather than from a data
+//   template, so their block composition isn't available this way.
 // - A small number of very new/experimental items referenced in loot
 //   tables aren't in our items database yet, so their names are
 //   auto-formatted from their internal ID rather than a verified display name.
@@ -4593,7 +4598,102 @@ const MINECRAFT_KNOWLEDGE = [
   "Trial Chambers building materials (structure architecture): commonly built from Tuff Bricks, Polished Tuff, Waxed Block of Copper, Waxed Oxidized Copper, Chiseled Tuff Bricks, Waxed Oxidized Cut Copper, Waxed Copper Grate, Water, Waxed Copper Bulb, Jigsaw Block, Waxed Oxidized Cut Copper Stairs, Powder Snow, Chiseled Tuff, Waxed Chiseled Copper, Ladder.",
   "Ocean Ruin building materials (structure architecture): commonly built from Gravel, Sand, Stone Bricks, Cracked Stone Bricks, Mossy Stone Bricks, Cut Sandstone, Chiseled Stone Bricks, Polished Granite, Mossy Cobblestone, Structure Block, Magma Block, Stone Brick Stairs, Dark Oak Planks, Chiseled Sandstone, Spruce Planks.",
   "Village building materials (structure architecture): commonly built from Dirt Path, Cobblestone, Grass Block, Smooth Sandstone, Dirt, Spruce Log, Oak Stairs, Spruce Planks, Oak Planks, Jigsaw Block, Acacia Stairs, Sand, Snow, Oak Log, Acacia Planks.",
-  "Woodland Mansion building materials (structure architecture): commonly built from Birch Planks, Cobblestone, Dark Oak Planks, Oak Planks, Dark Oak Log, Cobblestone Stairs, Oak Stairs, Red Carpet, Oak Slab, Polished Andesite, Oak Fence, Light Gray Wool, Dark Oak Stairs, Bookshelf, White Wool, Blocks of Labiz, Blocks of Diamond."
+  "Woodland Mansion building materials (structure architecture): commonly built from Birch Planks, Cobblestone, Dark Oak Planks, Oak Planks, Dark Oak Log, Cobblestone Stairs, Oak Stairs, Red Carpet, Oak Slab, Polished Andesite, Oak Fence, Light Gray Wool, Dark Oak Stairs, Bookshelf, White Wool, Blocks of Labiz, Blocks of Diamond.",
+  "Allay (mob): Passive, 20 HP health, speed 0.4.",
+  "Armadillo (mob): Passive, (Animal), 12 HP health, speed 0.14. Armadillos spawn in groups of two to three or four in savannas, savanna plateaus, and windswept savannas and in groups of one to two in badlands, eroded badlands, and wooded badlands.",
+  "Axolotl (mob): Passive, (Animal, Aquatic), 14 HP health, speed 1. Axolotls spawn underwater in the lush caves biome and when there is a clay block less than five blocks below the spawning space.",
+  "Bat (mob): Passive, (Animal-adjacent), 6 HP health.",
+  "Bee (mob): Neutral, (Animal, Arthropod), 10 HP health, speed 0.6. Bees are the only arthropod mob that can spawn in any difficulty including Peaceful.",
+  "Blaze (mob): Hostile, (Monster), 20 HP health. Blazes always require a light level of 11 or less to spawn.",
+  "Bogged (mob): Hostile, (Undead, Monster), 16 HP health. Bogged can spawn in swamps and mangrove swamps, replacing about 30% of skeletons, as well as in trial chambers via trial spawners.",
+  "Breeze (mob): Hostile, (Monster), 30 HP health. Breezes spawn from trial spawners that generate surrounded by chiseled tuff in trial chambers.",
+  "Camel (mob): Passive, (Animal). Camels spawn uncommonly in deserts in any light level or a light level of 7 and below.",
+  "Camel Husk (mob): Passive, (Undead, Monster, Animal), speed 0.09. In , when a husk spawns naturally and spawns in a space that does not block the collision box required for a camel husk, it has a 10% chance to spawn as a camel husk jockey, i.",
+  "Cat (mob): Passive, (Animal), speed 0.3.",
+  "Cave Spider (mob): Neutral, (Monster, Arthropod), 12 HP health, speed 0.3.",
+  "Chicken (mob): Passive, (Animal), 4 HP health, speed 0.25. Chickens spawn naturally in the Overworld in most grassy biomes except snowy plains, meadows, cherry groves, mangrove swamps, and pale gardens.",
+  "Chicken Jockey (mob): Zombie, zombie villager, and husk rider: Hostile; Drowned and zombified piglin rider: Neutral, deals 2.5-4.5 damage depending on difficulty.",
+  "Cod (mob): Passive, (Animal, Aquatic), 3 HP health, speed 0.7.",
+  "Copper Golem (mob): Passive, 12 HP health, speed 0.2.",
+  "Cow (mob): Passive, (Animal), 10 HP health, speed 0.2. Cows spawn naturally in the Overworld in most grassy biomes except for snowy plains, meadows, cherry groves, mangrove swamps, and pale gardens.",
+  "Creaking (mob): Hostile, (Monster), deals 2.5-4.5 damage depending on difficulty, speed 0.3. Creakings spawn when an activated creaking heart is triggered at nighttime.",
+  "Creeper (mob): Hostile, (Monster), 20 HP health. Creepers naturally spawn in the Overworld on solid blocks with a light level of 0, except in mushroom fields and deep dark biomes.",
+  "Dolphin (mob): Neutral (adult);  Passive (baby), (Animal, Aquatic), deals 2.5-4.5 damage depending on difficulty, speed 1.2. Dolphins are found in groups (pods) of 1-2 or 3-5 in all ocean biomes, excluding frozen oceans and cold oceans.",
+  "Donkey (mob): Passive, (Animal).",
+  "Drowned (mob): Neutral, (Undead, Monster), speed 0.23.",
+  "Elder Guardian (mob): Hostile, (Monster, Aquatic), 80 HP health. Three elder guardians spawn naturally during the generation of each ocean monument:\n* One in the top room of the monument.",
+  "Ender Dragon (mob): Hostile, (Monster), 200 HP health, speed 0.7.",
+  "Enderman (mob): Neutral, (Monster), 40 HP health, deals 4.5-10.5 damage depending on difficulty, speed 0.3.",
+  "Endermite (mob): Hostile, (Monster, Arthropod), 8 HP health. Endermites have a 5% chance to spawn when a player-thrown ender pearl lands.",
+  "Evoker (mob): Hostile, (Illager, Monster), 24 HP health.",
+  "Fox (mob): Passive (wild or trusting) ; Neutral (trusting a different player), (Animal), 10 HP health, speed 0.3. Foxes spawn in groups of two to four, and can spawn on grass blocks, coarse dirt, podzol, snow blocks, and snow.",
+  "Frog (mob): Passive, (Animal), 10 HP health, speed 1. Frogs spawn in groups of two to five in swamp and mangrove swamp biomes.",
+  "Ghast (mob): Hostile, (Monster), 10 HP health, speed 0.7. To spawn naturally, a ghast requires a solid block below it and a free space 5\u00d75 blocks wide and 4 blocks high.",
+  "Giant (mob): (Monster), 100 HP health, deals 26-75 damage depending on difficulty.",
+  "Glow Squid (mob): Passive, (Animal, Aquatic), 10 HP health.",
+  "Goat (mob): Neutral, (Animal), 10 HP health, speed 0.2. Groups of two to three goats spawn above stone, gravel, packed ice or snow blocks on snowy slopes, jagged peaks, and frozen peaks at the surface.",
+  "Guardian (mob): Hostile, (Monster, Aquatic), 30 HP health. Guardians spawn naturally in ocean monuments.",
+  "Happy Ghast (mob): Passive, (Animal), speed 0.05. Happy ghasts can be spawned by waterlogging a dried ghast for about 20 minutes.",
+  "Hoglin (mob): Hostile, (Animal, Monster), speed 0.3. Hoglins are found in herds of 3\u20134 in crimson forests, respawning over time.",
+  "Horse (mob): Passive, (Animal).",
+  "Husk (mob): Hostile, (Undead, Monster), speed 0.23. Husks spawn at a light level of 0 in the desert, mostly replacing zombies in these biomes.",
+  "Illusioner (mob): Hostile, (Illager, Monster), 32 HP health, speed 0.5. Illusioners do not spawn naturally in any way without commands, nor do they have a spawn egg in the Creative inventory.",
+  "Iron Golem (mob): Neutral (naturally spawned); Passive (player-built), deals 4.75-11.25 damage depending on difficulty, speed 0.25.",
+  "Llama (mob): Neutral, (Animal), speed 0.175.",
+  "Magma Cube (mob): Hostile, (Monster). Magma cubes spawn in areas of the Nether at all light levels.",
+  "Mooshroom (mob): Passive, (Animal), 10 HP health, speed 0.2. Red mooshrooms can spawn in mushroom fields biomes in herds of 4\u20138 on mycelium blocks.",
+  "Mule (mob): Passive, (Animal). Mules do not spawn naturally, but a mule can spawn through cross-breeding a horse with a donkey.",
+  "Nautilus (mob): Neutral (untamed); Passive (baby or tamed), (Animal, Aquatic), deals 2.5-4.5 damage depending on difficulty, speed 6.5 m/s. Nautiluses spawn in all ocean biomes, in groups of 1-3.",
+  "Ocelot (mob): Passive, (Animal), 10 HP health, speed 0.3. Ocelots spawn above grass blocks in jungle biomes at the world's sea level (Y-level 63 per default).",
+  "Panda (mob): Neutral (adult); Passive (baby), (Animal), speed 0.15. Pandas spawn rarely in groups of 1\u20132 in jungle biomes on grass blocks with at least a two-block space above them.",
+  "Parrot (mob): Passive, (Animal), 6 HP health, speed 0.2. Parrots naturally spawn in groups of 1\u20132 in jungles, bamboo jungles, and sparse jungles above logs, leaves, grass blocks, or air.",
+  "Phantom (mob): Hostile, (Undead, Monster), 20 HP health, speed 0.7.",
+  "Pig (mob): Passive, (Animal), speed 0.25. Pigs spawn in the Overworld in most grassy biomes except for snowy plains, meadows, mangrove swamps, and pale gardens.",
+  "Piglin (mob): Neutral (adult); Passive (baby), (Monster), 16 HP health, speed 0.35. Piglins spawn in groups of 4 in nether wastes and 3-4 in crimson forest biomes at light levels of 11 or 7 and below.",
+  "Piglin Brute (mob): Hostile, (Monster), 50 HP health. A small number of piglin brutes spawn in some rooms of bastion remnants only upon generation, so they are not renewable.",
+  "Pillager (mob): Hostile; Passive (broken crossbow), (Illager, Monster), 24 HP health.",
+  "Player (mob): Controlled, 20 HP health, speed 0.10.",
+  "Polar Bear (mob): Hostile (when baby is nearby); Neutral (adult); Passive (baby), (Animal), deals 4-9 damage depending on difficulty, speed 0.25. Polar bears spawn in snowy plains, ice spikes, frozen and deep frozen ocean biomes, and additionally/sometimes in frozen river, legacy frozen ocean, snowy slopes, jagged peaks, and frozen peaks biomes.",
+  "Pufferfish (mob): Neutral, (Animal, Aquatic), 3 HP health, speed 0.7.",
+  "Rabbit (mob): Passive (normal); Hostile (killer bunny), (Animal), 3 HP health, deals 5-12 damage depending on difficulty, speed 0.3. Rabbits spawn above grass, snow blocks or sand in specific biomes.",
+  "Ravager (mob): Hostile, (Monster), 100 HP health, speed 0.4. Ravagers spawn starting at wave 3 as part of a raid.",
+  "Ravager Jockey (mob): Hostile.",
+  "Salmon (mob): Passive, (Animal, Aquatic), 3 HP health, speed 0.7.",
+  "Sheep (mob): Passive, (Animal), 8 HP health, speed 0.23. The sheep color is determined by the type of biome the sheep spawns in.",
+  "Shulker (mob): Hostile, (Golem, Monster), 30 HP health, deals 3-6 damage depending on difficulty.",
+  "Silverfish (mob): Hostile, (Monster, Arthropod), 8 HP health, speed 0.25. Silverfish spawn from broken infested blocks, which generate in strongholds, underground in mountains and windswept hills biomes, in igloo basements, and in woodland mansion false portal rooms.",
+  "Skeleton (mob): Hostile, (Undead, Monster), 20 HP health.",
+  "Skeleton Horse (mob): Passive, (Undead, Monster, Animal), speed 0.2. A \"skeleton trap\" horse is a skeleton horse spawned from a fraction of lightning generated naturally by a thunderstorm (0.",
+  "Slime (mob): Hostile, (Monster). Slimes spawn naturally in 3 sizes: small, medium, and large.",
+  "Sniffer (mob): Passive, (Animal), 14 HP health, speed 0.1. Sniffers spawn by hatching from sniffer eggs, which can be found in suspicious sand from warm ocean ruins.",
+  "Snow Golem (mob): Passive, 4 HP health, speed 0.2. Snow golems are created by stacking two snow blocks vertically, and then placing a carved pumpkin or jack o'lantern on top of the stack.",
+  "Spider (mob): Neutral, (Monster, Arthropod), 16 HP health, deals 2-3 damage depending on difficulty, speed 0.3. Spiders can spawn in the Overworld at a light level of 0 within a 3\u00d71\u00d73 space centered on an opaque block.",
+  "Spider Jockey (mob): Hostile. When a spider spawns, there is a 1% chance for a skeleton mob to spawn riding it.",
+  "Squid (mob): Passive, (Animal, Aquatic), 10 HP health.",
+  "Stray (mob): Hostile, (Undead, Monster), 20 HP health. A stray may spawn directly under the sky in snowy plains, or ice spikes, replacing 80% of skeletons.",
+  "Strider (mob): Passive, (Animal), speed 0.175. Striders can spawn in every Nether biome.",
+  "Strider Jockey (mob): Zombified Piglin: Neutral ;  Baby Strider: Passive.",
+  "Tadpole (mob): Passive, (Animal, Aquatic), 6 HP health, speed 1. Tadpoles hatch from frogspawn in groups of 2-5.",
+  "Trader Llama (mob): Neutral, (Animal), speed 0.175. When a wandering trader spawns, two trader llamas attempt to spawn within 4 blocks of the trader on each horizontal axis and the world's surface on the y-axis.",
+  "Tropical Fish (mob): Passive, (Animal, Aquatic), 3 HP health, speed 0.7.",
+  "Turtle (mob): Passive, (Animal, Aquatic), 30 HP health, speed 0.25. Turtles occasionally spawn in small groups on the sand in beaches, but not in snowy beaches or stony shores.",
+  "Vex (mob): Hostile, (Monster), 14 HP health. The vex only spawns as part of an evoker's summoning attack.",
+  "Villager (mob): Passive, 20 HP health, deals 5-12 damage depending on difficulty, speed 0.5. Each villager spawns with an empty inventory.",
+  "Vindicator (mob): Hostile, (Illager, Monster), 24 HP health, speed 5.612 blocks/sec. On Normal difficulty and Hard difficulty, vindicators sometimes spawn with a randomly enchanted iron axe: the chance is 0\u201325%, and is higher when the regional difficulty is higher.",
+  "Wandering Trader (mob): Passive, 20 HP health, speed 0.7.",
+  "Warden (mob): Hostile, (Monster), 500 HP health.",
+  "Witch (mob): Hostile, (Monster), 26 HP health, speed 0.25. A witch may spawn in the Overworld above opaque blocks at a light level of 0 in all biomes except for mushroom fields and deep dark.",
+  "Wither (mob): Hostile, (Undead, Monster), speed 0.6. The wither is spawned by placing 4 blocks of soul sand and/or soul soil in a T shape, and putting 3 wither skeleton skulls on top of the three upper blocks.",
+  "Wither Skeleton (mob): Hostile, (Undead, Monster), 20 HP health, speed 0.25.",
+  "Wolf (mob): Neutral (wild, or if owned by a different player); Passive (player is owner or active), (Animal), deals 3-6 damage depending on difficulty, speed 0.3. Wild wolves spawn naturally in multiple biomes on grass blocks, coarse dirt, snow ( only on 8 layers of snow), snow blocks or podzol.",
+  "Zoglin (mob): Hostile, (Undead, Monster), 40 HP health, speed 0.3. Zoglins spawn when a hoglin has been out of the Nether for seconds.",
+  "Zombie (mob): Hostile, (Undead, Monster), deals 2.5-4.5 damage depending on difficulty, speed 0.23.",
+  "Zombie Horse (mob): Passive, (Undead, Monster, Animal).",
+  "Zombie Nautilus (mob): Neutral (untamed); Passive (tamed), (Undead, Aquatic, Monster, Animal), deals 2.5-4.5 damage depending on difficulty, speed 7.15 m/s.",
+  "Zombie Villager (mob): Hostile, (Undead, Monster), deals 2.5-4.5 damage depending on difficulty, speed 0.23.",
+  "Zombified Piglin (mob): Neutral, (Undead, Monster), speed 0.23. Zombified piglins can spawn in several methods:\n* In Nether wastes and crimson forest biomes, and Nether fortresses in the Nether.",
+  "Armor Stand (mob): A utility entity used to display armor, held items, and banners in a fixed pose - not a combat mob, has no combat abilities of its own.",
+  "Hoglin Jockey (mob): A baby piglin riding a baby hoglin. Baby piglin has 16 HP, baby hoglin has 40 HP. Deals 0.5-1 damage depending on difficulty. Baby piglins spawn already riding nearby baby hoglins after world generation."
 ];
 
 module.exports = { MINECRAFT_KNOWLEDGE };
