@@ -148,6 +148,12 @@ function retrieveContext(userMessage, topN = 3) {
   const ARCHITECTURE_INTENT_WORDS = ["built", "build", "made of", "made from", "make up", "makes up", "material", "materials", "constructed", "walls"];
   const hasArchitectureIntent = ARCHITECTURE_INTENT_WORDS.some((w) => rawLower.includes(w));
 
+  // Signals a genuine mob combat/stats question - these should win over
+  // older, less-detailed facts or unrelated items that happen to share
+  // the mob's name (e.g. "Piglin Spawn Egg") in a tied match.
+  const MOB_STAT_INTENT_WORDS = ["damage", "health", "hp", "attack", "speed", "hostile", "hostility", "hit points", "fast", "move", "moving"];
+  const hasMobStatIntent = MOB_STAT_INTENT_WORDS.some((w) => rawLower.includes(w));
+
   const scored = MINECRAFT_KNOWLEDGE.map((chunk, i) => {
     if (i === bestRecipeIdx && results.length > 0) return { chunk, score: -1 };
     let score = 0;
@@ -181,6 +187,12 @@ function retrieveContext(userMessage, topN = 3) {
     // Similarly, "what is X built from" should win over structure loot
     // facts for the same structure.
     if (hasArchitectureIntent && chunk.includes("(structure architecture)") && score > 0) {
+      score += 1.5;
+    }
+    // "How much damage/health does X have" should win over older,
+    // less-detailed facts and unrelated items (like spawn eggs) that
+    // happen to share the same starting name.
+    if (hasMobStatIntent && chunk.includes("(mob)") && score > 0) {
       score += 1.5;
     }
     return { chunk, score };
