@@ -1,14 +1,10 @@
-Checking candidate categories for individual mob pages...
-  Category:Hostile mobs -> 50 pages found. Sample: ['User:Aloi4/test/Creeper', 'Blaze', 'Bogged', 'Breeze', 'Camel Husk']
-  Category:Passive mobs -> 44 pages found. Sample: ['Agent', 'Allay', 'User:Aloi4/test/Villager', 'User:Aloi4/test/Villager/old', 'Armadillo']
-  Category:Neutral mobs -> 20 pages found. Sample: ['Bee', 'Cave Spider', 'Dolphin', 'Drowned', 'Enderman']
-  Category:Renewable mobs -> 0 pages found. Sample: []
-  Category:Unrenewable mobs -> 0 pages found. Sample: []
-  Category:Utility mobs -> 0 pages found. Sample: []
-  Category:List of mobs -> 0 pages found. Sample: []
+Checking Category:Advancements for individual pages...
+  Found 0 pages. Sample: []
 
-Combined total (deduplicated): 110 pages.
+Checking the main 'Advancements' page directly...
+  Found it - 46 characters.
+  Saved to wiki_raw/advancements/_main_page.txt for review.
 
-Fetching each page's content (this will take a few minutes)...
-
-Done. Fetched 0 new pages, skipped 110 already-fetched pages.
+=== SUMMARY ===
+Category page count: 0
+Main page fetched: yes
