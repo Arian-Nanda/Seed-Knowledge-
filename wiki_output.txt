@@ -1,10 +1,25 @@
-Checking Category:Advancements for individual pages...
-  Found 0 pages. Sample: []
+Fetching the 'Advancement' (singular) page directly...
+Found it - 91316 characters.
+Saved to wiki_raw/advancements/Advancement_main.txt
 
-Checking the main 'Advancements' page directly...
-  Found it - 46 characters.
-  Saved to wiki_raw/advancements/_main_page.txt for review.
-
-=== SUMMARY ===
-Category page count: 0
-Main page fetched: yes
+Found 22 section headers on this page. First 20:
+  Obtaining
+  Notifications
+  Interface
+  List of advancements
+  Minecraft
+  Nether
+  The End
+  Adventure
+  Husbandry
+  JSON format
+  Sounds
+  History
+  Advancement entries and requirements
+  Technical details
+  Issues
+  Gallery
+  Screenshots
+  Mojang screenshots
+  Renders and diagrams
+  Notes
