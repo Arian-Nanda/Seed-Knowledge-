@@ -154,6 +154,9 @@ function retrieveContext(userMessage, topN = 3) {
   const MOB_STAT_INTENT_WORDS = ["damage", "health", "hp", "attack", "speed", "hostile", "hostility", "hit points", "fast", "move", "moving"];
   const hasMobStatIntent = MOB_STAT_INTENT_WORDS.some((w) => rawLower.includes(w));
 
+  // Signals a question about advancements/achievements specifically.
+  const hasAdvancementIntent = rawLower.includes("advancement") || rawLower.includes("achievement");
+
   const scored = MINECRAFT_KNOWLEDGE.map((chunk, i) => {
     if (i === bestRecipeIdx && results.length > 0) return { chunk, score: -1 };
     let score = 0;
@@ -193,6 +196,9 @@ function retrieveContext(userMessage, topN = 3) {
     // less-detailed facts and unrelated items (like spawn eggs) that
     // happen to share the same starting name.
     if (hasMobStatIntent && chunk.includes("(mob)") && score > 0) {
+      score += 1.5;
+    }
+    if (hasAdvancementIntent && chunk.includes("(advancement)") && score > 0) {
       score += 1.5;
     }
     return { chunk, score };
