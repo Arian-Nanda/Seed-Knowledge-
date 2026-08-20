@@ -157,6 +157,18 @@ function retrieveContext(userMessage, topN = 3) {
   // Signals a question about advancements/achievements specifically.
   const hasAdvancementIntent = rawLower.includes("advancement") || rawLower.includes("achievement");
 
+  // Signals a question about the game's own release history/timeline,
+  // not an in-game item's history.
+  const HISTORY_INTENT_WORDS = ["when did", "come out", "released", "release date", "history of minecraft", "first version", "alpha", "beta", "full release"];
+  const hasHistoryIntent = HISTORY_INTENT_WORDS.some((w) => rawLower.includes(w));
+
+  // "Come out" / "release date" specifically mean the PUBLIC release, not
+  // early unreleased development phases (Pre-Classic, Indev, etc.) - a
+  // real gap found in testing, where "Full Release" didn't even make the
+  // top 3 despite being the actually-correct answer.
+  const PUBLIC_RELEASE_WORDS = ["come out", "release date", "publicly released", "officially released"];
+  const hasPublicReleaseIntent = PUBLIC_RELEASE_WORDS.some((w) => rawLower.includes(w));
+
   const scored = MINECRAFT_KNOWLEDGE.map((chunk, i) => {
     if (i === bestRecipeIdx && results.length > 0) return { chunk, score: -1 };
     let score = 0;
@@ -200,6 +212,12 @@ function retrieveContext(userMessage, topN = 3) {
     }
     if (hasAdvancementIntent && chunk.includes("(advancement)") && score > 0) {
       score += 1.5;
+    }
+    if (hasHistoryIntent && chunk.includes("(history)") && score > 0) {
+      score += 1.5;
+    }
+    if (hasPublicReleaseIntent && chunk.startsWith("Minecraft Java Edition Full Release") && score > 0) {
+      score += 2;
     }
     return { chunk, score };
   });
