@@ -1,0 +1,3737 @@
+{{Italic title|Java Edition}}
+{{about|previous updates for {{JE}}|development versions|Java  Edition version history/Development versions|future updates|Planned versions#Java Edition|other uses|Version history|a timeline of all events related to {{MC}}|Chronology of events}}
+{{/disclaimer}}
+{{relevant category|Java Edition versions}}
+[[File:Version History - Java.png|thumb|All versions of ''Minecraft:'' {{JE}} as of July 28, 2026.]]
+
+{{JE}} has been in constant development since May 10, 2009, when it was simply named ''Minecraft''. What is now known as [[pre-Classic]] refers to the early unreleased versions of ''Minecraft'' during the week from May 10 to May 16, 2009. The next phase, what was later called [[Java Edition Classic|Classic]], lasted from May 17 to November 10, 2009. [[Indev]], short for "in development", lasted from December 23, 2009, to February 23, 2010. [[Infdev]], short for "infinite development", lasted from February 27 to June 30, 2010. [[Java Edition Alpha|Alpha]] lasted from June 30 to December 3, 2010, and [[Java Edition Beta|Beta]] lasted from December 20, 2010, all the way through to November 11, 2011. The official release of ''Minecraft'' (''Java Edition'') came on November 18, 2011, at [[MINECON 2011]], and further updates have been released ever since, the most recent being {{version|java}}. Starting with [[1.12.2]], the game officially adopted the ''Java Edition'' subtitle, to distinguish it from the {{BE}}.
+
+{{TOC|left|limit=3|class=toc-nonumbers|style=column-count:2;column-gap:0px}}
+{{-}}
+
+== Full release ==
+{{anchor|Full Release}}
+The full release stage of [[Java Edition|''Minecraft: Java Edition'']]'s development started on November 18, 2011, and has continued until the present day. At this point of development, the game was considered "complete", having both an "[[The End|ending]]" and being ready for ratings and reviews. The game's price also increased from what it was in [[Java Edition Beta|Beta]], but users who previously bought the game were not charged extra.
+{{-|left}}
+
+=== 26.''x'' ===
+{{collapse
+|title='''Block and item additions'''
+|head=1}}
+{{Additions table
+|Poplar Log
+|Stripped Poplar Log
+|Poplar Wood
+|Stripped Poplar Wood
+|Poplar Planks
+|Poplar Stairs
+|Poplar Slab
+|Poplar Sign
+|Poplar Hanging Sign
+|Poplar Button
+|Poplar Pressure Plate
+|Poplar Door
+|Poplar Fence
+|Poplar Fence Gate
+|Poplar Trapdoor
+|Poplar Shelf
+|Poplar Boat
+|Poplar Boat with Chest
+|Red Poplar Leaves
+|Orange Poplar Leaves
+|Yellow Poplar Leaves
+|Poplar Sapling
+|Red Shrub
+|Shelf Mushroom
+|White Wool Stairs
+|White Wool Slab
+|White Cushion
+|Light Gray Wool Stairs
+|Light Gray Wool Slab
+|Light Gray Cushion
+|Gray Wool Stairs
+|Gray Wool Slab
+|Gray Cushion
+|Black Wool Stairs
+|Black Wool Slab
+|Black Cushion
+|Brown Wool Stairs
+|Brown Wool Slab
+|Brown Cushion
+|Red Wool Stairs
+|Red Wool Slab
+|Red Cushion
+|Orange Wool Stairs
+|Orange Wool Slab
+|Orange Cushion
+|Yellow Wool Stairs
+|Yellow Wool Slab
+|Yellow Cushion
+|Lime Wool Stairs
+|Lime Wool Slab
+|Lime Cushion
+|Green Wool Stairs
+|Green Wool Slab
+|Green Cushion
+|Cyan Wool Stairs
+|Cyan Wool Slab
+|Cyan Cushion
+|Light Blue Wool Stairs
+|Light Blue Wool Slab
+|Light Blue Cushion
+|Blue Wool Stairs
+|Blue Wool Slab
+|Blue Cushion
+|Purple Wool Stairs
+|Purple Wool Slab
+|Purple Cushion
+|Magenta Wool Stairs
+|Magenta Wool Slab
+|Magenta Cushion
+|Pink Wool Stairs
+|Pink Wool Slab
+|Pink Cushion
+|White Concrete Stairs
+|White Concrete Slab
+|Light Gray Concrete Stairs
+|Light Gray Concrete Slab
+|Gray Concrete Stairs
+|Gray Concrete Slab
+|Black Concrete Stairs
+|Black Concrete Slab
+|Brown Concrete Stairs
+|Brown Concrete Slab
+|Red Concrete Stairs
+|Red Concrete Slab
+|Orange Concrete Stairs
+|Orange Concrete Slab
+|Yellow Concrete Stairs
+|Yellow Concrete Slab
+|Lime Concrete Stairs
+|Lime Concrete Slab
+|Green Concrete Stairs
+|Green Concrete Slab
+|Cyan Concrete Stairs
+|Cyan Concrete Slab
+|Light Blue Concrete Stairs
+|Light Blue Concrete Slab
+|Blue Concrete Stairs
+|Blue Concrete Slab
+|Purple Concrete Stairs
+|Purple Concrete Slab
+|Magenta Concrete Stairs
+|Magenta Concrete Slab
+|Pink Concrete Stairs
+|Pink Concrete Slab
+|Straw Bed
+|Buried Ancient City Map
+|Buried Mineshaft Map
+|Desert Pyramid Map
+|Warm Ocean Ruins Map
+|Bamboo Camp Map
+|Birch Forest Camp Map
+|Cherry Grove Camp Map
+|Dappled Forest Camp Map
+|Flower Forest Camp Map
+|Pale Garden Camp Map
+|Swamp Camp Map
+|Windswept Forest Camp Map
+|title=26.3}}
+{{Additions table
+|Cinnabar
+|Cinnabar Slab
+|Cinnabar Stairs
+|Cinnabar Wall
+|Polished Cinnabar
+|Polished Cinnabar Slab
+|Polished Cinnabar Stairs
+|Polished Cinnabar Wall
+|Cinnabar Bricks
+|Cinnabar Brick Slab
+|Cinnabar Brick Stairs
+|Cinnabar Brick Wall
+|Chiseled Cinnabar
+|Potent Sulfur
+|Sulfur
+|Sulfur Slab
+|Sulfur Stairs
+|Sulfur Wall
+|Polished Sulfur
+|Polished Sulfur Slab
+|Polished Sulfur Stairs
+|Polished Sulfur Wall
+|Sulfur Bricks
+|Sulfur Brick Slab
+|Sulfur Brick Stairs
+|Sulfur Brick Wall
+|Chiseled Sulfur
+|Bucket of Sulfur Cube
+|Sulfur Cube Spawn Egg
+|Sulfur Spike
+|Music Disc Bounce
+|title=26.2}}
+{{Additions table
+|Golden Dandelion
+|title=26.1}}
+{{collapse
+|tail=1}}
+{|class="wikitable" data-description="2026 updates"
+!Update name
+!Version
+!Development release
+!Full release
+|-
+|[[Third Drop 2026]] ([[Java Edition guides/Third Drop 2026|Guide]])
+|[[Java Edition 26.3|26.3]]||June 23, 2026||Upcoming Q3 2026
+|-
+|[[Chaos Cubed]] ([[Java Edition guides/Chaos Cubed|Guide]])
+|[[Java Edition 26.2|26.2]]||April 7, 2026||June 16, 2026
+|-
+|rowspan=3|[[Tiny Takeover]] ([[Java Edition guides/Tiny Takeover|Guide]])
+|[[Java Edition 26.1.2|26.1.2]]||April 8, 2026||April 9, 2026
+|-
+|[[Java Edition 26.1.1|26.1.1]]||March 31, 2026||April 1, 2026
+|-
+|[[Java Edition 26.1|26.1]]||December 16, 2025||March 24, 2026
+|}
+
+=== 1.21 ===
+{{collapse
+|title='''Block and item additions'''
+|head=1}}
+{{Additions table
+|Copper Nautilus Armor
+|Iron Nautilus Armor
+|Golden Nautilus Armor
+|Diamond Nautilus Armor
+|Netherite Nautilus Armor
+|Wooden Spear
+|Stone Spear
+|Copper Spear
+|Iron Spear
+|Golden Spear
+|Diamond Spear  
+|Netherite Spear
+|Enchanted Book[&7Lunge I]
+|Enchanted Book[&7Lunge II]
+|Enchanted Book[&7Lunge III]
+|Nautilus Spawn Egg
+|Zombie Nautilus Spawn Egg
+|Camel Husk Spawn Egg
+|Parched Spawn Egg
+|Netherite Horse Armor
+|title=1.21.11}}
+{{Additions table
+|Copper Chest
+|Exposed Copper Chest
+|Weathered Copper Chest
+|Oxidized Copper Chest
+|Waxed Copper Chest
+|Waxed Exposed Copper Chest
+|Waxed Weathered Copper Chest
+|Waxed Oxidized Copper Chest
+|Oak Shelf
+|Birch Shelf
+|Spruce Shelf
+|Jungle Shelf
+|Acacia Shelf
+|Dark Oak Shelf
+|Crimson Shelf
+|Warped Shelf
+|Mangrove Shelf
+|Bamboo Shelf
+|Cherry Shelf
+|Pale Oak Shelf
+|Copper Golem Statue
+|Exposed Copper Golem Statue
+|Weathered Copper Golem Statue
+|Oxidized Copper Golem Statue
+|Waxed Copper Golem Statue
+|Waxed Exposed Copper Golem Statue
+|Waxed Weathered Copper Golem Statue
+|Waxed Oxidized Copper Golem Statue
+|Exposed Lightning Rod
+|Weathered Lightning Rod
+|Oxidized Lightning Rod
+|Waxed Lightning Rod
+|Waxed Exposed Lightning Rod
+|Waxed Weathered Lightning Rod
+|Waxed Oxidized Lightning Rod
+|Copper Sword
+|Copper Pickaxe
+|Copper Axe
+|Copper Shovel
+|Copper Hoe
+|Copper Helmet
+|Copper Chestplate
+|Copper Leggings
+|Copper Boots
+|Copper Horse Armor
+|Copper Nugget
+|Copper Golem Spawn Egg
+|Copper Torch
+|Copper Bars
+|Exposed Copper Bars
+|Weathered Copper Bars
+|Oxidized Copper Bars
+|Waxed Copper Bars
+|Waxed Exposed Copper Bars
+|Waxed Weathered Copper Bars
+|Waxed Oxidized Copper Bars
+|Copper Chain
+|Exposed Copper Chain
+|Weathered Copper Chain
+|Oxidized Copper Chain
+|Waxed Copper Chain
+|Waxed Exposed Copper Chain
+|Waxed Weathered Copper Chain
+|Waxed Oxidized Copper Chain
+|Copper Lantern
+|Exposed Copper Lantern
+|Weathered Copper Lantern
+|Oxidized Copper Lantern
+|Waxed Copper Lantern
+|Waxed Exposed Copper Lantern
+|Waxed Weathered Copper Lantern
+|Waxed Oxidized Copper Lantern
+|title=1.21.9}}
+{{Additions table
+|Music Disc Lava Chicken
+|Painting Dennis
+|title=1.21.7}}
+{{Additions table
+|Dried Ghast
+|Happy Ghast Spawn Egg
+|White Harness
+|Light Gray Harness
+|Gray Harness
+|Black Harness
+|Brown Harness
+|Red Harness
+|Orange Harness
+|Yellow Harness
+|Green Harness
+|Lime Harness
+|Cyan Harness
+|Light Blue Harness
+|Blue Harness
+|Magenta Harness
+|Purple Harness
+|Pink Harness
+|Music Disc Tears
+|title=1.21.6}}
+{{Additions table
+|Leaf Litter
+|Wildflowers
+|Test Block
+|Test Block log
+|Test Block fail
+|Test Block accept
+|Test Instance Block
+|Bush
+|Firefly Bush
+|Cactus Flower
+|Short Dry Grass
+|Tall Dry Grass
+|Blue Egg
+|Brown Egg
+|Jungle Explorer Map
+|Swamp Explorer Map
+|Desert Village Map
+|Plains Village Map
+|Savanna Village Map
+|Snowy Village Map
+|Taiga Village Map
+|title=1.21.5}}
+{{Additions table
+|Creaking Heart
+|Pale Oak Log
+|Stripped Pale Oak Log
+|Pale Oak Wood
+|Stripped Pale Oak Wood
+|Pale Oak Planks
+|Pale Oak Stairs
+|Pale Oak Slab
+|Pale Oak Sign
+|Pale Oak Hanging Sign
+|Pale Oak Button
+|Pale Oak Pressure Plate
+|Pale Oak Door
+|Pale Oak Fence
+|Pale Oak Fence Gate
+|Pale Oak Trapdoor
+|Pale Oak Boat
+|Pale Oak Boat with Chest
+|Pale Hanging Moss
+|Pale Moss Block
+|Pale Moss Carpet
+|Pale Oak Leaves
+|Pale Oak Sapling
+|Creaking Spawn Egg
+|Closed Eyeblossom
+|Open Eyeblossom
+|Block of Resin
+|Resin Bricks
+|Chiseled Resin Bricks
+|Resin Brick Slab
+|Resin Brick Stairs
+|Resin Brick Wall
+|Resin Clump
+|Resin Brick
+|title=1.21.4}}
+{{Additions table
+|Bordure Indented Banner Pattern
+|Field Masoned Banner Pattern
+|Bundle
+|White Bundle
+|Light Gray Bundle
+|Gray Bundle
+|Black Bundle
+|Brown Bundle
+|Red Bundle
+|Orange Bundle
+|Yellow Bundle
+|Lime Bundle
+|Green Bundle
+|Cyan Bundle
+|Light Blue Bundle
+|Blue Bundle
+|Purple Bundle
+|Magenta Bundle
+|Pink Bundle
+|title=1.21.2}}
+{{Additions table
+|Crafter
+|Copper Bulb
+|Exposed Copper Bulb
+|Weathered Copper Bulb
+|Oxidized Copper Bulb
+|Waxed Copper Bulb
+|Waxed Exposed Copper Bulb
+|Waxed Weathered Copper Bulb
+|Waxed Oxidized Copper Bulb
+|Chiseled Copper
+|Exposed Chiseled Copper
+|Weathered Chiseled Copper
+|Oxidized Chiseled Copper
+|Waxed Chiseled Copper
+|Waxed Exposed Chiseled Copper
+|Waxed Weathered Chiseled Copper
+|Waxed Oxidized Chiseled Copper
+|Copper Grate
+|Exposed Copper Grate
+|Weathered Copper Grate
+|Oxidized Copper Grate
+|Waxed Copper Grate
+|Waxed Exposed Copper Grate
+|Waxed Weathered Copper Grate
+|Waxed Oxidized Copper Grate
+|Copper Door
+|Exposed Copper Door
+|Weathered Copper Door
+|Oxidized Copper Door
+|Waxed Copper Door
+|Waxed Exposed Copper Door
+|Waxed Weathered Copper Door
+|Waxed Oxidized Copper Door
+|Copper Trapdoor
+|Exposed Copper Trapdoor
+|Weathered Copper Trapdoor
+|Oxidized Copper Trapdoor
+|Waxed Copper Trapdoor
+|Waxed Exposed Copper Trapdoor
+|Waxed Weathered Copper Trapdoor
+|Waxed Oxidized Copper Trapdoor
+|Tuff Stairs
+|Tuff Slab
+|Tuff Wall
+|Chiseled Tuff
+|Polished Tuff
+|Polished Tuff Stairs
+|Polished Tuff Slab
+|Polished Tuff Wall
+|Tuff Bricks
+|Tuff Brick Stairs
+|Tuff Brick Slab
+|Tuff Brick Wall
+|Chiseled Tuff Bricks
+|Trial Spawner
+|Trial Key
+|Breeze Spawn Egg
+|Vault
+|Wind Charge
+|Bogged Spawn Egg
+|Breeze Rod
+|Heavy Core
+|Mace
+|Flow Armor Trim
+|Bolt Armor Trim
+|Flow Pottery Sherd
+|Guster Pottery Sherd
+|Scrape Pottery Sherd
+|Flow Banner Pattern
+|Guster Banner Pattern
+|Trial Explorer Map
+|Ominous Bottle
+|Ominous Bottle II
+|Ominous Bottle III
+|Ominous Bottle IV
+|Ominous Bottle V
+|Ominous Trial Spawner
+|Ominous Vault
+|Ominous Trial Key
+|Potion of Wind Charging
+|Potion of Weaving
+|Potion of Oozing
+|Potion of Infestation
+|Splash Potion of Wind Charging
+|Splash Potion of Weaving
+|Splash Potion of Oozing
+|Splash Potion of Infestation
+|Lingering Potion of Wind Charging
+|Lingering Potion of Weaving
+|Lingering Potion of Oozing
+|Lingering Potion of Infestation
+|Arrow of Wind Charging
+|Arrow of Weaving
+|Arrow of Oozing
+|Arrow of Infestation
+|Enchanted Book[&7Density I]
+|Enchanted Book[&7Density II]
+|Enchanted Book[&7Density III]
+|Enchanted Book[&7Density IV]
+|Enchanted Book[&7Density V]
+|Enchanted Book[&7Breach I]
+|Enchanted Book[&7Breach II]
+|Enchanted Book[&7Breach III]
+|Enchanted Book[&7Breach IV]
+|Enchanted Book[&7Wind Burst I]
+|Enchanted Book[&7Wind Burst II]
+|Enchanted Book[&7Wind Burst III]
+|Painting Baroque
+|Painting Humble
+|Painting Meditative
+|Painting Prairie Ride
+|Painting Unpacked
+|Painting Backyard
+|Painting Bouquet
+|Painting Cavebird
+|Painting Changing
+|Painting Cotán
+|Painting Endboss
+|Painting Fern
+|Painting Finding
+|Painting Lowmist
+|Painting Orb
+|Painting Owlemons
+|Painting Passage
+|Painting Pond
+|Painting Sunflowers
+|Painting Tides
+|Music Disc Precipice
+|Music Disc Creator
+|Music Disc Creator (Music Box)
+|title=1.21}}
+{{collapse
+|tail=1}}
+{|class="wikitable" data-description="1.21 updates"
+!Update
+!Version
+!Development release
+!Full release
+|-
+|[[Mounts of Mayhem]] ([[Java Edition guides/Mounts of Mayhem|Guide]])
+|[[Java Edition 1.21.11|1.21.11]]||October 9, 2025||December 9, 2025
+|-
+|rowspan=2|[[The Copper Age]] ([[Java Edition guides/The Copper Age|Guide]])
+|[[Java Edition 1.21.10|1.21.10]]||October 2, 2025||October 7, 2025
+|-
+|[[Java Edition 1.21.9|1.21.9]]||July 29, 2025||September 30, 2025
+|-
+|rowspan=3|[[Chase the Skies]] ([[Java Edition guides/Chase the Skies|Guide]])
+|[[Java Edition 1.21.8|1.21.8]]||July 15, 2025||July 17, 2025
+|-
+|[[Java Edition 1.21.7|1.21.7]]||June 25, 2025||June 30, 2025
+|-
+|[[Java Edition 1.21.6|1.21.6]]||April 8, 2025||June 17, 2025
+|-
+|[[Spring to Life]] ([[Java Edition guides/Spring to Life|Guide]])
+|[[Java Edition 1.21.5|1.21.5]]||January 8, 2025||March 25, 2025
+|-
+|[[The Garden Awakens]] ([[Java Edition guides/The Garden Awakens|Guide]])
+|[[Java Edition 1.21.4|1.21.4]]||October 30, 2024||December 3, 2024
+|-
+|rowspan=2|[[Bundles of Bravery]] ([[Java Edition guides/Bundles of Bravery|Guide]])
+|[[Java Edition 1.21.3|1.21.3]]||–||October 23, 2024
+|-
+|[[Java Edition 1.21.2|1.21.2]]||August 15, 2024||October 22, 2024
+|-
+|rowspan=2|[[Tricky Trials]] ([[Java Edition guides/Tricky Trials|Guide]])
+|[[Java Edition 1.21.1|1.21.1]]||August 7, 2024||August 8, 2024
+|-
+|[[Java Edition 1.21|1.21]]||May 3, 2024||June 13, 2024
+|}
+
+=== 1.20 ===
+{{collapse
+|title='''Block and item additions'''
+|head=1}}
+{{Additions table
+|Armadillo Scute
+|Wolf Armor
+|Armadillo Spawn Egg
+|title=1.20.5}}
+{{Additions table
+|Bamboo Mosaic
+|Bamboo Mosaic Stairs
+|Bamboo Mosaic Slab
+|Bamboo Planks
+|Bamboo Button
+|Bamboo Door
+|Bamboo Fence
+|Bamboo Fence Gate
+|Bamboo Hanging Sign
+|Bamboo Pressure Plate
+|Bamboo Raft
+|Bamboo Raft with Chest
+|Bamboo Sign
+|Bamboo Slab
+|Bamboo Stairs
+|Bamboo Trapdoor
+|Chiseled Bookshelf
+|Oak Hanging Sign
+|Spruce Hanging Sign
+|Birch Hanging Sign
+|Jungle Hanging Sign
+|Acacia Hanging Sign
+|Dark Oak Hanging Sign
+|Mangrove Hanging Sign
+|Crimson Hanging Sign
+|Warped Hanging Sign
+|Camel Spawn Egg
+|Block of Bamboo
+|Block of Stripped Bamboo
+|Piglin Head
+|Netherite Upgrade Smithing Template
+|Sentry Armor Trim
+|Vex Armor Trim
+|Wild Armor Trim
+|Coast Armor Trim
+|Dune Armor Trim
+|Ward Armor Trim
+|Tide Armor Trim
+|Snout Armor Trim
+|Rib Armor Trim
+|Eye Armor Trim
+|Spire Armor Trim
+|Pink Petals
+|Cherry Sapling
+|Cherry Leaves
+|Cherry Log
+|Stripped Cherry Log
+|Cherry Wood
+|Stripped Cherry Wood
+|Cherry Planks
+|Cherry Boat
+|Cherry Boat with Chest
+|Cherry Button
+|Cherry Door
+|Cherry Fence
+|Cherry Fence Gate
+|Cherry Hanging Sign
+|Cherry Pressure Plate
+|Cherry Sign
+|Cherry Slab
+|Cherry Stairs
+|Cherry Trapdoor
+|Decorated Pot
+|Archer Pottery Sherd
+|Arms Up Pottery Sherd
+|Prize Pottery Sherd
+|Skull Pottery Sherd
+|Suspicious Sand
+|Brush
+|Torchflower
+|Torchflower Seeds
+|Sniffer Spawn Egg
+|Sniffer Egg
+|Pitcher Plant
+|Pitcher Pod
+|Suspicious Gravel
+|Angler Pottery Sherd
+|Blade Pottery Sherd
+|Brewer Pottery Sherd
+|Burn Pottery Sherd
+|Danger Pottery Sherd
+|Explorer Pottery Sherd
+|Friend Pottery Sherd
+|Heart Pottery Sherd
+|Heartbreak Pottery Sherd
+|Howl Pottery Sherd
+|Miner Pottery Sherd
+|Mourner Pottery Sherd
+|Plenty Pottery Sherd
+|Sheaf Pottery Sherd
+|Shelter Pottery Sherd
+|Snort Pottery Sherd
+|Calibrated Sculk Sensor
+|Host Armor Trim
+|Raiser Armor Trim
+|Shaper Armor Trim
+|Wayfinder Armor Trim
+|Silence Armor Trim
+|Music Disc Relic
+|title=1.20}}
+{{collapse
+|tail=1}}
+{|class="wikitable" data-description="1.20 updates"
+!Update
+!Version
+!Development release
+!Full release
+|-
+|rowspan=2|[[Armored Paws]] ([[Java Edition guides/Armored Paws|Guide]])
+|[[Java Edition 1.20.6|1.20.6]]||April 26, 2024||April 29, 2024
+|-
+|[[Java Edition 1.20.5|1.20.5]]||December 18, 2023||April 23, 2024
+|-
+|rowspan=2|[[Bats and Pots]] ([[Java Edition guides/Bats and Pots|Guide]])
+|[[Java Edition 1.20.4|1.20.4]]||December 6, 2023||December 7, 2023
+|-
+|[[Java Edition 1.20.3|1.20.3]]||October 4, 2023||December 5, 2023
+|-
+|rowspan=3|[[Trails & Tales]] ([[Java Edition guides/Trails & Tales|Guide]])
+|[[Java Edition 1.20.2|1.20.2]]||August 2, 2023||September 21, 2023
+|-
+|[[Java Edition 1.20.1|1.20.1]]||June 9, 2023||June 12, 2023
+|-
+|[[Java Edition 1.20|1.20]]||March 22, 2023||June 7, 2023
+|}
+
+=== 1.19 ===
+{{collapse
+|title='''Block and item additions'''
+|head=1}}
+{{Additions table
+|Iron Golem Spawn Egg
+|Snow Golem Spawn Egg
+|Ender Dragon Spawn Egg
+|Wither Spawn Egg
+|title=1.19.3}}
+{{Additions table
+|Sculk
+|Sculk Vein
+|Sculk Shrieker
+|Sculk Catalyst
+|Mangrove Roots
+|Mangrove Propagule
+|Mangrove Leaves
+|Mangrove Log
+|Stripped Mangrove Log
+|Mangrove Wood
+|Stripped Mangrove Wood
+|Mangrove Planks
+|Mangrove Button
+|Mangrove Boat
+|Mangrove Door
+|Mangrove Fence
+|Mangrove Fence Gate
+|Mangrove Pressure Plate
+|Mangrove Sign
+|Mangrove Stairs
+|Mangrove Slab
+|Mangrove Trapdoor
+|Mud
+|Muddy Mangrove Roots
+|Packed Mud
+|Mud Bricks
+|Mud Brick Stairs
+|Mud Brick Slab
+|Mud Brick Wall
+|Ochre Froglight
+|Pearlescent Froglight
+|Verdant Froglight
+|Frogspawn
+|Bucket of Tadpole
+|Tadpole Spawn Egg
+|Frog Spawn Egg
+|Oak Boat with Chest
+|Spruce Boat with Chest
+|Birch Boat with Chest
+|Jungle Boat with Chest
+|Acacia Boat with Chest
+|Dark Oak Boat with Chest
+|Mangrove Boat with Chest
+|Enchanted Book[&7Swift Sneak I]
+|Enchanted Book[&7Swift Sneak II]
+|Enchanted Book[&7Swift Sneak III]
+|Warden Spawn Egg
+|Reinforced Deepslate
+|Allay Spawn Egg
+|Echo Shard
+|Recovery Compass
+|Disc Fragment 5
+|Music Disc 5
+|Painting Earth
+|Painting Fire
+|Painting Water
+|Painting Wind
+|Goat Horn[&7Ponder]
+|Goat Horn[&7Sing]
+|Goat Horn[&7Seek]
+|Goat Horn[&7Feel]
+|Goat Horn[&7Admire]
+|Goat Horn[&7Call]
+|Goat Horn[&7Yearn]
+|Goat Horn[&7Dream]
+|title=1.19}}
+{{collapse
+|tail=1}}
+{|class="wikitable" data-description="1.19 updates"
+!Update
+!Version
+!Development release
+!Full release
+|-
+|rowspan=5|[[The Wild Update]] ([[Java Edition guides/The Wild Update|Guide]])
+|[[Java Edition 1.19.4|1.19.4]]||January 18, 2023||March 14, 2023
+|-
+|[[Java Edition 1.19.3|1.19.3]]||October 19, 2022||December 7, 2022
+|-
+|[[Java Edition 1.19.2|1.19.2]]||August 4, 2022||August 5, 2022
+|-
+|[[Java Edition 1.19.1|1.19.1]]||June 15, 2022||July 27, 2022
+|-
+|[[Java Edition 1.19|1.19]]||February 17, 2022||June 7, 2022
+|}
+
+=== 1.18 ===
+{{collapse
+|title='''Block and item additions'''
+|head=1}}
+{{Additions table
+|Music Disc Otherside
+|title=1.18}}
+{{collapse
+|tail=1}}
+{|class="wikitable" data-description="1.18 updates"
+!Update
+!Version
+!Development release
+!Full release
+|-
+|rowspan=3|[[Caves & Cliffs]]: Part&#160;II ([[Java Edition guides/Caves & Cliffs: Part II|Guide]])
+|[[Java Edition 1.18.2|1.18.2]]||January 19, 2022||February 28, 2022
+|-
+|[[Java Edition 1.18.1|1.18.1]]||December 3, 2021||December 10, 2021
+|-
+|[[Java Edition 1.18|1.18]]||July 13, 2021||November 30, 2021
+|}
+
+=== 1.17 ===
+{{collapse
+|title='''Block and item additions'''
+|head=1}}
+{{Additions table
+|Block of Copper
+|Waxed Block of Copper
+|Exposed Copper
+|Waxed Exposed Copper
+|Weathered Copper
+|Waxed Weathered Copper
+|Oxidized Copper
+|Cut Copper
+|Waxed Cut Copper
+|Exposed Cut Copper
+|Waxed Exposed Cut Copper
+|Weathered Cut Copper
+|Waxed Weathered Cut Copper
+|Oxidized Cut Copper
+|Cut Copper Slab
+|Waxed Cut Copper Slab
+|Exposed Cut Copper Slab
+|Waxed Exposed Cut Copper Slab
+|Weathered Cut Copper Slab
+|Waxed Weathered Cut Copper Slab
+|Oxidized Cut Copper Slab
+|Cut Copper Stairs
+|Waxed Cut Copper Stairs
+|Exposed Cut Copper Stairs
+|Waxed Exposed Cut Copper Stairs
+|Weathered Cut Copper Stairs
+|Waxed Weathered Cut Copper Stairs
+|Oxidized Cut Copper Stairs
+|Copper Ore
+|Copper Ingot
+|Lightning Rod
+|Spyglass
+|Small Amethyst Bud
+|Medium Amethyst Bud
+|Large Amethyst Bud
+|Amethyst Cluster
+|Amethyst Shard
+|Block of Amethyst
+|Budding Amethyst
+|Calcite
+|Tuff
+|Tinted Glass
+|Candle
+|White Candle
+|Light Gray Candle
+|Gray Candle
+|Black Candle
+|Brown Candle
+|Red Candle
+|Orange Candle
+|Yellow Candle
+|Lime Candle
+|Green Candle
+|Cyan Candle
+|Light Blue Candle
+|Blue Candle
+|Purple Candle
+|Magenta Candle
+|Pink Candle
+|Powder Snow
+|Powder Snow Bucket
+|Dripstone Block
+|Pointed Dripstone
+|Sculk Sensor
+|Bucket of Axolotl
+|Axolotl Spawn Egg
+|Glow Lichen
+|Glow Ink Sac
+|Glow Item Frame
+|Glow Squid Spawn Egg
+|Azalea
+|Flowering Azalea
+|Azalea Leaves
+|Flowering Azalea Leaves
+|Small Dripleaf
+|Big Dripleaf
+|Hanging Roots
+|Rooted Dirt
+|Moss Block
+|Moss Carpet
+|Spore Blossom
+|Glow Berries
+|Deepslate
+|Polished Deepslate
+|Chiseled Deepslate
+|Deepslate Bricks
+|Deepslate Tiles
+|Cobbled Deepslate Slab
+|Polished Deepslate Slab
+|Deepslate Brick Slab
+|Deepslate Tile Slab
+|Cobbled Deepslate Stairs
+|Polished Deepslate Stairs
+|Deepslate Brick Stairs
+|Deepslate Tile Stairs
+|Cobbled Deepslate Wall
+|Polished Deepslate Wall
+|Deepslate Brick Wall
+|Deepslate Tile Wall
+|Cobbled Deepslate
+|Deepslate Diamond Ore
+|Deepslate Gold Ore
+|Deepslate Iron Ore
+|Deepslate Redstone Ore
+|Deepslate Lapis Lazuli Ore
+|Smooth Basalt
+|Cracked Deepslate Bricks
+|Cracked Deepslate Tiles
+|Deepslate Coal Ore
+|Deepslate Copper Ore
+|Deepslate Emerald Ore
+|Infested Deepslate
+|Light 0
+|Light 1
+|Light 2
+|Light 3
+|Light 4
+|Light 5
+|Light 6
+|Light 7
+|Light 8
+|Light 9
+|Light 10
+|Light 11
+|Light 12
+|Light 13
+|Light 14
+|Light
+|Goat Spawn Egg
+|Waxed Oxidized Copper
+|Waxed Oxidized Cut Copper
+|Waxed Oxidized Cut Copper Slab
+|Waxed Oxidized Cut Copper Stairs
+|Raw Copper
+|Raw Gold
+|Raw Iron
+|Block of Raw Copper
+|Block of Raw Gold
+|Block of Raw Iron
+|title=1.17}}
+{{collapse
+|tail=1}}
+{|class="wikitable" data-description="1.17 updates"
+!Update
+!Version
+!Development release
+!Full release
+|-
+|rowspan=2|[[Caves & Cliffs]]: Part&#160;I ([[Java Edition guides/Caves & Cliffs: Part I|Guide]])
+|[[Java Edition 1.17.1|1.17.1]]||June 18, 2021||July 6, 2021
+|-
+|[[Java Edition 1.17|1.17]]||November 4, 2020||June 8, 2021
+|}
+
+=== 1.16 ===
+{{collapse
+|title='''Block and item additions'''
+|head=1}}
+{{Additions table
+|Piglin Brute Spawn Egg
+|title=1.16.2}}
+{{Additions table
+|Ancient Debris
+|Netherite Scrap
+|Netherite Ingot
+|Netherite Helmet
+|Netherite Chestplate
+|Netherite Leggings
+|Netherite Boots
+|Netherite Sword
+|Netherite Pickaxe
+|Netherite Axe
+|Netherite Shovel
+|Netherite Hoe
+|Block of Netherite
+|Crimson Stem
+|Stripped Crimson Stem
+|Crimson Planks
+|Crimson Button
+|Crimson Door
+|Crimson Fence
+|Crimson Fence Gate
+|Crimson Pressure Plate
+|Crimson Sign
+|Crimson Slab
+|Crimson Stairs
+|Crimson Trapdoor
+|Crimson Fungus
+|Crimson Nylium
+|Crimson Roots
+|Weeping Vines
+|Warped Stem
+|Stripped Warped Stem
+|Warped Planks
+|Warped Button
+|Warped Door
+|Warped Fence
+|Warped Fence Gate
+|Warped Pressure Plate
+|Warped Sign
+|Warped Slab
+|Warped Stairs
+|Warped Trapdoor
+|Warped Fungus
+|Warped Nylium
+|Warped Roots
+|Warped Wart Block
+|Nether Sprouts
+|Shroomlight
+|Basalt
+|Soul Soil
+|Soul Fire
+|Soul Lantern
+|Soul Torch
+|Hoglin Spawn Egg
+|Piglin Spawn Egg
+|Crying Obsidian
+|Target
+|Crimson Hyphae
+|Stripped Crimson Hyphae
+|Warped Hyphae
+|Stripped Warped Hyphae
+|Nether Gold Ore
+|Twisting Vines
+|Enchanted Book[&7Soul Speed I]
+|Enchanted Book[&7Soul Speed II]
+|Enchanted Book[&7Soul Speed III]
+|Polished Basalt
+|Respawn Anchor
+|Lodestone
+|Lodestone Compass
+|Warped Fungus on a Stick
+|Strider Spawn Egg
+|Zoglin Spawn Egg
+|Blackstone
+|Polished Blackstone
+|Chiseled Polished Blackstone
+|Polished Blackstone Bricks
+|Cracked Polished Blackstone Bricks
+|Gilded Blackstone
+|Blackstone Slab
+|Blackstone Stairs
+|Blackstone Wall
+|Polished Blackstone Slab
+|Polished Blackstone Stairs
+|Polished Blackstone Wall
+|Polished Blackstone Button
+|Polished Blackstone Pressure Plate
+|Polished Blackstone Brick Slab
+|Polished Blackstone Brick Stairs
+|Polished Blackstone Brick Wall
+|Chiseled Nether Bricks
+|Cracked Nether Bricks
+|Quartz Bricks
+|Soul Campfire
+|Snout Banner Pattern
+|Iron Chain
+|Music Disc Pigstep
+|title=1.16}}
+{{collapse
+|tail=1}}
+{|class="wikitable" data-description="1.16 updates"
+!Update
+!Version
+!Development release
+!Full release
+|-
+|rowspan=6|[[Nether Update]] ([[Java Edition guides/Nether Update|Guide]])
+|[[Java Edition 1.16.5|1.16.5]]||January 13, 2021||January 15, 2021
+|-
+|[[Java Edition 1.16.4|1.16.4]]||October 15, 2020||November 2, 2020
+|-
+|[[Java Edition 1.16.3|1.16.3]]||September 7, 2020||September 10, 2020
+|-
+|[[Java Edition 1.16.2|1.16.2]]||July 1, 2020||August 11, 2020
+|-
+|[[Java Edition 1.16.1|1.16.1]]||–||June 24, 2020
+|-
+|[[Java Edition 1.16|1.16]]||February 5, 2020||June 23, 2020
+|}
+
+=== 1.15 ===
+{{collapse
+|title='''Block and item additions'''
+|head=1}}
+{{Additions table
+|Beehive
+|Bee Nest
+|Honey Bottle
+|Honeycomb
+|Bee Spawn Egg
+|Honey Block
+|Honeycomb Block
+|title=1.15}}
+{{collapse
+|tail=1}}
+{|class="wikitable" data-description="1.15 updates"
+!Update
+!Version
+!Development release
+!Full release
+|-
+|rowspan=3|[[Buzzy Bees]] ([[Java Edition guides/Buzzy Bees|Guide]])
+|[[Java Edition 1.15.2|1.15.2]]||January 14, 2020||January 21, 2020
+|-
+|[[Java Edition 1.15.1|1.15.1]]||December 12, 2019||December 17, 2019
+|-
+|[[Java Edition 1.15|1.15]]||August 22, 2019||December 10, 2019
+|}
+
+=== 1.14 ===
+{{collapse
+|title='''Block and item additions'''
+|head=1}}
+{{Additions table
+|Bamboo
+|Cornflower
+|Lily of the Valley
+|Wither Rose
+|Spruce Sign
+|Birch Sign
+|Acacia Sign
+|Jungle Sign
+|Dark Oak Sign
+|Stone Slab
+|Stone Stairs
+|Andesite Slab
+|Andesite Stairs
+|Andesite Wall
+|Polished Andesite Slab
+|Polished Andesite Stairs
+|Diorite Slab
+|Diorite Stairs
+|Diorite Wall
+|Polished Diorite Slab
+|Polished Diorite Stairs
+|Granite Slab
+|Granite Stairs
+|Granite Wall
+|Polished Granite Slab
+|Polished Granite Stairs
+|Mossy Stone Brick Slab
+|Mossy Stone Brick Stairs
+|Mossy Stone Brick Wall
+|Mossy Cobblestone Slab
+|Mossy Cobblestone Stairs
+|Smooth Sandstone Slab
+|Smooth Sandstone Stairs
+|Sandstone Wall
+|Cut Sandstone Slab
+|Smooth Red Sandstone Slab
+|Smooth Red Sandstone Stairs
+|Red Sandstone Wall
+|Cut Red Sandstone Slab
+|Smooth Quartz Slab
+|Smooth Quartz Stairs
+|Nether Brick Wall
+|Red Nether Brick Slab
+|Red Nether Brick Stairs
+|Red Nether Brick Wall
+|End Stone Brick Slab
+|End Stone Brick Stairs
+|End Stone Brick Wall
+|Stone Brick Wall
+|Brick Wall
+|Prismarine Wall
+|Loom
+|Flower Charge Banner Pattern
+|Creeper Charge Banner Pattern
+|Skull Charge Banner Pattern
+|Thing Banner Pattern
+|White Dye
+|Black Dye
+|Brown Dye
+|Blue Dye
+|Suspicious Stew
+|Crossbow
+|Enchanted Book[&7Quick Charge I]
+|Enchanted Book[&7Quick Charge II]
+|Enchanted Book[&7Quick Charge III]
+|Enchanted Book[&7Piercing I]
+|Enchanted Book[&7Piercing II]
+|Enchanted Book[&7Piercing III]
+|Enchanted Book[&7Piercing IV]
+|Enchanted Book[&7Multishot]
+|Panda Spawn Egg
+|Pillager Spawn Egg
+|Ravager Spawn Egg
+|Bell
+|Barrel
+|Cartography Table
+|Fletching Table
+|Grindstone
+|Lectern
+|Smithing Table
+|Stonecutter
+|Blast Furnace
+|Smoker
+|Cat Spawn Egg
+|Scaffolding
+|Ominous Banner
+|Jigsaw Block
+|Lantern
+|Sweet Berries
+|Campfire
+|Composter
+|Wandering Trader Spawn Egg
+|Trader Llama Spawn Egg
+|Fox Spawn Egg
+|Leather Horse Armor
+|Globe Banner Pattern
+|title=1.14}}
+{{collapse
+|tail=1}}
+{|class="wikitable" data-description="1.14 updates"
+!Update
+!Version
+!Development release
+!Full release
+|-
+|rowspan=5|[[Village & Pillage]] ([[Java Edition guides/Village & Pillage|Guide]])
+|[[Java Edition 1.14.4|1.14.4]]||July 3, 2019||July 19, 2019
+|-
+|[[Java Edition 1.14.3|1.14.3]]||June 3, 2019||June 24, 2019
+|-
+|[[Java Edition 1.14.2|1.14.2]]||May 16, 2019||May 27, 2019
+|-
+|[[Java Edition 1.14.1|1.14.1]]||May 7, 2019||May 13, 2019
+|-
+|[[Java Edition 1.14|1.14]]||October 24, 2018||April 23, 2019
+|}
+
+=== 1.13 ===
+{{collapse
+|title='''Block and item additions'''
+|head=1}}
+{{Additions table
+|Dead Tube Coral
+|Dead Brain Coral
+|Dead Bubble Coral
+|Dead Fire Coral
+|Dead Horn Coral
+|title=1.13.1}}
+{{Additions table
+|Pumpkin
+|Debug Stick
+|Spruce Button
+|Spruce Pressure Plate
+|Spruce Trapdoor
+|Birch Button
+|Birch Pressure Plate
+|Birch Trapdoor
+|Jungle Button
+|Jungle Pressure Plate
+|Jungle Trapdoor
+|Acacia Button
+|Acacia Pressure Plate
+|Acacia Trapdoor
+|Dark Oak Button
+|Dark Oak Pressure Plate
+|Dark Oak Trapdoor
+|Stripped Oak Log
+|Stripped Spruce Log
+|Stripped Birch Log
+|Stripped Jungle Log
+|Stripped Acacia Log
+|Stripped Dark Oak Log
+|Bubble Column
+|Kelp
+|Dried Kelp
+|Dried Kelp Block
+|Seagrass
+|Prismarine Stairs
+|Prismarine Slab
+|Prismarine Brick Stairs
+|Prismarine Brick Slab
+|Dark Prismarine Stairs
+|Dark Prismarine Slab
+|Trident
+|Enchanted Book[&7Loyalty I]
+|Enchanted Book[&7Loyalty II]
+|Enchanted Book[&7Loyalty III]
+|Enchanted Book[&7Riptide I]
+|Enchanted Book[&7Riptide II]
+|Enchanted Book[&7Riptide III]
+|Enchanted Book[&7Impaling I]
+|Enchanted Book[&7Impaling II]
+|Enchanted Book[&7Impaling III]
+|Enchanted Book[&7Impaling IV]
+|Enchanted Book[&7Impaling V]
+|Enchanted Book[&7Channeling]
+|Turtle Egg
+|Turtle Scute
+|Turtle Shell
+|Potion of the Turtle Master
+|Splash Potion of the Turtle Master
+|Lingering Potion of the Turtle Master
+|Arrow of the Turtle Master
+|Turtle Spawn Egg
+|Phantom Spawn Egg
+|Bucket of Cod
+|Bucket of Salmon
+|Bucket of Pufferfish
+|Bucket of Tropical Fish
+|Cod Spawn Egg
+|Salmon Spawn Egg
+|Pufferfish Spawn Egg
+|Tropical Fish Spawn Egg
+|Tube Coral Block
+|Brain Coral Block
+|Bubble Coral Block
+|Fire Coral Block
+|Horn Coral Block
+|Tube Coral
+|Brain Coral
+|Bubble Coral
+|Fire Coral
+|Horn Coral
+|Buried Treasure Map
+|Shulker Box
+|Dead Tube Coral Block
+|Dead Brain Coral Block
+|Dead Bubble Coral Block
+|Dead Fire Coral Block
+|Dead Horn Coral Block
+|Tube Coral Fan
+|Brain Coral Fan
+|Bubble Coral Fan
+|Fire Coral Fan
+|Horn Coral Fan
+|Drowned Spawn Egg
+|Phantom Membrane
+|Potion of Slow Falling
+|Splash Potion of Slow Falling
+|Lingering Potion of Slow Falling
+|Arrow of Slow Falling
+|Sea Pickle
+|Blue Ice
+|Nautilus Shell
+|Heart of the Sea
+|Conduit
+|Dolphin Spawn Egg
+|Stripped Oak Wood
+|Stripped Spruce Wood
+|Stripped Birch Wood
+|Stripped Jungle Wood
+|Stripped Acacia Wood
+|Stripped Dark Oak Wood
+|Dead Tube Coral Fan
+|Dead Brain Coral Fan
+|Dead Bubble Coral Fan
+|Dead Fire Coral Fan
+|Dead Horn Coral Fan
+|title=1.13}}
+{{collapse
+|tail=1}}
+{|class="wikitable" data-description="1.13 updates"
+!Update
+!Version
+!Development release
+!Full release
+|-
+|rowspan=3|[[Update Aquatic]] ([[Java Edition guides/Update Aquatic|Guide]])
+|[[Java Edition 1.13.2|1.13.2]]||October 16, 2018||October 22, 2018
+|-
+|[[Java Edition 1.13.1|1.13.1]]||July 25, 2018||August 22, 2018
+|-
+|[[Java Edition 1.13|1.13]]||October 25, 2017||July 18, 2018
+|}
+
+=== 1.12 ===
+{{collapse
+|title='''Block and item additions'''
+|head=1}}
+{{Additions table
+|White Concrete
+|White Concrete Powder
+|White Glazed Terracotta
+|Orange Concrete
+|Orange Concrete Powder
+|Orange Glazed Terracotta
+|Magenta Concrete
+|Magenta Concrete Powder
+|Magenta Glazed Terracotta
+|Light Blue Concrete
+|Light Blue Concrete Powder
+|Light Blue Glazed Terracotta
+|Yellow Concrete
+|Yellow Concrete Powder
+|Yellow Glazed Terracotta
+|Lime Concrete
+|Lime Concrete Powder
+|Lime Glazed Terracotta
+|Pink Concrete
+|Pink Concrete Powder
+|Pink Glazed Terracotta
+|Gray Concrete
+|Gray Concrete Powder
+|Gray Glazed Terracotta
+|Light Gray Concrete
+|Light Gray Concrete Powder
+|Light Gray Glazed Terracotta
+|Cyan Concrete
+|Cyan Concrete Powder
+|Cyan Glazed Terracotta
+|Purple Concrete
+|Purple Concrete Powder
+|Purple Glazed Terracotta
+|Blue Concrete
+|Blue Concrete Powder
+|Blue Glazed Terracotta
+|Brown Concrete
+|Brown Concrete Powder
+|Brown Glazed Terracotta
+|Green Concrete
+|Green Concrete Powder
+|Green Glazed Terracotta
+|Red Concrete
+|Red Concrete Powder
+|Red Glazed Terracotta
+|Black Concrete
+|Black Concrete Powder
+|Black Glazed Terracotta
+|Knowledge Book
+|Parrot Spawn Egg
+|White Bed
+|Orange Bed
+|Magenta Bed
+|Light Blue Bed
+|Yellow Bed
+|Lime Bed
+|Pink Bed
+|Gray Bed
+|Light Gray Bed
+|Cyan Bed
+|Purple Bed
+|Blue Bed
+|Brown Bed
+|Green Bed
+|Black Bed
+|title=1.12}}
+{{collapse
+|tail=1}}
+{|class="wikitable" data-description="1.12 updates"
+!Update
+!Version
+!Development release
+!Full release
+|-
+|rowspan=3|[[World of Color Update]] ([[Java Edition guides/World of Color Update|Guide]])
+|[[Java Edition 1.12.2|1.12.2]]||September 13, 2017||September 18, 2017
+|-
+|[[Java Edition 1.12.1|1.12.1]]||August 1, 2017||August 3, 2017
+|-
+|[[Java Edition 1.12|1.12]]||February 8, 2017||June 7, 2017
+|}
+
+=== 1.11 ===
+{{collapse
+|title='''Block and item additions'''
+|head=1}}
+{{Additions table
+|title=1.11.1
+|Iron Nugget
+|Enchanted Book[&7Sweeping Edge I]
+|Enchanted Book[&7Sweeping Edge II]
+|Enchanted Book[&7Sweeping Edge III]}}
+{{Additions table
+|Wither Skeleton Spawn Egg
+|Stray Spawn Egg
+|Husk Spawn Egg
+|Elder Guardian Spawn Egg
+|Donkey Spawn Egg
+|Mule Spawn Egg
+|Skeleton Horse Spawn Egg
+|Zombie Horse Spawn Egg
+|Zombie Villager Spawn Egg
+|Observer
+|White Shulker Box
+|Light Gray Shulker Box
+|Gray Shulker Box
+|Black Shulker Box
+|Brown Shulker Box
+|Red Shulker Box
+|Orange Shulker Box
+|Yellow Shulker Box
+|Lime Shulker Box
+|Green Shulker Box
+|Cyan Shulker Box
+|Light Blue Shulker Box
+|Blue Shulker Box
+|Purple Shulker Box
+|Magenta Shulker Box
+|Pink Shulker Box
+|Shulker Shell
+|Enchanted Book[&7Curse of Vanishing]
+|Enchanted Book[&7Curse of Binding]
+|Ocean Explorer Map
+|Woodland Explorer Map
+|Totem of Undying
+|Evoker Spawn Egg
+|Vex Spawn Egg
+|Vindicator Spawn Egg
+|Llama Spawn Egg
+|title=1.11}}
+{{collapse
+|tail=1}}
+{|class="wikitable" data-description="1.11 updates"
+!Update
+!Version
+!Development release
+!Full release
+|-
+|rowspan=3|[[Exploration Update]] ([[Java Edition guides/Exploration Update|Guide]])
+|[[Java Edition 1.11.2|1.11.2]]||–||December 21, 2016
+|-
+|[[Java Edition 1.11.1|1.11.1]]||December 15, 2016||December 20, 2016
+|-
+|[[Java Edition 1.11|1.11]]||August 10, 2016||November 14, 2016
+|}
+
+=== 1.10 ===
+{{collapse
+|title='''Block and item additions'''
+|head=1}}
+{{Additions table
+|Bone Block
+|Magma Block
+|Nether Wart Block
+|Red Nether Bricks
+|Structure Void
+|Polar Bear Spawn Egg
+|title=1.10}}
+{{collapse
+|tail=1}}
+{|class="wikitable" data-description="1.10 updates"
+!Update
+!Version
+!Development release
+!Full release
+|-
+|rowspan=3|[[Frostburn Update]] ([[Java Edition guides/Frostburn Update|Guide]])
+|[[Java Edition 1.10.2|1.10.2]]||rowspan=2|–||June 23, 2016
+|-
+|[[Java Edition 1.10.1|1.10.1]]||June 22, 2016
+|-
+|[[Java Edition 1.10|1.10]]||May 18, 2016||June 8, 2016
+|}
+
+=== 1.9 ===
+{{collapse
+|title='''Block and item additions'''
+|head=1}}
+{{Additions table
+|Dirt Path
+|Structure Block
+|Spectral Arrow
+|Arrow of Splashing
+|Arrow of Night Vision
+|Arrow of Invisibility
+|Arrow of Leaping
+|Arrow of Fire Resistance
+|Arrow of Swiftness
+|Arrow of Slowness
+|Arrow of Water Breathing
+|Arrow of Healing
+|Arrow of Harming
+|Arrow of Poison
+|Arrow of Regeneration
+|Arrow of Strength
+|Arrow of Weakness
+|Splash Water Bottle
+|Mundane Splash Potion
+|Thick Splash Potion
+|Awkward Splash Potion
+|Beetroot
+|Beetroot Seeds
+|Beetroot Soup
+|Dragon Head
+|End Gateway
+|End Rod
+|End Stone Bricks
+|Purpur Block
+|Purpur Pillar
+|Purpur Slab
+|Purpur Stairs
+|Chorus Plant
+|Chorus Flower
+|Chorus Fruit
+|Popped Chorus Fruit
+|Shulker Spawn Egg
+|Dragon's Breath
+|Lingering Water Bottle
+|Mundane Lingering Potion
+|Thick Lingering Potion
+|Awkward Lingering Potion
+|Lingering Potion of Night Vision
+|Lingering Potion of Invisibility
+|Lingering Potion of Leaping
+|Lingering Potion of Fire Resistance
+|Lingering Potion of Swiftness
+|Lingering Potion of Slowness
+|Lingering Potion of Water Breathing
+|Lingering Potion of Healing
+|Lingering Potion of Harming
+|Lingering Potion of Poison
+|Lingering Potion of Regeneration
+|Lingering Potion of Strength
+|Lingering Potion of Weakness
+|White Shield
+|Light Gray Shield
+|Gray Shield
+|Black Shield
+|Brown Shield
+|Red Shield
+|Orange Shield
+|Yellow Shield
+|Lime Shield
+|Green Shield
+|Cyan Shield
+|Light Blue Shield
+|Blue Shield
+|Purple Shield
+|Magenta Shield
+|Pink Shield
+|Chain Command Block
+|Repeating Command Block
+|Shield
+|Elytra
+|Spruce Boat
+|Birch Boat
+|Jungle Boat
+|Acacia Boat
+|Dark Oak Boat
+|Frosted Ice
+|Enchanted Book[&7Frost Walker I]
+|Enchanted Book[&7Frost Walker II]
+|Enchanted Book[&7Mending]
+|End Crystal
+|Potion of Luck
+|Splash Potion of Luck
+|Lingering Potion of Luck
+|Arrow of Luck
+|Uncraftable Potion
+|Uncraftable Splash Potion
+|Uncraftable Lingering Potion
+|Uncraftable Tipped Arrow
+|Tipped Arrow
+|title=1.9}}
+{{collapse
+|tail=1}}
+{|class="wikitable" data-description="1.9 updates"
+!Update
+!Version
+!Development release
+!Full release
+|-
+|rowspan=5|[[Combat Update]] ([[Java Edition guides/Combat Update|Guide]])
+|[[Java Edition 1.9.4|1.9.4]]||–||rowspan=2|May 10, 2016
+|-
+|[[Java Edition 1.9.3|1.9.3]]||April 7, 2016
+|-
+|[[Java Edition 1.9.2|1.9.2]]||–||rowspan=2|March 30, 2016
+|-
+|[[Java Edition 1.9.1|1.9.1]]||March 9, 2016
+|- 
+|[[Java Edition 1.9|1.9]]||July 29, 2015||February 29, 2016
+|}
+
+=== 1.8 ===
+{{collapse
+|title='''Block and item additions'''
+|head=1}}
+{{Additions table
+|Granite
+|Polished Granite
+|Diorite
+|Polished Diorite
+|Andesite
+|Polished Andesite
+|Slime Block
+|Barrier
+|Iron Trapdoor
+|Endermite Spawn Egg
+|Coarse Dirt
+|Prismarine Crystals
+|Prismarine Shard
+|Prismarine
+|Prismarine Bricks
+|Dark Prismarine
+|Sea Lantern
+|Wet Sponge
+|Enchanted Book[&7Depth Strider I]
+|Enchanted Book[&7Depth Strider II]
+|Enchanted Book[&7Depth Strider III]
+|Guardian Spawn Egg
+|Raw Mutton
+|Cooked Mutton
+|Raw Rabbit
+|Cooked Rabbit
+|Rabbit Stew
+|Rabbit Hide
+|Rabbit's Foot
+|Potion of Leaping
+|Splash Potion of Leaping
+|Rabbit Spawn Egg
+|White Banner
+|Light Gray Banner
+|Gray Banner
+|Black Banner
+|Brown Banner
+|Red Banner
+|Orange Banner
+|Yellow Banner
+|Lime Banner
+|Green Banner
+|Cyan Banner
+|Light Blue Banner
+|Blue Banner
+|Purple Banner
+|Magenta Banner
+|Pink Banner
+|Armor Stand
+|Red Sandstone
+|Cut Red Sandstone
+|Chiseled Red Sandstone
+|Smooth Red Sandstone
+|Red Sandstone Slab
+|Red Sandstone Stairs
+|Spruce Fence
+|Birch Fence
+|Jungle Fence
+|Acacia Fence
+|Dark Oak Fence
+|Spruce Fence Gate
+|Birch Fence Gate
+|Jungle Fence Gate
+|Acacia Fence Gate
+|Dark Oak Fence Gate
+|Spruce Door
+|Birch Door
+|Jungle Door
+|Acacia Door
+|Dark Oak Door
+|title=1.8}}
+{{collapse
+|tail=1}}
+{|class="wikitable" data-description="1.8 updates"
+!Update
+!Version
+!Development release
+!Full release
+|-
+|rowspan=10|[[Bountiful Update]] ([[Java Edition guides/Bountiful Update|Guide]])
+|[[Java Edition 1.8.9|1.8.9]]||–||December 9, 2015
+|-
+|[[Java Edition 1.8.8|1.8.8]]||July 27, 2015||July 28, 2015
+|-
+|[[Java Edition 1.8.7|1.8.7]]||rowspan=5|–||June 5, 2015
+|-
+|[[Java Edition 1.8.6|1.8.6]]||May 25, 2015
+|-
+|[[Java Edition 1.8.5|1.8.5]]||May 22, 2015
+|-
+|[[Java Edition 1.8.4|1.8.4]]||April 17, 2015
+|-
+|[[Java Edition 1.8.3|1.8.3]]||February 20, 2015
+|-
+|[[Java Edition 1.8.2|1.8.2]]||December 18, 2014||February 19, 2015
+|-
+|[[Java Edition 1.8.1|1.8.1]]||October 15, 2014||November 24, 2014
+|- 
+|[[Java Edition 1.8|1.8]]||January 9, 2014||September 2, 2014
+|}
+
+=== 1.7 ===
+{{collapse
+|title='''Block and item additions'''
+|head=1}}
+{{Additions table
+|Allium
+|Azure Bluet
+|Blue Orchid
+|Lilac
+|Oxeye Daisy
+|Peony
+|Rose Bush
+|Sunflower
+|Orange Tulip
+|Pink Tulip
+|Red Tulip
+|White Tulip
+|Tall Grass
+|Large Fern
+|Packed Ice
+|Podzol
+|Infested Cracked Stone Bricks
+|Infested Mossy Stone Bricks
+|Infested Chiseled Stone Bricks
+|Enchanted Book[&7Luck of the Sea I]
+|Enchanted Book[&7Luck of the Sea II]
+|Enchanted Book[&7Luck of the Sea III]
+|Enchanted Book[&7Lure I]
+|Enchanted Book[&7Lure II]
+|Enchanted Book[&7Lure III]
+|Tropical Fish
+|Raw Salmon
+|Cooked Salmon
+|Pufferfish
+|Potion of Water Breathing
+|Splash Potion of Water Breathing
+|Red Sand
+|Minecart with Command Block
+|White Stained Glass
+|Light Gray Stained Glass
+|Gray Stained Glass
+|Black Stained Glass
+|Brown Stained Glass
+|Red Stained Glass
+|Orange Stained Glass
+|Yellow Stained Glass
+|Lime Stained Glass
+|Green Stained Glass
+|Cyan Stained Glass
+|Light Blue Stained Glass
+|Blue Stained Glass
+|Purple Stained Glass
+|Magenta Stained Glass
+|Pink Stained Glass
+|White Stained Glass Pane
+|Light Gray Stained Glass Pane
+|Gray Stained Glass Pane
+|Black Stained Glass Pane
+|Brown Stained Glass Pane
+|Red Stained Glass Pane
+|Orange Stained Glass Pane
+|Yellow Stained Glass Pane
+|Lime Stained Glass Pane
+|Green Stained Glass Pane
+|Cyan Stained Glass Pane
+|Light Blue Stained Glass Pane
+|Blue Stained Glass Pane
+|Purple Stained Glass Pane
+|Magenta Stained Glass Pane
+|Pink Stained Glass Pane
+|Acacia Log
+|Acacia Wood
+|Acacia Leaves
+|Acacia Sapling
+|Dark Oak Log
+|Dark Oak Wood
+|Dark Oak Leaves
+|Dark Oak Sapling
+|Acacia Planks
+|Acacia Stairs
+|Acacia Slab
+|Dark Oak Planks
+|Dark Oak Stairs
+|Dark Oak Slab
+|title=1.7.2}}
+{{collapse
+|tail=1}}
+{|class="wikitable" data-description="1.7 updates"
+!Update
+!Version
+!Development release
+!Full release
+|-
+|rowspan=8|[[The Update that Changed the World]] ([[Java Edition guides/The Update that Changed the World|Guide]])
+|[[Java Edition 1.7.10|1.7.10]]||June 3, 2014||June 26, 2014
+|-
+|[[Java Edition 1.7.9|1.7.9]]||rowspan=3|–||April 14, 2014
+|-
+|[[Java Edition 1.7.8|1.7.8]]||April 11, 2014
+|-
+|[[Java Edition 1.7.7|1.7.7]]||rowspan=2|April 9, 2014
+|-
+|[[Java Edition 1.7.6|1.7.6]]||April 3, 2014
+|-
+|[[Java Edition 1.7.5|1.7.5]]||–||February 26, 2014
+|-
+|[[Java Edition 1.7.4|1.7.4]]||November 21, 2013||December 10, 2013
+|-
+|[[Java Edition 1.7.2|1.7.2]]||September 5, 2013||October 25, 2013
+|}
+
+=== 1.6 ===
+{{collapse
+|title='''Block and item additions'''
+|head=1}}
+{{Additions table
+|White Carpet
+|Light Gray Carpet
+|Gray Carpet
+|Black Carpet
+|Brown Carpet
+|Red Carpet
+|Orange Carpet
+|Yellow Carpet
+|Lime Carpet
+|Green Carpet
+|Cyan Carpet
+|Light Blue Carpet
+|Blue Carpet
+|Purple Carpet
+|Magenta Carpet
+|Pink Carpet
+|Hay Bale
+|Lead
+|Diamond Horse Armor
+|Golden Horse Armor
+|Iron Horse Armor
+|Horse Spawn Egg
+|Name Tag
+|Terracotta
+|Block of Coal
+|White Terracotta
+|Light Gray Terracotta
+|Gray Terracotta
+|Black Terracotta
+|Brown Terracotta
+|Red Terracotta
+|Orange Terracotta
+|Yellow Terracotta
+|Lime Terracotta
+|Green Terracotta
+|Cyan Terracotta
+|Light Blue Terracotta
+|Blue Terracotta
+|Purple Terracotta
+|Magenta Terracotta
+|Pink Terracotta
+|title=1.6.1}}
+{{collapse
+|tail=1}}
+{|class="wikitable" data-description="1.6 updates"
+!Update
+!Version
+!Development release
+!Full release
+|-
+|rowspan=3|[[Horse Update]] ([[Java Edition guides/Horse Update|Guide]])
+|[[Java Edition 1.6.4|1.6.4]]||September 13, 2013||September 19, 2013
+|-
+|[[Java Edition 1.6.2|1.6.2]]||July 5, 2013||July 8, 2013
+|-
+|[[Java Edition 1.6.1|1.6.1]]||April 18, 2013||July 1, 2013
+|}
+
+=== 1.5 ===
+{{collapse
+|title='''Block and item additions'''
+|head=1}}
+{{Additions table
+|Nether Quartz Ore
+|Nether Quartz
+|Nether Brick
+|Block of Redstone
+|Daylight Detector
+|Hopper
+|Redstone Comparator
+|Trapped Chest
+|Light Weighted Pressure Plate
+|Heavy Weighted Pressure Plate
+|Block of Quartz
+|Chiseled Quartz Block
+|Quartz Pillar
+|Quartz Slab
+|Quartz Stairs
+|Activator Rail
+|Minecart with TNT
+|Dropper
+|Minecart with Hopper
+|Smooth Sandstone
+|Smooth Quartz Block
+|title=1.5}}
+{{collapse
+|tail=1}}
+{|class="wikitable" data-description="1.5 updates"
+!Update
+!Version
+!Development release
+!Full release
+|-
+|rowspan="3"|[[Redstone Update]] ([[Java Edition guides/Redstone Update|Guide]])
+|[[Java Edition 1.5.2|1.5.2]]||April 25, 2013||May 2, 2013
+|-
+|[[Java Edition 1.5.1|1.5.1]]||March 14, 2013||March 21, 2013
+|-
+|[[Java Edition 1.5|1.5]]||January 3, 2013||March 13, 2013
+|}
+
+=== 1.4 ===
+{{collapse
+|title='''Block and item additions'''
+|head=1}}
+{{Additions table
+|Nether Brick Slab
+|Firework Star
+|Firework Rocket
+|Enchanted Book
+|Enchanted Book[&7Unbreaking I]
+|Enchanted Book[&7Unbreaking II]
+|Enchanted Book[&7Unbreaking III]
+|Enchanted Book[&7Efficiency I]
+|Enchanted Book[&7Efficiency II]
+|Enchanted Book[&7Efficiency III]
+|Enchanted Book[&7Efficiency IV]
+|Enchanted Book[&7Efficiency V]
+|Enchanted Book[&7Fortune I]
+|Enchanted Book[&7Fortune II]
+|Enchanted Book[&7Fortune III]
+|Enchanted Book[&7Silk Touch]
+|Enchanted Book[&7Sharpness I]
+|Enchanted Book[&7Sharpness II]
+|Enchanted Book[&7Sharpness III]
+|Enchanted Book[&7Sharpness IV]
+|Enchanted Book[&7Sharpness V]
+|Enchanted Book[&7Smite I]
+|Enchanted Book[&7Smite II]
+|Enchanted Book[&7Smite III]
+|Enchanted Book[&7Smite IV]
+|Enchanted Book[&7Smite V]
+|Enchanted Book[&7Bane of Arthropods I]
+|Enchanted Book[&7Bane of Arthropods II]
+|Enchanted Book[&7Bane of Arthropods III]
+|Enchanted Book[&7Bane of Arthropods IV]
+|Enchanted Book[&7Bane of Arthropods V]
+|Enchanted Book[&7Looting I]
+|Enchanted Book[&7Looting II]
+|Enchanted Book[&7Looting III]
+|Enchanted Book[&7Fire Aspect I]
+|Enchanted Book[&7Fire Aspect II]
+|Enchanted Book[&7Knockback I]
+|Enchanted Book[&7Knockback II]
+|Enchanted Book[&7Protection I]
+|Enchanted Book[&7Protection II]
+|Enchanted Book[&7Protection III]
+|Enchanted Book[&7Protection IV]
+|Enchanted Book[&7Blast Protection I]
+|Enchanted Book[&7Blast Protection II]
+|Enchanted Book[&7Blast Protection III]
+|Enchanted Book[&7Blast Protection IV]
+|Enchanted Book[&7Fire Protection I]
+|Enchanted Book[&7Fire Protection II]
+|Enchanted Book[&7Fire Protection III]
+|Enchanted Book[&7Fire Protection IV]
+|Enchanted Book[&7Projectile Protection I]
+|Enchanted Book[&7Projectile Protection II]
+|Enchanted Book[&7Projectile Protection III]
+|Enchanted Book[&7Projectile Protection IV]
+|Enchanted Book[&7Feather Falling I]
+|Enchanted Book[&7Feather Falling II]
+|Enchanted Book[&7Feather Falling III]
+|Enchanted Book[&7Feather Falling IV]
+|Enchanted Book[&7Respiration I]
+|Enchanted Book[&7Respiration II]
+|Enchanted Book[&7Respiration III]
+|Enchanted Book[&7Aqua Affinity]
+|Enchanted Book[&7Power I]
+|Enchanted Book[&7Power II]
+|Enchanted Book[&7Power III]
+|Enchanted Book[&7Power IV]
+|Enchanted Book[&7Power V]
+|Enchanted Book[&7Punch I]
+|Enchanted Book[&7Punch II]
+|Enchanted Book[&7Flame]
+|Enchanted Book[&7Infinity]
+|Enchanted Book[&7Thorns I]
+|Enchanted Book[&7Thorns II]
+|Enchanted Book[&7Thorns III]
+|title=1.4.6}}
+{{Additions table
+|Music Disc Wait
+|title=1.4.4}}
+{{Additions table
+|Beacon
+|Command Block
+|Potion of Night Vision
+|Splash Potion of Night Vision
+|Carrot
+|Golden Carrot
+|Potato
+|Baked Potato
+|Poisonous Potato
+|Flower Pot
+|Item Frame
+|Oak Button
+|Cobblestone Wall
+|Mossy Cobblestone Wall
+|Empty Map
+|Potion of Invisibility
+|Splash Potion of Invisibility
+|Creeper Head
+|Player Head
+|Skeleton Skull
+|Wither Skeleton Skull
+|Zombie Head
+|Painting Wither
+|Nether Star
+|Carrot on a Stick
+|Pumpkin Pie
+|Bat Spawn Egg
+|Witch Spawn Egg
+|Anvil
+|Chipped Anvil
+|Damaged Anvil
+|title=1.4.2}}
+{{collapse
+|tail=1}}
+{|class="wikitable" data-description="1.4 updates"
+!Update
+!Version
+!Development release
+!Full release
+|-
+|rowspan=5|[[Pretty Scary Update]] ([[Java Edition guides/Pretty Scary Update|Guide]])
+|[[Java Edition 1.4.7|1.4.7]]||December 28, 2012||January 9, 2013
+|-
+|[[Java Edition 1.4.6|1.4.6]]||December 7, 2012||December 20, 2012
+|-
+|[[Java Edition 1.4.5|1.4.5]]||November 16, 2012||November 19, 2012
+|-
+|[[Java Edition 1.4.4|1.4.4]]||November 1, 2012||November 14, 2012
+|-
+|[[Java Edition 1.4.2|1.4.2]]||August 9, 2012||October 25, 2012
+|}
+
+=== 1.3 ===
+{{collapse
+|title='''Block and item additions'''
+|head=1}}
+{{Additions table
+|Oak Slab
+|Spruce Slab
+|Birch Slab
+|Jungle Slab
+|Book and Quill
+|Written Book
+|Cocoa
+|Emerald Ore
+|Emerald
+|Ender Chest
+|Sandstone Stairs
+|Enchanted Golden Apple
+|Tripwire Hook
+|Block of Emerald
+|Spruce Stairs
+|Birch Stairs
+|Jungle Stairs
+|Oak Wood
+|Spruce Wood
+|Birch Wood
+|Jungle Wood
+|title=1.3.1}}
+{{collapse
+|tail=1}}
+{|class="wikitable" data-description="1.3 updates"
+!Update
+!Version
+!Development release
+!Full release
+|-
+|rowspan=2|1.3 ([[Java Edition guides/1.3 releases|Guide]])
+|[[Java Edition 1.3.2|1.3.2]]||August 14, 2012||August 16, 2012
+|-
+|[[Java Edition 1.3.1|1.3.1]]||April 12, 2012||August 1, 2012
+|}
+
+=== 1.2 ===
+{{collapse
+|title='''Block and item additions'''
+|head=1}}
+{{Additions table
+|Spruce Planks
+|Birch Planks
+|Jungle Planks
+|Cut Sandstone
+|Chiseled Sandstone
+|title=1.2.4}}
+{{Additions table
+|Jungle Log
+|Jungle Leaves
+|Jungle Sapling
+|Bottle o' Enchanting
+|Fire Charge
+|Ocelot Spawn Egg
+|Redstone Lamp
+|Chiseled Stone Bricks
+|title=1.2.1}}
+{{collapse
+|tail=1}}
+{|class="wikitable" data-description="1.2 updates"
+!Update
+!Version
+!Development release
+!Full release
+|-
+|rowspan=5|1.2 ([[Java Edition guides/1.2 releases|Guide]])
+|[[Java Edition 1.2.5|1.2.5]]||March 30, 2012||April 4, 2012
+|-
+|[[Java Edition 1.2.4|1.2.4]]||rowspan=3|–||March 22, 2012
+|-
+|[[Java Edition 1.2.3|1.2.3]]||March 2, 2012
+|-
+|[[Java Edition 1.2.2|1.2.2]]||rowspan=2|March 1, 2012
+|-
+|[[Java Edition 1.2.1|1.2.1]]||January 19, 2012
+|}
+
+=== 1.1 ===
+{{collapse
+|title='''Block and item additions'''
+|head=1}}
+{{Additions table
+|Creeper Spawn Egg
+|Skeleton Spawn Egg
+|Spider Spawn Egg
+|Zombie Spawn Egg
+|Slime Spawn Egg
+|Ghast Spawn Egg
+|Zombie Pigman Spawn Egg
+|Enderman Spawn Egg
+|Cave Spider Spawn Egg
+|Silverfish Spawn Egg
+|Blaze Spawn Egg
+|Magma Cube Spawn Egg
+|Pig Spawn Egg
+|Sheep Spawn Egg
+|Cow Spawn Egg
+|Chicken Spawn Egg
+|Squid Spawn Egg
+|Wolf Spawn Egg
+|Mooshroom Spawn Egg
+|Villager Spawn Egg
+|title=1.1}}
+{{collapse
+|tail=1}}
+{|class="wikitable" data-description="1.1 updates"
+!Update
+!Version
+!Development release
+!Full release
+|-
+|1.1 ([[Java Edition guides/1.1|Guide]])
+|[[Java Edition 1.1|1.1]]||November 24, 2011||January 12, 2012
+|}
+
+=== 1.0 ===
+{{collapse
+|title='''Block and item additions'''
+|head=1}}
+{{Additions table
+|Nether Bricks
+|Nether Brick Stairs
+|Nether Brick Fence
+|Nether Wart
+|Blaze Rod
+|Ghast Tear
+|Gold Nugget
+|Mycelium
+|Lily Pad
+|Blaze Powder
+|Magma Cream
+|Spider Eye
+|Fermented Spider Eye
+|Glass Bottle
+|Music Disc Blocks
+|Music Disc Chirp
+|Music Disc Far
+|Music Disc Mall
+|Music Disc Mellohi
+|Music Disc Stal
+|Music Disc Strad
+|Music Disc Ward
+|Music Disc 11
+|Eye of Ender
+|End Portal Frame
+|End Portal
+|Cauldron
+|Enchanting Table
+|Brewing Stand
+|Water Bottle
+|Mundane Potion
+|Thick Potion
+|Awkward Potion
+|Potion of Fire Resistance
+|Potion of Harming
+|Potion of Healing
+|Potion of Poison
+|Potion of Regeneration
+|Potion of Slowness
+|Potion of Strength
+|Potion of Swiftness
+|Potion of Weakness
+|End Stone
+|Glistering Melon Slice
+|Splash Potion of Fire Resistance
+|Splash Potion of Harming
+|Splash Potion of Healing
+|Splash Potion of Poison
+|Splash Potion of Regeneration
+|Splash Potion of Slowness
+|Splash Potion of Strength
+|Splash Potion of Swiftness
+|Splash Potion of Weakness
+|Dragon Egg
+|title=1.0.0}}
+{{collapse
+|tail=1}}
+{|class="wikitable" data-description="1.0 updates"
+!Update
+!Version
+!Development release
+!Full release
+|-
+|rowspan=2|[[Adventure Update]] <small>(Part 2)</small> ([[Java Edition guides/Adventure Update: Part II|Guide]])
+|[[Java Edition 1.0.1|1.0.1]] (Server only)||–||November 24, 2011
+|-
+|[[Java Edition 1.0.0|1.0.0]]||September 22, 2011||November 18, 2011
+|}
+
+== Beta ==
+{|class="wikitable" data-description="Color code keys" align="right" aria-hidden="true"
+|+Key
+|-
+|{{VH label|launcher}}||{{VH label|launcher|desc=y}}
+|-
+|{{VH label|archived}}||{{VH label|archived|desc=y}}
+|-
+|{{VH label|reupload}}||{{VH label|reupload|desc=y}}
+|}
+The [[Java Edition Beta|Beta]] development phase started on December 20, 2010 and ended on November 18, 2011. The main goals of this development stage were a larger focus on polishing gameplay, additional content, and stability.<ref>https://web.archive.org/web/0/http://notch.tumblr.com/post/2175441966/minecraft-beta-december-20-2010</ref> The game's price also increased from what it was in Alpha, but users who previously bought the game were not charged extra.
+
+=== Beta 1.8 ===
+{{collapse
+|title='''Block and item additions'''
+|head=1}}
+{{Additions table
+|Stone Bricks
+|Cracked Stone Bricks
+|Mossy Stone Bricks
+|Infested Stone
+|Infested Cobblestone
+|Infested Stone Bricks
+|Brick Slab
+|Stone Brick Slab
+|Brick Stairs
+|Stone Brick Stairs
+|Glass Pane
+|Iron Bars
+|Oak Fence Gate
+|Vines
+|Mushroom Block
+|Mushroom Stem
+|Red Mushroom Block
+|Brown Mushroom Block
+|Pumpkin Seeds
+|Melon Seeds
+|Melon
+|Melon Slice
+|Raw Chicken
+|Cooked Chicken
+|Raw Beef
+|Steak
+|Rotten Flesh
+|Ender Pearl
+|title=Beta 1.8}}
+{{collapse
+|tail=1}}
+{|class="wikitable" data-description="Beta 1.8 updates"
+!Update
+!Version
+!State
+!Development release
+!Full release
+|-
+|rowspan=2|[[Adventure Update]] (Part 1) ([[Java Edition guides/Adventure Update: Part I|Guide]])
+|[[Java Edition Beta 1.8.1|Beta 1.8.1]]||{{VH label|launcher}}
+|–
+|September 15, 2011
+|-
+|[[Java Edition Beta 1.8|Beta 1.8]]||{{VH label|launcher}}
+|September 9, 2011
+|September 14, 2011
+|}
+
+=== Beta 1.7 ===
+{{collapse
+|title='''Block and item additions'''
+|head=1}}
+{{Additions table
+|Piston
+|Sticky Piston
+|Shears
+|title=Beta 1.7}}
+{{collapse
+|tail=1}}
+{|class="wikitable" data-description="Beta 1.7 updates"
+!scope=col|Update
+!Version
+!State
+!scope=col|Release date
+|-
+|rowspan=4|Beta 1.7 ([[Java Edition guides/Beta 1.7 releases|Guide]])
+|[[Java Edition Beta 1.7.3|Beta 1.7.3]]||{{VH label|launcher}}||July 8, 2011
+|-
+|[[Java Edition Beta 1.7.2|Beta 1.7.2]]||{{VH label|launcher}}||July 1, 2011
+|-
+|[[Java Edition Beta 1.7_01|Beta 1.7_01]]||{{VH label|archived}}
+|rowspan=2|June 30, 2011
+|-
+|[[Java Edition Beta 1.7|Beta 1.7]]||{{VH label|launcher}}
+|}
+
+=== Beta 1.6 ===
+{{collapse
+|title='''Block and item additions'''
+|head=1}}
+{{Additions table
+|Dead Bush
+|Short Grass
+|Fern
+|Oak Trapdoor
+|Map
+|title=Beta 1.6}}
+{{collapse
+|tail=1}}
+{|class="wikitable" data-description="Beta 1.6 updates"
+!scope=col|Update
+!Version
+!State
+!scope=col|Release date
+|-
+|rowspan=7|Beta 1.6 ([[Java Edition guides/Beta 1.6 releases|Guide]])
+|[[Java Edition Beta 1.6.6|Beta 1.6.6]]||{{VH label|launcher}}||May 31, 2011
+|-
+|[[Java Edition Beta 1.6.5|Beta 1.6.5]]||{{VH label|launcher}}||May 28, 2011
+|-
+|[[Java Edition Beta 1.6.4|Beta 1.6.4]]||{{VH label|launcher}}
+|rowspan=5|May 26, 2011
+|-
+|[[Java Edition Beta 1.6.3|Beta 1.6.3]]||{{VH label|launcher}}
+|-
+|[[Java Edition Beta 1.6.2|Beta 1.6.2]]||{{VH label|launcher}}
+|-
+|[[Java Edition Beta 1.6.1|Beta 1.6.1]]||{{VH label|launcher}}
+|-
+|[[Java Edition Beta 1.6|Beta 1.6]]||{{VH label|launcher}}
+|}
+
+=== Beta 1.5 ===
+{{collapse
+|title='''Block and item additions'''
+|head=1}}
+{{Additions table
+|Spruce Sapling
+|Birch Sapling
+|Powered Rail
+|Detector Rail
+|Cobweb
+|title=Beta 1.5}}
+{{collapse
+|tail=1}}
+{|class="wikitable" data-description="Beta 1.5 updates"
+!scope=col|Update
+!Version
+!State
+!scope=col|Release date
+|-
+|rowspan=3|Beta 1.5 ([[Java Edition guides/Beta 1.5 releases|Guide]])
+|[[Java Edition Beta 1.5_02|Beta 1.5_02]] (Server only)||{{VH label|archived}}
+|rowspan=2|April 20, 2011
+|-
+|[[Java Edition Beta 1.5_01|Beta 1.5_01]]||{{VH label|launcher}}
+|-
+|[[Java Edition Beta 1.5|Beta 1.5]]||{{VH label|launcher}}||April 19, 2011
+|}
+
+=== Beta 1.4 ===
+{{collapse
+|title='''Block and item additions'''
+|head=1}}
+{{Additions table
+|Locked Chest
+|Cookie
+|title=Beta 1.4}}
+{{collapse
+|tail=1}}
+{|class="wikitable" data-description="Beta 1.4 updates"
+!scope=col|Update
+!Version
+!State
+!scope=col|Release date
+|-
+|rowspan=2|Beta 1.4 ([[Java Edition guides/Beta 1.4 releases|Guide]])
+|[[Java Edition Beta 1.4_01|Beta 1.4_01]]||{{VH label|launcher}}||April 5, 2011
+|-
+|[[Java Edition Beta 1.4|Beta 1.4]]||{{VH label|launcher}}||March 31, 2011
+|}
+
+=== Beta 1.3 ===
+{{collapse
+|title='''Block and item additions'''
+|head=1}}
+{{Additions table
+|Cobblestone Slab
+|Petrified Oak Slab
+|Sandstone Slab
+|Smooth Stone
+|Bed
+|Redstone Repeater
+|Painting Skull On Fire
+|title=Beta 1.3}}
+{{collapse
+|tail=1}}
+{|class="wikitable" data-description="Beta 1.3 updates"
+!scope=col|Update
+!Version
+!State
+!scope=col|Release date
+|-
+|rowspan=2|Beta 1.3 ([[Java Edition guides/Beta 1.3 releases|Guide]])
+|[[Java Edition Beta 1.3_01|Beta 1.3_01]]||{{VH label|launcher}}||February 23, 2011
+|-
+|[[Java Edition Beta 1.3|Beta 1.3]]||{{VH label|launcher}}||February 22, 2011
+|}
+
+=== Beta 1.2 ===
+{{collapse
+|title='''Block and item additions'''
+|head=1}}
+{{Additions table
+|Light Gray Wool
+|Gray Wool
+|Black Wool
+|Brown Wool
+|Red Wool
+|Orange Wool
+|Yellow Wool
+|Lime Wool
+|Green Wool
+|Cyan Wool
+|Light Blue Wool
+|Blue Wool
+|Purple Wool
+|Magenta Wool
+|Pink Wool
+|Sugar
+|Cake
+|Dispenser
+|Note Block
+|Sandstone
+|Spruce Log
+|Spruce Leaves
+|Birch Log
+|Birch Leaves
+|Charcoal
+|Lapis Lazuli Ore
+|Block of Lapis Lazuli
+|Bone
+|Bone Meal
+|Light Gray Dye
+|Gray Dye
+|Ink Sac
+|Cocoa Beans
+|Red Dye
+|Orange Dye
+|Yellow Dye
+|Lime Dye
+|Green Dye
+|Cyan Dye
+|Light Blue Dye
+|Lapis Lazuli
+|Purple Dye
+|Magenta Dye
+|Pink Dye
+|title=Beta 1.2}}
+{{collapse
+|tail=1}}
+{|class="wikitable" data-description="Beta 1.2 updates"
+!scope=col|Update
+!Version
+!State
+!scope=col|Release date
+|-
+|rowspan=3|Beta 1.2 ([[Java Edition guides/Beta 1.2 releases|Guide]])
+|[[Java Edition Beta 1.2_02|Beta 1.2_02]]||{{VH label|launcher}}||January 21, 2011
+|-
+|[[Java Edition Beta 1.2_01|Beta 1.2_01]]||{{VH label|launcher}}||January 14, 2011
+|-
+|[[Java Edition Beta 1.2|Beta 1.2]]||{{VH label|launcher}}||January 13, 2011
+|}
+
+=== Beta 1.1 ===
+{|class="wikitable" data-description="Beta 1.1 updates"
+!scope=col|Update
+!Version
+!State
+!scope=col|Release date
+|-
+|rowspan=3|Beta 1.1 ([[Java Edition guides/Beta 1.1 releases|Guide]])
+|[[Java Edition Beta 1.1_02|Beta 1.1_02]]||{{VH label|launcher}}
+|rowspan=3|December 22, 2010
+|-
+|[[Java Edition Beta 1.1_01|Beta 1.1_01]]||{{VH label|launcher}}
+|-
+|[[Java Edition Beta 1.1|Beta 1.1]]||{{VH label|archived}}
+|}
+
+=== Beta 1.0 ===
+{|class="wikitable" data-description="Beta 1.0 updates"
+!scope=col|Update
+!Version
+!State
+!scope=col|Release date
+|-
+|rowspan=3|Beta 1.0 ([[Java Edition guides/Beta 1.0 releases|Guide]])
+|[[Java Edition Beta 1.0.2|Beta 1.0.2]]||{{VH label|reupload}}||December 21, 2010
+|-
+|[[Java Edition Beta 1.0_01|Beta 1.0_01]]||{{VH label|launcher}}
+|rowspan=2|December 20, 2010
+|-
+|[[Java Edition Beta 1.0|Beta 1.0]]||{{VH label|launcher}}
+|}
+
+== Alpha ==
+{|class="wikitable" data-description="Color code keys" align="right" aria-hidden="true"
+|+Key
+|-
+|{{VH label|launcher}}||{{VH label|launcher|desc=y}}
+|-
+|{{VH label|archived}}||{{VH label|archived|desc=y}}
+|-
+|{{VH label|reupload}}||{{VH label|reupload|desc=y}}
+|-
+|{{VH label|image/video/public proof}}||{{VH label|image/video/public proof|desc=y}}
+|}
+The [[Java Edition Alpha|Alpha]] development phase started on June 29, 2010, and ended on December 20, 2010. This version also limited the gamemode to Survival, but saw a re-release of multiplayer. At this time, [[Notch]] began developing the game full time, causing much more frequent updates. These were also the first versions which had to be purchased, though the price increased in later stages.
+
+=== Alpha 1.2 ===
+{{collapse
+|title='''Block and item additions'''
+|head=1}}
+{{Additions table
+|Netherrack
+|Soul Sand
+|Glowstone
+|Glowstone Dust
+|Carved Pumpkin
+|Jack o'Lantern
+|Nether Portal
+|Clock
+|Raw Cod
+|Cooked Cod
+|title=Alpha 1.2}}
+{{collapse
+|tail=1}}
+{|class="wikitable" data-description="Alpha 1.2 updates"
+!scope=col|Update
+!Client version
+!State
+!scope=col|Development release
+!scope=col|Full release
+!Server version
+!State
+|-
+|rowspan=14|[[Halloween Update]] ([[Java Edition guides/Halloween Update|Guide]])
+|[[Java Edition Alpha v1.2.6|Alpha v1.2.6]]||{{VH label|launcher}}||rowspan=13|-||December 3, 2010||[[Java Edition Alpha server 0.2.8|0.2.8]]||{{VH label|archived}}
+|-
+|[[Java Edition Alpha v1.2.5|Alpha v1.2.5]] ||{{VH label|launcher}}|| December 1, 2010 || [[Java Edition Alpha server 0.2.7|0.2.7]]||{{VH label|archived}}
+|-
+|[[Java Edition Alpha v1.2.4_01|Alpha v1.2.4_01]]||{{VH label|launcher}}
+|rowspan=2|November 30, 2010
+|[[Java Edition Alpha server 0.2.6 02|0.2.6_02]]||{{VH label|archived}}
+|-
+|[[Java Edition Alpha v1.2.3_05|Alpha v1.2.3_05]]||{{VH label|archived}}
+|[[Java Edition Alpha server 0.2.6|0.2.6]]-[[Java Edition Alpha server 0.2.6 01|0.2.6_01]]||{{VH label|archived}}{{note|Executable is missing.}}
+|-
+|[[Java Edition Alpha v1.2.3_04|Alpha v1.2.3_04]]||{{VH label|launcher}}||November 26, 2010
+|[[Java Edition Alpha server 0.2.5 02|0.2.5_02]]||{{VH label|archived}}
+|-
+|[[Java Edition Alpha v1.2.3_02|Alpha v1.2.3_02]]||{{VH label|launcher}}||November 25, 2010
+|[[Java Edition Alpha server 0.2.5 01|0.2.5_01]]-[[Java Edition Alpha server 0.2.5 02|0.2.5_02]]||{{VH label|archived}}
+|-
+|[[Java Edition Alpha v1.2.3_01|Alpha v1.2.3_01]]||{{VH label|launcher}}
+|rowspan=2|November 24, 2010
+|rowspan=2|[[Java Edition Alpha server 0.2.5|0.2.5]]
+|rowspan=2{{VH label|archived}}
+|-
+|[[Java Edition Alpha v1.2.3|Alpha v1.2.3]]||{{VH label|launcher}}
+|-
+|[[Java Edition Alpha v1.2.2|Alpha v1.2.2]]||{{VH label|launcher}}||November 10, 2010||[[Java Edition Alpha server 0.2.4|0.2.4]]||{{VH label|archived}}
+|-
+|[[Java Edition Alpha v1.2.1_01|Alpha v1.2.1_01]]||{{VH label|launcher}}
+|rowspan=2|November 5, 2010
+|rowspan=2|[[Java Edition Alpha server 0.2.3|0.2.3]]
+|rowspan=2{{VH label|archived}}
+|-
+|[[Java Edition Alpha v1.2.1|Alpha v1.2.1]]||{{VH label|image/video/public proof}}{{note|Launcher version is mislabeled.}}
+|-
+|[[Java Edition Alpha v1.2.0_02|Alpha v1.2.0_02]]||{{VH label|launcher}}||October 31, 2010
+|rowspan=2|[[Java Edition Alpha server 0.2.2 01|0.2.2_01]]-[[Java Edition Alpha server 0.2.3|0.2.3]]
+|rowspan=2{{VH label|archived}}
+|-
+|[[Java Edition Alpha v1.2.0_01|Alpha v1.2.0_01]]||{{VH label|launcher}}
+|rowspan=2|October 30, 2010
+|-
+|[[Java Edition Alpha v1.2.0|Alpha v1.2.0]] ([[Halloween Update]])||{{VH label|archived}}||October 29, 2010
+|[[Java Edition Alpha server 0.2.2|0.2.2]], [[Java Edition Alpha server 0.2.2 01|0.2.2_01]] and [[Java Edition Alpha server 0.2.3|0.2.3]]||{{VH label|archived}}
+|}
+
+=== Alpha 1.1 ===
+{{collapse
+|title='''Block and item additions'''
+|head=1}}
+{{Additions table
+|Compass
+|Fishing Rod
+|Painting Graham
+|Painting Creebet
+|Painting Kong
+|Painting Mortal Coil
+|Painting Pigscene
+|title=Alpha 1.1}}
+{{collapse
+|tail=1}}
+{|class="wikitable" data-description="Alpha 1.1 updates"
+!scope=col|Update
+!Client version
+!State
+!scope=col|Release date
+!Server version
+!State
+|-
+|rowspan=4|Alpha 1.1 ([[Java Edition guides/Alpha 1.1 releases|Guide]])
+|[[Java Edition Alpha v1.1.2_01|Alpha v1.1.2_01]]||{{VH label|launcher}}||September 23, 2010
+|rowspan=3|[[Java Edition Alpha server 0.2.1|0.2.1]]
+|rowspan=3{{VH label|archived}}
+|-
+|[[Java Edition Alpha v1.1.2|Alpha v1.1.2]]||{{VH label|launcher}}
+|rowspan=2|September 18, 2010
+|-
+|[[Java Edition Alpha v1.1.1|Alpha v1.1.1]] (Seecret Saturday 1)||{{VH label|archived}}
+|-
+|[[Java Edition Alpha v1.1.0|Alpha v1.1.0]] ([[Seecret Friday]] 9)||{{VH label|archived}}||September 10, 2010
+|[[Java Edition Alpha server 0.2.0|0.2.0]]-[[Java Edition Alpha server 0.2.1|0.2.1]]||{{VH label|archived}}
+|}
+
+=== Alpha 1.0 ===
+{{collapse
+|title='''Block and item additions'''
+|head=1}}
+{{Additions table
+|Redstone Ore
+|Redstone Dust
+|Redstone Torch
+|Oak Pressure Plate
+|Stone Pressure Plate
+|Stone Button
+|Lever
+|Iron Door
+|Snow
+|Ice
+|Snowball
+|Snow Block
+|Cactus
+|Oak Boat
+|Leather
+|Milk Bucket
+|Clay
+|Clay Ball
+|Sugar Cane
+|Paper
+|Book
+|Brick
+|Slimeball
+|Egg
+|Jukebox
+|Music Disc 13
+|Music Disc Cat
+|Minecart with Furnace
+|Minecart with Chest
+|Oak Fence
+|title=Alpha 1.0}}
+{{collapse
+|tail=1}}
+{|class="wikitable" data-description="Alpha 1.0 updates"
+!scope=col|Update
+!Client version
+!State
+!scope=col|Release date
+!Server version
+!State
+|-
+|rowspan=34|Alpha 1.0 ([[Java Edition guides/Alpha 1.0 releases|Guide]])
+|[[Java Edition Alpha v1.0.17_04|Alpha v1.0.17_04]]||{{VH label|launcher}}
+|rowspan=2|August 23, 2010
+|rowspan=5|[[Java Edition Alpha server 0.1.4|0.1.4]]
+|rowspan=5{{VH label|archived}}
+|-
+|[[Java Edition Alpha v1.0.17_03|Alpha v1.0.17_03]]||{{VH label|archived}}
+|-
+|[[Java Edition Alpha v1.0.17_02|Alpha v1.0.17_02]]||{{VH label|launcher}}
+|rowspan=3|August 20, 2010
+|-
+|[[Java Edition Alpha v1.0.17_01|Alpha v1.0.17_01]]||{{VH label|image/video/public proof}}
+|-
+|[[Java Edition Alpha v1.0.17|Alpha v1.0.17]] (Seecret Friday 8)||{{VH label|image/video/public proof}}
+|-
+|[[Java Edition Alpha v1.0.16_02|Alpha v1.0.16_02]]||{{VH label|archived}}||August 13, 2010
+|[[Java Edition Alpha server 0.1.3|0.1.3]]||{{VH label|archived}}
+|-
+|rowspan=2|[[Java Edition Alpha v1.0.16_01|Alpha v1.0.16_01]]
+|rowspan=2{{VH label|archived}}
+|rowspan=3|August 12, 2010
+|[[Java Edition Alpha server 0.1.2 01|0.1.2_01]]||{{VH label|archived}}
+|-
+|[[Java Edition Alpha server 0.1.2|0.1.2]]||{{VH label|reupload}}
+|-
+|[[Java Edition Alpha v1.0.16|Alpha v1.0.16]]||{{VH label|launcher}}
+|[[Java Edition Alpha server 0.1.1|0.1.1]]||{{VH label|reupload}}
+|-
+|[[Java Edition Alpha v1.0.15|Alpha v1.0.15]] (First SMP version)||{{VH label|launcher}}||August 3, 2010
+|[[Java Edition Alpha server 0.1.0|0.1.0]]||{{VH label|archived}}
+|-
+|[[Java Edition Alpha v1.0.14|Alpha v1.0.14]] (Seecret Friday 7)||{{VH label|launcher}}||July 30, 2010
+|rowspan=24|N/A
+|rowspan=24|&ndash;
+|-
+|[[Java Edition Alpha v1.0.13_01|Alpha v1.0.13_01]] (1K IN 24h)||{{VH label|archived}}||July 29, 2010
+|-
+|[[Java Edition Alpha v1.0.13|Alpha v1.0.13]]||{{VH label|archived}}||July 28, 2010
+|-
+|[[Java Edition Alpha v1.0.12|Alpha v1.0.12]]||{{VH label|archived}}||July 26, 2010
+|-
+|[[Java Edition Alpha v1.0.11|Alpha v1.0.11]] (Seecret Friday 6)||{{VH label|launcher}}||July 23, 2010
+|-
+|[[Java Edition Alpha v1.0.10|Alpha v1.0.10]]||{{VH label|archived}}||July 22, 2010
+|-
+|[[Java Edition Alpha v1.0.9|Alpha v1.0.9]]||{{VH label|archived}}||July 21, 2010
+|-
+|[[Java Edition Alpha v1.0.8_01|Alpha v1.0.8_01]]||{{VH label|archived}}
+|rowspan=3|July 19, 2010
+|-
+|[[Java Edition Alpha v1.0.8|Alpha v1.0.8]]||{{VH label|image/video/public proof}}
+|-
+|[[Java Edition Alpha v1.0.7|Alpha v1.0.7]]||{{VH label|archived}}
+|-
+|[[Java Edition Alpha v1.0.6_03|Alpha v1.0.6_03]]||{{VH label|archived}}
+|rowspan=3|July 17, 2010
+|-
+|[[Java Edition Alpha v1.0.6_02|Alpha v1.0.6_02]]||{{VH label|image/video/public proof}}
+|-
+|[[Java Edition Alpha v1.0.6_01|Alpha v1.0.6_01]]||{{VH label|archived}}
+|-
+|[[Java Edition Alpha v1.0.6|Alpha v1.0.6]] (Seecret Friday 5)||{{VH label|archived}}||July 16, 2010
+|-
+|[[Java Edition Alpha v1.0.5_01|Alpha v1.0.5_01]]||{{VH label|launcher}}||July 14, 2010
+|-
+|[[Java Edition Alpha v1.0.5|Alpha v1.0.5]]||{{VH label|reupload}}||July 13, 2010
+|-
+|[[Java Edition Alpha v1.0.4|Alpha v1.0.4]] (Seecret Friday 4)||{{VH label|launcher}}||July 9, 2010
+|-
+|[[Java Edition Alpha v1.0.3|Alpha v1.0.3]]||{{VH label|archived}}||July 7, 2010
+|-
+|[[Java Edition Alpha v1.0.2_02|Alpha v1.0.2_02]]||{{VH label|archived}}
+|rowspan=3|July 6, 2010
+|-
+|[[Java Edition Alpha v1.0.2_01|Alpha v1.0.2_01]]||{{VH label|archived}}
+|-
+|[[Java Edition Alpha v1.0.2|Alpha v1.0.2]]||{{VH label|image/video/public proof}}
+|-
+|[[Java Edition Alpha v1.0.1_01|Alpha v1.0.1_01]]||{{VH label|archived}}
+|rowspan=2|July 2, 2010
+|-
+|[[Java Edition Alpha v1.0.1|Alpha v1.0.1]] (Seecret Friday 3)||{{VH label|image/video/public proof}}
+|}
+
+== Infdev ==
+{|class="wikitable" data-description="Color code keys" align="right" aria-hidden="true"
+|+Key
+|-
+|{{VH label|launcher}}||{{VH label|launcher|desc=y}}
+|-
+|{{VH label|archived}}||{{VH label|archived|desc=y}}
+|-
+|{{VH label|image proof}}||{{VH label|image proof|desc=y}}
+|-
+|{{VH label|public proof}}||{{VH label|public proof|desc=y}}
+|-
+|{{VH label|irc proof}}||{{VH label|irc proof|desc=y}}
+|}
+{{main|Java Edition Infdev|Minecraft Infdev|Java Edition guides/Infdev releases}}{{collapse
+|title='''Block and item additions'''
+|head=1}}
+{{Additions table
+|Golden Apple
+|Ladder
+|Oak Sign
+|Oak Door
+|Bucket
+|Water Bucket
+|Lava Bucket
+|Rail
+|Minecart
+|Monster Spawner
+|Saddle
+|Oak Stairs
+|Cobblestone Stairs
+|title=Infdev}}
+{{collapse
+|tail=1}}
+The [[Java Edition Infdev|Infdev]] development phase started on February 27, 2010 and ended on June 30, 2010. During this stage, ''Minecraft'' was only available in single-player [[Survival]] mode and versions were unnumbered under the name '''[[Minecraft Infdev]]'''. At this point, [[Notch]] rewrote the game code to allow mostly "infinite" terrain.
+
+{|class="wikitable" data-description="Infdev updates"
+!scope=col|Version/release date
+!State
+|-
+|[[Java Edition Infdev 20100630-1835|Infdev 20100630-1835]]||{{VH label|archived}}
+|-
+|[[Java Edition Infdev 20100630-1340|Infdev 20100630-1340]]||{{VH label|archived}}
+|-
+|[[Java Edition Infdev 20100629|Infdev 20100629]]||{{VH label|archived}}
+|-
+|[[Java Edition Infdev 20100627|Infdev 20100627]]||{{VH label|archived}}
+|-
+|[[Java Edition Infdev 20100625-1917|Infdev 20100625-1917]] (Seecret Friday 2)||{{VH label|archived}}
+|-
+|[[Java Edition Infdev 20100625-0922|Infdev 20100625-0922]]||{{VH label|archived}}
+|-
+|[[Java Edition Infdev 20100624|Infdev 20100624]]||{{VH label|archived}}
+|-
+|[[Java Edition Infdev 20100618|Infdev 20100618]] (Seecret Friday 1)||{{VH label|launcher}}
+|-
+|[[Java Edition Infdev 20100617-1531|Infdev 20100617-1531]]||{{VH label|archived}}
+|-
+|[[Java Edition Infdev 20100617-1205|Infdev 20100617-1205]]||{{VH label|archived}}
+|-
+|[[Java Edition Infdev 20100616-2210|Infdev 20100616-2210]]||{{VH label|image proof}}
+|-
+|[[Java Edition Infdev 20100616-1808|Infdev 20100616-1808]]||{{VH label|archived}}
+|-
+|[[Java Edition Infdev 20100615|Infdev 20100615]]||{{VH label|archived}}
+|-
+|[[Java Edition Infdev 20100611|Infdev 20100611]]||{{VH label|archived}}
+|-
+|[[Java Edition Infdev 20100608|Infdev 20100608]]||{{VH label|archived}}
+|-
+|[[Java Edition Infdev 20100607|Infdev 20100607]]||{{VH label|archived}}
+|-
+|[[Java Edition Infdev 20100420|Infdev 20100420]]||{{VH label|archived}}
+|-
+|[[Java Edition Infdev 20100415|Infdev 20100415]]||{{VH label|archived}}
+|-
+|[[Java Edition Infdev 20100414|Infdev 20100414]]||{{VH label|archived}}
+|-
+|[[Java Edition Infdev 20100413-1953|Infdev 20100413-1953]]||{{VH label|archived}}
+|-
+|[[Java Edition Infdev 20100413-1951|Infdev 20100413-1951]]||{{VH label|irc proof}}
+|-
+|[[Java Edition Infdev 20100330-1611|Infdev 20100330-1611]]||{{VH label|archived}}
+|-
+|[[Java Edition Infdev 20100330-1203|Infdev 20100330-1203]]||{{VH label|image proof}}
+|-
+|[[Java Edition Infdev 20100327|Infdev 20100327]]||{{VH label|archived}}
+|-
+|[[Java Edition Infdev 20100325-1640|Infdev 20100325-1640]]||{{VH label|archived}}
+|-
+|[[Java Edition Infdev 20100325-1545|Infdev 20100325-1545]]||{{VH label|public proof}}
+|-
+|[[Java Edition Infdev 20100321-1817|Infdev 20100321-1817]]||{{VH label|archived}}
+|-
+|[[Java Edition Infdev 20100320|Infdev 20100320]]||{{VH label|archived}}
+|-
+|[[Java Edition Infdev 20100316|Infdev 20100316]]||{{VH label|archived}}
+|-
+|[[Java Edition Infdev 20100313|Infdev 20100313]]||{{VH label|archived}}
+|-
+|[[Java Edition Infdev 20100227-1433|Infdev 20100227-1433]]||{{VH label|archived}}
+|-
+|[[Java Edition Infdev 20100227-1414|Infdev 20100227-1414]]||{{VH label|image proof}}
+|}
+
+== Indev ==
+{|class="wikitable" data-description="Color code keys" align="right" aria-hidden="true"
+|+Key
+|-
+|{{VH label|archived}}||{{VH label|archived|desc=y}}
+|-
+|{{VH label|reupload}}||{{VH label|reupload|desc=y}}
+|-
+|{{VH label|image proof}}||{{VH label|image proof|desc=y}}
+|-
+|{{VH label|public proof}}||{{VH label|public proof|desc=y}}
+|-
+|{{VH label|irc proof}}||{{VH label|irc proof|desc=y}}
+|}
+{{main|Java Edition Indev|Java Edition guides/Indev releases}}{{collapse
+|title='''Block and item additions'''
+|head=1}}
+{{Additions table
+|Farmland
+|Wheat Seeds
+|Bread
+|Wheat
+|Wooden Hoe
+|Stone Hoe
+|Iron Hoe
+|Golden Hoe
+|Diamond Hoe
+|Golden Helmet
+|Golden Chestplate
+|Golden Leggings
+|Golden Boots
+|Diamond Helmet
+|Diamond Chestplate
+|Diamond Leggings
+|Diamond Boots
+|Flint
+|Furnace
+|Lit Furnace
+|Raw Porkchop
+|Cooked Porkchop
+|Painting
+|Painting Albanian
+|Painting de_aztec
+|Painting Target Successfully Bombed
+|Painting Kebab med tre pepperoni
+|Painting Paradisträd
+|Painting Wasteland
+|Painting Wanderer
+|Painting Bonjour Monsieur Courbet
+|Painting Fighters
+|Painting The Pool
+|Painting Seaside
+|Painting sunset_dense
+|Painting Bust
+|Painting Match
+|Painting Pointer
+|Painting Skull and Roses
+|Painting The Stage Is Set
+|Painting The void|title=Indev}}
+{{Additions table
+|Torch
+|Leather Cap
+|Leather Tunic
+|Leather Pants
+|Leather Boots
+|Studded Helmet
+|Studded Chestplate
+|Studded Leggings
+|Studded Boots
+|Chainmail Helmet
+|Chainmail Chestplate
+|Chainmail Leggings
+|Chainmail Boots
+|Iron Helmet
+|Iron Chestplate
+|Iron Leggings
+|Iron Boots
+|Quiver
+|Apple
+|Iron Sword
+|Fire
+|Iron Axe
+|Iron Pickaxe
+|Iron Shovel
+|Flint and Steel
+|Infinite Water Source
+|Infinite Lava Source
+|Bow
+|Arrow
+|Chest
+|Diamond Ore
+|Block of Diamond
+|Gear
+|Diamond
+|Coal
+|Gold Ingot
+|Iron Ingot
+|Wooden Sword
+|Wooden Axe
+|Wooden Pickaxe
+|Wooden Shovel
+|Stone Sword
+|Stone Axe
+|Stone Pickaxe
+|Stone Shovel
+|Diamond Sword
+|Diamond Axe
+|Diamond Pickaxe
+|Diamond Shovel
+|Stick
+|Crafting Table
+|Golden Sword
+|Golden Axe
+|Golden Pickaxe
+|Golden Shovel
+|Bowl
+|Mushroom Stew
+|Gunpowder
+|String
+|Feather
+|title=Indev 0.31}}
+{{collapse
+|tail=1}}
+The [[Java Edition Indev|Indev]] development phase started on December 23, 2009, and ended on February 23, 2010. It was the successor to the previous [[Survival Test]] and continued expanding the survival aspects of the game, making it a lot more like the current gameplay. Versions in this stage were either unnumbered or used the same number.
+
+{|class="wikitable" data-description="Indev updates"
+!scope=col|Name
+!scope=col|Version/release date
+!State
+|-
+|rowspan=17|[[Minecraft Indev]]<br>([[Java Edition guides/Minecraft Indev releases|Guide]])
+|[[Java Edition Indev 20100223|Indev 20100223]]||{{VH label|archived}}
+|-
+|[[Java Edition Indev 20100219|Indev 20100219]]||{{VH label|archived}}
+|-
+|[[Java Edition Indev 20100218-0016|Indev 20100218-0016]]||{{VH label|archived}}
+|-
+|[[Java Edition Indev 20100218-0011|Indev 20100218-0011]]||{{VH label|irc proof}}
+|-
+|[[Java Edition Indev 20100214|Indev 20100214]]||{{VH label|archived}}
+|-
+|[[Java Edition Indev 20100213|Indev 20100213]]||{{VH label|archived}}
+|-
+|[[Java Edition Indev 20100212-1622|Indev 20100212-1622]]||{{VH label|archived}}
+|-
+|[[Java Edition Indev 20100212-1210|Indev 20100212-1210]]||{{VH label|archived}}
+|-
+|[[Java Edition Indev 20100211-2340|Indev 20100211-2340]]||{{VH label|image proof}}
+|-
+|[[Java Edition Indev 20100211-2333|Indev 20100211-2333]]||{{VH label|public proof}}
+|-
+|[[Java Edition Indev 20100211-2327|Indev 20100211-2327]]||{{VH label|irc proof}}
+|-
+|[[Java Edition Indev 20100207-1703|Indev 20100207-1703]]||{{VH label|archived}}
+|-
+|[[Java Edition Indev 20100207-1647|Indev 20100207-1647]]||{{VH label|image proof}}
+|-
+|[[Java Edition Indev 20100207-1101|Indev 20100207-1101]]||{{VH label|archived}}
+|-
+|[[Java Edition Indev 20100207-1057|Indev 20100207-1057]]||{{VH label|public proof}}
+|-
+|[[Java Edition Indev 20100206-2103|Indev 20100206-2103]]||{{VH label|archived}}
+|-
+|[[Java Edition Indev 20100206-2034|Indev 20100206-2034]]||{{VH label|image proof}}
+|-
+|rowspan=58|[[Java Edition Indev 0.31|0.31]]<br>([[Java Edition guides/Indev 0.31 releases|Guide]])
+|[[Java Edition Indev 0.31 20100206-1437|Indev 0.31 20100206-1437]]||{{VH label|image proof}}
+|-
+|[[Java Edition Indev 0.31 20100205-2241|Indev 0.31 20100205-2241]]||{{VH label|image proof}}
+|-
+|[[Java Edition Indev 0.31 20100205-1558|Indev 0.31 20100205-1558]]||{{VH label|image proof}}
+|-
+|[[Java Edition Indev 0.31 20100204-2153|Indev 0.31 20100204-2153]]||{{VH label|image proof}}
+|-
+|[[Java Edition Indev 0.31 20100204-2027|Indev 0.31 20100204-2027]]||{{VH label|public proof}}
+|-
+|[[Java Edition Indev 0.31 20100204-1541|Indev 0.31 20100204-1541]]||{{VH label|image proof}}
+|-
+|[[Java Edition Indev 0.31 20100202|Indev 0.31 20100202]]||{{VH label|reupload}}
+|-
+|[[Java Edition Indev 0.31 20100201-2227|Indev 0.31 20100201-2227]]||{{VH label|archived}}
+|-
+|[[Java Edition Indev 0.31 20100201-0038|Indev 0.31 20100201-0038]]||{{VH label|public proof}}
+|-
+|[[Java Edition Indev 0.31 20100201-0025|Indev 0.31 20100201-0025]]||{{VH label|archived}}
+|-
+|[[Java Edition Indev 0.31 20100131-2244|Indev 0.31 20100131-2244]]||{{VH label|archived}}
+|-
+|[[Java Edition Indev 0.31 20100131-2241|Indev 0.31 20100131-2241]]||{{VH label|irc proof}}
+|-
+|[[Java Edition Indev 0.31 20100131-2156|Indev 0.31 20100131-2156]]||{{VH label|public proof}}
+|-
+|[[Java Edition Indev 0.31 20100130|Indev 0.31 20100130]]||{{VH label|archived}}
+|-
+|[[Java Edition Indev 0.31 20100129-2332|Indev 0.31 20100129-2332]]||{{VH label|image proof}}
+|-
+|[[Java Edition Indev 0.31 20100129-2209|Indev 0.31 20100129-2209]]||{{VH label|image proof}}
+|-
+|[[Java Edition Indev 0.31 20100129-2158|Indev 0.31 20100129-2158]]||{{VH label|irc proof}}
+|-
+|[[Java Edition Indev 0.31 20100129-2138|Indev 0.31 20100129-2138]]||{{VH label|irc proof}}
+|-
+|[[Java Edition Indev 0.31 20100129-2134|Indev 0.31 20100129-2134]]||{{VH label|irc proof}}
+|-
+|[[Java Edition Indev 0.31 20100129-2129|Indev 0.31 20100129-2129]]||{{VH label|irc proof}}
+|-
+|[[Java Edition Indev 0.31 20100129-1452|Indev 0.31 20100129-1452]]||{{VH label|archived}}
+|-
+|[[Java Edition Indev 0.31 20100129-1447|Indev 0.31 20100129-1447]]||{{VH label|irc proof}}
+|-
+|[[Java Edition Indev 0.31 20100128-2304|Indev 0.31 20100128-2304]]||{{VH label|archived}}
+|-
+|[[Java Edition Indev 0.31 20100128-2200|Indev 0.31 20100128-2200]]||{{VH label|public proof}}
+|-
+|[[Java Edition Indev 0.31 20100125|Indev 0.31 20100125]]||{{VH label|archived}}
+|-
+|[[Java Edition Indev 0.31 20100124-2310|Indev 0.31 20100124-2310]]||{{VH label|archived}}
+|-
+|[[Java Edition Indev 0.31 20100124-2134|Indev 0.31 20100124-2134]]||{{VH label|image proof}}
+|-
+|[[Java Edition Indev 0.31 20100124-2119|Indev 0.31 20100124-2119]]||{{VH label|public proof}}
+|-
+|[[Java Edition Indev 0.31 20100122-2251|Indev 0.31 20100122-2251]]||{{VH label|image proof}}
+|-
+|[[Java Edition Indev 0.31 20100122-1708|Indev 0.31 20100122-1708]]||{{VH label|image proof}}
+|-
+|[[Java Edition Indev 0.31 20100114|Indev 0.31 20100114]]||{{VH label|image proof}}
+|-
+|[[Java Edition Indev 0.31 20100113-2243|Indev 0.31 20100113-2243]]||{{VH label|irc proof}}
+|-
+|[[Java Edition Indev 0.31 20100113-2015 (Creative)|Indev 0.31 20100113-2015 (Creative)]]||{{VH label|image proof}}
+|-
+|[[Java Edition Indev 0.31 20100113-2015|Indev 0.31 20100113-2015]]||{{VH label|image proof}}
+|-
+|[[Java Edition Indev 0.31 20100112-1949|Indev 0.31 20100112-1949]]||{{VH label|image proof}}
+|-
+|[[Java Edition Indev 0.31 20100112-0826|Indev 0.31 20100112-0826]]||{{VH label|public proof}}
+|-
+|[[Java Edition Indev 0.31 20100111-2210|Indev 0.31 20100111-2210]]||{{VH label|image proof}}
+|-
+|[[Java Edition Indev 0.31 20100111-2207|Indev 0.31 20100111-2207]]||{{VH label|irc proof}}
+|-
+|[[Java Edition Indev 0.31 20100110|Indev 0.31 20100110]]||{{VH label|archived}}
+|-
+|[[Java Edition Indev 0.31 20100109-2000|Indev 0.31 20100109-2000]]||{{VH label|image proof}}
+|-
+|[[Java Edition Indev 0.31 20100109-1939|Indev 0.31 20100109-1939]]||{{VH label|image proof}}
+|-
+|[[Java Edition Indev 0.31 20100107-2010|Indev 0.31 20100107-2010]]||{{VH label|image proof}}
+|-
+|[[Java Edition Indev 0.31 20100107-1947|Indev 0.31 20100107-1947]]||{{VH label|irc proof}}
+|-
+|[[Java Edition Indev 0.31 20100107-1851|Indev 0.31 20100107-1851]]||{{VH label|image proof}}
+|-
+|[[Java Edition Indev 0.31 20100106-2220|Indev 0.31 20100106-2220]]||{{VH label|image proof}}
+|-
+|[[Java Edition Indev 0.31 20100106-2158|Indev 0.31 20100106-2158]]||{{VH label|image proof}}
+|-
+|[[Java Edition Indev 0.31 20100106-1655|Indev 0.31 20100106-1655]]||{{VH label|irc proof}}
+|-
+|[[Java Edition Indev 0.31 20100104-2258|Indev 0.31 20100104-2258]]||{{VH label|archived}}
+|-
+|[[Java Edition Indev 0.31 20100104-2154|Indev 0.31 20100104-2154]]||{{VH label|irc proof}}
+|-
+|[[Java Edition Indev 0.31 20091231-2255|Indev 0.31 20091231-2255]]||{{VH label|archived}}
+|-
+|[[Java Edition Indev 0.31 20091231-2147|Indev 0.31 20091231-2147]]||{{VH label|irc proof}}
+|-
+|[[Java Edition Indev 0.31 20091231-2033|Indev 0.31 20091231-2033]]||{{VH label|image proof}}
+|-
+|[[Java Edition Indev 0.31 20091231-2013|Indev 0.31 20091231-2013]]||{{VH label|irc proof}}
+|-
+|[[Java Edition Indev 0.31 20091231-2004|Indev 0.31 20091231-2004]]||{{VH label|irc proof}}
+|-
+|[[Java Edition Indev 0.31 20091231-1856|Indev 0.31 20091231-1856]]||{{VH label|irc proof}}
+|-
+|[[Java Edition Indev 0.31 20091223-1459|Indev 0.31 20091223-1459]]||{{VH label|archived}}
+|-
+|[[Java Edition Indev 0.31 20091223-0040|Indev 0.31 20091223-0040]]||{{VH label|image proof}}
+|}
+
+== Classic ==
+{|class="wikitable" data-description="Color code keys" align="right" aria-hidden="true"
+|+Key
+|-
+|{{VH label|launcher}}||{{VH label|launcher|desc=y}}
+|-
+|{{VH label|archived}}||{{VH label|archived|desc=y}}
+|-
+|{{VH label|reupload}}||{{VH label|reupload|desc=y}}
+|-
+|{{VH label|edited}}||{{VH label|edited|desc=y}}
+|-
+|{{VH label|image proof}}||{{VH label|image proof|desc=y}}
+|-
+|{{VH label|public proof}}||{{VH label|public proof|desc=y}}
+|-
+|{{VH label|changelog proof}}||{{VH label|changelog proof|desc=y}}
+|-
+|{{VH label|irc proof}}||{{VH label|irc proof|desc=y}}
+|-
+|{{VH label|none}}||{{VH label|none|desc=y}}
+|}{{main|Java Edition Classic|Java Edition guides/Classic releases}}
+[[Java Edition Classic|Classic]] was the first long development phase of the game, in which it was constantly improved and updated over several months. It occurred between May 16 and December 23, 2009. The original game mode was [[Creative]], but on September 1, 2009 development began for [[Survival]] mode under the name [[Survival Test]].
+
+=== Late Classic ===
+{{main|Java Edition Late Classic}}
+{{collapse
+|title='''Block and item additions'''
+|head=1}}
+{{Additions table
+|Obsidian
+|title=Late Classic}}
+{{collapse
+|tail=1}}
+{|class="wikitable" data-description="Versions of late Classic"
+!scope=col|Client version
+!State
+!scope=col|Release date
+!scope=col|Server version
+!State
+|-
+|rowspan=3 |[[Java Edition Classic 0.30|0.30]]
+|style="background-color:#C6EFCD" rowspan=3 |[[File:Checkmark U2713.svg|10px|link=]]
+|rowspan=3 |
+November 10, 2009<br>(Launcher version:<br> July 31, 2011)
+|[[Java Edition Classic server 1.10.1|1.10.1]]
+|{{VH label|archived}}
+|-
+|[[Java Edition Classic server 1.10|1.10]]
+|{{VH label|edited}}
+|-
+|rowspan=4|[[Java Edition Classic server 1.9.1|1.9.1]]
+|rowspan=4{{VH label|archived}}
+|-
+|[[Java Edition Classic 0.29_02|0.29_02]]||{{VH label|archived}}
+|October 30, 2009
+|-
+|[[Java Edition Classic 0.29_01|0.29_01]]||{{VH label|archived}}
+|rowspan=2|October 29, 2009
+|-
+|[[Java Edition Classic 0.29|0.29]]||{{VH label|archived}}
+|-
+|[[Java Edition Classic 0.28_01|0.28_01]]||{{VH label|archived}}
+|rowspan=2|October 27, 2009
+|rowspan=2|[[Java Edition Classic server 1.9|1.9]]
+|rowspan=2{{VH label|archived}}
+|-
+|[[Java Edition Classic 0.28|0.28]]||{{VH label|image proof}}
+|}
+
+=== Survival Test ===
+{{main|Java Edition Survival Test}}{{collapse
+|title='''Block and item additions'''
+|head=1}}
+{{Additions table
+|Smooth Stone Slab
+|Block of Iron
+|TNT
+|Mossy Cobblestone
+|Bricks
+|Bookshelf
+|title=Survival Test}}
+{{collapse
+|tail=1}}
+{|class="wikitable" data-description="Survival Test updates"
+!Version
+!State
+!Release date
+|-
+|[[Java Edition Classic 0.30|0.30]] <ref group=note>This version was released at the end of the Late Classic Creative period.</ref>
+|style="background-color:#C6EFCD" |[[File:Checkmark U2713.svg|10px|link=]]
+|November 10, 2009
+|-
+|[[Java Edition Classic 0.27 SURVIVAL TEST|0.27 SURVIVAL TEST]]||{{VH label|archived}}
+|rowspan=2|October 24, 2009
+|-
+|[[Java Edition Classic 0.26 SURVIVAL TEST|0.26 SURVIVAL TEST]]||{{VH label|image proof}}
+|-
+|[[Java Edition Classic 0.25 05 SURVIVAL TEST|0.25_05 SURVIVAL TEST]]||{{VH label|archived}}
+|rowspan=5|September 3, 2009
+|-
+|[[Java Edition Classic 0.25 03 SURVIVAL TEST|0.25 SURVIVAL TEST 4]]||{{VH label|image proof}}
+|-
+|[[Java Edition Classic 0.25 02 SURVIVAL TEST|0.25 SURVIVAL TEST 3]]||{{VH label|irc proof}}
+|-
+|[[Java Edition Classic 0.25 01 SURVIVAL TEST|0.25 SURVIVAL TEST 2]]||{{VH label|irc proof}}
+|-
+|[[Java Edition Classic 0.25 SURVIVAL TEST|0.25 SURVIVAL TEST]]||{{VH label|irc proof}}
+|-
+|[[Java Edition Classic 0.24 SURVIVAL TEST 03|0.24_SURVIVAL_TEST_03]]||{{VH label|archived}}
+|rowspan=4|September 1, 2009
+|-
+|[[Java Edition Classic 0.24 SURVIVAL TEST 02|0.24_SURVIVAL_TEST_02]]||{{VH label|image proof}}
+|-
+|[[Java Edition Classic 0.24 SURVIVAL TEST 01|0.24_SURVIVAL_TEST_01]]||{{VH label|image proof}}
+|-
+|[[Java Edition Classic 0.24 SURVIVAL TEST|0.24_SURVIVAL_TEST]]||{{VH label|image proof}}
+|}
+
+=== Middle Classic ===
+{{main|Java Edition Middle Classic}}{{collapse
+|title='''Block and item additions'''
+|head=1}}
+{{Additions table
+|Sponge
+|Glass
+|White Cloth
+|Light Gray Cloth
+|Dark Gray Cloth
+|Red Cloth
+|Orange Cloth
+|Yellow Cloth
+|Chartreuse Cloth
+|Green Cloth
+|Spring Green Cloth
+|Cyan Cloth
+|Capri Cloth
+|Ultramarine Cloth
+|Violet Cloth
+|Purple Cloth
+|Magenta Cloth
+|Rose Cloth
+|Block of Gold
+|Dandelion
+|Rose
+|Red Mushroom
+|Brown Mushroom
+|title=Middle Classic}}
+{{collapse
+|tail=1}}
+{|class="wikitable" data-description="Middle Classic updates"
+!scope=col|Client version
+!State
+!scope=col|Release date
+!scope=col|Server version
+!State
+|-
+|[[Java Edition Classic 0.0.23a 01|0.0.23a_01]]||{{VH label|archived}}
+|rowspan=2|July 11, 2009
+|rowspan=11|[[Java Edition Classic server 1.8.2|1.8.2]]
+|rowspan=11{{VH label|archived}}
+|-
+|[[Java Edition Classic 0.0.23a|0.0.23a]]||{{VH label|public proof}}
+|-
+|[[Java Edition Classic 0.0.22a_05|0.0.22a_05]]||{{VH label|archived}}
+|rowspan=6|June 29, 2009
+|-
+|[[Java Edition Classic 0.0.22a 04|0.0.22a_04]]||{{VH label|image proof}}
+|-
+|[[Java Edition Classic 0.0.22a 03|0.0.22a_03]]||{{VH label|image proof}}
+|-
+|[[Java Edition Classic 0.0.22a 02|0.0.22a_02]]||{{VH label|irc proof}}
+|-
+|[[Java Edition Classic 0.0.22a 01|0.0.22a_01]]||{{VH label|irc proof}}
+|-
+|[[Java Edition Classic 0.0.22a|0.0.22a]]||{{VH label|irc proof}}
+|-
+|[[Java Edition Classic 0.0.21a_01|0.0.21a_01]]||{{VH label|image proof}}
+|June 23, 2009
+|-
+|[[Java Edition Classic 0.0.21a|0.0.21a]]||{{VH label|reupload}}
+|June 22, 2009
+|-
+|[[Java Edition Classic 0.0.20a_02|0.0.20a_02]]||{{VH label|archived}}
+|rowspan=7|June 20, 2009
+|-
+|[[Java Edition Classic 0.0.20a_01|0.0.20a_01]]||{{VH label|archived}}
+|[[Java Edition Classic server 1.8.1|1.8.1]]||{{VH label|changelog proof}}
+|-
+|[[Java Edition Classic 0.0.20a|0.0.20a]]||{{VH label|image proof}}
+|[[Java Edition Classic server 1.8|1.8]]||{{VH label|changelog proof}}
+|-
+|[[Java Edition Classic 0.0.19a_06|0.0.19a_06]]||{{VH label|reupload}}
+|[[Java Edition Classic server 1.7|1.7]]||{{VH label|changelog proof}}
+|-
+|[[Java Edition Classic 0.0.19a_05|0.0.19a_05]]||{{VH label|irc proof}}
+|rowspan=3|[[Java Edition Classic server 1.6|1.6]]
+|rowspan=3{{VH label|archived}}
+|-
+|[[Java Edition Classic 0.0.19a_04|0.0.19a_04]]||{{VH label|archived}}
+|-
+|[[Java Edition Classic 0.0.19a_03|0.0.19a_03]]||{{VH label|image proof}}
+|-
+|[[Java Edition Classic 0.0.19a_02|0.0.19a_02]]||{{VH label|image proof}}
+|rowspan=3|June 19, 2009
+|rowspan=3|[[Java Edition Classic server 1.5|1.5]]
+|rowspan=3{{VH label|changelog proof}}
+|-
+|[[Java Edition Classic 0.0.19a_01|0.0.19a_01]]||{{VH label|none}}
+|-
+|[[Java Edition Classic 0.0.19a|0.0.19a]]||{{VH label|image proof}}
+|-
+|[[Java Edition Classic 0.0.18a_02|0.0.18a_02]]||{{VH label|archived}}||June 14, 2009
+|[[Java Edition Classic server 1.4.1|1.4.1]]||{{VH label|archived}}
+|-
+|[[Java Edition Classic 0.0.18a_01|0.0.18a_01]]||{{VH label|image proof}}
+|rowspan=2|June 13, 2009
+|rowspan=2|[[Java Edition Classic server 1.4|1.4]]
+|rowspan=2{{VH label|archived}}
+|-
+|[[Java Edition Classic 0.0.18a|0.0.18a]]||{{VH label|irc proof}}
+|-
+|[[Java Edition Classic 0.0.17a|0.0.17a]]||{{VH label|archived}}
+|June 10, 2009
+|[[Java Edition Classic server 1.3|1.3]]||{{VH label|archived}}
+|}
+
+=== Multiplayer Test ===
+{{main|Java Edition Multiplayer Test}}
+{|class="wikitable" data-description="Multiplayer Test updates"
+!scope=col|Client version
+!State
+!scope=col|Release date
+!scope=col|Server version
+!State
+|-
+|[[Java Edition Classic 0.0.16a_02|0.0.16a_02]]||{{VH label|reupload}}
+|rowspan=3|June 7, 2009
+|[[Java Edition Classic server 1.2|1.2]]||{{VH label|archived}}
+|-
+|[[Java Edition Classic 0.0.16a_01|0.0.16a_01]]||{{VH label|image proof}}
+|[[Java Edition Classic server 1.1|1.1]]||{{VH label|changelog proof}}
+|-
+|[[Java Edition Classic 0.0.16a|0.0.16a]]||{{VH label|public proof}}
+|[[Java Edition Classic server 1.0|1.0]]||{{VH label|changelog proof}}
+|-
+|[[Java Edition Classic 0.0.15a_03|0.0.15a_03]]||{{VH label|none}}
+|rowspan=6|June 4, 2009
+|rowspan=11|N/A
+|rowspan=11|–
+|-
+|[[Java Edition Classic 0.0.15a_02|0.0.15a_02]]||{{VH label|image proof}}
+|-
+|[[Java Edition Classic 0.0.15a_01|0.0.15a_01]]||{{VH label|none}}
+|-
+|[[Java Edition Classic 0.0.15a (Multiplayer Test 8)|0.0.15a (Multiplayer Test 8)]]||{{VH label|irc proof}}
+|-
+|[[Java Edition Classic 0.0.15a (Multiplayer Test 7)|0.0.15a (Multiplayer Test 7)]]||{{VH label|irc proof}}
+|-
+|[[Java Edition Classic 0.0.15a (Multiplayer Test 6)|0.0.15a (Multiplayer Test 6)]]||{{VH label|irc proof}}
+|-
+|[[Java Edition Classic 0.0.15a (Multiplayer Test 5)|0.0.15a (Multiplayer Test 5)]]||{{VH label|image proof}}
+|rowspan=4|June 3, 2009
+|-
+|[[Java Edition Classic 0.0.15a (Multiplayer Test 4)|0.0.15a (Multiplayer Test 4)]]||{{VH label|irc proof}}
+|-
+|[[Java Edition Classic 0.0.15a (Multiplayer Test 3)|0.0.15a (Multiplayer Test 3)]]||{{VH label|irc proof}}
+|-
+|[[Java Edition Classic 0.0.15a (Multiplayer Test 2)|0.0.15a (Multiplayer Test 2)]]||{{VH label|irc proof}}
+|-
+|[[Java Edition Classic 0.0.15a (Multiplayer Test 1)|0.0.15a (Multiplayer Test 1)]]||{{VH label|archived}}
+|May 31, 2009
+|}
+
+=== Early Classic ===
+{{main|Java Edition Early Classic}}{{collapse
+|title='''Block and item additions'''
+|head=1}}
+{{Additions table
+|Bedrock
+|Water
+|Lava
+|Sand
+|Gravel
+|Coal Ore
+|Iron Ore
+|Gold Ore
+|Oak Log
+|Oak Leaves
+|title=Early Classic}}
+{{collapse
+|tail=1}}
+{|class="wikitable" data-description="Prior updates"
+!Version!!State!!Release date
+|-
+|[[Java Edition Classic 0.0.14a_08|0.0.14a_08]]||{{VH label|archived}}
+|rowspan="5"|May 28, 2009
+|-
+| [[Java Edition Classic 0.0.14a_07|0.0.14a_07]]||{{VH label|image proof}}
+|-
+|[[Java Edition Classic 0.0.14a_06|0.0.14a_06]]||{{VH label|irc proof}}
+|-
+|[[Java Edition Classic 0.0.14a_05|0.0.14a_05]]||{{VH label|irc proof}}
+|-
+|[[Java Edition Classic 0.0.14a_04|0.0.14a_04]]||{{VH label|public proof}}
+|-
+|[[Java Edition Classic 0.0.14a_03|0.0.14a_03]]||{{VH label|image proof}}
+|rowspan="3"|May 27, 2009
+|-
+|[[Java Edition Classic 0.0.14a_01|0.0.14a_01]]||{{VH label|irc proof}}
+|-
+|[[Java Edition Classic 0.0.14a|0.0.14a]]||{{VH label|public proof}}
+|-
+|[[Java Edition Classic 0.0.13a_03|0.0.13a_03]]||{{VH label|launcher}}
+|
+*May 22, 2009
+*August 6, 2013<ref group="note">Recompilation date; the launcher version of 0.0.13a_03 has a 2013 compilation date. It has identical gameplay to 0.0.13a, but the files are different.</ref>
+|-
+|[[Java Edition Classic 0.0.13a|0.0.13a]]||{{VH label|image proof}}
+|
+*May 22, 2009
+*August 6, 2013<ref group="note">Recompilation date; the launcher version of 0.0.13a is an early development build of the actually released version of 0.0.13a.</ref>
+|-
+|[[Java Edition Classic 0.0.12a_03|0.0.12a_03]]||{{VH label|reupload}}
+|
+*May 19, 2009
+*May 20, 2009{{note|Reuploaded on May 20, 2009, at 00:18 UTC for unknown reasons}}
+|-
+|[[Java Edition Classic 0.0.12a_02|0.0.12a_02]]||{{VH label|public proof}}
+|rowspan="3"|May 19, 2009
+|-
+|[[Java Edition Classic 0.0.12a_01|0.0.12a_01]]||{{VH label|image proof}}
+|-
+|[[Java Edition Classic 0.0.12a|0.0.12a]]||{{VH label|public proof}}
+|-
+|[[Java Edition Classic 0.0.11a|0.0.11a]]||{{VH label|image proof}}
+|
+*May 17, 2009
+*August 6, 2013<ref group="note">Recompilation date: the launcher version is different compared to the original release but gameplay is unchanged.</ref>
+|}
+
+=== Private alpha ===
+{{main|Java Edition Classic private alpha}}
+{|class="wikitable" data-description="Prior updates"
+!Version!!State!!Release date
+|-
+|[[Java Edition Classic 0.0.10a|0.0.10a]]||{{VH label|irc proof}}||May 17, 2009
+|-
+|[[Java Edition Classic 0.0.9a|0.0.9a]]||{{VH label|image proof}}
+|rowspan="7"|May 16, 2009
+|-
+||[[Java Edition Classic 0.0.3a|0.0.3a]]||{{VH label|irc proof}}
+|-
+|[[Java Edition Classic 0.0.2a|0.0.2a]]||{{VH label|irc proof}}
+|-
+|[[Java Edition Classic mc-161648|mc-161648]]||{{VH label|irc proof}}
+|-
+|[[Java Edition Classic mc-161625|mc-161625]]||{{VH label|irc proof}}
+|-
+|[[Java Edition Classic mc-161616|mc-161616]]||{{VH label|irc proof}}
+|-
+|[[Java Edition Classic mc-161607|mc-161607]]||{{VH label|irc proof}}
+|}
+
+== Pre-Classic ==
+{{Anchor|Pre-classic}}
+{|class="wikitable" data-description="Color code keys" align="right" aria-hidden="true"
+|+Key
+|-
+|{{VH label|launcher}}||{{VH label|launcher|desc=y}}
+|-
+|{{VH label|video proof}}||{{VH label|video proof|desc=y}}
+|}
+{{Main|Java Edition pre-Classic|Java Edition guides/pre-Classic releases}}{{collapse
+|title='''Block and item additions'''
+|head=1}}
+{{Additions table
+|Air
+|Stone
+|Grass Block
+|Dirt
+|Oak Planks
+|Cobblestone
+|Oak Sapling
+|title=Pre-Classic}}
+{{collapse
+|tail=1}}
+[[Java Edition pre-Classic|Pre-Classic]] was the initial development phase of ''Minecraft'', in which the very basic mechanics and elements of the game were developed, tested and improved over the period of less than a week—from May 10–16, 2009. It was not originally released to the public, but some versions are now playable via the [[launcher]].
+
+{|class="wikitable" data-description="pre-Classic versions"
+!scope="col"|Version
+!State
+!scope="col"|Release date
+|-
+|[[Java Edition pre-Classic rd-161348|rd-161348]]||{{VH label|launcher}}||May 16, 2009
+|-
+|[[Java Edition pre-Classic rd-160052|rd-160052]]||{{VH label|launcher}}
+| rowspan="2"|May 15, 2009
+|-
+|[[Java Edition pre-Classic rd-20090515|rd-20090515]]||{{VH label|video proof}}{{note|Launcher version is mislabeled.}}
+|-
+|[[Java Edition pre-Classic rd-132328|rd-132328]]||{{VH label|launcher}}
+|rowspan="3"|May 13, 2009
+|-
+|[[Java Edition pre-Classic rd-132211|rd-132211]]||{{VH label|launcher}}
+|-
+|[[Cave game tech test|rd-131655 (''Cave game tech test/demo'')]]||{{VH label|video proof}}
+|}
+
+== Notes ==
+{{notelist}}
+
+== References ==
+{{reflist}}
+
+== Navigation ==
+{{Navbox version history}}
+{{Navbox Java Edition versions|general}}
+
+[[Category:Java Edition versions| ]]
+
+[[cs:Historie Verzí]]
+[[de:Versionen]]
+[[es:Historial de versiones de Java Edition]]
+[[fr:Historique des versions Java]]
+[[hu:Java Edition verzióelőzmények]]
+[[it:Storia delle versioni della Java Edition]]
+[[ja:更新履歴/Java Edition]]
+[[ko:Java Edition 버전 역사]]
+[[lzh:爪哇版版記]]
+[[nl:Javaeditie versiegeschiedenis]]
+[[pl:Historia wersji Java Edition]]
+[[pt:Histórico de versões da Edição Java]]
+[[ru:История версий Java Edition]]
+[[th:ประวัติเวอร์ชัน]]
+[[uk:Історія версій (Java Edition)]]
+[[zh:Java版版本记录]]

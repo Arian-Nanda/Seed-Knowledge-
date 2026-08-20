@@ -1,2 +1,6 @@
-Found it - 5170 characters.
-Saved to wiki_raw/history/Version_history.txt
+Fetching 'Java Edition version history'...
+  Found it - 94700 characters.
+  Saved to wiki_raw/history/Java_Edition_version_history.txt
+Fetching 'Bedrock Edition version history'...
+  Found it - 88049 characters.
+  Saved to wiki_raw/history/Bedrock_Edition_version_history.txt

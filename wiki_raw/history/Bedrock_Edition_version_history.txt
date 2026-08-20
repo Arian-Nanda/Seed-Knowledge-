@@ -1,0 +1,4244 @@
+{{Italic title|Bedrock Edition}}
+{{about|previous updates for {{BE}}|development versions|Bedrock Edition version history/Development versions|future updates|Planned versions#Bedrock Edition|a timeline of all events related to {{MC}}|Chronology of events}}
+{{/disclaimer}}
+{{relevant category|Bedrock Edition versions}}
+[[File:Version History - Bedrock.png|thumb|All versions of ''Minecraft: [[Bedrock Edition]]'' as of April 2026.]]
+This page is a reverse chronology of all updates released for {{BE}}. ''Minecraft: Bedrock Edition'' has been in development since August 16, 2011, and was called ''[[Minecraft: Pocket Edition]]'' at the time. ''Bedrock Edition'' was in [[Bedrock Edition Alpha|Alpha]] until November 18, 2016, when the game was fully released. Upon the release of [[Bedrock Edition 1.2.0]], the "''Pocket Edition''" subtitle was dropped and the edition was unofficially (until June 7, 2022) dubbed "''Bedrock Edition''". Further updates have been released ever since, the most recent being {{v|bedrock}}.
+
+{{TOC|left|limit=3|class=toc-nonumbers|style=column-count:2;column-gap:0px}}
+{{-}}
+
+== ''Bedrock Edition'' ==
+After the release of the [[Better Together Update]] on September 20, 2017, multiplayer could now be conducted across Windows, mobile, Xbox One, and eventually Nintendo Switch (June 21, 2018), PS4 (December 10, 2019), ChromeOS (June 7, 2023), PS5 (October 22, 2024), Xbox Series X|S (June 17, 2025), and Nintendo Switch 2 (October 27, 2026). ''Minecraft: Bedrock Edition'' is still being developed today.
+<!-- Template:
+=== 27.''x'' ===
+{| class="wikitable" style="text-align:center;" data-description="27.''x'' version history"
+! rowspan="2" | Version
+! rowspan="2" | Development release
+! colspan="8" | Full release
+|-
+! {{os|and}} / {{os|chrome}}
+! {{os|ios}} / {{os|ipad}}
+! {{os|fireos}}
+! {{os|win}}
+! {{os|xb1}} / {{os|xsx}}
+! {{os|ns}}
+! {{os|ns2}}
+! {{os|ps4}}
+! {{os|ps5}}
+|-
+| [[Bedrock Edition 27.X|27.X]]
+| —
+| colspan="8" | —
+|}
+-->
+=== 26.''x'' ===
+{{collapse
+|title='''Block and item additions'''
+|head=1
+}}
+{{Additions table
+|Poplar Log
+|Stripped Poplar Log
+|Poplar Wood
+|Stripped Poplar Wood
+|Poplar Planks
+|Poplar Stairs
+|Poplar Slab
+|Poplar Sign
+|Poplar Hanging Sign
+|Poplar Button
+|Poplar Pressure Plate
+|Poplar Door
+|Poplar Fence
+|Poplar Fence Gate
+|Poplar Trapdoor
+|Poplar Shelf
+|Poplar Boat
+|Poplar Boat with Chest
+|Red Poplar Leaves
+|Orange Poplar Leaves
+|Yellow Poplar Leaves
+|Poplar Sapling
+|Red Shrub
+|Shelf Mushroom
+|White Wool Stairs
+|White Wool Slab
+|White Cushion
+|Light Gray Wool Stairs
+|Light Gray Wool Slab
+|Light Gray Cushion
+|Gray Wool Stairs
+|Gray Wool Slab
+|Gray Cushion
+|Black Wool Stairs
+|Black Wool Slab
+|Black Cushion
+|Brown Wool Stairs
+|Brown Wool Slab
+|Brown Cushion
+|Red Wool Stairs
+|Red Wool Slab
+|Red Cushion
+|Orange Wool Stairs
+|Orange Wool Slab
+|Orange Cushion
+|Yellow Wool Stairs
+|Yellow Wool Slab
+|Yellow Cushion
+|Lime Wool Stairs
+|Lime Wool Slab
+|Lime Cushion
+|Green Wool Stairs
+|Green Wool Slab
+|Green Cushion
+|Cyan Wool Stairs
+|Cyan Wool Slab
+|Cyan Cushion
+|Light Blue Wool Stairs
+|Light Blue Wool Slab
+|Light Blue Cushion
+|Blue Wool Stairs
+|Blue Wool Slab
+|Blue Cushion
+|Purple Wool Stairs
+|Purple Wool Slab
+|Purple Cushion
+|Magenta Wool Stairs
+|Magenta Wool Slab
+|Magenta Cushion
+|Pink Wool Stairs
+|Pink Wool Slab
+|Pink Cushion
+|White Concrete Stairs
+|White Concrete Slab
+|Light Gray Concrete Stairs
+|Light Gray Concrete Slab
+|Gray Concrete Stairs
+|Gray Concrete Slab
+|Black Concrete Stairs
+|Black Concrete Slab
+|Brown Concrete Stairs
+|Brown Concrete Slab
+|Red Concrete Stairs
+|Red Concrete Slab
+|Orange Concrete Stairs
+|Orange Concrete Slab
+|Yellow Concrete Stairs
+|Yellow Concrete Slab
+|Lime Concrete Stairs
+|Lime Concrete Slab
+|Green Concrete Stairs
+|Green Concrete Slab
+|Cyan Concrete Stairs
+|Cyan Concrete Slab
+|Light Blue Concrete Stairs
+|Light Blue Concrete Slab
+|Blue Concrete Stairs
+|Blue Concrete Slab
+|Purple Concrete Stairs
+|Purple Concrete Slab
+|Magenta Concrete Stairs
+|Magenta Concrete Slab
+|Pink Concrete Stairs
+|Pink Concrete Slab
+|Straw Bed BE
+|Buried Ancient City Map
+|Buried Mineshaft Map
+|Desert Pyramid Map
+|Warm Ocean Ruins Map
+|Bamboo Camp Map
+|Birch Forest Camp Map
+|Cherry Grove Camp Map
+|Dappled Forest Camp Map
+|Flower Forest Camp Map
+|Pale Garden Camp Map
+|Swamp Camp Map
+|Windswept Forest Camp Map
+|title=26.50}}
+{{Additions table
+|Cinnabar
+|Cinnabar Slab
+|Cinnabar Stairs
+|Cinnabar Wall
+|Polished Cinnabar
+|Polished Cinnabar Slab
+|Polished Cinnabar Stairs
+|Polished Cinnabar Wall
+|Cinnabar Bricks
+|Cinnabar Brick Slab
+|Cinnabar Brick Stairs
+|Cinnabar Brick Wall
+|Chiseled Cinnabar
+|Potent Sulfur
+|Sulfur
+|Sulfur Slab
+|Sulfur Stairs
+|Sulfur Wall
+|Polished Sulfur
+|Polished Sulfur Slab
+|Polished Sulfur Stairs
+|Polished Sulfur Wall
+|Sulfur Bricks
+|Sulfur Brick Slab
+|Sulfur Brick Stairs
+|Sulfur Brick Wall
+|Chiseled Sulfur
+|Sulfur Spike
+|Bucket of Sulfur Cube
+|Sulfur Cube Spawn Egg
+|Music Disc Bounce
+|title=26.30}}
+{{Additions table
+|Golden Dandelion
+|title=26.10}}
+{{collapse
+|tail=1
+}}
+{| class="wikitable" style="text-align:center;" data-description="26.''x'' version history"
+! rowspan="2" | Version
+! rowspan="2" | Development release
+! colspan="10" | Full release
+|-
+! {{os|and}}
+! {{os|chrome}}
+! {{os|ios}} / {{os|ipad}}
+! {{os|fireos}}
+! {{os|win}}
+! {{os|xb1}} / {{os|xsx}}
+! {{os|ns}}
+! {{os|ns2}}
+! {{os|ps4}}
+! {{os|ps5}}
+|-
+|'''[[Bedrock Edition 26.50|26.50]]'''<br>([[Third Drop 2026]])<br>([[Bedrock Edition guides/Third Drop 2026|Guide]])
+|July 21, 2026
+| colspan="7" |Upcoming Q3 2026
+| rowspan="22" |—
+| colspan="2" |Upcoming Q3 2026
+|-
+|[[Bedrock Edition 26.44|26.44]]
+| rowspan="2" |—
+| colspan="6" |August 14, 2026
+|August 18, 2026
+| colspan="2" |August 14, 2026
+|-
+|[[Bedrock Edition 26.41|26.41]]
+| colspan="4" |—
+|August 7, 2026
+|—
+|August 7, 2026
+| colspan="2" |—
+|-
+|[[Bedrock Edition 26.40|26.40]]
+|June 2, 2026
+| colspan="7" |August 4, 2026
+| colspan="2" |August 4, 2026
+|-
+|[[Bedrock Edition 26.35|26.35]]
+| rowspan="5" |—
+| colspan="6" rowspan="2" |—
+|July 28, 2026
+| colspan="2" |—
+|-
+|[[Bedrock Edition 26.34|26.34]]
+|July 23, 2026
+| colspan="2" |July 23, 2026
+|-
+|[[Bedrock Edition 26.33|26.33]]
+| colspan="6" |July 9, 2026
+|July 10, 2026
+|July 10, 2026
+|July 9, 2026
+|-
+|[[Bedrock Edition 26.32|26.32]]
+| colspan="6" |June 25, 2026
+|June 27, 2026
+| colspan="2" |June 25, 2026
+|-
+|[[Bedrock Edition 26.31|26.31]]
+| colspan="3" |June 19, 2026
+|June 21, 2026
+| colspan="2" |June 19, 2026
+|June 25, 2026
+| colspan="2" |June 19, 2026
+|-
+|'''[[Bedrock Edition 26.30|26.30]]'''<br>([[Chaos Cubed]])<br>([[Bedrock Edition guides/Chaos Cubed|Guide]])
+|April 21, 2026
+| colspan="7" |June 16, 2026
+| colspan="2" |June 16, 2026
+|-
+|[[Bedrock Edition 26.23|26.23]]
+| rowspan="3" |—
+| rowspan="2" |May 21, 2026
+| colspan="6" rowspan="2" |—
+| colspan="2" rowspan="2" |—
+|-
+|[[Bedrock Edition 26.22|26.22]]
+|-
+|[[Bedrock Edition 26.21|26.21]]
+| colspan="6" |May 14, 2026
+|May 18, 2026
+| colspan="2" |May 14, 2026
+|-
+|[[Bedrock Edition 26.20|26.20]]
+|March 10, 2026
+| colspan="7" |May 5, 2026
+| colspan="2" |May 5, 2026
+|-
+|[[Bedrock Edition 26.13|26.13]]
+| rowspan="3" |—
+| colspan="2" |April 7, 2026
+|April 6, 2026
+|April 9, 2026
+| colspan="3" |April 7, 2026
+| colspan="2" |April 7, 2026
+|-
+|[[Bedrock Edition 26.12|26.12]]
+| colspan="4" |March 31, 2026
+| colspan="1" |April 1, 2026
+| colspan="2" |March 31, 2026
+| colspan="2" |March 31, 2026
+|-
+|[[Bedrock Edition 26.11|26.11]]
+| colspan="4" |—
+|March 26, 2026
+| colspan="2" |—
+| colspan="2" |—
+|-
+|'''[[Bedrock Edition 26.10|26.10]]'''<br>([[Tiny Takeover]])<br>([[Bedrock Edition guides/Tiny Takeover|Guide]])
+|January 27, 2026
+| colspan="7" |March 24, 2026
+| colspan="2" |March 24, 2026
+|-
+|[[Bedrock Edition 26.3|26.3]]
+| rowspan="3" |—
+| colspan="7" |March 2, 2026
+| colspan="2" |March 2, 2026
+|-
+|[[Bedrock Edition 26.2|26.2]]
+| colspan="7" |February 25, 2026
+| colspan="2" |February 25, 2026
+|-
+|[[Bedrock Edition 26.1|26.1]]
+| colspan="2" |February 19, 2026
+|February 23, 2026
+| colspan="4" |February 19, 2026
+| colspan="2" |February 19, 2026
+|-
+|[[Bedrock Edition 26.0|26.0]]
+|December 3, 2025
+| colspan="7" |February 10, 2026
+| colspan="2" |February 10, 2026
+|}
+
+=== 1.21 ===
+{{collapse
+|title='''Block and item additions'''
+|head=1
+}}
+{{Additions table
+|Copper Nautilus Armor
+|Iron Nautilus Armor
+|Golden Nautilus Armor
+|Diamond Nautilus Armor
+|Netherite Nautilus Armor
+|Netherite Horse Armor
+|Wooden Spear
+|Stone Spear
+|Copper Spear
+|Iron Spear
+|Golden Spear
+|Diamond Spear  
+|Netherite Spear
+|Camel Husk Spawn Egg
+|Nautilus Spawn Egg
+|Parched Spawn Egg
+|Zombie Nautilus Spawn Egg
+|Enchanted Book[&7Lunge I]
+|Enchanted Book[&7Lunge II]
+|Enchanted Book[&7Lunge III]
+|title=1.21.130}}
+{{Additions table
+|Copper Chest
+|Exposed Copper Chest
+|Weathered Copper Chest
+|Oxidized Copper Chest
+|Waxed Copper Chest
+|Waxed Exposed Copper Chest
+|Waxed Weathered Copper Chest
+|Waxed Oxidized Copper Chest
+|Oak Shelf BE
+|Birch Shelf BE
+|Spruce Shelf BE
+|Jungle Shelf BE
+|Acacia Shelf BE
+|Dark Oak Shelf BE
+|Crimson Shelf BE
+|Warped Shelf BE
+|Mangrove Shelf BE
+|Bamboo Shelf BE
+|Cherry Shelf BE
+|Pale Oak Shelf BE
+|Copper Golem Statue BE
+|Exposed Copper Golem Statue BE
+|Weathered Copper Golem Statue BE
+|Oxidized Copper Golem Statue BE
+|Waxed Copper Golem Statue BE
+|Waxed Exposed Copper Golem Statue BE
+|Waxed Weathered Copper Golem Statue BE
+|Waxed Oxidized Copper Golem Statue BE
+|Exposed Lightning Rod
+|Weathered Lightning Rod
+|Oxidized Lightning Rod
+|Waxed Lightning Rod
+|Waxed Exposed Lightning Rod
+|Waxed Weathered Lightning Rod
+|Waxed Oxidized Lightning Rod
+|Copper Torch
+|Copper Bars
+|Exposed Copper Bars
+|Weathered Copper Bars
+|Oxidized Copper Bars
+|Waxed Copper Bars
+|Waxed Exposed Copper Bars
+|Waxed Weathered Copper Bars
+|Waxed Oxidized Copper Bars
+|Copper Chain
+|Exposed Copper Chain
+|Weathered Copper Chain
+|Oxidized Copper Chain
+|Waxed Copper Chain
+|Waxed Exposed Copper Chain
+|Waxed Weathered Copper Chain
+|Waxed Oxidized Copper Chain
+|Copper Lantern
+|Exposed Copper Lantern
+|Weathered Copper Lantern
+|Oxidized Copper Lantern
+|Waxed Copper Lantern
+|Waxed Exposed Copper Lantern
+|Waxed Weathered Copper Lantern
+|Waxed Oxidized Copper Lantern
+|Copper Golem Spawn Egg
+|Copper Sword
+|Copper Axe
+|Copper Pickaxe
+|Copper Shovel
+|Copper Hoe
+|Copper Helmet
+|Copper Chestplate
+|Copper Leggings
+|Copper Boots
+|Copper Horse Armor
+|Copper Nugget
+|title=1.21.111}}
+{{Additions table
+|Music Disc Lava Chicken
+|title=1.21.93}}
+{{Additions table
+|Dried Ghast
+|Happy Ghast Spawn Egg
+|White Harness
+|Light Gray Harness
+|Gray Harness
+|Black Harness
+|Brown Harness
+|Red Harness
+|Orange Harness
+|Yellow Harness
+|Green Harness
+|Lime Harness
+|Cyan Harness
+|Light Blue Harness
+|Blue Harness
+|Magenta Harness
+|Purple Harness
+|Pink Harness
+|Music Disc Tears
+|Painting Dennis
+|title=1.21.90}}
+{{Additions table
+|Leaf Litter
+|Wildflowers
+|Bush
+|Firefly Bush
+|Cactus Flower
+|Short Dry Grass
+|Tall Dry Grass
+|Blue Egg
+|Brown Egg
+|Jungle Explorer Map BE
+|Swamp Explorer Map BE
+|Desert Village Map BE
+|Plains Village Map BE
+|Savanna Village Map BE
+|Snowy Village Map BE
+|Taiga Village Map BE
+|title=1.21.70}}
+{{Additions table
+|Pale Oak Log
+|Pale Oak Wood
+|Stripped Pale Oak Log
+|Stripped Pale Oak Wood
+|Pale Oak Leaves
+|Pale Oak Sapling
+|Pale Oak Planks
+|Pale Oak Slab
+|Pale Oak Stairs
+|Pale Oak Door
+|Pale Oak Trapdoor
+|Pale Oak Button
+|Pale Oak Pressure Plate
+|Pale Oak Fence
+|Pale Oak Fence Gate
+|Pale Oak Sign
+|Pale Oak Hanging Sign
+|Pale Oak Boat
+|Pale Oak Boat with Chest
+|Pale Moss Block
+|Pale Moss Carpet
+|Pale Hanging Moss
+|Closed Eyeblossom
+|Open Eyeblossom
+|Resin Clump
+|Block of Resin
+|Resin Brick
+|Resin Bricks
+|Resin Brick Slab
+|Resin Brick Stairs
+|Resin Brick Wall
+|Chiseled Resin Bricks
+|Creaking Heart
+|Creaking Spawn Egg
+|title=1.21.50
+}}
+{{Additions table
+|Bundle
+|White Bundle
+|Light Gray Bundle
+|Gray Bundle
+|Black Bundle
+|Brown Bundle
+|Red Bundle
+|Orange Bundle
+|Yellow Bundle
+|Lime Bundle
+|Green Bundle
+|Cyan Bundle
+|Light Blue Bundle
+|Blue Bundle
+|Purple Bundle
+|Magenta Bundle
+|Pink Bundle
+|title=1.21.40
+}}
+{{Additions table
+|Copper Bulb
+|Exposed Copper Bulb
+|Weathered Copper Bulb
+|Oxidized Copper Bulb
+|Waxed Copper Bulb
+|Waxed Exposed Copper Bulb
+|Waxed Weathered Copper Bulb
+|Waxed Oxidized Copper Bulb
+|Chiseled Copper
+|Exposed Chiseled Copper
+|Weathered Chiseled Copper
+|Oxidized Chiseled Copper
+|Waxed Chiseled Copper
+|Waxed Exposed Chiseled Copper
+|Waxed Weathered Chiseled Copper
+|Waxed Oxidized Chiseled Copper
+|Copper Grate
+|Exposed Copper Grate
+|Weathered Copper Grate
+|Oxidized Copper Grate
+|Waxed Copper Grate
+|Waxed Exposed Copper Grate
+|Waxed Weathered Copper Grate
+|Waxed Oxidized Copper Grate
+|Copper Door
+|Exposed Copper Door
+|Weathered Copper Door
+|Oxidized Copper Door
+|Waxed Copper Door
+|Waxed Exposed Copper Door
+|Waxed Weathered Copper Door
+|Waxed Oxidized Copper Door
+|Copper Trapdoor
+|Exposed Copper Trapdoor
+|Weathered Copper Trapdoor
+|Oxidized Copper Trapdoor
+|Waxed Copper Trapdoor
+|Waxed Exposed Copper Trapdoor
+|Waxed Weathered Copper Trapdoor
+|Waxed Oxidized Copper Trapdoor
+|Tuff Stairs
+|Tuff Slab
+|Tuff Wall
+|Chiseled Tuff
+|Polished Tuff
+|Polished Tuff Stairs
+|Polished Tuff Slab
+|Polished Tuff Wall
+|Tuff Bricks
+|Tuff Brick Stairs
+|Tuff Brick Slab
+|Tuff Brick Wall
+|Chiseled Tuff Bricks
+|Crafter
+|Trial Spawner
+|Ominous Trial Spawner
+|Vault
+|Trial Key
+|Ominous Trial Key
+|Breeze Rod
+|Heavy Core
+|Mace
+|Wind Charge
+|Trial Explorer Map BE
+|Flow Armor Trim
+|Bolt Armor Trim
+|Flow Pottery Sherd
+|Guster Pottery Sherd
+|Scrape Pottery Sherd
+|Flow Banner Pattern
+|Guster Banner Pattern
+|Painting Baroque
+|Painting Humble
+|Painting Meditative
+|Painting Prairie Ride
+|Painting Unpacked
+|Painting Backyard
+|Painting Bouquet
+|Painting Cavebird
+|Painting Changing
+|Painting Cotán
+|Painting Endboss
+|Painting Fern
+|Painting Finding
+|Painting Lowmist
+|Painting Orb
+|Painting Owlemons
+|Painting Passage
+|Painting Pond
+|Painting Sunflowers
+|Painting Tides
+|Ominous Bottle
+|Ominous Bottle II
+|Ominous Bottle III
+|Ominous Bottle IV
+|Ominous Bottle V
+|Potion of Wind Charging
+|Potion of Weaving
+|Potion of Oozing
+|Potion of Infestation
+|Splash Potion of Wind Charging
+|Splash Potion of Weaving
+|Splash Potion of Oozing
+|Splash Potion of Infestation
+|Lingering Potion of Wind Charging
+|Lingering Potion of Weaving
+|Lingering Potion of Oozing
+|Lingering Potion of Infestation
+|Arrow of Wind Charging
+|Arrow of Weaving
+|Arrow of Oozing
+|Arrow of Infestation
+|Enchanted Book[&7Density I]
+|Enchanted Book[&7Density II]
+|Enchanted Book[&7Density III]
+|Enchanted Book[&7Density IV]
+|Enchanted Book[&7Density V]
+|Enchanted Book[&7Breach I]
+|Enchanted Book[&7Breach II]
+|Enchanted Book[&7Breach III]
+|Enchanted Book[&7Breach IV]
+|Enchanted Book[&7Wind Burst I]
+|Enchanted Book[&7Wind Burst II]
+|Enchanted Book[&7Wind Burst III]
+|Breeze Spawn Egg
+|Bogged Spawn Egg
+|Music Disc Precipice
+|Music Disc Creator
+|Music Disc Creator (Music Box)
+|title=1.21.0}}
+{{collapse
+|tail=1
+}}
+{| class="wikitable" style="text-align:center;" data-description="1.21 version history"
+! rowspan="2" | Version
+! rowspan="2" | Development release
+! colspan="9" | Full release
+|-
+! {{os|and}} / {{os|chrome}}
+! {{os|ios}} / {{os|ipad}}
+! {{os|fireos}}
+! {{os|win}}
+! {{os|xb1}}
+! {{os|xsx}}
+! {{os|ns}}{{note|group=n|Playable on Nintendo Switch 2 via backward compatibility.<ref>[https://switch-software-compatibility.nintendo.com/en-US/details/0100d71004694000 Nintendo Switch 2 Compatibility Information]</ref>}}
+! {{os|ps4}}
+! {{os|ps5}}
+|-
+|[[Bedrock Edition 1.21.132|1.21.132]]
+| rowspan="2" |—
+| colspan="8" |January 8, 2026
+|January 9, 2026
+|-
+|[[Bedrock Edition 1.21.131|1.21.131]]
+| colspan="9" |December 16, 2025
+|-
+|'''[[Bedrock Edition 1.21.130|1.21.130]]'''<br>([[Mounts of Mayhem]])<br>([[Bedrock Edition guides/Mounts of Mayhem|Guide]])
+|October 14, 2025
+| colspan="9" |December 9, 2025
+|-
+|[[Bedrock Edition 1.21.124|1.21.124]]
+| rowspan="4" |—
+| colspan="9" |November 21, 2025
+|-
+|[[Bedrock Edition 1.21.123|1.21.123]]
+| colspan="9" |November 13, 2025
+|-
+|[[Bedrock Edition 1.21.122|1.21.122]]
+| colspan="3" |—
+| colspan="1" |November 10, 2025
+| colspan="5" |—
+|-
+|[[Bedrock Edition 1.21.121|1.21.121]]
+| colspan="9" |November 4, 2025
+|-
+|[[Bedrock Edition 1.21.120|1.21.120]]
+|September 3, 2025
+| colspan="9" |October 28, 2025
+|-
+|[[Bedrock Edition 1.21.114|1.21.114]]
+| rowspan="3" |—
+| colspan="9" |October 16, 2025
+|-
+|[[Bedrock Edition 1.21.113|1.21.113]]
+| colspan="9" |October 9, 2025
+|-
+|[[Bedrock Edition 1.21.112|1.21.112]]
+| colspan="8" |—
+|October 3, 2025
+|-
+|'''[[Bedrock Edition 1.21.111|1.21.111]]'''<br>([[The Copper Age]])<br>([[Bedrock Edition guides/The Copper Age|Guide]])
+|July 22, 2025
+| colspan="9" |September 30, 2025
+|-
+|[[Bedrock Edition 1.21.101|1.21.101]]
+|—
+| colspan="4" |August 13, 2025
+| colspan="2" |August 15, 2025
+| colspan="3" |August 13, 2025
+|-
+|[[Bedrock Edition 1.21.100|1.21.100]]
+|June 10, 2025
+| colspan="9" |August 5, 2025
+|-
+|[[Bedrock Edition 1.21.94|1.21.94]]
+| rowspan="4" |—
+| colspan="9" |July 14, 2025
+|-
+|[[Bedrock Edition 1.21.93|1.21.93]]
+| colspan="9" |July 3, 2025
+|-
+|[[Bedrock Edition 1.21.92|1.21.92]]
+| colspan="2" |June 19, 2025
+|June 20, 2025
+|June 19, 2025
+| colspan="2" |June 20, 2025
+|June 24, 2025
+| colspan="2" |June 19, 2025
+|-
+|[[Bedrock Edition 1.21.91|1.21.91]]
+| colspan="4" |—
+| colspan="2" |June 18, 2025
+| colspan="3" |—
+|-
+| '''[[Bedrock Edition 1.21.90|1.21.90]]'''<br>([[Chase the Skies]])<br>([[Bedrock Edition guides/Chase the Skies|Guide]])
+| April 22, 2025
+| colspan="9" | June 17, 2025
+|-
+|[[Bedrock Edition 1.21.84|1.21.84]]
+| rowspan="3" |—
+| colspan="4" |—
+|June 5, 2025
+| rowspan="28" |—
+| colspan="3" rowspan="2" |—
+|-
+|[[Bedrock Edition 1.21.82|1.21.82]]
+| colspan="3" | —
+| May 19, 2025
+| —
+|-
+|[[Bedrock Edition 1.21.81|1.21.81]]
+|May 14, 2025
+|May 15, 2025
+| colspan="3" |May 14, 2025
+|May 16, 2025
+| colspan="2" |May 14, 2025
+|-
+| [[Bedrock Edition 1.21.80|1.21.80]]
+| March 11, 2025
+| colspan="5" | May 6, 2025
+| colspan="3" |May 6, 2025
+|-
+| [[Bedrock Edition 1.21.73|1.21.73]]
+| rowspan="3" | —
+| colspan="3" | —
+| April 11, 2025
+| —
+| colspan="3" |—
+|-
+| [[Bedrock Edition 1.21.72|1.21.72]]
+| colspan="5" | April 8, 2025
+| colspan="3" |April 8, 2025
+|-
+|[[Bedrock Edition 1.21.71|1.21.71]]
+| colspan="2" |March 28, 2025
+| March 31, 2025
+| colspan="2" |March 28, 2025
+| March 31, 2025
+| colspan="2" |March 28, 2025
+|-
+| '''[[Bedrock Edition 1.21.70|1.21.70]]'''<br>([[Spring to Life]])<br>([[Bedrock Edition guides/Spring to Life|Guide]])
+| January 30, 2025
+| colspan="5" | March 25, 2025
+| colspan="3" |March 25, 2025
+|-
+| [[Bedrock Edition 1.21.62|1.21.62]]
+| rowspan="2" |—
+| colspan="5" | February 25, 2025
+|February 26, 2025
+| colspan="2" |February 25, 2025
+|-
+| [[Bedrock Edition 1.21.61|1.21.61]]
+| colspan="5" | February 19, 2025
+|February 20, 2025
+| colspan="2" |February 19, 2025
+|-
+| [[Bedrock Edition 1.21.60|1.21.60]]
+| November 20, 2024
+| colspan="5" | February 11, 2025
+| colspan="3" |February 11, 2025
+|-
+|[[Bedrock Edition 1.21.51|1.21.51]]
+|—
+| December 9, 2024
+| colspan="2" |December 10, 2024
+| colspan="2" |December 11, 2024
+| December 16, 2024
+| colspan="2" |December 11, 2024
+|-
+| '''[[Bedrock Edition 1.21.50|1.21.50]]'''<br>([[The Garden Awakens]])<br>([[Bedrock Edition guides/The Garden Awakens|Guide]])
+| October 9, 2024
+| colspan="5" | December 3, 2024
+| colspan="3" |December 3, 2024
+|-
+|[[Bedrock Edition 1.21.44|1.21.44]]
+| rowspan="4" |—
+| colspan="5" |October 31, 2024
+|November 5, 2024
+| colspan="2" |October 31, 2024
+|-
+|[[Bedrock Edition 1.21.43|1.21.43]]
+| colspan="5" |October 28, 2024
+| colspan="1" |October 30, 2024
+| colspan="1" |October 28, 2024
+|October 25, 2024
+|-
+|[[Bedrock Edition 1.21.42|1.21.42]]
+| colspan="5" |—
+| colspan="2" |—
+|October 23, 2024
+|-
+| [[Bedrock Edition 1.21.41|1.21.41]]
+| colspan="5" rowspan="2" | October 22, 2024
+| colspan="2" rowspan="2" |October 22, 2024
+| rowspan="3" |October 22, 2024
+|-
+| '''[[Bedrock Edition 1.21.40|1.21.40]]'''<br>([[Bundles of Bravery]])<br>([[Bedrock Edition guides/Bundles of Bravery|Guide]])
+| September 4, 2024
+|-
+| [[Bedrock Edition 1.21.31|1.21.31]]
+| —
+| colspan="5" | September 30, 2024
+| colspan="2" |September 30, 2024
+|-
+| [[Bedrock Edition 1.21.30|1.21.30]]
+| August 1, 2024
+| colspan="5" | September 17, 2024
+| colspan="2" |September 17, 2024
+| rowspan="9" |—
+|-
+| [[Bedrock Edition 1.21.23|1.21.23]]
+| rowspan="3" | —
+| colspan="5" | September 3, 2024
+| colspan="2" |September 3, 2024
+|-
+| [[Bedrock Edition 1.21.22|1.21.22]]
+| August 26, 2024
+| colspan="2" | August 27, 2024
+| colspan="2" | August 26, 2024
+| colspan="2" |August 26, 2024
+|-
+| [[Bedrock Edition 1.21.21|1.21.21]]
+| colspan="3" | August 14, 2024
+| colspan="1" | August 15, 2024
+| colspan="1" | August 14, 2024
+| colspan="1" | August 20, 2024
+| August 14, 2024
+|-
+| [[Bedrock Edition 1.21.20|1.21.20]]
+| May 22, 2024
+| colspan="5" | August 13, 2024
+| colspan="2" |August 13, 2024
+|-
+|[[Bedrock Edition 1.21.3|1.21.3]]
+| rowspan="3" |—
+| colspan="5" |—
+|—
+| July 15, 2024
+|-
+|[[Bedrock Edition 1.21.2|1.21.2]]
+| colspan="5" |July 9, 2024
+| colspan="2" |July 9, 2024
+|-
+|[[Bedrock Edition 1.21.1|1.21.1]]
+| colspan="5" |June 20, 2024
+| colspan="2" |June 20, 2024
+|-
+| '''[[Bedrock Edition 1.21.0|1.21.0]]'''<br>([[Tricky Trials]])<br>([[Bedrock Edition guides/Tricky Trials|Guide]])
+| April 3, 2024
+| colspan="5" | June 13, 2024
+| colspan="2" |June 13, 2024
+|}
+
+=== 1.20 ===
+{{collapse
+|title='''Block and item additions'''
+|head=1
+}}
+{{Additions table
+|Armadillo Scute
+|Wolf Armor
+|Armadillo Spawn Egg
+|title=1.20.80}}
+{{Additions table
+|Bamboo Mosaic
+|Bamboo Mosaic Stairs
+|Bamboo Mosaic Slab
+|Block of Bamboo
+|Block of Stripped Bamboo
+|Bamboo Planks
+|Bamboo Button
+|Bamboo Door
+|Bamboo Fence
+|Bamboo Fence Gate
+|Bamboo Pressure Plate
+|Bamboo Sign
+|Bamboo Slab
+|Bamboo Stairs
+|Bamboo Trapdoor
+|Bamboo Hanging Sign
+|Oak Hanging Sign
+|Spruce Hanging Sign
+|Birch Hanging Sign
+|Jungle Hanging Sign
+|Acacia Hanging Sign
+|Dark Oak Hanging Sign
+|Mangrove Hanging Sign
+|Cherry Hanging Sign
+|Crimson Hanging Sign
+|Warped Hanging Sign
+|Cherry Sapling
+|Cherry Leaves
+|Cherry Log
+|Stripped Cherry Log
+|Cherry Wood
+|Stripped Cherry Wood
+|Cherry Planks
+|Cherry Button
+|Cherry Door
+|Cherry Fence
+|Cherry Fence Gate
+|Cherry Pressure Plate
+|Cherry Sign
+|Cherry Slab
+|Cherry Stairs
+|Cherry Trapdoor
+|Calibrated Sculk Sensor
+|Chiseled Bookshelf
+|Decorated Pot
+|Piglin Head
+|Pink Petals
+|Pitcher Plant
+|Pitcher Pod
+|Torchflower
+|Torchflower Seeds
+|Sniffer Egg
+|Suspicious Sand
+|Suspicious Gravel
+|Brush
+|Angler Pottery Sherd
+|Archer Pottery Sherd
+|Arms Up Pottery Sherd
+|Blade Pottery Sherd
+|Brewer Pottery Sherd
+|Burn Pottery Sherd
+|Danger Pottery Sherd
+|Explorer Pottery Sherd
+|Friend Pottery Sherd
+|Heart Pottery Sherd
+|Heartbreak Pottery Sherd
+|Howl Pottery Sherd
+|Miner Pottery Sherd
+|Mourner Pottery Sherd
+|Plenty Pottery Sherd
+|Prize Pottery Sherd
+|Sheaf Pottery Sherd
+|Shelter Pottery Sherd
+|Skull Pottery Sherd
+|Snort Pottery Sherd
+|Netherite Upgrade Smithing Template
+|Coast Armor Trim
+|Dune Armor Trim
+|Eye Armor Trim
+|Host Armor Trim
+|Raiser Armor Trim
+|Rib Armor Trim
+|Sentry Armor Trim
+|Shaper Armor Trim
+|Silence Armor Trim
+|Snout Armor Trim
+|Spire Armor Trim
+|Tide Armor Trim
+|Vex Armor Trim
+|Ward Armor Trim
+|Wayfinder Armor Trim
+|Wild Armor Trim
+|White Shield
+|Light Gray Shield
+|Gray Shield
+|Black Shield
+|Brown Shield
+|Red Shield
+|Orange Shield
+|Yellow Shield
+|Lime Shield
+|Green Shield
+|Cyan Shield
+|Light Blue Shield
+|Blue Shield
+|Purple Shield
+|Magenta Shield
+|Pink Shield
+|Bamboo Raft
+|Bamboo Raft with Chest
+|Cherry Boat
+|Cherry Boat with Chest
+|Camel Spawn Egg
+|Sniffer Spawn Egg
+|Music Disc Relic
+|title=1.20.0}}
+{{collapse
+|tail=1
+}}
+{| class="wikitable" style="text-align:center;" data-description="1.20 version history"
+! rowspan="2" | Version
+! rowspan="2" | Development release
+! colspan="7" | Full release
+|-
+! {{os|and}} / {{os|chrome}}
+! {{os|ios}} / {{os|ipad}}
+! {{os|fireos}}
+! {{os|win}}
+! {{os|xb1}}{{note|group=n|name=xbseries}}
+! {{os|ns}}
+! {{os|ps4}}{{note|group=n|name=ps5}}
+|-
+|[[Bedrock Edition 1.20.81|1.20.81]]
+| —
+| colspan="5" | April 29, 2024
+| colspan="1" | May 2, 2024
+| April 29, 2024
+|-
+|'''[[Bedrock Edition 1.20.80|1.20.80]]'''<br>([[Armored Paws]])<br>([[Bedrock Edition guides/Armored Paws|Guide]])
+| February 29, 2024
+| colspan="7" | April 23, 2024
+|-
+|[[Bedrock Edition 1.20.73|1.20.73]]
+| rowspan="3" | —
+| colspan="4" | April 1, 2024
+| colspan="2" | —
+| April 1, 2024
+|-
+|[[Bedrock Edition 1.20.72|1.20.72]]
+| colspan="3" | March 19, 2024
+| colspan="2" | March 22, 2024
+| colspan="2" | March 19, 2024
+|-
+|[[Bedrock Edition 1.20.71|1.20.71]]
+| colspan="7" rowspan="2" | March 12, 2024
+|-
+|[[Bedrock Edition 1.20.70|1.20.70]]
+| January 24, 2024
+|-
+|[[Bedrock Edition 1.20.62|1.20.62]]
+| —
+| colspan="7" | February 15, 2024
+|-
+|[[Bedrock Edition 1.20.60|1.20.60]]
+| November 15, 2023
+| colspan="7" | February 6, 2024
+|-
+|[[Bedrock Edition 1.20.51|1.20.51]]
+| —
+| colspan="7" | December 14, 2023
+|-
+|'''[[Bedrock Edition 1.20.50|1.20.50]]'''<br>([[Bats and Pots]])<br>([[Bedrock Edition guides/Bats and Pots|Guide]])
+| October 11, 2023
+| colspan="7" | December 5, 2023
+|-
+|[[Bedrock Edition 1.20.41|1.20.41]]
+| —
+| colspan="7" | November 2, 2023
+|-
+|[[Bedrock Edition 1.20.40|1.20.40]]
+| September 7, 2023
+| colspan="7" | October 24, 2023
+|-
+|[[Bedrock Edition 1.20.32|1.20.32]]
+| rowspan="2" | —
+| colspan="7" | October 5, 2023
+|-
+|[[Bedrock Edition 1.20.31|1.20.31]]
+| colspan="7" | September 26, 2023
+|-
+|[[Bedrock Edition 1.20.30|1.20.30]]
+| June 28, 2023
+| colspan="7" | September 19, 2023
+|-
+|[[Bedrock Edition 1.20.15|1.20.15]]
+| rowspan="4" | —
+| August 16, 2023
+| colspan="2" | August 17, 2023
+| August 18, 2023
+| August 16, 2023
+| August 18, 2023
+| August 16, 2023
+|-
+|[[Bedrock Edition 1.20.14|1.20.14]]
+| colspan="6" | —
+| August 8, 2023
+|-
+|[[Bedrock Edition 1.20.13|1.20.13]]
+| —
+| July 24, 2023
+| colspan="5" | —
+|-
+|[[Bedrock Edition 1.20.12|1.20.12]]
+| colspan="7" | July 18, 2023
+|-
+|[[Bedrock Edition 1.20.10|1.20.10]]
+| May 25, 2023
+| colspan="7" | July 11, 2023
+|-
+|[[Bedrock Edition 1.20.1|1.20.1]]
+| —
+| colspan="7" | June 21, 2023
+|-
+|'''[[Bedrock Edition 1.20.0|1.20.0]]'''<br>([[Trails & Tales]])<br>([[Bedrock Edition guides/Trails & Tales|Guide]])
+| April 12, 2023
+| colspan="7" |June 7, 2023
+|}
+
+=== 1.19 ===
+{{collapse
+|title='''Block and item additions'''
+|head=1
+}}
+{{Additions table
+|Ender Dragon Spawn Egg
+|Iron Golem Spawn Egg
+|Snow Golem Spawn Egg
+|Wither Spawn Egg
+|title=1.19.60}}
+{{Additions table
+|Mangrove Roots
+|Mangrove Propagule
+|Mangrove Leaves
+|Mangrove Log
+|Stripped Mangrove Log
+|Mangrove Wood
+|Mangrove Planks
+|Mangrove Button
+|Mangrove Door
+|Mangrove Fence
+|Mangrove Fence Gate
+|Mangrove Pressure Plate
+|Mangrove Sign
+|Mangrove Stairs
+|Mangrove Slab
+|Mangrove Trapdoor
+|Ochre Froglight
+|Pearlescent Froglight
+|Verdant Froglight
+|Frogspawn
+|Mud
+|Muddy Mangrove Roots
+|Packed Mud
+|Mud Bricks
+|Mud Brick Stairs
+|Mud Brick Slab
+|Mud Brick Wall
+|Reinforced Deepslate
+|Sculk
+|Sculk Vein
+|Sculk Sensor
+|Sculk Shrieker
+|Sculk Catalyst
+|Disc Fragment 5
+|Echo Shard
+|Recovery Compass
+|Bucket of Tadpole
+|Goat Horn[&7Ponder]
+|Goat Horn[&7Sing]
+|Goat Horn[&7Seek]
+|Goat Horn[&7Feel]
+|Goat Horn[&7Admire]
+|Goat Horn[&7Call]
+|Goat Horn[&7Yearn]
+|Goat Horn[&7Dream]
+|Mangrove Boat
+|Oak Boat with Chest
+|Spruce Boat with Chest
+|Birch Boat with Chest
+|Jungle Boat with Chest
+|Acacia Boat with Chest
+|Dark Oak Boat with Chest
+|Mangrove Boat with Chest
+|Allay Spawn Egg
+|Frog Spawn Egg
+|Tadpole Spawn Egg
+|Warden Spawn Egg
+|Music Disc 5
+|Enchanted Book[&7Swift Sneak I]
+|Enchanted Book[&7Swift Sneak II]
+|Enchanted Book[&7Swift Sneak III]
+|title=1.19.0}}
+{{collapse
+|tail=1
+}}
+{| class="wikitable" style="text-align:center;" data-description="1.19 version history"
+! rowspan="2" | Version
+! rowspan="2" | Development release
+! colspan="7" | Full release
+|-
+! {{os|and}}
+! {{os|ios}} / {{os|ipad}}
+! {{os|fireos}}
+! {{os|win}}
+! {{os|xb1}}{{note|group=n|name=xbseries}}
+! {{os|ns}}
+! {{os|ps4}}{{note|group=n|name=ps5}}
+|-
+|[[Bedrock Edition 1.19.83|1.19.83]]
+| rowspan="2" | —
+| colspan="7" | May 17, 2023
+|-
+|[[Bedrock Edition 1.19.81|1.19.81]]
+| colspan="7" | April 27, 2023
+|-
+|[[Bedrock Edition 1.19.80|1.19.80]]
+| March 8, 2023
+| colspan="7" | April 26, 2023
+|-
+|[[Bedrock Edition 1.19.73|1.19.73]]
+| rowspan="3" | —
+| colspan="7" | March 29, 2023
+|-
+|[[Bedrock Edition 1.19.72|1.19.72]]
+| colspan="6" | –
+| March 20, 2023
+|-
+|[[Bedrock Edition 1.19.71|1.19.71]]
+| colspan="5" | March 17, 2023
+| March 20, 2023
+| March 17, 2023
+|-
+|[[Bedrock Edition 1.19.70|1.19.70]]
+| January 26, 2023
+| colspan="2" | March 14, 2023
+| March 15, 2023
+| colspan="4" | March 14, 2023
+|-
+|[[Bedrock Edition 1.19.63|1.19.63]]
+| rowspan="2" | —
+| colspan="7" | February 24, 2023
+|-
+|[[Bedrock Edition 1.19.62|1.19.62]]
+| February 18, 2023
+| colspan="4" | February 16, 2023
+| February 17, 2023
+| February 16, 2023
+|-
+|[[Bedrock Edition 1.19.60|1.19.60]]
+| November 23, 2022
+| colspan="3" | February 7, 2023
+| February 8, 2023
+| colspan="3" | February 7, 2023
+|-
+|[[Bedrock Edition 1.19.51|1.19.51]]
+| —
+| colspan="5" | December 13, 2022
+| December 15, 2022
+| December 13, 2022
+|-
+|[[Bedrock Edition 1.19.50|1.19.50]]
+| October 13, 2022
+| colspan="7" | November 29, 2022
+|-
+|[[Bedrock Edition 1.19.41|1.19.41]]
+| —
+| colspan="2" | November 3, 2022
+| November 4, 2022
+| colspan="2" | November 3, 2022
+| November 7, 2022
+| November 3, 2022
+|-
+|[[Bedrock Edition 1.19.40|1.19.40]]
+| September 8, 2022
+| colspan="7" |October 25, 2022
+|-
+|[[Bedrock Edition 1.19.31|1.19.31]]
+| —
+| colspan="7" |October 4, 2022
+|-
+|[[Bedrock Edition 1.19.30|1.19.30]]
+| August 4, 2022
+| colspan="7" |September 20, 2022
+|-
+|[[Bedrock Edition 1.19.22|1.19.22]]
+| rowspan="2" | —
+| colspan="7" |September 1, 2022
+|-
+|[[Bedrock Edition 1.19.21|1.19.21]]
+| colspan="5" |August 23, 2022
+| August 25, 2022
+| August 23, 2022
+|-
+|[[Bedrock Edition 1.19.20|1.19.20]]
+| June 29, 2022
+| colspan="7" |August 9, 2022
+|-
+|[[Bedrock Edition 1.19.11|1.19.11]]
+|—
+| colspan="7" |July 26, 2022
+|-
+|[[Bedrock Edition 1.19.10|1.19.10]]
+| May 25, 2022
+| colspan="7" |July 12, 2022
+|-
+|[[Bedrock Edition 1.19.2|1.19.2]]
+|—
+| colspan="7" |June 22, 2022
+|-
+|'''[[Bedrock Edition 1.19.0|1.19.0]]'''<br>([[The Wild Update]])<br>([[Bedrock Edition guides/The Wild Update|Guide]])
+|April 6, 2022
+| colspan="7" |June 7, 2022
+|}
+
+===1.18 ===
+{{collapse
+|title='''Block and item additions'''
+|head=1}}
+{{Additions table
+|Music Disc Otherside
+|title=1.18}}
+{{collapse
+|tail=1}}
+{| class="wikitable" style="text-align:center;" data-description="1.18 version history"
+! rowspan="2" |Version
+! rowspan="2" |Development release
+! colspan="7" |Full release
+|-
+! {{os|and}}
+! {{os|ios}} / {{os|ipad}}
+! {{os|fireos}}
+! {{os|win}}
+! {{os|xb1}}{{note|group=n|name=xbseries}}
+! {{os|ns}}
+! {{os|ps4}}{{note|group=n|name=ps5}}
+|-
+|[[Bedrock Edition 1.18.33|1.18.33]]
+| rowspan="3" |—
+| colspan="5" |—
+| May 13, 2022
+| rowspan="2" |—
+|-
+|[[Bedrock Edition 1.18.32|1.18.32]]
+|May 5, 2022
+|—
+|May 6, 2022
+| colspan="2" |—
+|May 6, 2022
+|-
+|[[Bedrock Edition 1.18.31|1.18.31]]
+| colspan="5" |April 27, 2022
+|April 29, 2022
+|April 27, 2022
+|-
+|[[Bedrock Edition 1.18.30|1.18.30]]
+| January 27, 2022
+| colspan="7" |April 19, 2022
+|-
+|[[Bedrock Edition 1.18.12|1.18.12]]
+| rowspan="2" |—
+| colspan="5" |February 16, 2022
+|February 21, 2022
+|February 16, 2022
+|-
+|[[Bedrock Edition 1.18.11|1.18.11]]
+| colspan="5" |—
+|February 11, 2022
+|—
+|-
+|[[Bedrock Edition 1.18.10|1.18.10]]
+|November 18, 2021
+| colspan="7" |February 8, 2022
+|-
+|
+[[Bedrock Edition 1.18.2|1.18.2]]
+| rowspan="2" |—
+| colspan="7" |December 9, 2021
+|-
+|[[Bedrock Edition 1.18.1|1.18.1]]
+| colspan="5" |December 6, 2021
+|—
+|December 2, 2021
+|-
+|'''[[Bedrock Edition 1.18.0|1.18.0]]'''<br>([[Caves & Cliffs]]: Part&#160;II)<br>([[Bedrock Edition guides/Caves & Cliffs: Part II|Guide]])
+|October 6, 2021
+| colspan="7" |November 30, 2021
+|}
+
+===1.17 ===
+{{collapse
+|title='''Block and item additions'''
+|head=1
+}}
+{{Additions table
+|Small Amethyst Bud
+|Medium Amethyst Bud
+|Large Amethyst Bud
+|Amethyst Cluster
+|Block of Amethyst
+|Budding Amethyst
+|Azalea
+|Azalea Leaves
+|Flowering Azalea
+|Flowering Azalea Leaves
+|Block of Copper
+|Exposed Copper
+|Weathered Copper
+|Oxidized Copper
+|Waxed Block of Copper
+|Waxed Exposed Copper
+|Waxed Weathered Copper
+|Waxed Oxidized Copper
+|Cut Copper
+|Exposed Cut Copper
+|Weathered Cut Copper
+|Oxidized Cut Copper
+|Waxed Cut Copper
+|Waxed Exposed Cut Copper
+|Waxed Weathered Cut Copper
+|Waxed Oxidized Cut Copper
+|Cut Copper Slab
+|Exposed Cut Copper Slab
+|Weathered Cut Copper Slab
+|Oxidized Cut Copper Slab
+|Waxed Cut Copper Slab
+|Waxed Exposed Cut Copper Slab
+|Waxed Weathered Cut Copper Slab
+|Waxed Oxidized Cut Copper Slab
+|Cut Copper Stairs
+|Exposed Cut Copper Stairs
+|Weathered Cut Copper Stairs
+|Oxidized Cut Copper Stairs
+|Waxed Cut Copper Stairs
+|Waxed Exposed Cut Copper Stairs
+|Waxed Weathered Cut Copper Stairs
+|Waxed Oxidized Cut Copper Stairs
+|Copper Ore
+|Block of Raw Iron
+|Block of Raw Gold
+|Block of Raw Copper
+|Calcite
+|Deepslate
+|Cobbled Deepslate
+|Cobbled Deepslate Slab
+|Cobbled Deepslate Stairs
+|Cobbled Deepslate Wall
+|Polished Deepslate
+|Polished Deepslate Slab
+|Polished Deepslate Stairs
+|Polished Deepslate Wall
+|Deepslate Bricks
+|Cracked Deepslate Bricks
+|Deepslate Brick Slab
+|Deepslate Brick Stairs
+|Deepslate Brick Wall
+|Deepslate Tiles
+|Cracked Deepslate Tiles 
+|Deepslate Tile Slab
+|Deepslate Tile Stairs
+|Deepslate Tile Wall
+|Chiseled Deepslate
+|Deepslate Iron Ore
+|Deepslate Gold Ore
+|Deepslate Copper Ore
+|Deepslate Coal Ore
+|Deepslate Diamond Ore
+|Deepslate Redstone Ore
+|Deepslate Emerald Ore
+|Deepslate Lapis Lazuli Ore
+|Big Dripleaf
+|Small Dripleaf
+|Pointed Dripstone
+|Dripstone Block
+|Glow Item Frame
+|Glow Lichen
+|Hanging Roots
+|Infested Deepslate
+|Lightning Rod
+|Moss Block
+|Moss Carpet
+|Rooted Dirt
+|Powder Snow
+|Smooth Basalt
+|Spore Blossom
+|Tinted Glass
+|Tuff
+|Candle
+|White Candle
+|Light Gray Candle
+|Gray Candle
+|Black Candle
+|Brown Candle
+|Red Candle
+|Orange Candle
+|Yellow Candle
+|Lime Candle
+|Green Candle
+|Cyan Candle
+|Light Blue Candle
+|Blue Candle
+|Purple Candle
+|Magenta Candle
+|Pink Candle
+|Amethyst Shard
+|Bucket of Axolotl
+|Copper Ingot
+|Glow Berries
+|Glow Ink Sac
+|Powder Snow Bucket
+|Raw Iron
+|Raw Gold
+|Raw Copper
+|Spyglass
+|Axolotl Spawn Egg
+|Glow Squid Spawn Egg
+|Goat Spawn Egg
+|title=1.17.0}}
+{{collapse
+|tail=1
+}}
+{| class="wikitable" style="text-align:center;" data-description="1.17 version history"
+! rowspan="2" |Version
+! rowspan="2" |Development release
+! colspan="7" |Full release
+|-
+! {{os|and}}
+! {{os|ios}} / {{os|ipad}}
+! {{os|fireos}}
+! {{os|win}}
+! {{os|xb1}}{{note|group=n|name=xbseries}}
+! {{os|ns}}
+! {{os|ps4}}{{note|group=n|name=ps5}}
+|-
+|[[Bedrock Edition 1.17.41|1.17.41]]
+|—
+| colspan="2" | October 27, 2021
+| October 29, 2021
+| colspan="4" | October 27, 2021
+|-
+|[[Bedrock Edition 1.17.40|1.17.40]]
+|September 15, 2021
+| colspan="7" |October 19, 2021
+|-
+|[[Bedrock Edition 1.17.34|1.17.34]]
+| rowspan="3" |—
+| colspan="2" | October 5, 2021
+| October 7, 2021
+| colspan="4" | October 6, 2021
+|-
+|[[Bedrock Edition 1.17.33|1.17.33]]
+| colspan="2" |—
+| October 4, 2021
+| colspan="4" |—
+|-
+|[[Bedrock Edition 1.17.32|1.17.32]]
+| colspan="7" |September 30, 2021
+|-
+|[[Bedrock Edition 1.17.30|1.17.30]]
+|June 23, 2021
+| colspan="7" |September 21, 2021
+|-
+|[[Bedrock Edition 1.17.11|1.17.11]]
+|—
+| colspan="7" |August 9, 2021
+|-
+|[[Bedrock Edition 1.17.10|1.17.10]]
+| May 26, 2021
+| colspan="7" |July 13, 2021
+|-
+|
+[[Bedrock Edition 1.17.2|1.17.2]]
+| rowspan="2" |—
+| colspan="7" |June 22, 2021
+|-
+|[[Bedrock Edition 1.17.1|1.17.1]]
+| colspan="5" |— 
+|June 14, 2021
+|—
+|-
+|'''[[Bedrock Edition 1.17.0|1.17.0]]'''<br>([[Caves & Cliffs]]: Part&#160;I)<br>([[Bedrock Edition guides/Caves & Cliffs: Part I|Guide]])
+|March 25, 2021
+| colspan="7" |June 8, 2021
+|}
+
+===1.16 ===
+{{collapse
+|title='''Block and item additions'''
+|head=1
+}}
+{{Additions table
+|Piglin Brute Spawn Egg
+|title=1.16.20}}
+{{Additions table
+|Ancient Debris
+|Basalt
+|Blackstone
+|Polished Blackstone
+|Chiseled Polished Blackstone
+|Blackstone Slab
+|Blackstone Stairs
+|Blackstone Wall
+|Polished Blackstone Slab
+|Polished Blackstone Stairs
+|Polished Blackstone Wall
+|Polished Blackstone Bricks
+|Polished Blackstone Brick Slab
+|Polished Blackstone Brick Stairs
+|Polished Blackstone Brick Wall
+|Polished Blackstone Button
+|Polished Blackstone Pressure Plate
+|Block of Netherite
+|Border
+|Chain
+|Chiseled Nether Bricks
+|Cracked Nether Bricks
+|Crimson Nylium
+|Crimson Stem
+|Crimson Hyphae
+|Stripped Crimson Stem
+|Stripped Crimson Hyphae
+|Crimson Planks
+|Crimson Button
+|Crimson Door
+|Crimson Fence
+|Crimson Fence Gate
+|Crimson Pressure Plate
+|Crimson Sign
+|Crimson Slab
+|Crimson Stairs
+|Crimson Trapdoor
+|Crimson Fungus
+|Crimson Roots
+|Allow
+|Deny
+|Weeping Vines
+|Warped Nylium
+|Warped Stem
+|Warped Hyphae
+|Stripped Warped Stem
+|Stripped Warped Hyphae
+|Warped Planks
+|Warped Button
+|Warped Door
+|Warped Fence
+|Warped Fence Gate
+|Warped Pressure Plate
+|Warped Sign
+|Warped Slab
+|Warped Stairs
+|Warped Trapdoor
+|Warped Fungus
+|Warped Roots
+|Twisting Vines
+|Nether Sprouts
+|Warped Wart Block
+|Crying Obsidian BE
+|Gilded Blackstone
+|Lodestone
+|Nether Gold Ore
+|Quartz Bricks
+|Respawn Anchor
+|Shroomlight
+|Soul Soil
+|Soul Fire
+|Soul Torch
+|Soul Lantern
+|Soul Campfire
+|Target
+|Lodestone Compass
+|Netherite Scrap
+|Netherite Ingot
+|Netherite Helmet
+|Netherite Chestplate
+|Netherite Leggings
+|Netherite Boots
+|Netherite Sword
+|Netherite Axe
+|Netherite Pickaxe
+|Netherite Shovel
+|Netherite Hoe
+|Warped Fungus on a Stick
+|Enchanted Book[&7Soul Speed I]
+|Enchanted Book[&7Soul Speed II]
+|Enchanted Book[&7Soul Speed III]
+|Snout Banner Pattern
+|Piglin Spawn Egg
+|Hoglin Spawn Egg
+|Zoglin Spawn Egg
+|Strider Spawn Egg
+|Music Disc Pigstep
+|title=1.16.0}}
+{{collapse
+|tail=1
+}}
+{| class="wikitable" style="text-align:center;" data-description="1.16 version history"
+! rowspan="2" |Version
+! rowspan="2" |Development release
+! colspan="11" |Full release
+|-
+! {{os|and}}
+! {{os|ios}} / {{os|ipad}}
+! {{os|fire}}
+! {{os|firephone}}
+! {{os|w10}}
+! {{os|w10m}} Mobile
+! {{os|gearvr}}
+! {{os|firetv}}
+! {{os|xb1}}{{note|group=n|Playable on Xbox Series X{{!}}S via backward compatibility.|name=xbseries}}
+! {{os|ns}}
+! {{os|ps4}}{{note|group=n|Playable on PlayStation 5 via backward compatibility.|name=ps5}}
+|-
+|[[Bedrock Edition 1.16.221|1.16.221]]
+|—
+| colspan="3" |April 22, 2021
+| rowspan="3" |—
+|April 22, 2021
+| colspan="2" rowspan="11" |—
+| colspan="4" |April 22, 2021
+|-
+|[[Bedrock Edition 1.16.220|1.16.220]]
+|March 4, 2021
+| colspan="3" |April 6, 2021
+|April 6, 2021
+| colspan="4" |April 6, 2021
+|-
+|[[Bedrock Edition 1.16.210|1.16.210]]
+|December 2, 2020
+| colspan="3" |March 9, 2021
+|March 9, 2021
+| colspan="4" |March 9, 2021
+|-
+|[[Bedrock Edition 1.16.201|1.16.201]]
+|—
+| colspan="5" |December 15, 2020
+| colspan="4" |December 15, 2020
+|-
+|[[Bedrock Edition 1.16.200|1.16.200]]
+|October 22, 2020
+| colspan="5" |December 8, 2020
+| colspan="4" |December 8, 2020
+|-
+|[[Bedrock Edition 1.16.101|1.16.101]]
+|—
+| colspan="4" |November 23, 2020
+|—
+|November 23, 2020
+|—
+|November 24, 2020
+|—
+|-
+|[[Bedrock Edition 1.16.100|1.16.100]]
+|July 30, 2020
+| colspan="5" |November 17, 2020
+| colspan="2" |November 17, 2020
+|November 16, 2020
+|November 17, 2020
+|-
+|[[Bedrock Edition 1.16.61|1.16.61]]
+| rowspan="6" |—
+| colspan="5" rowspan="2" |—
+| colspan="3" rowspan="4" |—
+|September 25, 2020
+|-
+|[[Bedrock Edition 1.16.60|1.16.60]]
+|September 23, 2020
+|-
+|[[Bedrock Edition 1.16.50|1.16.50]]
+|—
+|September 22, 2020
+| colspan="3" |—
+|—
+|-
+|[[Bedrock Edition 1.16.42|1.16.42]]
+| colspan="5" |—
+|September 22, 2020
+|-
+|[[Bedrock Edition 1.16.40|1.16.40]]
+|September 3, 2020
+|September 4, 2020
+| colspan="5" |September 3, 2020
+|September 4, 2020
+|September 3, 2020
+|September 11, 2020
+| August 26, 2020
+|-
+|[[Bedrock Edition 1.16.21|1.16.21]]
+| colspan="9" |—
+|August 20, 2020
+|—
+|-
+|
+[[Bedrock Edition 1.16.20|1.16.20]]
+|June 25, 2020
+| colspan="11" |August 11, 2020
+|-
+|[[Bedrock Edition 1.16.10|1.16.10]]
+| rowspan="4" |—
+| colspan="2" |July 21, 2020
+| colspan="2" |—
+| colspan="3" |July 21, 2020
+| colspan="4" |—
+|-
+|[[Bedrock Edition 1.16.1.04|1.16.1.04]]
+| colspan="10" rowspan="2" |— 
+|July 16, 2020
+|-
+|[[Bedrock Edition 1.16.1.03|1.16.1.03]]
+| July 8, 2020
+|-
+|[[Bedrock Edition 1.16.1|1.16.1]]
+|June 29, 2020 
+| July 6, 2020
+| colspan="2" |June 30, 2020
+| colspan="3" |June 29, 2020 
+| July 1, 2020 
+|June 30, 2020 
+| July 3, 2020 
+|June 30, 2020
+|-
+|'''[[Bedrock Edition 1.16.0|1.16.0]]'''<br>([[Nether Update]])<br>([[Bedrock Edition guides/Nether Update|Guide]])
+|February 12, 2020
+| colspan="11" |June 23, 2020
+|}
+
+===1.14 ===
+{{collapse
+|title='''Block and item additions'''
+|head=1
+}}
+{{Additions table
+|Beehive
+|Bee Nest
+|Honey Block
+|Honeycomb Block
+|Honey Bottle
+|Honeycomb
+|Bee Spawn Egg
+|title=1.14.0}}
+{{collapse
+|tail=1
+}}
+{| class="wikitable" style="text-align:center;" data-description="1.14 version history"
+! rowspan="2" |Version
+! rowspan="2" |Development release
+! colspan="10" |Full release
+|-
+! {{os|and}}
+! {{os|ios}} / {{os|ipad}}
+! {{os|fire}} / {{os|firephone}}
+! {{os|w10}}
+! {{os|w10m}} Mobile
+! {{os|gearvr}}
+! {{os|firetv}}
+! {{os|xb1}}
+! {{os|ns}}
+! {{os|ps4}}
+|-
+|[[Bedrock Edition 1.14.60|1.14.60]]
+| rowspan="2" |—
+| colspan="10" |April 15, 2020
+|-
+|[[Bedrock Edition 1.14.41|1.14.41]]
+| colspan="9" |—
+|March 3, 2020
+|-
+|[[Bedrock Edition 1.14.30|1.14.30]]
+| January 29, 2020
+| colspan="8" |February 11, 2020
+|February 18, 2020
+|February 11, 2020
+|-
+|[[Bedrock Edition 1.14.21|1.14.21]]
+|—
+| colspan="2" |—
+| January 31, 2020
+| colspan="7" |—
+|-
+|[[Bedrock Edition 1.14.20|1.14.20]]
+|December 18, 2019
+| colspan="8" | January 28, 2020
+|February 4, 2020
+|January 28, 2020
+|-
+|[[Bedrock Edition 1.14.1|1.14.1]]
+|November 13, 2019
+| colspan="8" |December 18, 2019
+| colspan="2" |December 19, 2019
+|-
+|
+[[Bedrock Edition 1.14.0.12|1.14.0.12]]
+|—
+| colspan="9" |—
+|December 13, 2019
+|-
+|'''[[Bedrock Edition 1.14.0|1.14.0]]'''<br>([[Buzzy Bees]])<br>([[Bedrock Edition guides/Buzzy Bees|Guide]])
+| October 9, 2019
+| colspan="8" |December 10, 2019
+|December 11, 2019
+|December 10, 2019
+|}
+
+===1.13 ===
+{{collapse
+|title='''Block and item additions'''
+|head=1
+}}
+{{Additions table
+|Dead Tube Coral
+|Dead Brain Coral
+|Dead Bubble Coral
+|Dead Fire Coral
+|Dead Horn Coral
+|Wither Rose
+|Light Block
+|Structure Void BE
+|Suspicious Stew
+|Fox Spawn Egg
+|title=1.13.0}}
+{{collapse
+|tail=1
+}}
+{| class="wikitable" style="text-align:center;" data-description="1.13 version history"
+! rowspan="2" |Version
+! rowspan="2" |Development release
+! colspan="9" |Full release
+|-
+! {{os|and}}
+! {{os|ios}} / {{os|ipad}}
+! {{os|fire}} / {{os|firephone}}
+! {{os|w10}}
+! {{os|w10m}} Mobile
+! {{os|gearvr}}
+! {{os|firetv}}
+! {{os|xb1}}
+! {{os|ns}}
+|-
+|[[Bedrock Edition 1.13.3|1.13.3]]
+| rowspan="3" |—
+| colspan="1" rowspan="2" |—
+|November 20, 2019
+| colspan="7" rowspan="2" |—
+|-
+|[[Bedrock Edition 1.13.2|1.13.2]]
+|November 14, 2019
+|-
+|[[Bedrock Edition 1.13.1|1.13.1]]
+| colspan="9" |November 12, 2019
+|-
+|'''[[Bedrock Edition 1.13.0|1.13.0]]'''<br>([[Bedrock Edition guides/1.13 releases|Guide]]) 
+|June 27, 2019
+| colspan="9" |October 29, 2019
+|}
+
+===1.12 ===
+{| class="wikitable" style="text-align:center;" data-description="1.12 version history"
+! rowspan="2" |Version
+! rowspan="2" |Development release
+! colspan="10" |Full release
+|-
+! {{os|and}}
+! {{os|ios}}
+! {{os|ipad}}
+! {{os|fire}} / {{os|firephone}}
+! {{os|w10}}
+! {{os|w10m}} Mobile
+! {{os|gearvr}}
+! {{os|firetv}}
+! {{os|xb1}}
+! {{os|ns}}
+|-
+|[[Bedrock Edition 1.12.1|1.12.1]]
+|—
+|September 2, 2019
+|September 3, 2019
+|September 24, 2019
+| colspan="7" |September 3, 2019
+|-
+|'''[[Bedrock Edition 1.12.0|1.12.0]]'''<br>([[Bedrock Edition guides/1.12 releases|Guide]])
+|April 17, 2019 
+|July 10, 2019 
+| July 9, 2019
+|—
+| colspan="7" |July 9, 2019
+|}
+
+===1.11 ===
+{| class="wikitable" style="text-align:center;" data-description="1.11 version history"
+! rowspan="2" |Version
+! rowspan="2" |Development release
+! colspan="9" |Full release
+|-
+!Android
+!iOS
+! Fire & Fire Phone
+! Windows 10
+!Windows 10 Mobile 
+!Gear VR 
+!Fire TV 
+!Xbox One
+!Nintendo Switch
+|-
+|[[Bedrock Edition 1.11.4|1.11.4]]
+| rowspan="4" |—
+| colspan="9" | May 23, 2019
+|-
+|[[Bedrock Edition 1.11.3|1.11.3]]
+| colspan="8" | May 17, 2019
+| rowspan="2" |—
+|-
+|[[Bedrock Edition 1.11.2|1.11.2]]
+| colspan="7" |—
+|May 2, 2019
+|-
+|[[Bedrock Edition 1.11.1|1.11.1]]
+| colspan="8" |April 26, 2019
+|May 2, 2019
+|-
+|'''[[Bedrock Edition 1.11.0|1.11.0]]'''<br>([[Village & Pillage]])<br>([[Bedrock Edition guides/Village & Pillage|Guide]])
+|February 21, 2019
+| colspan="9" |April 23, 2019
+|}
+
+===1.10 ===
+{{collapse
+|title='''Block and item additions'''
+|head=1
+}}
+{{Additions table
+|Composter
+|Campfire
+|Jigsaw Block
+|Lectern
+|Loom
+|Stonecutter
+|Flower Charge Banner Pattern
+|Creeper Charge Banner Pattern
+|Skull Charge Banner Pattern
+|Thing Banner Pattern
+|Field Masoned Banner Pattern
+|Bordure Indented Banner Pattern
+|Ravager Spawn Egg
+|Wandering Trader Spawn Egg
+|Sweet Berries
+|Shield
+|title=1.10.0}}
+{{collapse
+|tail=1
+}}
+{| class="wikitable" style="text-align:center;" data-description="1.10 version history"
+! rowspan="2" |Version
+! rowspan="2" |Development release
+! colspan="9" |Full release
+|-
+!Android
+!iOS
+! Fire & Fire Phone
+! Windows 10
+! Windows 10 Mobile 
+!Gear VR 
+!Fire TV 
+!Xbox One
+!Nintendo Switch
+|-
+|[[Bedrock Edition 1.10.1|1.10.1]]
+|—
+| colspan="3" |—
+|March 27, 2019
+| colspan="5" |—
+|-
+|'''[[Bedrock Edition 1.10.0|1.10.0]]'''<br>([[Texture Update]])<br>([[Bedrock Edition guides/1.10 releases|Guide]])
+| January 30, 2019
+| colspan="9" |March 19, 2019
+|}
+
+===1.9 ===
+{{collapse
+|title='''Block and item additions'''
+|head=1
+}}
+{{Additions table
+|Barrel
+|Bell
+|Blast Furnace
+|Cartography Table
+|Smoker
+|Fletching Table
+|Cornflower
+|Lily of the Valley
+|Grindstone
+|Lantern
+|Spruce Sign
+|Birch Sign
+|Acacia Sign
+|Jungle Sign
+|Dark Oak Sign
+|Smithing Table
+|Smooth Stone
+|Smooth Sandstone
+|Smooth Red Sandstone
+|Smooth Quartz Block
+|Stone Slab
+|Andesite Slab
+|Polished Andesite Slab
+|Diorite Slab
+|Polished Diorite Slab
+|Granite Slab
+|Polished Granite Slab
+|Mossy Stone Brick Slab
+|Mossy Cobblestone Slab
+|Smooth Sandstone Slab
+|Smooth Red Sandstone Slab
+|Smooth Quartz Slab
+|Red Nether Brick Slab
+|End Stone Brick Slab
+|Cut Sandstone Slab
+|Cut Red Sandstone Slab
+|Stone Stairs
+|Andesite Stairs
+|Polished Andesite Stairs
+|Diorite Stairs
+|Polished Diorite Stairs
+|Granite Stairs
+|Polished Granite Stairs
+|Mossy Stone Brick Stairs
+|Mossy Cobblestone Stairs
+|Smooth Sandstone Stairs
+|Smooth Red Sandstone Stairs
+|Smooth Quartz Stairs
+|Red Nether Brick Stairs
+|End Stone Brick Stairs
+|Brick Wall
+|Andesite Wall
+|Diorite Wall
+|Granite Wall
+|Prismarine Wall
+|Stone Brick Wall
+|Mossy Stone Brick Wall
+|Sandstone Wall
+|Red Sandstone Wall
+|Nether Brick Wall
+|Red Nether Brick Wall
+|End Stone Brick Wall
+|Pillager Spawn Egg
+|title=1.9.0}}
+{{collapse
+|tail=1
+}}
+{| class="wikitable" style="text-align:center;" data-description="1.9 version history"
+! rowspan="2" |Version
+! rowspan="2" |Development release
+! colspan="9" |Full release
+|-
+!Android
+!iOS
+! Fire & Fire Phone
+! Windows 10
+! Windows 10 Mobile 
+!Gear VR 
+!Fire TV 
+!Xbox One
+!Nintendo Switch
+|-
+|'''[[Bedrock Edition 1.9.0|1.9.0]]'''<br>([[Bedrock Edition guides/1.9|Guide]])
+|November 15, 2018
+| colspan="9" |February 5, 2019
+|}
+
+===1.8 ===
+{{collapse
+|title='''Block and item additions'''
+|head=1
+}}
+{{Additions table
+|Bamboo
+|Scaffolding
+|Crossbow
+|White Dye
+|Blue Dye
+|Black Dye
+|Cat Spawn Egg
+|Panda Spawn Egg
+|Enchanted Book[&7Quick Charge I]
+|Enchanted Book[&7Quick Charge II]
+|Enchanted Book[&7Quick Charge III]
+|Enchanted Book[&7Piercing I]
+|Enchanted Book[&7Piercing II]
+|Enchanted Book[&7Piercing III]
+|Enchanted Book[&7Piercing IV]
+|Enchanted Book[&7Multishot]
+|title=1.8.0}}
+{{collapse
+|tail=1
+}}
+{| class="wikitable" style="text-align:center;" data-description="1.8 version history"
+! rowspan="2" |Version
+! rowspan="2" |Development release
+! colspan="9" |Full release
+|-
+!Android
+!iOS 
+!Fire & Fire Phone
+!Windows 10
+! Windows 10 Mobile 
+!Gear VR 
+!Fire TV 
+!Xbox One
+!Nintendo Switch
+|-
+|[[Bedrock Edition 1.8.1|1.8.1]]
+|—
+| colspan="8" | January 8, 2019
+|December 17, 2018
+|-
+|'''[[Bedrock Edition 1.8.0|1.8.0]]'''<br>([[Bedrock Edition guides/1.8 releases|Guide]])
+| October 10, 2018
+| colspan="9" |December 11, 2018
+|}
+
+===1.7 ===
+{| class="wikitable" style="text-align:center;" data-description="1.7 version history"
+! rowspan="2" |Version
+! rowspan="2" |Development release
+! colspan="9" |Full release
+|-
+!Android
+!iOS
+! Fire & Fire Phone
+! Windows 10
+! Windows 10 Mobile 
+!Gear VR 
+!Fire TV 
+!Xbox One
+!Nintendo Switch
+|-
+|[[Bedrock Edition 1.7.1|1.7.1]]
+|—
+| colspan="3" |—
+|November 7, 2018
+| colspan="3" |—
+|November 7, 2018
+|—
+|-
+|'''[[Bedrock Edition 1.7.0|1.7.0]]'''<br>([[Bedrock Edition guides/1.7 releases|Guide]])
+|August 23, 2018
+| October 16, 2018
+| October 15, 2018
+| colspan="7" | October 16, 2018
+|}
+
+===1.6 ===
+{{collapse
+|title='''Block and item additions'''
+|head=1
+}}
+{{Additions table
+|Barrier
+|Potion of Slow Falling
+|Splash Potion of Slow Falling
+|Lingering Potion of Slow Falling
+|Arrow of Slow Falling
+|Phantom Membrane
+|Phantom Spawn Egg
+|title=1.6.0}}
+{{collapse
+|tail=1
+}}
+{| class="wikitable" style="text-align:center;" data-description="1.6 version history"
+! rowspan="2" |Version
+! rowspan="2" |Development release
+! colspan="9" |Full release
+|-
+!Android
+!iOS
+! Fire & Fire Phone
+! Windows 10
+! Windows 10 Mobile 
+!Gear VR 
+!Fire TV 
+!Xbox One
+!Nintendo Switch
+|-
+|[[Bedrock Edition 1.6.2|1.6.2]]
+| rowspan="2" |—
+|—
+| October 1, 2018
+| colspan="7" |—
+|-
+|[[Bedrock Edition 1.6.1|1.6.1]]
+| colspan="9" |September 17, 2018
+|-
+|'''[[Bedrock Edition 1.6.0|1.6.0]]'''<br>([[Bedrock Edition guides/1.6 releases|Guide]]) 
+|June 14, 2018
+| colspan="9" |August 28, 2018
+|}
+
+===1.5 ===
+{{collapse
+|title='''Block and item additions'''
+|head=1
+}}
+{{Additions table
+|Bubble Column
+|Conduit BE
+|Turtle Egg
+|Turtle Spawn Egg
+|Turtle Scute
+|Turtle Shell
+|Potion of the Turtle Master
+|Splash Potion of the Turtle Master
+|Lingering Potion of the Turtle Master
+|Arrow of the Turtle Master
+|title=1.5.0}}
+{{collapse
+|tail=1
+}}
+{| class="wikitable" style="text-align:center;" data-description="1.5 version history"
+! rowspan="2" |Version
+! rowspan="2" |Development release
+! colspan="9" |Full release
+|-
+!Android
+!iOS
+! Fire & Fire Phone
+! Windows 10
+! Windows 10 Mobile 
+!Gear VR 
+!Fire TV 
+!Xbox One
+!Nintendo Switch
+|-
+|[[Bedrock Edition 1.5.3|1.5.3]]
+| rowspan="3" |—
+| colspan="9" | August 7, 2018
+|-
+|[[Bedrock Edition 1.5.2|1.5.2]]
+| colspan="2" |July 24, 2018 
+|July 25, 2018
+| colspan="3" |July 24, 2018 
+|July 25, 2018 
+|July 24, 2018
+|—
+|-
+|[[Bedrock Edition 1.5.1|1.5.1]]
+| colspan="8" |July 20, 2018 
+|July 19, 2018
+|-
+|'''[[Bedrock Edition 1.5.0|1.5.0]]'''<br>([[Update Aquatic]]) <small>(Phase&#160;Two)</small><br>([[Bedrock Edition guides/Update Aquatic (Phase Two)|Guide]])
+|April 25, 2018
+| colspan="9" |July 10, 2018
+|}
+
+===1.4 ===
+{{collapse
+|title='''Block and item additions'''
+|head=1
+}}
+{{Additions table
+|Carved Pumpkin
+|Blue Ice
+|Acacia Button
+|Acacia Pressure Plate
+|Acacia Trapdoor
+|Birch Button
+|Birch Pressure Plate
+|Birch Trapdoor
+|Dark Oak Button
+|Dark Oak Pressure Plate
+|Dark Oak Trapdoor
+|Jungle Button
+|Jungle Pressure Plate
+|Jungle Trapdoor
+|Spruce Button
+|Spruce Pressure Plate
+|Spruce Trapdoor
+|Brain Coral
+|Bubble Coral
+|Fire Coral
+|Horn Coral
+|Tube Coral
+|Brain Coral Block
+|Bubble Coral Block
+|Fire Coral Block
+|Horn Coral Block
+|Tube Coral Block
+|Dead Brain Coral Block
+|Dead Bubble Coral Block
+|Dead Fire Coral Block
+|Dead Horn Coral Block
+|Dead Tube Coral Block
+|Brain Coral Fan
+|Bubble Coral Fan
+|Fire Coral Fan
+|Horn Coral Fan
+|Tube Coral Fan
+|Dead Brain Coral Fan
+|Dead Bubble Coral Fan
+|Dead Fire Coral Fan
+|Dead Horn Coral Fan
+|Dead Tube Coral Fan
+|Kelp
+|Dried Kelp Block
+|Seagrass
+|Sea Pickle
+|Prismarine Stairs
+|Prismarine Slab
+|Prismarine Brick Stairs
+|Prismarine Brick Slab
+|Dark Prismarine Stairs
+|Dark Prismarine Slab
+|Stripped Acacia Log
+|Stripped Birch Log
+|Stripped Dark Oak Log
+|Stripped Jungle Log
+|Stripped Oak Log
+|Stripped Spruce Log
+|Bucket of Tropical Fish
+|Bucket of Cod
+|Bucket of Salmon
+|Bucket of Pufferfish
+|Dried Kelp
+|Heart of the Sea
+|Nautilus Shell
+|Cod Spawn Egg
+|Dolphin Spawn Egg
+|Drowned Spawn Egg
+|Pufferfish Spawn Egg
+|Salmon Spawn Egg
+|Tropical Fish Spawn Egg
+|Buried Treasure Map BE
+|Trident
+|Enchanted Book[&7Loyalty I]
+|Enchanted Book[&7Loyalty II]
+|Enchanted Book[&7Loyalty III]
+|Enchanted Book[&7Riptide I]
+|Enchanted Book[&7Riptide II]
+|Enchanted Book[&7Riptide III]
+|Enchanted Book[&7Impaling I]
+|Enchanted Book[&7Impaling II]
+|Enchanted Book[&7Impaling III]
+|Enchanted Book[&7Impaling IV]
+|Enchanted Book[&7Channeling]
+|Enchanted Book[&7Curse of Binding]
+|Enchanted Book[&7Curse of Vanishing]
+|title=1.4.0}}
+{{collapse
+|tail=1
+}}
+{| class="wikitable" style="text-align:center;" data-description="1.4 version history"
+! rowspan="2" |Version
+! rowspan="2" |Development release
+! colspan="9" |Full release
+|-
+!Android
+!iOS
+! Fire & Fire Phone
+! Windows 10
+! Windows 10 Mobile 
+!Gear VR 
+!Fire TV 
+!Xbox One
+!Nintendo Switch
+|-
+|[[Bedrock Edition 1.4.4|1.4.4]]
+| rowspan="4" |— 
+| June 7, 2018
+|— 
+| June 7, 2018
+| colspan="3" |— 
+| June 7, 2018
+| colspan="2" |—
+|-
+|[[Bedrock Edition 1.4.3|1.4.3]]
+|— 
+| June 5, 2018
+| colspan="7" |—
+|-
+|[[Bedrock Edition 1.4.2|1.4.2]]
+| colspan="8" | May 23, 2018
+|—
+|-
+|[[Bedrock Edition 1.4.1|1.4.1]]
+| May 17, 2018
+|—
+| May 17, 2018
+| colspan="3" |—
+| May 17, 2018
+|— 
+|June 21, 2018
+|-
+|'''[[Bedrock Edition 1.4.0|1.4.0]]'''<br> ([[Update Aquatic]]) <small>(Phase&#160;One)</small><br>([[Bedrock Edition guides/Update Aquatic (Phase One)|Guide]])
+|March 28, 2018
+| colspan="8" | May 16, 2018
+|—
+|}
+
+===1.2 ===
+{{collapse
+|title='''Block and item additions'''
+|head=1
+}}
+{{Additions table
+|Armor Stand
+|Black Banner
+|Blue Banner
+|Brown Banner
+|Cyan Banner
+|Gray Banner
+|Green Banner
+|Light Blue Banner
+|Light Gray Banner
+|Lime Banner
+|Magenta Banner
+|Orange Banner
+|Pink Banner
+|Purple Banner
+|Red Banner
+|White Banner
+|Yellow Banner
+|Jukebox
+|Book and Quill
+|Firework Star
+|Firework Rocket
+|Music Disc 11
+|Music Disc 13
+|Music Disc Blocks
+|Music Disc Cat
+|Music Disc Chirp
+|Music Disc Far
+|Music Disc Mall
+|Music Disc Mellohi
+|Music Disc Stal
+|Music Disc Strad
+|Music Disc Wait
+|Music Disc Ward
+|Parrot Spawn Egg
+|Zombie Villager Spawn Egg
+|title=1.2.0}}
+{{collapse
+|tail=1
+}}
+{| class="wikitable" style="text-align:center;" data-description="1.2 version history"
+! rowspan="2" |Version
+! rowspan="2" |Development release
+! colspan="9" |Full release
+|-
+!Android
+!iOS 
+!Fire & Fire Phone
+!Windows 10
+!Windows 10 Mobile
+!Gear VR 
+!Fire TV 
+!Xbox One
+!Nintendo Switch
+|-
+|[[Bedrock Edition 1.2.13.60|1.2.13.60 (1.2.16)]]
+| rowspan="3" |—
+| colspan="8" |April 19, 2018
+|—
+|-
+|[[Bedrock Edition 1.2.15|1.2.15]]
+| rowspan="2" |—
+|April 12, 2018
+| colspan="7" rowspan="2" |—
+|-
+|[[Bedrock Edition 1.2.14|1.2.14]]
+|April 4, 2018
+|-
+|[[Bedrock Edition 1.2.13|1.2.13]]
+|March 2, 2018
+| colspan="8" |April 3, 2018
+|—
+|-
+|[[Bedrock Edition 1.2.12|1.2.12]]
+| rowspan="2" |—
+| colspan="8" |—
+|June 21, 2018
+|-
+|[[Bedrock Edition 1.2.11|1.2.11]]
+| colspan="2" |March 9, 2018
+| colspan="6" |March 8, 2018
+| rowspan="12" |—
+|-
+|[[Bedrock Edition 1.2.10|1.2.10]]
+| January 24, 2018
+| colspan="8" |February 7, 2018
+|-
+|[[Bedrock Edition 1.2.9|1.2.9]]
+| rowspan="4" |—
+| colspan="8" | January 16, 2018
+|-
+|[[Bedrock Edition 1.2.8|1.2.8]]
+| colspan="2" |December 18, 2017
+| colspan="3" |December 19, 2017
+|December 18, 2017
+| colspan="2" |December 19, 2017
+|-
+|[[Bedrock Edition 1.2.7|1.2.7]]
+| colspan="8" |December 14, 2017
+|-
+|[[Bedrock Edition 1.2.6.1|1.2.6.1]]
+|December 7, 2017
+| colspan="7" |—
+|-
+|[[Bedrock Edition 1.2.6|1.2.6]]
+|November 8, 2017
+| colspan="8" |December 6, 2017
+|-
+|
+[[Bedrock Edition 1.2.5|1.2.5]]
+| October 13, 2017
+| colspan="8" |November 21, 2017
+|-
+|[[Bedrock Edition 1.2.3|1.2.3]]
+| October 4, 2017
+| colspan="8" | October 18, 2017
+|-
+|
+[[Bedrock Edition 1.2.2|1.2.2]]
+| rowspan="2" |—
+| colspan="8" | October 4, 2017
+|-
+|[[Bedrock Edition 1.2.1|1.2.1]]
+| colspan="4" |September 26, 2017
+|September 28, 2017
+| colspan="3" |September 26, 2017
+|-
+|'''[[Bedrock Edition 1.2.0|1.2.0]]'''<br> ([[Better Together Update]]) <br>([[Bedrock Edition guides/Better Together Update|Guide]])
+|July 31, 2017
+| colspan="8" |September 20, 2017
+|}
+
+==''Pocket Edition''==
+With [[Pocket Edition 1.0.0]] implementing the final dimension in the game - [[the End]], [[Pocket Edition|''Minecraft: Pocket Edition'']] embraced its full release. It was re-branded as [[Bedrock Edition|''Minecraft'']] less than a year later.
+
+===1.1 ===
+{{collapse
+|title='''Block and item additions'''
+|head=1
+}}
+{{Additions table
+|Magma Block BE
+|Bone Block
+|Nether Wart Block
+|Red Nether Bricks
+|title =1.1.3}}
+{{Additions table
+|White Bed BE
+|White Concrete
+|White Concrete Powder
+|White Glazed Terracotta
+|Light Gray Bed BE
+|Light Gray Concrete
+|Light Gray Concrete Powder
+|Light Gray Glazed Terracotta
+|Gray Bed BE
+|Gray Concrete
+|Gray Concrete Powder
+|Gray Glazed Terracotta
+|Black Bed BE
+|Black Concrete
+|Black Concrete Powder
+|Black Glazed Terracotta
+|Brown Bed BE
+|Brown Concrete
+|Brown Concrete Powder
+|Brown Glazed Terracotta
+|Red Concrete
+|Red Concrete Powder
+|Red Glazed Terracotta
+|Orange Bed BE
+|Orange Concrete
+|Orange Concrete Powder
+|Orange Glazed Terracotta
+|Yellow Bed BE
+|Yellow Concrete
+|Yellow Concrete Powder
+|Yellow Glazed Terracotta
+|Lime Bed BE
+|Lime Concrete
+|Lime Concrete Powder
+|Lime Glazed Terracotta
+|Green Bed BE
+|Green Concrete
+|Green Concrete Powder
+|Green Glazed Terracotta
+|Cyan Bed BE
+|Cyan Concrete
+|Cyan Concrete Powder
+|Cyan Glazed Terracotta
+|Light Blue Bed BE
+|Light Blue Concrete
+|Light Blue Concrete Powder
+|Light Blue Glazed Terracotta
+|Blue Bed BE
+|Blue Concrete
+|Blue Concrete Powder
+|Blue Glazed Terracotta
+|Purple Bed BE
+|Purple Concrete
+|Purple Concrete Powder
+|Purple Glazed Terracotta
+|Magenta Bed BE
+|Magenta Concrete
+|Magenta Concrete Powder
+|Magenta Glazed Terracotta
+|Pink Bed BE
+|Pink Concrete
+|Pink Concrete Powder
+|Pink Glazed Terracotta
+|White Shulker Box
+|Light Gray Shulker Box
+|Gray Shulker Box
+|Black Shulker Box
+|Brown Shulker Box
+|Red Shulker Box
+|Orange Shulker Box
+|Yellow Shulker Box
+|Lime Shulker Box
+|Green Shulker Box
+|Cyan Shulker Box
+|Light Blue Shulker Box
+|Blue Shulker Box
+|Purple Shulker Box
+|Magenta Shulker Box
+|Pink Shulker Box
+|Frosted Ice
+|Ocean Explorer Map BE
+|Woodland Explorer Map BE
+|Enchanted Book [&7Frost Walker I]
+|Enchanted Book [&7Frost Walker II]
+|Enchanted Book [&7Mending]
+|Iron Nugget
+|Totem of Undying
+|Llama Spawn Egg
+|Vindicator Spawn Egg
+|Evoker Spawn Egg
+|Vex Spawn Egg
+|title=1.1.0}}
+{{collapse
+|tail=1
+}}
+{| class="wikitable" style="text-align:center;" data-description="1.1 version history"
+! rowspan="2" |Version
+! rowspan="2" |Development release
+! colspan="8" |Full release
+|-
+!Android
+!iOS 
+!Fire & Fire Phone
+! Windows 10
+! Windows 10 Mobile 
+!Gear VR
+!tvOS 
+!Fire TV
+|-
+|[[Pocket Edition 1.1.7|1.1.7]]
+| rowspan="3" |—
+|—
+|September 15, 2017
+| colspan="6" |—
+|-
+|[[Pocket Edition 1.1.5|1.1.5]]
+| colspan="2" |August 3, 2017
+|August 1, 2017
+| colspan="3" |August 3, 2017
+|August 7, 2017
+|August 3, 2017
+|-
+|[[Pocket Edition 1.1.4|1.1.4]]
+| colspan="8" |July 19, 2017
+|-
+|[[Pocket Edition 1.1.3|1.1.3]]
+|June 23, 2017
+| colspan="8" | July 6, 2017
+|-
+|[[Pocket Edition 1.1.2|1.1.2]]
+|— 
+|June 23, 2017 
+|June 26, 2017
+| colspan="6" |June 23, 2017
+|-
+|[[Pocket Edition 1.1.1|1.1.1]]
+|June 13, 2017
+| colspan="8" |June 20, 2017
+|-
+|'''[[Pocket Edition 1.1.0|1.1.0]]'''<br>([[Discovery Update]])<br>([[Bedrock Edition guides/Discovery Update|Guide]])
+|March 31, 2017
+| colspan="8" | June 1, 2017
+|}
+
+===1.0 ===
+{{collapse
+|title='''Block and item additions'''
+|head=1
+}}
+{{Additions table
+|Command Block
+|Repeating Command Block
+|Chain Command Block
+|Minecart with Command Block BE
+|title=1.0.5}}
+{{Additions table
+|Chorus Flower
+|Chorus Plant
+|Ender Chest BE
+|End Gateway BE
+|End Portal BE
+|End Stone Bricks
+|End Rod
+|Dragon Egg
+|Dragon Head
+|Purpur Block
+|Purpur Pillar
+|Purpur Stairs
+|Purpur Slab
+|Black Stained Glass
+|Black Stained Glass Pane BE
+|Blue Stained Glass
+|Blue Stained Glass Pane BE
+|Brown Stained Glass
+|Brown Stained Glass Pane BE
+|Cyan Stained Glass
+|Cyan Stained Glass Pane BE
+|Gray Stained Glass
+|Gray Stained Glass Pane BE
+|Green Stained Glass
+|Green Stained Glass Pane BE 
+|Light Blue Stained Glass
+|Light Blue Stained Glass Pane BE
+|Light Gray Stained Glass
+|Light Gray Stained Glass Pane BE
+|Lime Stained Glass
+|Lime Stained Glass Pane BE
+|Magenta Stained Glass
+|Magenta Stained Glass Pane BE
+|Orange Stained Glass
+|Orange Stained Glass Pane BE 
+|Pink Stained Glass
+|Pink Stained Glass Pane BE
+|Purple Stained Glass
+|Purple Stained Glass Pane BE
+|Red Stained Glass
+|Red Stained Glass Pane BE
+|White Stained Glass
+|White Stained Glass Pane BE
+|Yellow Stained Glass
+|Yellow Stained Glass Pane BE
+|Structure Block
+|Chorus Fruit
+|Dragon's Breath
+|Elytra
+|End Crystal
+|Eye of Ender
+|Lingering Potion of Decay
+|Lingering Potion of Fire Resistance
+|Lingering Potion of Harming
+|Lingering Potion of Healing
+|Lingering Potion of Invisibility
+|Lingering Potion of Leaping
+|Lingering Potion of Night Vision
+|Lingering Potion of Poison
+|Lingering Potion of Regeneration
+|Lingering Potion of Slowness
+|Lingering Potion of Strength
+|Lingering Potion of Swiftness
+|Lingering Potion of Water Breathing
+|Lingering Potion of Weakness
+|Lingering Water Bottle
+|Popped Chorus Fruit
+|Shulker Shell
+|Endermite Spawn Egg
+|Polar Bear Spawn Egg
+|Shulker Spawn Egg
+|title=1.0.0}}
+{{collapse
+|tail=1
+}}
+{| class="wikitable" style="text-align:center;" data-description="1.0 version history"
+! rowspan="2" |Version
+! rowspan="2" |Development release
+! colspan="8" |Full release
+|-
+!Android
+!iOS 
+!Fire & Fire Phone
+! Windows 10
+! Windows 10 Mobile 
+!Gear VR
+!tvOS 
+!Fire TV
+|-
+|[[Pocket Edition 1.0.9|1.0.9]]
+| rowspan="3" |—
+| colspan="8" |May 18, 2017
+|-
+|[[Pocket Edition 1.0.8|1.0.8]]
+| colspan="8" |May 4, 2017
+|-
+|[[Pocket Edition 1.0.7|1.0.7]]
+| colspan="8" |April 20, 2017
+|-
+|[[Pocket Edition 1.0.6|1.0.6]]
+|March 24, 2017
+| colspan="8" |April 11, 2017
+|-
+|[[Pocket Edition 1.0.5|1.0.5]]
+|March 10, 2017
+| colspan="8" |March 28, 2017
+|-
+|[[Pocket Edition 1.0.4|1.0.4]]
+|February 14, 2017
+| colspan="8" |March 9, 2017
+|-
+|[[Pocket Edition 1.0.3|1.0.3]]
+|February 1, 2017
+|February 8, 2017
+| colspan="2" |February 9, 2017
+|February 10, 2017
+|February 22, 2017
+| colspan="3" |February 9, 2017
+|-
+|[[Pocket Edition 1.0.2|1.0.2]]
+| rowspan="2" |—
+| colspan="4" | January 19, 2017
+| rowspan="3" |—
+| colspan="2" | January 25, 2017
+| January 19, 2017
+|-
+|[[Pocket Edition 1.0.1|1.0.1]]
+|—
+| January 6, 2017
+| colspan="2" |—
+| colspan="3" |—
+|-
+|'''[[Pocket Edition 1.0.0|1.0.0]]'''<br>([[Ender Update]])<br>([[Bedrock Edition guides/Ender Update|Guide]])
+|November 11, 2016
+| colspan="4" |December 19, 2016
+| colspan="3" |December 19, 2016
+|}
+
+==Pocket Edition Alpha==
+{{main|Pocket Edition Alpha}}
+{{el|pe}} was first disclosed on E3 2011 in July where a primary demo was available and lasted for more than five years. The prolonged development has been porting features from {{JE}} onto the mobile platform piece by piece until the game is "finished", with the release of [[Pocket Edition 1.0.0]].
+
+{{anchor|0.16.0}}
+===0.16 ===
+{{collapse
+|title='''Block and item additions'''
+|head=1
+}}
+{{Additions table
+|Beacon BE
+|Prismarine
+|Sea Lantern BE
+|Wet Sponge
+|Nether Star
+|Prismarine Crystals
+|Prismarine Shard
+|Potion of Decay
+|Splash Potion of Decay
+|Arrow of Decay
+|Elder Guardian Spawn Egg
+|Guardian Spawn Egg
+|title=v0.16.0 alpha}}
+{{collapse
+|tail=1
+}}
+{| class="wikitable" style="text-align:center;" data-description="0.16 version history"
+! rowspan="2" |Version
+! rowspan="2" |Development release
+! colspan="6" |Full release
+|-
+!Android
+!iOS 
+!Fire OS
+! Windows Phone 8.1
+
+! Windows 10 
+!Gear VR
+|-
+|[[Pocket Edition v0.16.2 alpha|v0.16.2]]
+| rowspan="2" |—
+|November 17, 2016
+| colspan="5" |November 18, 2016
+|-
+|[[Pocket Edition v0.16.1 alpha|v0.16.1]]
+| colspan="6" |November 4, 2016
+|-
+|'''[[Pocket Edition v0.16.0 alpha|v0.16.0]]'''<br>([[Boss Update]])<br>([[Bedrock Edition guides/Boss Update|Guide]])
+|August 29, 2016
+| October 21, 2016
+|October 25, 2016
+| colspan="4" | October 21, 2016
+|}
+
+{{anchor|0.15.0}}
+=== 0.15 ===
+{{collapse
+|title='''Block and item additions'''
+|head=1
+}}
+{{Additions table
+|Observer
+|Piston
+|Sticky Piston
+|Raw Mutton
+|Cooked Mutton
+|Fire Charge
+|Horse Spawn Egg
+|Zombie Horse Spawn Egg
+|Skeleton Horse Spawn Egg
+|Mule Spawn Egg
+|Donkey Spawn Egg
+|Stray Spawn Egg
+|Husk Spawn Egg
+|Wither Skeleton Spawn Egg
+|Name Tag
+|Lead
+|Carrot on a Stick
+|Tipped Arrow
+|Arrow of Fire Resistance
+|Arrow of Harming
+|Arrow of Healing
+|Arrow of Invisibility
+|Arrow of Leaping
+|Arrow of Night Vision
+|Arrow of Poison
+|Arrow of Regeneration
+|Arrow of Slowness
+|Arrow of Strength
+|Arrow of Swiftness
+|Arrow of Water Breathing
+|Arrow of Weakness
+|Diamond Horse Armor
+|Golden Horse Armor
+|Iron Horse Armor
+|Leather Horse Armor
+|title=v0.15.0 alpha}}
+{{collapse
+|tail=1
+}}
+{| class="wikitable" style="text-align:center;" data-description="0.15 version history"
+! rowspan="2" |Version
+! rowspan="2" |Development release
+! colspan="6" |Full release
+|-
+!Android
+!iOS 
+!Fire OS
+! Windows Phone 8.1
+! Windows 10 
+!Gear VR
+|-
+|[[Pocket Edition v0.15.10 alpha|v0.15.10]]
+| rowspan="9" |—
+| October 3, 2016
+| colspan="5" | October 4, 2016
+|-
+|[[Pocket Edition v0.15.9 alpha|v0.15.9]]
+| colspan="3" |September 22, 2016
+|September 23, 2016
+| colspan="2" |September 22, 2016
+|-
+|[[Pocket Edition v0.15.8 alpha|v0.15.8]]
+| colspan="6" |September 15, 2016
+|-
+|[[Pocket Edition v0.15.7 alpha|v0.15.7]]
+| colspan="4" |August 31, 2016
+|September 1, 2016
+|August 31, 2016
+|-
+|[[Pocket Edition v0.15.6 alpha|v0.15.6]]
+| colspan="3" |August 10, 2016
+| colspan="2" |August 11, 2016
+|August 10, 2016
+|-
+|[[Pocket Edition v0.15.5 alpha|v0.15.5]]
+| colspan="4" |—
+|July-August 2016
+| –
+|-
+|[[Pocket Edition v0.15.4 alpha|v0.15.4]]
+| colspan="3" |July 28, 2016
+| colspan="2" |July 29, 2016
+|July 28, 2016
+|-
+|[[Pocket Edition v0.15.3 alpha|v0.15.3]]
+|July 19, 2016
+| colspan="5" |—
+|-
+|[[Pocket Edition v0.15.2 alpha|v0.15.2]]
+| colspan="2" |July 7, 2016
+| colspan="4" | July 8, 2016
+|-
+|[[Pocket Edition v0.15.1 alpha|v0.15.1]]
+|June 14, 2016 
+|June 26, 2016
+|—
+| colspan="4" |June 27, 2016
+|-
+|'''[[Pocket Edition v0.15.0 alpha|v0.15.0]]'''<br>([[Friendly Update]]) <br>([[Bedrock Edition guides/Friendly Update|Guide]])
+| June 3, 2016 
+|June 10, 2016
+| colspan="5" |June 13, 2016
+|}
+
+{{anchor|0.14.0|0.14.1|0.14.2|0.14.3}}
+
+===0.14 ===
+{{collapse
+|title='''Block and item additions'''
+|head=1
+}}
+{{Additions table
+|Redstone Comparator
+|Dispenser
+|Dropper
+|Hopper
+|Redstone Repeater
+|Minecart with Chest
+|Minecart with TNT
+|Minecart with Hopper
+|Cauldron
+|Red Sandstone
+|Red Sandstone Stairs
+|Red Sandstone Slab
+|Chiseled Red Sandstone
+|Cut Red Sandstone
+|Slime Block
+|Item Frame
+|Empty Map
+|Map
+|Ender Pearl
+|Witch Spawn Egg
+|title=v0.14.0 alpha}}
+{{collapse
+|tail=1
+}}
+{| class="wikitable" style="text-align:center;" data-description="0.14 version history"
+! rowspan="2" |Version
+! rowspan="2" |Development release
+! colspan="6" |Full release
+|-
+!Android
+!iOS 
+!Fire OS
+! Windows Phone 8.1
+!Windows 10
+!Gear VR
+|-
+|[[Pocket Edition v0.14.3 alpha|v0.14.3]]
+| rowspan="3" |—
+| May 18, 2016
+| colspan="5" | May 19, 2016
+|-
+|[[Pocket Edition v0.14.2 alpha|v0.14.2]]
+|April 26, 2016
+| colspan="5" |April 27, 2016
+|-
+|[[Pocket Edition v0.14.1 alpha|v0.14.1]]
+|April 5, 2016
+| colspan="2" |April 6, 2016
+|April 7, 2016
+|April 5, 2016
+| rowspan="2" |—
+|-
+|'''[[Pocket Edition v0.14.0 alpha|v0.14.0]]'''<br>([[Overworld Update]])<br>([[Bedrock Edition guides/Overworld Update|Guide]])
+| January 25, 2016
+| colspan="5" |February 18, 2016
+|}
+
+{{anchor|0.13.0|0.13.1|0.13.2}}
+===0.13 ===
+{{collapse
+|title='''Block and item additions'''
+|head=1
+}}
+{{Additions table
+|Redstone Lamp
+|Redstone Torch
+|Lever
+|Tripwire Hook
+|Daylight Detector
+|Oak Pressure Plate
+|Stone Pressure Plate
+|Heavy Weighted Pressure Plate
+|Light Weighted Pressure Plate
+|Oak Button
+|Stone Button
+|Detector Rail
+|Activator Rail
+|Trapped Chest
+|Spruce Door
+|Birch Door
+|Jungle Door
+|Acacia Door
+|Dark Oak Door
+|Iron Trapdoor
+|Note Block
+|Rabbit Hide
+|Raw Rabbit
+|Cooked Rabbit
+|Rabbit Stew
+|Rabbit Spawn Egg
+|title=v0.13.0 alpha}}
+{{collapse
+|tail=1
+}}
+{| class="wikitable" style="text-align:center;" data-description="0.13 version history"
+! rowspan="2" |Version
+! rowspan="2" |Development release
+! colspan="5" |Full release
+|-
+!Android
+!iOS
+!Fire OS
+! Windows Phone 8.1
+! Windows 10
+|-
+|[[Pocket Edition v0.13.2 alpha|v0.13.2 alpha]]
+| rowspan="2" |—
+|February 3, 2016
+| colspan="4" |February 4, 2016
+|-
+|[[Pocket Edition v0.13.1 alpha|v0.13.1 alpha]]
+| colspan="5" |December 16, 2015
+|-
+|'''[[Pocket Edition v0.13.0 alpha|v0.13.0 alpha]]'''<br>([[Bedrock Edition guides/0.13 releases|Guide]])
+|November 2, 2015
+| colspan="5" |November 19, 2015
+|}
+
+{{anchor|0.12.0|0.12.0.1|0.12.1|0.12.2|0.12.3}}
+===0.12 ===
+{{collapse
+|title='''Block and item additions'''
+|head=1
+}}
+{{Additions table
+|Enchanting Table
+|Anvil
+|Chipped Anvil
+|Damaged Anvil
+|Brewing Stand
+|Creeper Head BE
+|Player Head
+|Skeleton Skull BE
+|Wither Skeleton Skull BE
+|Zombie Head BE
+|Flower Pot
+|Soul Sand
+|Nether Brick Fence
+|Nether Brick Slab
+|Nether Quartz Ore
+|Nether Portal
+|Glass Bottle
+|Water Bottle
+|Awkward Potion
+|Mundane Potion
+|Thick Potion
+|Potion of Fire Resistance
+|Potion of Harming
+|Potion of Healing
+|Potion of Invisibility
+|Potion of Leaping
+|Potion of Night Vision
+|Potion of Poison
+|Potion of Regeneration
+|Potion of Slowness
+|Potion of Strength
+|Potion of Swiftness
+|Potion of Water Breathing
+|Potion of Weakness
+|Splash Water Bottle
+|Awkward Splash Potion
+|Mundane Splash Potion
+|Thick Splash Potion
+|Splash Potion of Fire Resistance
+|Splash Potion of Harming
+|Splash Potion of Healing
+|Splash Potion of Invisibility
+|Splash Potion of Leaping
+|Splash Potion of Night Vision
+|Splash Potion of Poison
+|Splash Potion of Regeneration
+|Splash Potion of Slowness
+|Splash Potion of Strength
+|Splash Potion of Swiftness
+|Splash Potion of Water Breathing
+|Splash Potion of Weakness
+|Enchanted Book
+|Enchanted Book[&7Unbreaking I]|Enchanted Book[&7Unbreaking II]|Enchanted Book[&7Unbreaking III]|Enchanted Book[&7Efficiency I]|Enchanted Book[&7Efficiency II]|Enchanted Book[&7Efficiency III]|Enchanted Book[&7Efficiency IV]|Enchanted Book[&7Efficiency V]|Enchanted Book[&7Silk Touch]|Enchanted Book[&7Bane of Arthropods I]|Enchanted Book[&7Bane of Arthropods II]|Enchanted Book[&7Bane of Arthropods III]|Enchanted Book[&7Bane of Arthropods IV]|Enchanted Book[&7Bane of Arthropods V]|Enchanted Book[&7Thorns I]|Enchanted Book[&7Thorns II]|Enchanted Book[&7Thorns III]|Enchanted Book[&7Luck of the Sea I]|Enchanted Book [&7Depth Strider I]
+|Enchanted Book [&7Depth Strider II]
+|Enchanted Book [&7Depth Strider III]
+|Enchanted Book[&7Luck of the Sea II]
+|Enchanted Book[&7Luck of the Sea III]
+|Enchanted Book[&7Lure I]
+|Enchanted Book[&7Lure II]
+|Enchanted Book[&7Lure III]
+|Gold Nugget
+|Golden Carrot
+|Nether Wart
+|Glistering Melon
+|Golden Apple
+|Enchanted Golden Apple
+|Rabbit's Foot
+|Blaze Rod
+|Blaze Powder
+|Ghast Tear
+|Spider Eye
+|Fermented Spider Eye
+|Bottle o' Enchanting
+|Poisonous Potato
+|Blaze Spawn Egg
+|Ocelot Spawn Egg
+|title=v0.12.1 alpha}}
+{{collapse
+|tail=1
+}}
+{| class="wikitable" style="text-align:center;" data-description="0.12 version history"
+! rowspan="2" |Version
+! rowspan="2" |Development release
+! colspan="5" |Full release
+|-
+!Android
+!iOS
+!Fire OS
+! Windows Phone 8.1
+! Windows 10
+|-
+|[[Pocket Edition v0.12.3 alpha|v0.12.3 alpha]]
+| rowspan="2" |—
+| October 22, 2015
+| colspan="4" | October 23, 2015
+|-
+|
+[[Pocket Edition v0.12.2 alpha|v0.12.2 alpha]]
+|October 11, 2015
+| October 14, 2015
+| colspan="3" |October 11, 2015
+
+|-
+|-
+|'''[[Pocket Edition v0.12.1 alpha|v0.12.1 alpha]]'''<br>([[Bedrock Edition guides/0.12 releases|Guide]])
+|July 29, 2015
+|September 9, 2015
+|September 8, 2015
+|September 4, 2015
+| colspan="2" |September 8, 2015
+|-
+|[[Pocket Edition v0.12.0.1 alpha|v0.12.0.1 alpha]]
+| rowspan="2" |—
+| colspan="4" rowspan="2" |—
+|August 11, 2015
+|-
+|[[Pocket Edition v0.12.0 alpha|v0.12.0 alpha]]
+|July 29, 2015
+|}
+
+{{anchor|0.11.0|0.11.1|0.11.2}}
+
+===0.11 ===
+{{collapse
+|title='''Block and item additions'''
+|head=1
+}}
+{{Additions table
+|Block of Redstone
+|Grass Path
+|Oak Boat
+|Spruce Boat
+|Birch Boat
+|Acacia Boat
+|Jungle Boat
+|Dark Oak Boat
+|Fishing Rod
+|Magma Cream
+|Raw Fish
+|Cooked Fish
+|Raw Salmon
+|Cooked Salmon
+|Tropical Fish
+|Pufferfish
+|Rotten Flesh
+|Bat Spawn Egg
+|Cave Spider Spawn Egg
+|Magma Cube Spawn Egg
+|Squid Spawn Egg
+|Ghast Spawn Egg
+|title=v0.11.0 alpha}}
+{{collapse
+|tail=1
+}}
+{| class="wikitable" style="text-align:center;" data-description="0.11 version history"
+! rowspan="2" |Version
+! rowspan="2" |Development release
+! colspan="4" |Full release
+|-
+!Android
+!iOS 
+!Fire OS
+! Windows Phone 8.1
+|-
+|[[Pocket Edition v0.11.2 alpha|v0.11.2 alpha]]
+| rowspan="2" |—
+| colspan="3" |—
+|June 5, 2015
+|-
+|[[Pocket Edition v0.11.1 alpha|v0.11.1 alpha]]
+| colspan="3" | June 4, 2015
+| rowspan="2" |—
+|-
+|'''[[Pocket Edition v0.11.0 alpha|v0.11.0 alpha]]'''<br>([[Bedrock Edition guides/0.11 releases|Guide]])
+|April 9, 2015
+| colspan="3" | June 4, 2015
+|}
+
+{{anchor|0.10.0|0.10.1|0.10.2|0.10.3|0.10.4|0.10.5}}
+
+===0.10 ===
+{{collapse
+|title='''Block and item additions'''
+|head=1
+}}
+{{Additions table
+|Spruce Fence
+|Spruce Fence Gate
+|Birch Fence
+|Birch Fence Gate
+|Jungle Fence
+|Jungle Fence Gate
+|Acacia Fence
+|Acacia Fence Gate
+|Dark Oak Fence
+|Dark Oak Fence Gate
+|title=v0.10.0 alpha}}
+{{collapse
+|tail=1
+}}
+{| class="wikitable" style="text-align:center;" data-description="0.10 version history"
+! rowspan="2" |Version
+! rowspan="2" |Development release
+! colspan="4" |Full release
+|-
+!Android
+!iOS
+!Fire OS
+! Windows Phone 8.1
+|-
+|[[Pocket Edition v0.10.5 alpha|v0.10.5 alpha]]
+| rowspan="5" |—
+|January 12, 2015
+|—
+| January 8, 2015
+|—
+|-
+|[[Pocket Edition v0.10.4 alpha|v0.10.4 alpha]]
+|November 24, 2014
+|December 2, 2014
+|—
+|December 10, 2014
+|-
+|[[Pocket Edition v0.10.3 alpha|v0.10.3 alpha]]
+|November 21, 2014
+| colspan="2" rowspan="3" |—
+| rowspan="4" |—
+|-
+|[[Pocket Edition v0.10.2 alpha|v0.10.2 alpha]]
+|November 20, 2014
+|-
+|[[Pocket Edition v0.10.1 alpha|v0.10.1 alpha]]
+|November 19, 2014
+|-
+|'''[[Pocket Edition v0.10.0 alpha|v0.10.0 alpha]]'''<br>([[Bedrock Edition guides/0.10 releases|Guide]])
+| October 17, 2014
+| colspan="3" |November 18, 2014
+|}
+
+{{anchor|0.9.0|0.9.1|0.9.2|0.9.3|0.9.4|0.9.5}}
+===0.9 ===
+{{collapse
+|title='''Block and item additions'''
+|head=1
+}}
+{{Additions table
+|Monster Spawner
+|End Portal Frame
+|Emerald Ore
+|Block of Emerald
+|Terracotta
+|White Terracotta
+|Light Gray Terracotta
+|Gray Terracotta
+|Black Terracotta
+|Brown Terracotta
+|Red Terracotta
+|Orange Terracotta
+|Yellow Terracotta
+|Lime Terracotta
+|Green Terracotta
+|Cyan Terracotta
+|Light Blue Terracotta
+|Blue Terracotta
+|Purple Terracotta
+|Magenta Terracotta
+|Pink Terracotta
+|Infested Cobblestone
+|Infested Stone
+|Infested Stone Bricks
+|Infested Mossy Stone Bricks
+|Infested Cracked Stone Bricks
+|Infested Chiseled Stone Bricks
+|End Stone
+|Red Sand
+|Mycelium
+|Podzol
+|Packed Ice
+|Coarse Dirt
+|Granite
+|Polished Granite
+|Andesite
+|Polished Andesite
+|Diorite
+|Polished Diorite
+|Acacia Log
+|Acacia Wood
+|Acacia Planks
+|Acacia Slab
+|Acacia Stairs
+|Acacia Leaves
+|Acacia Sapling
+|Dark Oak Log
+|Dark Oak Wood
+|Dark Oak Planks
+|Dark Oak Slab
+|Dark Oak Stairs
+|Dark Oak Leaves
+|Dark Oak Sapling
+|Jungle Wood
+|Jungle Sapling
+|Blue Orchid
+|Allium
+|Azure Bluet
+|Red Tulip
+|Orange Tulip
+|Pink Tulip
+|White Tulip
+|Oxeye Daisy
+|Sunflower
+|Lilac
+|Rose Bush
+|Peony
+|Vines
+|Lily Pad
+|Cocoa Beans
+|Tall Grass
+|Large Fern
+|Cookie
+|Emerald
+|Mooshroom Spawn Egg
+|Creeper Spawn Egg
+|Enderman Spawn Egg
+|Silverfish Spawn Egg
+|Skeleton Spawn Egg
+|Slime Spawn Egg
+|Spider Spawn Egg
+|Villager Spawn Egg
+|Zombie Spawn Egg
+|Zombie Pigman Spawn Egg
+|Wolf Spawn Egg
+|title=v0.9.0 alpha}}
+{{collapse
+|tail=1
+}}
+{| class="wikitable" style="text-align:center;" data-description="0.9 version history"
+! rowspan="2" |Version
+! rowspan="2" |Development release
+! colspan="4" |Full release
+|-
+!Android
+!iOS 
+!Fire & Fire TV 
+!Fire Phone
+|-
+|[[Pocket Edition v0.9.5 alpha|v0.9.5 alpha]]
+| rowspan="5" |— 
+|July 24, 2014 
+|July 27, 2014
+| colspan="2" |July 26, 2014
+|-
+|[[Pocket Edition v0.9.4 alpha|v0.9.4 alpha]]
+| colspan="2" |July 17, 2014
+| colspan="2" |—
+|-
+|[[Pocket Edition v0.9.3 alpha|v0.9.3 alpha]]
+|July 16, 2014
+| colspan="3" |—
+|-
+|[[Pocket Edition v0.9.2 alpha|v0.9.2 alpha]]
+| colspan="2" |July 15, 2014
+| colspan="2" |—
+|-
+|[[Pocket Edition v0.9.1 alpha|v0.9.1 alpha]]
+|July 11, 2014
+|— 
+|July 11, 2014 
+|July 25, 2014
+|-
+|'''[[Pocket Edition v0.9.0 alpha|v0.9.0 alpha]]'''<br>([[Bedrock Edition guides/0.9 releases|Guide]])
+| June 9, 2014
+| colspan="3" |July 10, 2014
+|—
+|}
+
+{{anchor|0.8.0|0.8.1|0.8.2}}
+
+===0.8 ===
+{{collapse
+|title='''Block and item additions'''
+|head=1
+}}
+{{Additions table
+|Spruce Planks
+|Spruce Slab
+|Spruce Stairs
+|Birch Planks
+|Birch Slab
+|Birch Stairs
+|Jungle Planks
+|Jungle Slab
+|Jungle Stairs
+|Jungle Log
+|Jungle Leaves
+|Oak Wood
+|Spruce Wood
+|Birch Wood
+|Block of Coal
+|White Carpet
+|Light Gray Carpet
+|Gray Carpet
+|Black Carpet
+|Brown Carpet
+|Red Carpet
+|Orange Carpet
+|Yellow Carpet
+|Lime Carpet
+|Green Carpet
+|Cyan Carpet
+|Light Blue Carpet
+|Blue Carpet
+|Purple Carpet
+|Magenta Carpet
+|Pink Carpet
+|Cobblestone Wall
+|Mossy Cobblestone Wall
+|Hay Bale
+|Iron Bars
+|Carved Pumpkin
+|Jack o'Lantern
+|Rail
+|Powered Rail
+|Fern
+|Dead Bush
+|Sponge
+|Redstone
+|Carrot
+|Potato
+|Pumpkin Seeds
+|Pumpkin Pie
+|Baked Potato
+|Beetroot Seeds
+|Beetroot
+|Beetroot Soup
+|Minecart|title=v0.8.0 alpha}}
+{{collapse
+|tail=1
+}}
+{| class="wikitable" style="text-align:center;" data-description="0.8 version history"
+! rowspan="2" |Version
+! rowspan="2" |Development release
+! colspan="4" |Full release
+|-
+!Android
+!iOS
+
+!Fire 
+!Fire TV
+|-
+|[[Pocket Edition v0.8.2 alpha|v0.8.2 alpha]]
+| rowspan="2" |—
+| colspan="3" |—
+|April 12, 2014
+|-
+|[[Pocket Edition v0.8.1 alpha|v0.8.1 alpha]]
+|December 18, 2013
+|December 19, 2013
+|—
+| rowspan="2" |—
+|-
+|'''[[Pocket Edition v0.8.0 alpha|v0.8.0 alpha]]'''<br>([[Bedrock Edition guides/0.8 releases|Guide]])
+|November 22, 2013
+| colspan="3" |December 12, 2013
+|}
+
+{{anchor|0.7.0|0.7.1|0.7.2|0.7.3|0.7.4|0.7.5|0.7.6}}
+
+===0.7 ===
+{{collapse
+|title='''Block and item additions'''
+|head=1
+}}
+{{Additions table
+|Quartz Slab
+|title=v0.7.3 alpha}}
+{{Additions table
+|Cake
+|Bucket
+|Water Bucket
+|Lava Bucket
+|Milk Bucket
+|Saddle
+|Chicken Spawn Egg
+|Cow Spawn Egg
+|Pig Spawn Egg
+|Sheep Spawn Egg
+|title=v0.7.0 alpha}}
+{{collapse
+|tail=1
+}}
+{| class="wikitable" style="text-align:center;" data-description="0.7 version history"
+! rowspan="2" |Version
+! colspan="3" |Release date
+|-
+!{{os|and}}
+!{{os|ios}}
+!{{os|fireos}}
+|-
+|[[Pocket Edition v0.7.6 alpha|v0.7.6 alpha]]
+| October 11, 2013
+| October 16, 2013
+| rowspan="2" |—
+|-
+|
+[[Pocket Edition v0.7.5 alpha|v0.7.5 alpha]]
+|September 4, 2013
+|September 12, 2013
+|-
+|[[Pocket Edition v0.7.4 alpha|v0.7.4 alpha]]
+| colspan="2" |September 2, 2013
+|August 31, 2013
+|-
+|[[Pocket Edition v0.7.3 alpha|v0.7.3 alpha]]
+| colspan="3" |August 15, 2013
+|-
+|[[Pocket Edition v0.7.2 alpha|v0.7.2 alpha]]
+| colspan="3" | July 4, 2013
+|-
+|[[Pocket Edition v0.7.1 alpha|v0.7.1 alpha]]
+| colspan="3" | June 7, 2013
+|-
+|'''[[Pocket Edition v0.7.0 alpha|v0.7.0 alpha]]'''<br>([[Bedrock Edition guides/0.7 releases|Guide]])
+| colspan="3" | June 5, 2013
+|}
+
+{{anchor|0.6.0|0.6.1}}
+
+===0.6 ===
+{{collapse
+|title='''Block and item additions'''
+|head=1
+}}
+{{Additions table
+|Netherrack
+|Nether Brick
+|Nether Bricks
+|Nether Quartz
+|Block of Quartz
+|Chiseled Quartz Block
+|Quartz Pillar
+|Cracked Stone Bricks
+|Mossy Stone Bricks
+|Stonecutter BE
+|Chiseled Sandstone
+|Smooth Sandstone
+|Nether Brick Stairs
+|Sandstone Stairs
+|Stone Brick Stairs
+|Quartz Stairs
+|Stone Brick Slab
+|Leather Cap
+|Leather Tunic
+|Leather Pants
+|Leather Boots
+|Chainmail Helmet
+|Chainmail Chestplate
+|Chainmail Leggings
+|Chainmail Boots
+|Iron Helmet
+|Iron Chestplate
+|Iron Leggings
+|Iron Boots
+|Golden Helmet
+|Golden Chestplate
+|Golden Leggings
+|Golden Boots
+|Diamond Helmet
+|Diamond Chestplate
+|Diamond Leggings
+|Diamond Boots
+|title=v0.6.0 alpha}}
+{{collapse
+|tail=1
+}}
+{| class="wikitable" style="text-align:center;" data-description="0.6 version history"
+! rowspan="2" |Version
+! colspan="3" |Release date
+|-
+!{{os|and}}
+!{{os|ios}}
+!{{os|fireos}}
+|-
+|[[Pocket Edition v0.6.1 alpha|v0.6.1 alpha]]
+| January 31, 2013
+|February 2, 2013
+| January 31, 2013
+|-
+|'''[[Pocket Edition v0.6.0 alpha|v0.6.0 alpha]]'''<br>([[Bedrock Edition guides/0.6 releases|Guide]])
+| colspan="3" | January 30, 2013
+|}
+{{anchor|0.5.0}}
+
+===0.5 ===
+{{collapse
+|title='''Block and item additions'''
+|head=1
+}}
+{{Additions table
+|Nether Reactor Core
+|Initialized Nether Reactor Core
+|Finished Nether Reactor Core
+|Glowing Obsidian
+|Glowstone
+|Melon
+|Cobweb
+|Oak Sign
+|Melon Seeds
+|Melon Slice
+|Painting
+|Painting Albanian
+|Painting de_aztec
+|Painting de_aztec
+|Painting Target Successfully Bombed
+|Painting Kebab med tre pepperoni
+|Painting Paradisträd
+|Painting Wasteland
+|Painting Wanderer
+|Painting Bonjour Monsieur Courbet
+|Painting Fighters
+|Painting The Pool
+|Painting Seaside
+|Painting sunset_dense
+|Painting Bust
+|Painting Match
+|Painting Pointer
+|Painting Skull and Roses
+|Painting The Stage Is Set
+|Painting The void
+|Painting Graham
+|Painting Creebet
+|Painting Kong
+|Painting Mortal Coil
+|Painting Pigscene
+|Painting Earth
+|Painting Fire
+|Painting Water
+|Painting Wind
+|title=v0.5.0 alpha}}
+{{collapse
+|tail=1
+}}
+{| class="wikitable" style="text-align:center;" data-description="0.5 version history"
+! rowspan="2" |Version
+! colspan="3" | Release date
+|-
+!{{os|and}}
+!{{os|ios}}
+!{{os|fireos}}
+|-
+|
+'''[[Pocket Edition v0.5.0 alpha|v0.5.0 alpha]]'''<br>([[Bedrock Edition guides/0.5.0|Guide]])
+| colspan="2" |November 15, 2012
+| ?
+|}
+
+{{anchor|0.4.0}}
+
+===0.4 ===
+{{collapse
+|title='''Block and item additions'''
+|head=1
+}}
+{{Additions table
+|Red Bed BE
+|Oak Trapdoor
+|Stone Bricks
+|Flint and Steel
+|Wooden Hoe
+|Stone Hoe
+|Iron Hoe
+|Golden Hoe
+|Diamond Hoe
+|Apple
+|Bread
+|Mushroom Stew
+|Raw Beef
+|Steak
+|Raw Chicken
+|Cooked Chicken
+|Raw Porkchop
+|Cooked Porkchop
+|Wheat Seeds
+|Egg
+|title=v0.4.0 alpha}}
+{{collapse
+|tail=1
+}}
+{| class="wikitable" style="text-align:center;" data-description="0.4 version history"
+! rowspan="2" |Version
+! colspan="3" | Release date
+|-
+!{{os|and}}
+!{{os|ios}}
+!{{os|fireos}}
+|-
+|[[Pocket Edition v0.4.0 alpha rev 3|v0.4.0 alpha rev 3]]
+| rowspan="2" |—
+|September 17, 2012
+| rowspan="2" |—
+|-
+|[[Pocket Edition v0.4.0 alpha rev 2|v0.4.0 alpha rev 2]]
+|September 14, 2012
+|-
+|
+'''[[Pocket Edition v0.4.0 alpha|v0.4.0 alpha]]'''<br>([[Bedrock Edition guides/0.4.0|Guide]])
+| colspan="2" |September 6, 2012
+|September 13, 2012
+|}
+
+{{anchor|0.3.0|0.3.2|0.3.3}}
+
+===0.3 ===
+{{collapse
+|title='''Block and item additions'''
+|head=1
+}}
+{{Additions table
+|Bow
+|Flint
+|title=v0.3.3 alpha}}
+{{Additions table
+|Furnace
+|Oak Sapling
+|Spruce Sapling
+|Birch Sapling
+|Glass Pane
+|Chest BE
+|title=v0.3.2 alpha}}
+{{Additions table
+|Crafting Table
+|Brick Slab
+|Brick Stairs
+|Coal
+|Charcoal
+|Lapis Lazuli
+|Cocoa Beans
+|Ink Sac
+|Bone Meal
+|Light Gray Dye
+|Gray Dye
+|Red Dye
+|Orange Dye
+|Yellow Dye
+|Lime Dye
+|Green Dye
+|Cyan Dye
+|Light Blue Dye
+|Purple Dye
+|Magenta Dye
+|Pink Dye
+|title=v0.3.0 alpha}}
+{{collapse
+|tail=1
+}}
+{| class="wikitable" style="text-align:center;" data-description="0.3 version history"
+! rowspan="2" |Version
+! colspan="2" | Release date
+|-
+!{{os|and}}
+!{{os|ios}}
+|-
+|[[Pocket Edition v0.3.3 alpha|v0.3.3 alpha]]
+| colspan="2" |August 9, 2012
+|-
+|[[Pocket Edition v0.3.2 alpha|v0.3.2 alpha]]
+| colspan="2" |July 16, 2012
+|-
+|
+'''[[Pocket Edition v0.3.0 alpha|v0.3.0 alpha]]'''<br>([[Bedrock Edition guides/0.3 releases|Guide]])
+|April 23, 2012
+|April 24, 2012
+|}
+
+{{anchor|0.2.0|0.2.1}}
+
+===0.2 ===
+{{collapse
+|title='''Block and item additions'''
+|head=1
+}}
+{{Additions table
+|Oak Fence
+|Oak Fence Gate
+|White Wool
+|Snow Block
+|Bookshelf
+|Mossy Cobblestone
+|Block of Lapis Lazuli
+|reserved6
+|Stone Shovel
+|Stone Pickaxe
+|Stone Axe
+|Stone Sword
+|Shears
+|Clay Ball
+|Brick
+|Iron Ingot
+|Gold Ingot
+|Diamond
+|Compass
+|Clock
+|Stick
+|Bowl
+|Paper
+|Book
+|Leather
+|Snowball
+|Slimeball
+|Sugar
+|Bone
+|Gunpowder
+|String
+|Feather
+|Arrow
+|Glowstone Dust
+|Wheat
+|Iron Shovel
+|Iron Pickaxe
+|Iron Axe
+|Iron Sword
+|Wooden Shovel
+|Wooden Pickaxe
+|Wooden Axe
+|Wooden Sword
+|Diamond Shovel
+|Diamond Pickaxe
+|Diamond Axe
+|Diamond Sword
+|Golden Shovel
+|Golden Pickaxe
+|Golden Axe
+|Golden Sword
+|title=v0.2.0 alpha}}
+{{collapse
+|tail=1
+}}
+{| class="wikitable" style="text-align:center;" data-description="0.2 version history"
+! rowspan="2" |Version
+! colspan="2" | Release date
+|-
+!{{os|and}}
+!{{os|ios}}
+|-
+|[[Pocket Edition v0.2.2 alpha|v0.2.2 alpha]]
+|March 18, 2012
+| rowspan="2" |—
+|-
+|[[Pocket Edition v0.2.1 alpha2|v0.2.1 alpha2]]
+|March 17, 2012
+|-
+|[[Pocket Edition v0.2.1 alpha|v0.2.1 alpha]]
+| colspan="2" |March 14, 2012
+|-
+|'''[[Pocket Edition v0.2.0 alpha|v0.2.0 alpha]]'''<br>([[Bedrock Edition guides/0.2 releases|Guide]])
+|February 11, 2012
+|February 17, 2012
+|}
+
+{{anchor|0.1.0|0.1.1|0.1.2|0.1.3}}
+
+===0.1 ===
+{{collapse
+|title='''Block and item additions'''
+|head=1
+}}
+{{Additions table
+|Oak Stairs
+|Cobblestone Stairs
+|Coal Ore
+|Iron Ore
+|Gold Ore
+|Diamond Ore
+|Redstone Ore
+|Lapis Lazuli Ore
+|Ice
+|Gravel
+|Clay
+|Lava
+|Farmland
+|Oak Door
+|Iron Door
+|Oak Slab
+|Cobblestone Slab
+|Sandstone Slab
+|Camera
+|Invisible Bedrock
+|title=v0.1.0 alpha}}
+{{collapse
+|tail=1
+}}
+{| class="wikitable" style="text-align:center;" data-description="0.1 version history"
+! rowspan="2" |Version
+! colspan="2" | Release date
+|-
+!{{os|and}}
+!{{os|ios}}
+|-
+|[[Pocket Edition v0.1.3 alpha|v0.1.3 alpha]]
+|December 3, 2011
+|December 14, 2011
+|-
+|[[Pocket Edition v0.1.2 alpha|v0.1.2 alpha]]
+| October 13, 2011
+|November 17, 2011
+|-
+|[[Pocket Edition v0.1.1 alpha|v0.1.1 alpha]]
+| October 7, 2011
+| rowspan="2" |—
+|-
+|'''[[Pocket Edition v0.1.0 alpha|v0.1.0 alpha]]''' (Xperia PLAY only)<br>([[Bedrock Edition guides/0.1 releases|Guide]])
+|August 16, 2011
+|-
+|}
+
+===Pre-Release===
+{{collapse
+|title='''Block and item additions'''
+|head=1
+}}
+{{Additions table
+|Air|Sand|Oak Leaves|Birch Leaves|Spruce Leaves|Light Gray Wool|Gray Wool|Black Wool|Brown Wool|Red Wool|Orange Wool|Yellow Wool|Lime Wool|Green Wool|Cyan Wool|Light Blue Wool|Blue Wool|Purple Wool|Magenta Wool|Pink Wool|Sandstone|Grass Block|Dirt|Stone|Cobblestone|Oak Planks|Glass|Block of Diamond|Block of Gold|Block of Iron|Obsidian|Bricks|Ladder|Oak Log|Birch Log|Spruce Log|Rose BE|Torch|Sugar Cane|Red Mushroom|Brown Mushroom|Dandelion|TNT|Smooth Stone Slab|Snow|Water
+|title=Demo}}
+{{collapse
+|tail=1
+}}
+{| class="wikitable" style="text-align:center;" data-description="Pre-release version history"
+! rowspan="2" |Version
+! Release date
+|-
+!{{os|and}}
+|-
+|[[Pocket Edition Demo|Demo]]<br>([[Bedrock Edition guides/Pocket Edition Demo|Guide]])
+|Unreleased
+|}
+
+==Trivia==
+* There is no Bedrock Edition 1.15, as it was skipped, and the version jumped directly from 1.14 to 1.16.
+* There is no Bedrock Edition 1.3, as it was skipped, and the version jumped directly from 1.2 to 1.4.
+
+== See also ==
+* [[Bedrock Edition release timeline]]
+
+==Notes==
+{{notelist|n}}
+
+== Navigation ==
+{{Navbox version history}}
+{{Navbox Bedrock Edition versions|general}}
+
+[[Category:Bedrock Edition versions| ]]
+
+[[el:Bedrock Edition version history]]
+[[es:Historial de versiones de Bedrock Edition]]
+[[fr:Historique des versions Bedrock]]
+[[hu:Bedrock Edition verzióelőzmények]]
+[[it:Storia delle versioni]]
+[[ja:Bedrock Edition/更新履歴]]
+[[ko:Bedrock Edition 버전 역사]]
+[[nl:Bedrockeditie versiegeschiedenis]]
+[[pl:Historia wersji/Bedrock]]
+[[pt:Histórico de versões da Edição Bedrock]]
+[[ru:История версий (Bedrock Edition)]]
+[[uk:Історія версій (Bedrock Edition)]]
+[[zh:基岩版版本记录]]
