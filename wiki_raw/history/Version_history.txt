@@ -1,0 +1,121 @@
+{{Redirect|Patch|the terrain feature|Random patch}}
+
+This page is a list of '''version history''' pages for the various '''development stages''' of each edition and type of ''Minecraft'' game.
+
+== ''Minecraft'' ==
+=== ''Java Edition'' ===
+* [[Java Edition version history|Version history]]
+** [[Java Edition pre-Classic|Pre-Classic]] (May 10/11 – May 16, 2009) (Cave game)
+** [[Java Edition Classic|Classic]] (May 16 – November 10, 2009)
+*** [[Java Edition Classic server version history|Classic server]] (June 8 - December 11, 2009)
+** [[Java Edition Indev|Indev]] (December 23, 2009 – February 23, 2010)
+** [[Java Edition Infdev|Infdev]] (February 27 – June 29/30, 2010)
+** [[Java Edition Alpha|Alpha]] (June 29/30 – December 3, 2010)
+** [[Java Edition Beta|Beta]] (December 20, 2010 – November 11, 2011)
+** [[Java Edition#Full release|Full release]] (November 18, 2011 – present)
+* [[Java Edition version history/Development versions|Development versions]]
+* [[Minecraft Wiki:Projects/wiki.vg merge/Protocol History|Protocol history]]
+* [[Realms#Java Edition|Realms version history]] (Minecraft version)
+** [[Realms#Java Edition 2|Realms version history]] (Realms version)
+
+=== ''Bedrock Edition'' ===
+* [[Bedrock Edition version history|Version history]]
+** [[Pocket Edition Alpha]] (August 16, 2011 – November 18, 2016)
+** {{el|pe}} (December 19, 2016 – September 15, 2017)
+** {{BE}} (September 20, 2017 – present)
+* [[Bedrock Edition version history/Development versions|Development versions]] (November 22, 2013 – present)
+* [[Minecraft Wiki:Projects/wiki.vg merge/Bedrock Protocol version numbers|Protocol history]]
+* [[Bedrock Editor version history]]
+** Alpha (March 8, 2023 - October 30, 2024)
+** Beta (November 7, 2024 - May 20, 2025)
+** Full release (May 27, 2025 - present)
+* [[Bedrock Dedicated Server version history]]
+** Alpha (2018 - 2024)
+** Full release (2024 - present)
+* [[Realms#Bedrock Edition|Realms version history]] (Minecraft version)
+** [[Realms#Bedrock Edition 2|Realms version history]] (Realms version)
+
+=== ''China Edition'' ===
+*[[China Edition#History|Version history]] (2017 - present)
+
+=== ''New Nintendo 3DS Edition'' ===
+* [[New Nintendo 3DS Edition version history|Version history]] (September 13, 2017 – January 15, 2019)
+
+=== ''Minecraft Education'' ===
+* [[Minecraft Education version history|Version history]]
+** [[Education Edition early access|Early access]] (June 28 – October 2, 2016)
+** {{el|ee}} full release (November 1, 2016 – present)
+* [[Minecraft Education version history/Development versions|Development versions]] (June 9, 2016 – present)
+* [[Minecraft Education version history/Classroom Mode|Classroom Mode]]
+* [[Minecraft Education version history/Code Connection|Code Connection]] (May 2, 2017 - June 12, 2018)
+
+=== ''MinecraftEdu'' ===
+* [[MinecraftEdu version history|Version history]]
+** Beta (mid-June 2011 – 2013)
+** Full release (2013 – April 5, 2016)
+
+=== ''Pi Edition'' ===
+* [[Pi Edition#Release|Release]] (February 11, 2013)
+
+=== ''Minecraft Launcher'' ===
+* [[Launcher version history|Version history]] (April 18, 2013 – present)
+
+=== Legacy Console Edition === 
+* [[Legacy Console Edition version history|Version history]]
+** {{el|360}} (May 9, 2012 – April 30, 2019)
+** {{el|xb1}} (September 5, 2014 – April 9, 2024)
+** {{el|ps3}} (December 17, 2013 – April 15, 2020)
+** {{el|ps4}} (September 4, 2014 – August 13, 2024)
+** {{el|psv}} (October 14, 2014 – April 15, 2020)
+** {{el|wii}} (December 17, 2015 – March 19, 2019)
+** {{el|ns}} (May 11, 2017 – June 21, 2018)
+
+== Spin-offs ==
+=== ''Minecraft: Story Mode'' ===
+* {{MCSM|Version history}} (October 13, 2015 – April 26, 2018)
+** [[MCSM:Steam builds|Steam builds]] (October 13, 2015 - November 23, 2016)
+** [[MCSM:Steam Season Two builds|Steam builds (Season Two)]] (July 25, 2017 - April 26, 2018)
+
+=== ''Minecraft Earth'' ===
+* {{MCE|Version history}} (July 16, 2019 – January 5, 2021)
+
+=== ''Minecraft Dungeons'' ===
+* {{MCD|Version history}} (May 26, 2020 – November 30, 2022)
+
+=== ''Minecraft Dungeons II'' ===
+* ''Set to release on September 29, 2026.''
+
+=== ''Minecraft Legends'' ===
+* {{MCL|Version history}} (April 18, 2023 – December 7, 2023)
+
+=== ''Minecraft Blast'' ===
+* [[Minecraft Blast#Version history|Version history]] (November 10, 2025 - present)
+
+== See also ==
+* See [[Version types]] for definitions of all version types (e.g. hotfixes, pre-releases, etc.).
+* See [[Version formats]] for information about how versions and version numbers are formatted.
+* See [[Major update]] for a list of major updates released before the game drop system was added.
+* See [[Game drop]] for a list of updates released after themed drop system was added (excluding [[Tricky Trials]]).
+
+== Navigation ==
+{{Navbox named updates|all}}
+{{Navbox version history}}
+
+[[Category:Lists]]
+
+[[cs:Historie Verzí]]
+[[de:Versionen]]
+[[es:Historial de versiones]]
+[[fr:Historique des versions]]
+[[hu:Verzióelőzmények]]
+[[it:Storia delle versioni]]
+[[ja:更新履歴]]
+[[ko:버전 역사]]
+[[nl:Versiegeschiedenis]]
+[[pl:Historia wersji]]
+[[pt:Histórico de versões]]
+[[ru:История версий]]
+[[th:ประวัติเวอร์ชัน]]
+[[tr:Versiyon Tarihi]]
+[[uk:Історія версій]]
+[[zh:版本记录]]

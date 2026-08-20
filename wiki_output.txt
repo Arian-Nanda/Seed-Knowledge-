@@ -1,9 +1,2 @@
-Trying 'History of Minecraft'...
-  Not found.
-Trying 'Development of Minecraft'...
-  Not found.
-Trying 'History'...
-  Found it - 48 characters.
-  Saved to wiki_raw/history/History.txt
-
-Done - review what was found above before we design the parsing step.
+Found it - 5170 characters.
+Saved to wiki_raw/history/Version_history.txt
