@@ -1,6 +1,7 @@
-Fetching 'Java Edition version history'...
-  Found it - 94700 characters.
-  Saved to wiki_raw/history/Java_Edition_version_history.txt
-Fetching 'Bedrock Edition version history'...
-  Found it - 88049 characters.
-  Saved to wiki_raw/history/Bedrock_Edition_version_history.txt
+Checking Category:Biomes for individual pages...
+  Found 3 pages. Sample: ['Biome', 'Biome/Before 1.18', 'Biome/Before Beta 1.8']
+  [1/3] Saved: Biome (101056 chars)
+  [2/3] Saved: Biome/Before 1.18 (45642 chars)
+  [3/3] Saved: Biome/Before Beta 1.8 (17398 chars)
+
+Done. Fetched 3 pages.
