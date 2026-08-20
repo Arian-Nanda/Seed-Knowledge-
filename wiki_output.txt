@@ -1,25 +1,9 @@
-Fetching the 'Advancement' (singular) page directly...
-Found it - 91316 characters.
-Saved to wiki_raw/advancements/Advancement_main.txt
+Trying 'History of Minecraft'...
+  Not found.
+Trying 'Development of Minecraft'...
+  Not found.
+Trying 'History'...
+  Found it - 48 characters.
+  Saved to wiki_raw/history/History.txt
 
-Found 22 section headers on this page. First 20:
-  Obtaining
-  Notifications
-  Interface
-  List of advancements
-  Minecraft
-  Nether
-  The End
-  Adventure
-  Husbandry
-  JSON format
-  Sounds
-  History
-  Advancement entries and requirements
-  Technical details
-  Issues
-  Gallery
-  Screenshots
-  Mojang screenshots
-  Renders and diagrams
-  Notes
+Done - review what was found above before we design the parsing step.
