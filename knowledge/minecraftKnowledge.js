@@ -8,6 +8,10 @@
 //   a real, actively maintained mirror of Minecraft's official generated
 //   data (loot tables and world-generation configs straight from Mojang's
 //   own data generator tool).
+// - Development history facts (9 total) - the game's high-level phase
+//   timeline (Pre-Classic through Full Release for Java, plus Bedrock's
+//   own history and cross-platform milestones), sourced from the
+//   Minecraft Wiki's version history pages.
 // - Advancement facts (126 total) - what unlocks each one, and its
 //   prerequisite - sourced from the Minecraft Wiki's main Advancement
 //   page, parsed directly from its structured template data.
@@ -4823,7 +4827,16 @@ const MINECRAFT_KNOWLEDGE = [
   "The Healing Power of Friendship! (advancement): Bucket of Tropical Fish. Unlocked by: The Cutest Predator |Have the Regeneration effect applied or updated by an axolotl after causing the final damage to its attack target while being less than 20 blocks away from the axolotl on each coordinate axis. A player with Regeneration II cannot obtain the advancement. |husbandry/kill_axolotl_target |\u2014 Requires the 'Team up with an axolotl and win a fight' advancement first.",
   "Good as New (advancement): Repair a damaged Wolf Armor using Armadillo Scutes. Unlocked by: Repair damaged wolf armor to full durability while the armor is equipped on the wolf. |husbandry/repair_wolf_armor |\u2014 Requires the 'Best Friends Forever' advancement first.",
   "The Whole Pack (advancement): Tame one of each Wolf variant. Unlocked by: Tame each of these 9 wolf variants: Ashen Wolf, Black Wolf, Chestnut Wolf, Pale Wolf, Rusty Wolf, Snowy Wolf, Spotted Wolf, Striped Wolf, Woods Wolf Requires the 'Best Friends Forever' advancement first.",
-  "Shear Brilliance (advancement): Remove Wolf Armor from a Wolf using Shears. Unlocked by: \u2014 |husbandry/remove_wolf_armor |\u2014 Requires the 'Best Friends Forever' advancement first."
+  "Shear Brilliance (advancement): Remove Wolf Armor from a Wolf using Shears. Unlocked by: \u2014 |husbandry/remove_wolf_armor |\u2014 Requires the 'Best Friends Forever' advancement first.",
+  "Minecraft Java Edition Pre-Classic (history): The earliest unreleased phase of development, lasting from May 10 to May 16, 2009, when the game was simply called \"Minecraft.\"",
+  "Minecraft Java Edition Classic (history): Lasted from May 17 to November 10, 2009.",
+  "Minecraft Java Edition Indev (history): Short for \"in development\", lasted from December 23, 2009 to February 23, 2010.",
+  "Minecraft Java Edition Infdev (history): Short for \"infinite development\", lasted from February 27 to June 30, 2010.",
+  "Minecraft Java Edition Alpha (history): Lasted from June 30 to December 3, 2010.",
+  "Minecraft Java Edition Beta (history): Lasted from December 20, 2010 to November 11, 2011.",
+  "Minecraft Java Edition Full Release (history): Officially released November 18, 2011 at MINECON 2011. Starting with version 1.12.2, the game officially adopted the \"Java Edition\" subtitle to distinguish it from Bedrock Edition.",
+  "Minecraft Bedrock Edition History (history): Bedrock Edition has been in development since August 16, 2011, originally called \"Minecraft: Pocket Edition.\" It was in Alpha until November 18, 2016, when it fully released. The \"Pocket Edition\" subtitle was dropped starting with version 1.2.0, though the edition was unofficially called \"Bedrock Edition\" until June 7, 2022.",
+  "Minecraft Bedrock Edition Cross-Platform Milestones (history): The Better Together Update (September 20, 2017) enabled cross-platform multiplayer across Windows, mobile, and Xbox One. Further platform support followed: Nintendo Switch (June 21, 2018), PS4 (December 10, 2019), ChromeOS (June 7, 2023), PS5 (October 22, 2024), Xbox Series X|S (June 17, 2025), and Nintendo Switch 2 (October 27, 2026)."
 ];
 
 module.exports = { MINECRAFT_KNOWLEDGE };
