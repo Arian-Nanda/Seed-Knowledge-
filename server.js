@@ -299,8 +299,48 @@ const { retrieveContext } = require("./knowledge/retrieveKnowledge.js");
 const { MINECRAFT_KNOWLEDGE } = require("./knowledge/minecraftKnowledge.js");
 
 // All 1,105 block facts, in the exact order they appear in the knowledge
-// base - used for the deterministic daily rotation below.
-const ALL_BLOCK_FACTS = MINECRAFT_KNOWLEDGE.filter((f) => f.includes("(block):"));
+// base - reordered below before use for the daily rotation.
+const RAW_BLOCK_FACTS = MINECRAFT_KNOWLEDGE.filter((f) => f.includes("(block):"));
+
+// A simple, fixed string hash - used ONLY to reorder the block list below,
+// not for anything security-sensitive.
+function stableHash(str) {
+  let h = 0;
+  for (let i = 0; i < str.length; i++) {
+    h = (h * 31 + str.charCodeAt(i)) | 0;
+  }
+  return h;
+}
+
+// The RAW block list groups similarly-shaped variants together for long
+// stretches (e.g. hundreds of Slabs in a row, then Walls) - a side effect
+// of how the source data itself is ordered. Rotating through it in that
+// original order meant real users saw many consecutive days of nothing
+// but slabs, then nothing but walls - confirmed directly from real dates
+// during testing, not a coincidence. This reorders the list ONCE using a
+// fixed hash of each block's own name, breaking up the clustering while
+// staying completely deterministic - the same block still shows on the
+// same day for everyone, and the order doesn't change across server
+// restarts, since it depends only on the block names themselves, not on
+// Math.random() or the current time.
+//
+// Separately, 50 blocks (standing vs. wall-mounted pairs like Sign/Wall
+// Sign, Banner/Wall Banner) share the same display name across two
+// distinct facts - shown correctly to be a real duplicate, not a bug in
+// this reordering, while testing the fix above. De-duplicating by name
+// here (keeping just the first occurrence) avoids the same name ever
+// showing up twice in the rotation.
+const seenNames = new Set();
+const DEDUPED_BLOCK_FACTS = RAW_BLOCK_FACTS.filter((f) => {
+  const name = f.match(/^(.+?) \(block\)/)[1];
+  if (seenNames.has(name)) return false;
+  seenNames.add(name);
+  return true;
+});
+
+const ALL_BLOCK_FACTS = [...DEDUPED_BLOCK_FACTS].sort((a, b) => {
+  return stableHash(a) - stableHash(b);
+});
 
 // Parses a "{Name} (block): hardness H; blast resistance B; drops: ...;
 // harvestable with: ...." fact into structured data. Tested against all
