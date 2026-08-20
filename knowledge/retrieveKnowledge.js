@@ -169,6 +169,12 @@ function retrieveContext(userMessage, topN = 3) {
   const PUBLIC_RELEASE_WORDS = ["come out", "release date", "publicly released", "officially released"];
   const hasPublicReleaseIntent = PUBLIC_RELEASE_WORDS.some((w) => rawLower.includes(w));
 
+  // Signals a question about when a specific MOB was added, as opposed
+  // to the game's own overall history - "(mob history)" facts don't share
+  // the same tag string as "(history)" facts, so they need their own
+  // boost (found missing during testing with "when did allays get added").
+  const hasMobHistoryIntent = rawLower.includes("added") || rawLower.includes("when did") || rawLower.includes("first appear");
+
   const scored = MINECRAFT_KNOWLEDGE.map((chunk, i) => {
     if (i === bestRecipeIdx && results.length > 0) return { chunk, score: -1 };
     let score = 0;
@@ -218,6 +224,9 @@ function retrieveContext(userMessage, topN = 3) {
     }
     if (hasPublicReleaseIntent && chunk.startsWith("Minecraft Java Edition Full Release") && score > 0) {
       score += 2;
+    }
+    if (hasMobHistoryIntent && chunk.includes("(mob history)") && score > 0) {
+      score += 1.5;
     }
     return { chunk, score };
   });
