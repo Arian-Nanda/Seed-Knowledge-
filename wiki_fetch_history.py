@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import requests
 import os
+import time
 
 API_URL = "https://minecraft.wiki/api.php"
 OUTPUT_DIR = "wiki_raw/history"
@@ -34,15 +35,24 @@ def get_page_wikitext(title):
 
 def main():
     os.makedirs(OUTPUT_DIR, exist_ok=True)
-    content = get_page_wikitext("Version history")
-    if not content:
-        print("Not found.")
-        return
-    print(f"Found it - {len(content)} characters.")
-    out_path = os.path.join(OUTPUT_DIR, "Version_history.txt")
-    with open(out_path, "w", encoding="utf-8") as f:
-        f.write(content)
-    print(f"Saved to {out_path}")
+
+    pages = {
+        "Java Edition version history": "Java_Edition_version_history.txt",
+        "Bedrock Edition version history": "Bedrock_Edition_version_history.txt",
+    }
+
+    for title, filename in pages.items():
+        print(f"Fetching '{title}'...")
+        content = get_page_wikitext(title)
+        if not content:
+            print("  Not found.")
+            continue
+        print(f"  Found it - {len(content)} characters.")
+        out_path = os.path.join(OUTPUT_DIR, filename)
+        with open(out_path, "w", encoding="utf-8") as f:
+            f.write(content)
+        print(f"  Saved to {out_path}")
+        time.sleep(0.5)
 
 
 if __name__ == "__main__":
