@@ -8,6 +8,8 @@
 //   a real, actively maintained mirror of Minecraft's official generated
 //   data (loot tables and world-generation configs straight from Mojang's
 //   own data generator tool).
+// - Villager profession facts (13 total) - what each profession trades
+//   and its job site block, sourced from the Minecraft Wiki's Trading page.
 // - Biome facts (66 total) - what each biome looks like and what
 //   spawns there, sourced from the Minecraft Wiki's main Biome page.
 // - Per-mob history facts (94 total) - when each mob was first added
@@ -5002,7 +5004,20 @@ const MINECRAFT_KNOWLEDGE = [
   "Small End islands (biome): Generates as part of the outer islands of the End. This biome represents the empty expanse between the larger islands, populated by the smaller, circular islands. Large amounts of endermen spawn in this biome.",
   "End midlands (biome): Generates as part of the outer islands of the End. This biome represents the gradual slope from the hilltops of each island down to the cliffs around the edge. End cities generate here, but chorus trees do not. Large amounts of endermen spawn in this biome.",
   "End highlands (biome): Generates as part of the outer islands of the End. This biome represents the hilltops of each island, and is the only biome in the End where both chorus trees and End cities generate. Large amounts of endermen spawn in this biome.",
-  "End barrens (biome): Generates as part of the outer islands of the End. This biome represents the outer rims of each island, with steep cliffs below the edge. Neither End cities nor chorus trees generate in this biome. Large amounts of endermen spawn in this biome."
+  "End barrens (biome): Generates as part of the outer islands of the End. This biome represents the outer rims of each island, with steep cliffs below the edge. Neither End cities nor chorus trees generate in this biome. Large amounts of endermen spawn in this biome.",
+  "Armorer (villager profession): Villagers with this profession trade various foundry and armor items. Job site block: Blast Furnace.",
+  "Butcher (villager profession): Villagers with this profession trade meat and some other food items. Job site block: Smoker.",
+  "Cartographer (villager profession): Villagers with this profession trade maps and related items. Job site block: Cartography Table.",
+  "Cleric (villager profession): Villagers with this profession trade magic items. Job site block: Brewing Stand.",
+  "Farmer (villager profession): Villagers with this profession trade crops and natural foods. Job site block: Composter.",
+  "Fisherman (villager profession): Villagers with this profession trade fishing-related items. Job site block: Barrel.",
+  "Fletcher (villager profession): Villagers with this profession trade archery-related items. Job site block: Fletching Table.",
+  "Leatherworker (villager profession): Villagers with this profession trade animal products, including leather-related items. Job site block: Cauldron.",
+  "Librarian (villager profession): Villagers with this profession trade book-related items. Job site block: Lectern.",
+  "Mason (villager profession): Villagers with this profession trade various types of stone. Job site block: Stonecutter.",
+  "Shepherd (villager profession): Villagers with this profession trade wool and dyed items. Job site block: Loom.",
+  "Toolsmith (villager profession): Villagers with this profession trade tools and related materials. Job site block: Smithing Table.",
+  "Weaponsmith (villager profession): Villagers with this profession trade weapons and related materials. Job site block: Grindstone."
 ];
 
 module.exports = { MINECRAFT_KNOWLEDGE };
